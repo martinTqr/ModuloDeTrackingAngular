@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   //Template Url: es lo que se va a mostrar con esa etiqueta
   templateUrl: './app.component.html',
   //stylesUrl: "es el estilo del componente"
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'Ricardo';
