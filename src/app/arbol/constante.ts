@@ -13,12 +13,36 @@ export const reporte: Categoria[] = [
       {
         id: 26,
         nombre: 'Previa',
-        tipo: 'out',
+        tipo: 'in',
         idEmpresa: '11',
         idCategoriaPadre: '15',
         orden: '1',
         fechaBorrado: null,
-        subcategorias: [],
+        subcategorias: [
+          {
+            id: 878978979,
+            nombre: 'Previa',
+            tipo: 'in',
+            idEmpresa: '11',
+            idCategoriaPadre: '26',
+            orden: '1',
+            fechaBorrado: null,
+            subcategorias: [],
+            acumulado: {
+              total: 3200,
+              cajas: [
+                {
+                  id: 8,
+                  nombre: 'Caja Wallas',
+                  idUnidadNegocio: '9',
+                  negativa: false,
+                  fechaBorrado: null,
+                  total: 3200,
+                },
+              ],
+            },
+          },
+        ],
         acumulado: {
           total: 3200,
           cajas: [

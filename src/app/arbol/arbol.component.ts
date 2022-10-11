@@ -13,6 +13,14 @@ export class ArbolComponent implements OnInit {
   constructor(servicio: ArbolService) {
     this.reporte = servicio.buscarCategorias();
   }
+  mostrarMontoDeCaja(data: Categoria) {
+    return data.acumulado.cajas.map((caja: any) => `$${caja.total} \n `);
+  }
+  mostrarCajas(data: Categoria) {
+    console.log(data);
+
+    return data.acumulado.cajas.map((caja: any) => `${caja.nombre}: `);
+  }
 
   ngOnInit(): void {}
 }

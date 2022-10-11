@@ -9,7 +9,13 @@
   [columnAutoWidth]="true"
   [expandedRowKeys]="[1]"
 >
-  <dxi-column dataField="nombre" caption="Position"></dxi-column>
+  <dxi-column dataField="nombre" caption="Categorias"></dxi-column>
   <dxi-column dataField="tipo"></dxi-column>
+
+  <div></div>
+  <dxi-column [calculateCellValue]="mostrarCajas" caption="Caja"> </dxi-column>
+  <dxi-column [calculateCellValue]="mostrarMontoDeCaja" caption="Monto">
+  </dxi-column>
+  <dxo-filter-row caption="Caja"> </dxo-filter-row>
   <dxi-column dataField="acumulado.total"></dxi-column>
 </dx-tree-list>
