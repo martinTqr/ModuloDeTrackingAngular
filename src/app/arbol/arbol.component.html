@@ -1,0 +1,15 @@
+<h1>Arbol</h1>
+<dx-tree-list
+  id="reporte"
+  [dataSource]="reporte"
+  itemsExpr="subcategorias"
+  dataStructure="tree"
+  [showRowLines]="true"
+  [showBorders]="true"
+  [columnAutoWidth]="true"
+  [expandedRowKeys]="[1]"
+>
+  <dxi-column dataField="nombre" caption="Position"></dxi-column>
+  <dxi-column dataField="tipo"></dxi-column>
+  <dxi-column dataField="acumulado.total"></dxi-column>
+</dx-tree-list>
