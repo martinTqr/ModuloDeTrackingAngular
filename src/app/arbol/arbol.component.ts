@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Categoria } from './arbol.interaces';
 import { ArbolService } from './arbol.service';
 
@@ -10,17 +10,13 @@ import { ArbolService } from './arbol.service';
 })
 export class ArbolComponent implements OnInit {
   reporte: Categoria[];
+  @Input() mode!: string;
   constructor(servicio: ArbolService) {
-    this.reporte = servicio.buscarCategorias();
-  }
-  mostrarMontoDeCaja(data: Categoria) {
-    return data.acumulado.cajas.map((caja: any) => `$${caja.total} \n `);
-  }
-  mostrarCajas(data: Categoria) {
-    console.log(data);
-
-    return data.acumulado.cajas.map((caja: any) => `${caja.nombre}: `);
+    const reporte = servicio.buscarCategorias();
+    this.reporte = reporte;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (this.mode === 'in') this.reporte = [this.reporte[0]];
+  }
 }
