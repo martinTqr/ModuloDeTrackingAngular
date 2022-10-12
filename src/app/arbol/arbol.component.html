@@ -1,7 +1,7 @@
-<h1>Arbol</h1>
+<h1>Ingresos</h1>
 <dx-tree-list
   id="reporte"
-  [dataSource]="reporte"
+  [dataSource]="reporte.ingresos.subcategorias"
   itemsExpr="subcategorias"
   dataStructure="tree"
   [showRowLines]="true"
@@ -10,6 +10,62 @@
   [expandedRowKeys]="[1]"
 >
   <dxi-column dataField="nombre" caption="Categorias"></dxi-column>
-  <dxi-column dataField="tipo"></dxi-column>
+
   <dxi-column dataField="acumulado.total"></dxi-column>
+</dx-tree-list>
+<dx-tree-list
+  id="reporte"
+  [dataSource]="reporte.ingresos.acumulado.cajas"
+  itemsExpr="subcategorias"
+  dataStructure="tree"
+  [showRowLines]="true"
+  [showBorders]="true"
+  [columnAutoWidth]="true"
+  [expandedRowKeys]="[1]"
+>
+  <dxi-column dataField="nombre" caption="Cajas"></dxi-column>
+  <dxi-column dataField="total"></dxi-column>
+</dx-tree-list>
+<br />
+<h1>Egresos</h1>
+<dx-tree-list
+  id="reporte"
+  [dataSource]="reporte.egresos.subcategorias"
+  itemsExpr="subcategorias"
+  dataStructure="tree"
+  [showRowLines]="true"
+  [showBorders]="true"
+  [columnAutoWidth]="true"
+  [expandedRowKeys]="[1]"
+>
+  <dxi-column dataField="nombre" caption="Categorias"></dxi-column>
+
+  <dxi-column dataField="acumulado.total"></dxi-column>
+</dx-tree-list>
+<dx-tree-list
+  id="reporte"
+  [dataSource]="reporte.egresos.acumulado.cajas"
+  itemsExpr="subcategorias"
+  dataStructure="tree"
+  [showRowLines]="true"
+  [showBorders]="true"
+  [columnAutoWidth]="true"
+  [expandedRowKeys]="[1]"
+>
+  <dxi-column dataField="nombre" caption="Cajas"></dxi-column>
+  <dxi-column dataField="total"></dxi-column>
+</dx-tree-list>
+<h1>Totales</h1>
+<dx-tree-list
+  id="reporte"
+  [dataSource]="reporte.cajas"
+  itemsExpr="subcategorias"
+  dataStructure="tree"
+  [showRowLines]="true"
+  [showBorders]="true"
+  [columnAutoWidth]="true"
+  [expandedRowKeys]="[1]"
+>
+  <dxi-column dataField="nombre" caption="Cajas"></dxi-column>
+  <dxi-column dataField="total"></dxi-column>
 </dx-tree-list>

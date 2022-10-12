@@ -2,9 +2,9 @@ export interface Categoria {
   id: number;
   nombre: string;
   tipo: string;
-  idEmpresa: string;
+  idEmpresa: string | null;
   idCategoriaPadre: string | null;
-  orden: string;
+  orden: number | string;
   fechaBorrado: string | Date | null;
   subcategorias: Categoria[];
   acumulado: Acumulado;

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Categoria } from './arbol.interaces';
 import { ArbolService } from './arbol.service';
+import { Reporte } from './constante';
 
 @Component({
   selector: 'arbol',
@@ -9,14 +9,12 @@ import { ArbolService } from './arbol.service';
   providers: [ArbolService],
 })
 export class ArbolComponent implements OnInit {
-  reporte: Categoria[];
+  reporte: Reporte;
   @Input() mode!: string;
   constructor(servicio: ArbolService) {
     const reporte = servicio.buscarCategorias();
     this.reporte = reporte;
   }
 
-  ngOnInit(): void {
-    if (this.mode === 'in') this.reporte = [this.reporte[0]];
-  }
+  ngOnInit(): void {}
 }
