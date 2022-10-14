@@ -8,12 +8,16 @@
   [showBorders]="true"
   [columnAutoWidth]="true"
   [expandedRowKeys]="[1]"
+  [columnWidth]="300"
 >
   <dxi-column dataField="nombre" caption="Categorias"></dxi-column>
 
   <dxi-column dataField="acumulado.total"></dxi-column>
+  <dxi-column *ngFor="let caja of 'acumulado.cajas'" dataField="{{ caja }}">
+  </dxi-column>
 </dx-tree-list>
-<dx-tree-list
+
+<!-- <dx-tree-list
   id="reporte"
   [dataSource]="reporte.ingresos.acumulado.cajas"
   itemsExpr="subcategorias"
@@ -22,6 +26,7 @@
   [showBorders]="true"
   [columnAutoWidth]="true"
   [expandedRowKeys]="[1]"
+  [columnWidth]="300"
 >
   <dxi-column dataField="nombre" caption="Cajas"></dxi-column>
   <dxi-column dataField="total"></dxi-column>
@@ -37,6 +42,7 @@
   [showBorders]="true"
   [columnAutoWidth]="true"
   [expandedRowKeys]="[1]"
+  [columnWidth]="300"
 >
   <dxi-column dataField="nombre" caption="Categorias"></dxi-column>
 
@@ -51,6 +57,7 @@
   [showBorders]="true"
   [columnAutoWidth]="true"
   [expandedRowKeys]="[1]"
+  [columnWidth]="300"
 >
   <dxi-column dataField="nombre" caption="Cajas"></dxi-column>
   <dxi-column dataField="total"></dxi-column>
@@ -65,7 +72,8 @@
   [showBorders]="true"
   [columnAutoWidth]="true"
   [expandedRowKeys]="[1]"
+  [columnWidth]="300"
 >
-  <dxi-column dataField="nombre" caption="Cajas"></dxi-column>
+  <dxi-column wi dataField="nombre" caption="Cajas"></dxi-column>
   <dxi-column dataField="total"></dxi-column>
-</dx-tree-list>
+</dx-tree-list> -->
