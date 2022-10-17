@@ -759,7 +759,19 @@ export const reporte: Reporte = {
         },
         meses: [
           {
-            total: 0,
+            total: 7810,
+          },
+          {
+            total: 1600,
+          },
+          {
+            total: 7800,
+          },
+          {
+            total: 7800,
+          },
+          {
+            total: 79870,
           },
           {
             total: 0,
@@ -774,19 +786,7 @@ export const reporte: Reporte = {
             total: 0,
           },
           {
-            total: 0,
-          },
-          {
-            total: 0,
-          },
-          {
-            total: 0,
-          },
-          {
-            total: 0,
-          },
-          {
-            total: 0,
+            total: 7800,
           },
           {
             total: 0,
@@ -1057,7 +1057,7 @@ export const reporte: Reporte = {
         },
         meses: [
           {
-            total: 0,
+            total: 10,
           },
           {
             total: 0,
@@ -1090,7 +1090,7 @@ export const reporte: Reporte = {
             total: 0,
           },
           {
-            total: 0,
+            total: 110000,
           },
         ],
       },
@@ -1370,10 +1370,10 @@ export const reporte: Reporte = {
             total: 0,
           },
           {
-            total: 0,
+            total: 456456,
           },
           {
-            total: 0,
+            total: 120000,
           },
           {
             total: 0,
@@ -1702,7 +1702,7 @@ export const reporte: Reporte = {
             total: 0,
           },
           {
-            total: 0,
+            total: 3000,
           },
           {
             total: 0,
@@ -1720,7 +1720,7 @@ export const reporte: Reporte = {
             total: 0,
           },
           {
-            total: 0,
+            total: 1000,
           },
           {
             total: 0,
@@ -1836,40 +1836,40 @@ export const reporte: Reporte = {
     },
     meses: [
       {
-        total: 0,
+        total: 7820,
+      },
+      {
+        total: 4600,
+      },
+      {
+        total: 7800,
+      },
+      {
+        total: 7800,
+      },
+      {
+        total: 79870,
+      },
+      {
+        total: 456456,
+      },
+      {
+        total: 120000,
+      },
+      {
+        total: 1000,
       },
       {
         total: 0,
       },
       {
-        total: 0,
+        total: 7800,
       },
       {
         total: 0,
       },
       {
-        total: 0,
-      },
-      {
-        total: 0,
-      },
-      {
-        total: 0,
-      },
-      {
-        total: 0,
-      },
-      {
-        total: 0,
-      },
-      {
-        total: 0,
-      },
-      {
-        total: 0,
-      },
-      {
-        total: 0,
+        total: 110000,
       },
     ],
   },
@@ -2149,10 +2149,10 @@ export const reporte: Reporte = {
             total: 0,
           },
           {
-            total: 0,
+            total: 1000,
           },
           {
-            total: 0,
+            total: 9800,
           },
           {
             total: 0,
@@ -2663,16 +2663,16 @@ export const reporte: Reporte = {
             total: 0,
           },
           {
-            total: 0,
+            total: 12000,
           },
           {
-            total: 0,
+            total: 12000,
           },
           {
-            total: 0,
+            total: 12000,
           },
           {
-            total: 0,
+            total: 12000,
           },
         ],
       },
@@ -3036,13 +3036,13 @@ export const reporte: Reporte = {
         },
         meses: [
           {
-            total: 0,
+            total: 10,
           },
           {
-            total: 0,
+            total: 780,
           },
           {
-            total: 0,
+            total: 12300,
           },
           {
             total: 0,
@@ -3343,10 +3343,10 @@ export const reporte: Reporte = {
             total: 0,
           },
           {
-            total: 0,
+            total: 70000,
           },
           {
-            total: 0,
+            total: 70000,
           },
           {
             total: 0,
@@ -3647,10 +3647,10 @@ export const reporte: Reporte = {
             total: 0,
           },
           {
-            total: 0,
+            total: 6000,
           },
           {
-            total: 0,
+            total: 78000,
           },
           {
             total: 0,
@@ -3951,10 +3951,10 @@ export const reporte: Reporte = {
             total: 0,
           },
           {
-            total: 0,
+            total: 1000,
           },
           {
-            total: 0,
+            total: 3000,
           },
           {
             total: 0,
@@ -4240,13 +4240,13 @@ export const reporte: Reporte = {
             total: 0,
           },
           {
-            total: 0,
+            total: 7000,
           },
           {
-            total: 0,
+            total: 7140000,
           },
           {
-            total: 0,
+            total: 7140000,
           },
           {
             total: 0,
@@ -4365,40 +4365,40 @@ export const reporte: Reporte = {
     },
     meses: [
       {
-        total: 0,
+        total: 10,
       },
       {
-        total: 0,
+        total: 780,
       },
       {
-        total: 0,
+        total: 13300,
       },
       {
-        total: 0,
+        total: 79800,
       },
       {
-        total: 0,
+        total: 77000,
       },
       {
-        total: 0,
+        total: 7146000,
       },
       {
-        total: 0,
+        total: 7218000,
       },
       {
-        total: 0,
+        total: 1000,
       },
       {
-        total: 0,
+        total: 15000,
       },
       {
-        total: 0,
+        total: 12000,
       },
       {
-        total: 0,
+        total: 12000,
       },
       {
-        total: 0,
+        total: 12000,
       },
     ],
   },
