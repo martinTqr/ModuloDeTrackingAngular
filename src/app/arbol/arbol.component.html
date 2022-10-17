@@ -39,6 +39,18 @@
 >
   <dxi-column dataField="nombre" caption="Cajas"></dxi-column>
   <dxi-column dataField="total"></dxi-column>
+  <dxi-column dataField="meses[0].total" caption="Enero"></dxi-column>
+  <dxi-column dataField="meses[1].total" caption="Febrero"></dxi-column>
+  <dxi-column dataField="meses[2].total" caption="Marzo"></dxi-column>
+  <dxi-column dataField="meses[3].total" caption="Abril"></dxi-column>
+  <dxi-column dataField="meses[4].total" caption="Mayo"></dxi-column>
+  <dxi-column dataField="meses[5].total" caption="Junio"></dxi-column>
+  <dxi-column dataField="meses[6].total" caption="Julio"></dxi-column>
+  <dxi-column dataField="meses[7].total" caption="Agosto"></dxi-column>
+  <dxi-column dataField="meses[8].total" caption="Septiembre"></dxi-column>
+  <dxi-column dataField="meses[9].total" caption="Octubre"></dxi-column>
+  <dxi-column dataField="meses[10].total" caption="Noviembre"></dxi-column>
+  <dxi-column dataField="meses[11].total" caption="Diciembre"></dxi-column>
 </dx-tree-list>
 <br />
 <h1>Egresos</h1>
@@ -82,4 +94,43 @@
 >
   <dxi-column dataField="nombre" caption="Cajas"></dxi-column>
   <dxi-column dataField="total"></dxi-column>
+  <dxi-column dataField="meses[0].total" caption="Enero"></dxi-column>
+  <dxi-column dataField="meses[1].total" caption="Febrero"></dxi-column>
+  <dxi-column dataField="meses[2].total" caption="Marzo"></dxi-column>
+  <dxi-column dataField="meses[3].total" caption="Abril"></dxi-column>
+  <dxi-column dataField="meses[4].total" caption="Mayo"></dxi-column>
+  <dxi-column dataField="meses[5].total" caption="Junio"></dxi-column>
+  <dxi-column dataField="meses[6].total" caption="Julio"></dxi-column>
+  <dxi-column dataField="meses[7].total" caption="Agosto"></dxi-column>
+  <dxi-column dataField="meses[8].total" caption="Septiembre"></dxi-column>
+  <dxi-column dataField="meses[9].total" caption="Octubre"></dxi-column>
+  <dxi-column dataField="meses[10].total" caption="Noviembre"></dxi-column>
+  <dxi-column dataField="meses[11].total" caption="Diciembre"></dxi-column>
+</dx-tree-list>
+<h1>Totales</h1>
+<dx-tree-list
+  id="reporte"
+  [dataSource]="reporte.cajas"
+  itemsExpr="subcategorias"
+  dataStructure="tree"
+  [showRowLines]="true"
+  [showBorders]="true"
+  [columnAutoWidth]="true"
+  [expandedRowKeys]="[1]"
+  [columnWidth]="130"
+>
+  <dxi-column dataField="nombre" caption="Cajas"></dxi-column>
+  <dxi-column dataField="total"></dxi-column>
+  <dxi-column dataField="meses[0].total" caption="Enero"></dxi-column>
+  <dxi-column dataField="meses[1].total" caption="Febrero"></dxi-column>
+  <dxi-column dataField="meses[2].total" caption="Marzo"></dxi-column>
+  <dxi-column dataField="meses[3].total" caption="Abril"></dxi-column>
+  <dxi-column dataField="meses[4].total" caption="Mayo"></dxi-column>
+  <dxi-column dataField="meses[5].total" caption="Junio"></dxi-column>
+  <dxi-column dataField="meses[6].total" caption="Julio"></dxi-column>
+  <dxi-column dataField="meses[7].total" caption="Agosto"></dxi-column>
+  <dxi-column dataField="meses[8].total" caption="Septiembre"></dxi-column>
+  <dxi-column dataField="meses[9].total" caption="Octubre"></dxi-column>
+  <dxi-column dataField="meses[10].total" caption="Noviembre"></dxi-column>
+  <dxi-column dataField="meses[11].total" caption="Diciembre"></dxi-column>
 </dx-tree-list>

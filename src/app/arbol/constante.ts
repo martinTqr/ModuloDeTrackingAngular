@@ -15,6 +15,44 @@ export const reporte: Reporte = {
       negativa: false,
       fechaBorrado: null,
       total: 385446,
+      meses: [
+        {
+          total: 0,
+        },
+        {
+          total: 820,
+        },
+        {
+          total: -4500,
+        },
+        {
+          total: -62200,
+        },
+        {
+          total: 9870,
+        },
+        {
+          total: 450456,
+        },
+        {
+          total: 42000,
+        },
+        {
+          total: 0,
+        },
+        {
+          total: -15000,
+        },
+        {
+          total: -12000,
+        },
+        {
+          total: -12000,
+        },
+        {
+          total: -12000,
+        },
+      ],
     },
     {
       id: 9,
@@ -23,6 +61,44 @@ export const reporte: Reporte = {
       negativa: false,
       fechaBorrado: null,
       total: -14169190,
+      meses: [
+        {
+          total: 7810,
+        },
+        {
+          total: 3000,
+        },
+        {
+          total: -1000,
+        },
+        {
+          total: -9800,
+        },
+        {
+          total: -7000,
+        },
+        {
+          total: -7140000,
+        },
+        {
+          total: -7140000,
+        },
+        {
+          total: 0,
+        },
+        {
+          total: 0,
+        },
+        {
+          total: 7800,
+        },
+        {
+          total: 0,
+        },
+        {
+          total: 110000,
+        },
+      ],
     },
   ],
   ingresos: {
@@ -62,6 +138,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 1610,
+                  meses: [
+                    {
+                      total: 10,
+                    },
+                    {
+                      total: 1600,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -123,6 +237,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 7800,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 7800,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -184,6 +336,90 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 7800,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 7800,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  id: 8,
+                  nombre: 'Caja Wallas',
+                  idUnidadNegocio: '9',
+                  negativa: false,
+                  fechaBorrado: null,
+                  total: 0,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -245,6 +481,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 7800,
+                  meses: [
+                    {
+                      total: 7800,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   id: 8,
@@ -253,12 +527,50 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 87670,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 7800,
+                    },
+                    {
+                      total: 79870,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
             meses: [
               {
-                total: 0,
+                total: 7800,
               },
               {
                 total: 0,
@@ -288,7 +600,7 @@ export const reporte: Reporte = {
                 total: 0,
               },
               {
-                total: 7800,
+                total: 0,
               },
               {
                 total: 0,
@@ -358,6 +670,44 @@ export const reporte: Reporte = {
               negativa: false,
               fechaBorrado: null,
               total: 97080,
+              meses: [
+                {
+                  total: 10,
+                },
+                {
+                  total: 1600,
+                },
+                {
+                  total: 7800,
+                },
+                {
+                  total: 7800,
+                },
+                {
+                  total: 79870,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
             },
             {
               id: 9,
@@ -366,6 +716,44 @@ export const reporte: Reporte = {
               negativa: false,
               fechaBorrado: null,
               total: 15600,
+              meses: [
+                {
+                  total: 7800,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 7800,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
             },
           ],
         },
@@ -436,6 +824,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 110000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 110000,
+                    },
+                  ],
                 },
               ],
             },
@@ -497,6 +923,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 10,
+                  meses: [
+                    {
+                      total: 10,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -550,6 +1014,44 @@ export const reporte: Reporte = {
               negativa: false,
               fechaBorrado: null,
               total: 110010,
+              meses: [
+                {
+                  total: 10,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 110000,
+                },
+              ],
             },
           ],
         },
@@ -620,6 +1122,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 456456,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 456456,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -681,6 +1221,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 120000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 120000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -734,6 +1312,44 @@ export const reporte: Reporte = {
               negativa: false,
               fechaBorrado: null,
               total: 576456,
+              meses: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 456456,
+                },
+                {
+                  total: 120000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
             },
           ],
         },
@@ -804,6 +1420,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 3000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 3000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -865,6 +1519,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 1000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 1000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -918,6 +1610,44 @@ export const reporte: Reporte = {
               negativa: false,
               fechaBorrado: null,
               total: 3000,
+              meses: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 3000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
             },
             {
               id: 8,
@@ -926,6 +1656,44 @@ export const reporte: Reporte = {
               negativa: false,
               fechaBorrado: null,
               total: 1000,
+              meses: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 1000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
             },
           ],
         },
@@ -979,6 +1747,44 @@ export const reporte: Reporte = {
           negativa: false,
           fechaBorrado: null,
           total: 674536,
+          meses: [
+            {
+              total: 10,
+            },
+            {
+              total: 1600,
+            },
+            {
+              total: 7800,
+            },
+            {
+              total: 7800,
+            },
+            {
+              total: 79870,
+            },
+            {
+              total: 456456,
+            },
+            {
+              total: 120000,
+            },
+            {
+              total: 1000,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           id: 9,
@@ -987,6 +1793,44 @@ export const reporte: Reporte = {
           negativa: false,
           fechaBorrado: null,
           total: 128610,
+          meses: [
+            {
+              total: 7810,
+            },
+            {
+              total: 3000,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 7800,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 110000,
+            },
+          ],
         },
       ],
     },
@@ -1066,6 +1910,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 1000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 1000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -1127,6 +2009,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 9800,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 9800,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -1180,6 +2100,44 @@ export const reporte: Reporte = {
               negativa: false,
               fechaBorrado: null,
               total: 10800,
+              meses: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 1000,
+                },
+                {
+                  total: 9800,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
             },
           ],
         },
@@ -1250,6 +2208,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 12000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 12000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -1311,6 +2307,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 12000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 12000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -1372,6 +2406,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 12000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 12000,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -1433,6 +2505,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 12000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 12000,
+                    },
+                  ],
                 },
               ],
             },
@@ -1486,6 +2596,44 @@ export const reporte: Reporte = {
               negativa: false,
               fechaBorrado: null,
               total: 48000,
+              meses: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 12000,
+                },
+                {
+                  total: 12000,
+                },
+                {
+                  total: 12000,
+                },
+                {
+                  total: 12000,
+                },
+              ],
             },
           ],
         },
@@ -1556,6 +2704,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 10,
+                  meses: [
+                    {
+                      total: 10,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -1617,6 +2803,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 780,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 780,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -1678,6 +2902,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 12300,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 12300,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -1731,6 +2993,44 @@ export const reporte: Reporte = {
               negativa: false,
               fechaBorrado: null,
               total: 13090,
+              meses: [
+                {
+                  total: 10,
+                },
+                {
+                  total: 780,
+                },
+                {
+                  total: 12300,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
             },
           ],
         },
@@ -1801,6 +3101,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 70000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 70000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -1862,6 +3200,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 70000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 70000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -1915,6 +3291,44 @@ export const reporte: Reporte = {
               negativa: false,
               fechaBorrado: null,
               total: 140000,
+              meses: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 70000,
+                },
+                {
+                  total: 70000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
             },
           ],
         },
@@ -1985,6 +3399,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 6000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 6000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -2046,6 +3498,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 78000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 78000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -2099,6 +3589,44 @@ export const reporte: Reporte = {
               negativa: false,
               fechaBorrado: null,
               total: 84000,
+              meses: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 6000,
+                },
+                {
+                  total: 78000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
             },
           ],
         },
@@ -2169,6 +3697,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 1000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 1000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -2230,6 +3796,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 3000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 3000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -2283,6 +3887,44 @@ export const reporte: Reporte = {
               negativa: false,
               fechaBorrado: null,
               total: 4000,
+              meses: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 1000,
+                },
+                {
+                  total: 3000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
             },
           ],
         },
@@ -2353,6 +3995,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 7000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 7000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -2414,6 +4094,44 @@ export const reporte: Reporte = {
                   negativa: false,
                   fechaBorrado: null,
                   total: 14280000,
+                  meses: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 7140000,
+                    },
+                    {
+                      total: 7140000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -2467,6 +4185,44 @@ export const reporte: Reporte = {
               negativa: false,
               fechaBorrado: null,
               total: 14287000,
+              meses: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 7000,
+                },
+                {
+                  total: 7140000,
+                },
+                {
+                  total: 7140000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
             },
           ],
         },
@@ -2520,6 +4276,44 @@ export const reporte: Reporte = {
           negativa: false,
           fechaBorrado: null,
           total: 14297800,
+          meses: [
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 1000,
+            },
+            {
+              total: 9800,
+            },
+            {
+              total: 7000,
+            },
+            {
+              total: 7140000,
+            },
+            {
+              total: 7140000,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           id: 8,
@@ -2528,6 +4322,44 @@ export const reporte: Reporte = {
           negativa: false,
           fechaBorrado: null,
           total: 289090,
+          meses: [
+            {
+              total: 10,
+            },
+            {
+              total: 780,
+            },
+            {
+              total: 12300,
+            },
+            {
+              total: 70000,
+            },
+            {
+              total: 70000,
+            },
+            {
+              total: 6000,
+            },
+            {
+              total: 78000,
+            },
+            {
+              total: 1000,
+            },
+            {
+              total: 15000,
+            },
+            {
+              total: 12000,
+            },
+            {
+              total: 12000,
+            },
+            {
+              total: 12000,
+            },
+          ],
         },
       ],
     },

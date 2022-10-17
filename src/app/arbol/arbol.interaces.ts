@@ -8,9 +8,7 @@ export interface Categoria {
   fechaBorrado: string | Date | null;
   subcategorias: Categoria[];
   acumulado: Acumulado;
-  meses?: {
-    total: number;
-  }[];
+  meses?: Totales[];
 }
 export enum TipoCategoria {
   in = 'in',
@@ -22,6 +20,10 @@ export interface Caja {
   idUnidadNegocio: string;
   negativa: boolean;
   fechaBorrado: string | Date | null;
+  total: number;
+  meses: Totales[];
+}
+export interface Totales {
   total: number;
 }
 export interface Acumulado {
