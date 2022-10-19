@@ -25,6 +25,9 @@ export interface Caja {
 }
 export interface Totales {
   total: number;
+  semanas: {
+    total: number;
+  }[];
 }
 export interface Acumulado {
   total: number;

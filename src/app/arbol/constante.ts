@@ -6,7 +6,7 @@ export interface Reporte {
   egresos: Categoria;
 }
 export const reporte: Reporte = {
-  total: -13783744,
+  total: -13783684,
   cajas: [
     {
       id: 8,
@@ -14,43 +14,247 @@ export const reporte: Reporte = {
       idUnidadNegocio: '9',
       negativa: false,
       fechaBorrado: null,
-      total: 385446,
+      total: 385506,
       meses: [
         {
           total: 0,
+          semanas: [
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: 820,
+          semanas: [
+            {
+              total: 820,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
-          total: -4500,
+          total: -4440,
+          semanas: [
+            {
+              total: -4500,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 60,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: -62200,
+          semanas: [
+            {
+              total: -62200,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: 9870,
+          semanas: [
+            {
+              total: 9870,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: 450456,
+          semanas: [
+            {
+              total: 450456,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: 42000,
+          semanas: [
+            {
+              total: 42000,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: 0,
+          semanas: [
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: -15000,
+          semanas: [
+            {
+              total: -15000,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: -12000,
+          semanas: [
+            {
+              total: -12000,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: -12000,
+          semanas: [
+            {
+              total: -12000,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: -12000,
+          semanas: [
+            {
+              total: -12000,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
       ],
     },
@@ -64,39 +268,243 @@ export const reporte: Reporte = {
       meses: [
         {
           total: 7810,
+          semanas: [
+            {
+              total: 7810,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: 3000,
+          semanas: [
+            {
+              total: 3000,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: -1000,
+          semanas: [
+            {
+              total: -1000,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: -9800,
+          semanas: [
+            {
+              total: -9800,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: -7000,
+          semanas: [
+            {
+              total: -7000,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: -7140000,
+          semanas: [
+            {
+              total: -7140000,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: -7140000,
+          semanas: [
+            {
+              total: 0,
+            },
+            {
+              total: -7140000,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: 0,
+          semanas: [
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: 0,
+          semanas: [
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: 7800,
+          semanas: [
+            {
+              total: 7800,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: 0,
+          semanas: [
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
         {
           total: 110000,
+          semanas: [
+            {
+              total: 110000,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+            {
+              total: 0,
+            },
+          ],
         },
       ],
     },
@@ -141,39 +549,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 10,
+                      semanas: [
+                        {
+                          total: 10,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 1600,
+                      semanas: [
+                        {
+                          total: 1600,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -182,39 +794,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 10,
+                semanas: [
+                  {
+                    total: 10,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 1600,
+                semanas: [
+                  {
+                    total: 1600,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -228,7 +1044,7 @@ export const reporte: Reporte = {
             fechaBorrado: null,
             subcategorias: [],
             acumulado: {
-              total: 7800,
+              total: 7860,
               cajas: [
                 {
                   id: 8,
@@ -236,43 +1052,247 @@ export const reporte: Reporte = {
                   idUnidadNegocio: '9',
                   negativa: false,
                   fechaBorrado: null,
-                  total: 7800,
+                  total: 7860,
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
-                      total: 7800,
+                      total: 7860,
+                      semanas: [
+                        {
+                          total: 7800,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 60,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -281,39 +1301,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
-                total: 7800,
+                total: 7860,
+                semanas: [
+                  {
+                    total: 7800,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 60,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -339,39 +1563,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 7800,
+                      semanas: [
+                        {
+                          total: 7800,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -385,39 +1813,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -426,39 +2058,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 7800,
+                semanas: [
+                  {
+                    total: 7800,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -484,39 +2320,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 7800,
+                      semanas: [
+                        {
+                          total: 7800,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -530,39 +2570,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 7800,
+                      semanas: [
+                        {
+                          total: 7800,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 79870,
+                      semanas: [
+                        {
+                          total: 79870,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -571,39 +2815,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 7800,
+                semanas: [
+                  {
+                    total: 7800,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 7800,
+                semanas: [
+                  {
+                    total: 7800,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 79870,
+                semanas: [
+                  {
+                    total: 79870,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -623,6 +3071,758 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+        acumulado: {
+          total: 112740,
+          cajas: [
+            {
+              id: 8,
+              nombre: 'Caja Wallas',
+              idUnidadNegocio: '9',
+              negativa: false,
+              fechaBorrado: null,
+              total: 97140,
+              meses: [
+                {
+                  total: 10,
+                  semanas: [
+                    {
+                      total: 10,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 1600,
+                  semanas: [
+                    {
+                      total: 1600,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 7860,
+                  semanas: [
+                    {
+                      total: 7800,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 60,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 7800,
+                  semanas: [
+                    {
+                      total: 7800,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 79870,
+                  semanas: [
+                    {
+                      total: 79870,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              id: 9,
+              nombre: 'Caja Wallas VIP',
+              idUnidadNegocio: '9',
+              negativa: false,
+              fechaBorrado: null,
+              total: 15600,
+              meses: [
+                {
+                  total: 7800,
+                  semanas: [
+                    {
+                      total: 7800,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 7800,
+                  semanas: [
+                    {
+                      total: 7800,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        meses: [
+          {
+            total: 7810,
+            semanas: [
+              {
+                total: 7810,
               },
               {
                 total: 0,
@@ -636,12 +3836,91 @@ export const reporte: Reporte = {
               {
                 total: 0,
               },
+            ],
+          },
+          {
+            total: 1600,
+            semanas: [
+              {
+                total: 1600,
+              },
+              {
+                total: 0,
+              },
               {
                 total: 0,
               },
               {
                 total: 0,
               },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 7860,
+            semanas: [
+              {
+                total: 7800,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 60,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 7800,
+            semanas: [
+              {
+                total: 7800,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 79870,
+            semanas: [
+              {
+                total: 79870,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
               {
                 total: 0,
               },
@@ -659,140 +3938,125 @@ export const reporte: Reporte = {
               },
             ],
           },
-        ],
-        acumulado: {
-          total: 112680,
-          cajas: [
-            {
-              id: 8,
-              nombre: 'Caja Wallas',
-              idUnidadNegocio: '9',
-              negativa: false,
-              fechaBorrado: null,
-              total: 97080,
-              meses: [
-                {
-                  total: 10,
-                },
-                {
-                  total: 1600,
-                },
-                {
-                  total: 7800,
-                },
-                {
-                  total: 7800,
-                },
-                {
-                  total: 79870,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-              ],
-            },
-            {
-              id: 9,
-              nombre: 'Caja Wallas VIP',
-              idUnidadNegocio: '9',
-              negativa: false,
-              fechaBorrado: null,
-              total: 15600,
-              meses: [
-                {
-                  total: 7800,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 7800,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-              ],
-            },
-          ],
-        },
-        meses: [
           {
-            total: 7810,
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
-            total: 1600,
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 7800,
-          },
-          {
-            total: 7800,
-          },
-          {
-            total: 79870,
-          },
-          {
-            total: 0,
-          },
-          {
-            total: 0,
-          },
-          {
-            total: 0,
-          },
-          {
-            total: 0,
-          },
-          {
-            total: 7800,
+            semanas: [
+              {
+                total: 7800,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
         ],
       },
@@ -827,39 +4091,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 110000,
+                      semanas: [
+                        {
+                          total: 110000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -868,39 +4336,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 110000,
+                semanas: [
+                  {
+                    total: 110000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -926,39 +4598,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 10,
+                      semanas: [
+                        {
+                          total: 10,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -967,39 +4843,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 10,
+                semanas: [
+                  {
+                    total: 10,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -1017,39 +5097,243 @@ export const reporte: Reporte = {
               meses: [
                 {
                   total: 10,
+                  semanas: [
+                    {
+                      total: 10,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 110000,
+                  semanas: [
+                    {
+                      total: 110000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -1058,39 +5342,243 @@ export const reporte: Reporte = {
         meses: [
           {
             total: 10,
+            semanas: [
+              {
+                total: 10,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 110000,
+            semanas: [
+              {
+                total: 110000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
         ],
       },
@@ -1125,39 +5613,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 456456,
+                      semanas: [
+                        {
+                          total: 456456,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -1166,39 +5858,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 456456,
+                semanas: [
+                  {
+                    total: 456456,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -1224,25 +6120,726 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 120000,
+                      semanas: [
+                        {
+                          total: 120000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            meses: [
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 120000,
+                semanas: [
+                  {
+                    total: 120000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+        acumulado: {
+          total: 576456,
+          cajas: [
+            {
+              id: 8,
+              nombre: 'Caja Wallas',
+              idUnidadNegocio: '9',
+              negativa: false,
+              fechaBorrado: null,
+              total: 576456,
+              meses: [
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 456456,
+                  semanas: [
+                    {
+                      total: 456456,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 120000,
+                  semanas: [
+                    {
+                      total: 120000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
                     {
                       total: 0,
                     },
@@ -1262,28 +6859,12 @@ export const reporte: Reporte = {
                 },
               ],
             },
-            meses: [
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 120000,
-              },
+          ],
+        },
+        meses: [
+          {
+            total: 0,
+            semanas: [
               {
                 total: 0,
               },
@@ -1301,94 +6882,225 @@ export const reporte: Reporte = {
               },
             ],
           },
-        ],
-        acumulado: {
-          total: 576456,
-          cajas: [
-            {
-              id: 8,
-              nombre: 'Caja Wallas',
-              idUnidadNegocio: '9',
-              negativa: false,
-              fechaBorrado: null,
-              total: 576456,
-              meses: [
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 456456,
-                },
-                {
-                  total: 120000,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-              ],
-            },
-          ],
-        },
-        meses: [
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
-          },
-          {
-            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 456456,
+            semanas: [
+              {
+                total: 456456,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 120000,
+            semanas: [
+              {
+                total: 120000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
         ],
       },
@@ -1423,39 +7135,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 3000,
+                      semanas: [
+                        {
+                          total: 3000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -1464,39 +7380,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 3000,
+                semanas: [
+                  {
+                    total: 3000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -1522,39 +7642,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 1000,
+                      semanas: [
+                        {
+                          total: 1000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -1563,39 +7887,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 1000,
+                semanas: [
+                  {
+                    total: 1000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -1613,27 +8141,758 @@ export const reporte: Reporte = {
               meses: [
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 3000,
+                  semanas: [
+                    {
+                      total: 3000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              id: 8,
+              nombre: 'Caja Wallas',
+              idUnidadNegocio: '9',
+              negativa: false,
+              fechaBorrado: null,
+              total: 1000,
+              meses: [
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 1000,
+                  semanas: [
+                    {
+                      total: 1000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        meses: [
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 3000,
+            semanas: [
+              {
+                total: 3000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 1000,
+            semanas: [
+              {
+                total: 1000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    acumulado: {
+      total: 803206,
+      cajas: [
+        {
+          id: 8,
+          nombre: 'Caja Wallas',
+          idUnidadNegocio: '9',
+          negativa: false,
+          fechaBorrado: null,
+          total: 674596,
+          meses: [
+            {
+              total: 10,
+              semanas: [
+                {
+                  total: 10,
                 },
                 {
                   total: 0,
@@ -1650,34 +8909,128 @@ export const reporte: Reporte = {
               ],
             },
             {
-              id: 8,
-              nombre: 'Caja Wallas',
-              idUnidadNegocio: '9',
-              negativa: false,
-              fechaBorrado: null,
+              total: 1600,
+              semanas: [
+                {
+                  total: 1600,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 7860,
+              semanas: [
+                {
+                  total: 7800,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 60,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 7800,
+              semanas: [
+                {
+                  total: 7800,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 79870,
+              semanas: [
+                {
+                  total: 79870,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 456456,
+              semanas: [
+                {
+                  total: 456456,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 120000,
+              semanas: [
+                {
+                  total: 120000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
               total: 1000,
-              meses: [
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
+              semanas: [
                 {
                   total: 1000,
                 },
@@ -1695,14 +9048,366 @@ export const reporte: Reporte = {
                 },
               ],
             },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
           ],
         },
-        meses: [
+        {
+          id: 9,
+          nombre: 'Caja Wallas VIP',
+          idUnidadNegocio: '9',
+          negativa: false,
+          fechaBorrado: null,
+          total: 128610,
+          meses: [
+            {
+              total: 7810,
+              semanas: [
+                {
+                  total: 7810,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 3000,
+              semanas: [
+                {
+                  total: 3000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 7800,
+              semanas: [
+                {
+                  total: 7800,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 110000,
+              semanas: [
+                {
+                  total: 110000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    meses: [
+      {
+        total: 7820,
+        semanas: [
+          {
+            total: 7820,
+          },
           {
             total: 0,
           },
           {
-            total: 3000,
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 4600,
+        semanas: [
+          {
+            total: 4600,
           },
           {
             total: 0,
@@ -1716,9 +9421,111 @@ export const reporte: Reporte = {
           {
             total: 0,
           },
+        ],
+      },
+      {
+        total: 7860,
+        semanas: [
+          {
+            total: 7800,
+          },
           {
             total: 0,
           },
+          {
+            total: 60,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 7800,
+        semanas: [
+          {
+            total: 7800,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 79870,
+        semanas: [
+          {
+            total: 79870,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 456456,
+        semanas: [
+          {
+            total: 456456,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 120000,
+        semanas: [
+          {
+            total: 120000,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 1000,
+        semanas: [
           {
             total: 1000,
           },
@@ -1736,140 +9543,85 @@ export const reporte: Reporte = {
           },
         ],
       },
-    ],
-    acumulado: {
-      total: 803146,
-      cajas: [
-        {
-          id: 8,
-          nombre: 'Caja Wallas',
-          idUnidadNegocio: '9',
-          negativa: false,
-          fechaBorrado: null,
-          total: 674536,
-          meses: [
-            {
-              total: 10,
-            },
-            {
-              total: 1600,
-            },
-            {
-              total: 7800,
-            },
-            {
-              total: 7800,
-            },
-            {
-              total: 79870,
-            },
-            {
-              total: 456456,
-            },
-            {
-              total: 120000,
-            },
-            {
-              total: 1000,
-            },
-            {
-              total: 0,
-            },
-            {
-              total: 0,
-            },
-            {
-              total: 0,
-            },
-            {
-              total: 0,
-            },
-          ],
-        },
-        {
-          id: 9,
-          nombre: 'Caja Wallas VIP',
-          idUnidadNegocio: '9',
-          negativa: false,
-          fechaBorrado: null,
-          total: 128610,
-          meses: [
-            {
-              total: 7810,
-            },
-            {
-              total: 3000,
-            },
-            {
-              total: 0,
-            },
-            {
-              total: 0,
-            },
-            {
-              total: 0,
-            },
-            {
-              total: 0,
-            },
-            {
-              total: 0,
-            },
-            {
-              total: 0,
-            },
-            {
-              total: 0,
-            },
-            {
-              total: 7800,
-            },
-            {
-              total: 0,
-            },
-            {
-              total: 110000,
-            },
-          ],
-        },
-      ],
-    },
-    meses: [
       {
-        total: 7820,
-      },
-      {
-        total: 4600,
+        total: 0,
+        semanas: [
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
       },
       {
         total: 7800,
-      },
-      {
-        total: 7800,
-      },
-      {
-        total: 79870,
-      },
-      {
-        total: 456456,
-      },
-      {
-        total: 120000,
-      },
-      {
-        total: 1000,
+        semanas: [
+          {
+            total: 7800,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
       },
       {
         total: 0,
-      },
-      {
-        total: 7800,
-      },
-      {
-        total: 0,
+        semanas: [
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
       },
       {
         total: 110000,
+        semanas: [
+          {
+            total: 110000,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
       },
     ],
   },
@@ -1913,39 +9665,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 1000,
+                      semanas: [
+                        {
+                          total: 1000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -1954,39 +9910,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 1000,
+                semanas: [
+                  {
+                    total: 1000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -2012,6 +10172,511 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 9800,
+                      semanas: [
+                        {
+                          total: 9800,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            meses: [
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 9800,
+                semanas: [
+                  {
+                    total: 9800,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+        acumulado: {
+          total: 10800,
+          cajas: [
+            {
+              id: 9,
+              nombre: 'Caja Wallas VIP',
+              idUnidadNegocio: '9',
+              negativa: false,
+              fechaBorrado: null,
+              total: 10800,
+              meses: [
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
                     },
                     {
                       total: 0,
@@ -2019,6 +10684,54 @@ export const reporte: Reporte = {
                     {
                       total: 0,
                     },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 1000,
+                  semanas: [
+                    {
+                      total: 1000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 9800,
+                  semanas: [
                     {
                       total: 9800,
                     },
@@ -2031,6 +10744,154 @@ export const reporte: Reporte = {
                     {
                       total: 0,
                     },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
                     {
                       total: 0,
                     },
@@ -2050,28 +10911,12 @@ export const reporte: Reporte = {
                 },
               ],
             },
-            meses: [
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 9800,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
+          ],
+        },
+        meses: [
+          {
+            total: 0,
+            semanas: [
               {
                 total: 0,
               },
@@ -2089,94 +10934,225 @@ export const reporte: Reporte = {
               },
             ],
           },
-        ],
-        acumulado: {
-          total: 10800,
-          cajas: [
-            {
-              id: 9,
-              nombre: 'Caja Wallas VIP',
-              idUnidadNegocio: '9',
-              negativa: false,
-              fechaBorrado: null,
-              total: 10800,
-              meses: [
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 1000,
-                },
-                {
-                  total: 9800,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-              ],
-            },
-          ],
-        },
-        meses: [
           {
             total: 0,
-          },
-          {
-            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 1000,
+            semanas: [
+              {
+                total: 1000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 9800,
+            semanas: [
+              {
+                total: 9800,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
         ],
       },
@@ -2211,39 +11187,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 12000,
+                      semanas: [
+                        {
+                          total: 12000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -2252,39 +11432,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 12000,
+                semanas: [
+                  {
+                    total: 12000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -2310,39 +11694,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 12000,
+                      semanas: [
+                        {
+                          total: 12000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -2351,39 +11939,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 12000,
+                semanas: [
+                  {
+                    total: 12000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -2409,39 +12201,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 12000,
+                      semanas: [
+                        {
+                          total: 12000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -2450,39 +12446,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 12000,
+                semanas: [
+                  {
+                    total: 12000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -2508,39 +12708,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 12000,
+                      semanas: [
+                        {
+                          total: 12000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -2549,39 +12953,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 12000,
+                semanas: [
+                  {
+                    total: 12000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -2599,39 +13207,243 @@ export const reporte: Reporte = {
               meses: [
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 12000,
+                  semanas: [
+                    {
+                      total: 12000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 12000,
+                  semanas: [
+                    {
+                      total: 12000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 12000,
+                  semanas: [
+                    {
+                      total: 12000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 12000,
+                  semanas: [
+                    {
+                      total: 12000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -2640,39 +13452,243 @@ export const reporte: Reporte = {
         meses: [
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 12000,
+            semanas: [
+              {
+                total: 12000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 12000,
+            semanas: [
+              {
+                total: 12000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 12000,
+            semanas: [
+              {
+                total: 12000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 12000,
+            semanas: [
+              {
+                total: 12000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
         ],
       },
@@ -2707,39 +13723,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 10,
+                      semanas: [
+                        {
+                          total: 10,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -2748,39 +13968,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 10,
+                semanas: [
+                  {
+                    total: 10,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -2806,39 +14230,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 780,
+                      semanas: [
+                        {
+                          total: 780,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -2847,39 +14475,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 780,
+                semanas: [
+                  {
+                    total: 780,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -2905,10 +14737,546 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 12300,
+                      semanas: [
+                        {
+                          total: 12300,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            meses: [
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 12300,
+                semanas: [
+                  {
+                    total: 12300,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+        acumulado: {
+          total: 13090,
+          cajas: [
+            {
+              id: 8,
+              nombre: 'Caja Wallas',
+              idUnidadNegocio: '9',
+              negativa: false,
+              fechaBorrado: null,
+              total: 13090,
+              meses: [
+                {
+                  total: 10,
+                  semanas: [
+                    {
+                      total: 10,
                     },
                     {
                       total: 0,
                     },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 780,
+                  semanas: [
+                    {
+                      total: 780,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 12300,
+                  semanas: [
                     {
                       total: 12300,
                     },
@@ -2924,6 +15292,171 @@ export const reporte: Reporte = {
                     {
                       total: 0,
                     },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
                     {
                       total: 0,
                     },
@@ -2943,13 +15476,52 @@ export const reporte: Reporte = {
                 },
               ],
             },
-            meses: [
+          ],
+        },
+        meses: [
+          {
+            total: 10,
+            semanas: [
+              {
+                total: 10,
+              },
+              {
+                total: 0,
+              },
               {
                 total: 0,
               },
               {
                 total: 0,
               },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 780,
+            semanas: [
+              {
+                total: 780,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 12300,
+            semanas: [
               {
                 total: 12300,
               },
@@ -2965,6 +15537,11 @@ export const reporte: Reporte = {
               {
                 total: 0,
               },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
               {
                 total: 0,
               },
@@ -2982,94 +15559,165 @@ export const reporte: Reporte = {
               },
             ],
           },
-        ],
-        acumulado: {
-          total: 13090,
-          cajas: [
-            {
-              id: 8,
-              nombre: 'Caja Wallas',
-              idUnidadNegocio: '9',
-              negativa: false,
-              fechaBorrado: null,
-              total: 13090,
-              meses: [
-                {
-                  total: 10,
-                },
-                {
-                  total: 780,
-                },
-                {
-                  total: 12300,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-              ],
-            },
-          ],
-        },
-        meses: [
           {
-            total: 10,
-          },
-          {
-            total: 780,
-          },
-          {
-            total: 12300,
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
-          },
-          {
-            total: 0,
-          },
-          {
-            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
         ],
       },
@@ -3104,39 +15752,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 70000,
+                      semanas: [
+                        {
+                          total: 70000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -3145,39 +15997,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 70000,
+                semanas: [
+                  {
+                    total: 70000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -3203,7 +16259,506 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 70000,
+                      semanas: [
+                        {
+                          total: 70000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            meses: [
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 70000,
+                semanas: [
+                  {
+                    total: 70000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+        acumulado: {
+          total: 140000,
+          cajas: [
+            {
+              id: 8,
+              nombre: 'Caja Wallas',
+              idUnidadNegocio: '9',
+              negativa: false,
+              fechaBorrado: null,
+              total: 140000,
+              meses: [
+                {
+                  total: 0,
+                  semanas: [
                     {
                       total: 0,
                     },
@@ -3213,6 +16768,57 @@ export const reporte: Reporte = {
                     {
                       total: 0,
                     },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 70000,
+                  semanas: [
                     {
                       total: 70000,
                     },
@@ -3222,6 +16828,157 @@ export const reporte: Reporte = {
                     {
                       total: 0,
                     },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 70000,
+                  semanas: [
+                    {
+                      total: 70000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
                     {
                       total: 0,
                     },
@@ -3241,28 +16998,12 @@ export const reporte: Reporte = {
                 },
               ],
             },
-            meses: [
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 70000,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
+          ],
+        },
+        meses: [
+          {
+            total: 0,
+            semanas: [
               {
                 total: 0,
               },
@@ -3280,94 +17021,225 @@ export const reporte: Reporte = {
               },
             ],
           },
-        ],
-        acumulado: {
-          total: 140000,
-          cajas: [
-            {
-              id: 8,
-              nombre: 'Caja Wallas',
-              idUnidadNegocio: '9',
-              negativa: false,
-              fechaBorrado: null,
-              total: 140000,
-              meses: [
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 70000,
-                },
-                {
-                  total: 70000,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-              ],
-            },
-          ],
-        },
-        meses: [
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
-          },
-          {
-            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 70000,
+            semanas: [
+              {
+                total: 70000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 70000,
+            semanas: [
+              {
+                total: 70000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
         ],
       },
@@ -3402,39 +17274,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 6000,
+                      semanas: [
+                        {
+                          total: 6000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -3443,39 +17519,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 6000,
+                semanas: [
+                  {
+                    total: 6000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -3501,25 +17781,726 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 78000,
+                      semanas: [
+                        {
+                          total: 78000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            meses: [
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 78000,
+                semanas: [
+                  {
+                    total: 78000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+        acumulado: {
+          total: 84000,
+          cajas: [
+            {
+              id: 8,
+              nombre: 'Caja Wallas',
+              idUnidadNegocio: '9',
+              negativa: false,
+              fechaBorrado: null,
+              total: 84000,
+              meses: [
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 6000,
+                  semanas: [
+                    {
+                      total: 6000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 78000,
+                  semanas: [
+                    {
+                      total: 78000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
                     {
                       total: 0,
                     },
@@ -3539,28 +18520,12 @@ export const reporte: Reporte = {
                 },
               ],
             },
-            meses: [
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 0,
-              },
-              {
-                total: 78000,
-              },
+          ],
+        },
+        meses: [
+          {
+            total: 0,
+            semanas: [
               {
                 total: 0,
               },
@@ -3578,94 +18543,225 @@ export const reporte: Reporte = {
               },
             ],
           },
-        ],
-        acumulado: {
-          total: 84000,
-          cajas: [
-            {
-              id: 8,
-              nombre: 'Caja Wallas',
-              idUnidadNegocio: '9',
-              negativa: false,
-              fechaBorrado: null,
-              total: 84000,
-              meses: [
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 6000,
-                },
-                {
-                  total: 78000,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-                {
-                  total: 0,
-                },
-              ],
-            },
-          ],
-        },
-        meses: [
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
-          },
-          {
-            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 6000,
+            semanas: [
+              {
+                total: 6000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 78000,
+            semanas: [
+              {
+                total: 78000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
         ],
       },
@@ -3700,39 +18796,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 1000,
+                      semanas: [
+                        {
+                          total: 1000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -3741,39 +19041,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 1000,
+                semanas: [
+                  {
+                    total: 1000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -3799,39 +19303,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 3000,
+                      semanas: [
+                        {
+                          total: 3000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -3840,39 +19548,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 3000,
+                semanas: [
+                  {
+                    total: 3000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -3890,39 +19802,243 @@ export const reporte: Reporte = {
               meses: [
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 1000,
+                  semanas: [
+                    {
+                      total: 1000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 3000,
+                  semanas: [
+                    {
+                      total: 3000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
                 {
                   total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
                 },
               ],
             },
@@ -3931,39 +20047,243 @@ export const reporte: Reporte = {
         meses: [
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 1000,
+            semanas: [
+              {
+                total: 1000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 3000,
+            semanas: [
+              {
+                total: 3000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
           {
             total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
           },
         ],
       },
@@ -3998,39 +20318,243 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 7000,
+                      semanas: [
+                        {
+                          total: 7000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
                     },
                   ],
                 },
@@ -4039,39 +20563,243 @@ export const reporte: Reporte = {
             meses: [
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 7000,
+                semanas: [
+                  {
+                    total: 7000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
               {
                 total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
               },
             ],
           },
@@ -4097,6 +20825,588 @@ export const reporte: Reporte = {
                   meses: [
                     {
                       total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 7140000,
+                      semanas: [
+                        {
+                          total: 7140000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 7140000,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 7140000,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                        {
+                          total: 0,
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            meses: [
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 7140000,
+                semanas: [
+                  {
+                    total: 7140000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 7140000,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 7140000,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+              {
+                total: 0,
+                semanas: [
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                  {
+                    total: 0,
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+        acumulado: {
+          total: 14287000,
+          cajas: [
+            {
+              id: 9,
+              nombre: 'Caja Wallas VIP',
+              idUnidadNegocio: '9',
+              negativa: false,
+              fechaBorrado: null,
+              total: 14287000,
+              meses: [
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 7000,
+                  semanas: [
+                    {
+                      total: 7000,
                     },
                     {
                       total: 0,
@@ -4107,6 +21417,34 @@ export const reporte: Reporte = {
                     {
                       total: 0,
                     },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 7140000,
+                  semanas: [
+                    {
+                      total: 7140000,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 7140000,
+                  semanas: [
                     {
                       total: 0,
                     },
@@ -4114,8 +21452,99 @@ export const reporte: Reporte = {
                       total: 7140000,
                     },
                     {
-                      total: 7140000,
+                      total: 0,
                     },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                    {
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 0,
+                  semanas: [
                     {
                       total: 0,
                     },
@@ -4135,7 +21564,12 @@ export const reporte: Reporte = {
                 },
               ],
             },
-            meses: [
+          ],
+        },
+        meses: [
+          {
+            total: 0,
+            semanas: [
               {
                 total: 0,
               },
@@ -4148,6 +21582,114 @@ export const reporte: Reporte = {
               {
                 total: 0,
               },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 7000,
+            semanas: [
+              {
+                total: 7000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 7140000,
+            semanas: [
+              {
+                total: 7140000,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 7140000,
+            semanas: [
               {
                 total: 0,
               },
@@ -4155,8 +21697,99 @@ export const reporte: Reporte = {
                 total: 7140000,
               },
               {
-                total: 7140000,
+                total: 0,
               },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+              {
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 0,
+            semanas: [
               {
                 total: 0,
               },
@@ -4175,17 +21808,22 @@ export const reporte: Reporte = {
             ],
           },
         ],
-        acumulado: {
-          total: 14287000,
-          cajas: [
+      },
+    ],
+    acumulado: {
+      total: 14586890,
+      cajas: [
+        {
+          id: 9,
+          nombre: 'Caja Wallas VIP',
+          idUnidadNegocio: '9',
+          negativa: false,
+          fechaBorrado: null,
+          total: 14297800,
+          meses: [
             {
-              id: 9,
-              nombre: 'Caja Wallas VIP',
-              idUnidadNegocio: '9',
-              negativa: false,
-              fechaBorrado: null,
-              total: 14287000,
-              meses: [
+              total: 0,
+              semanas: [
                 {
                   total: 0,
                 },
@@ -4198,15 +21836,214 @@ export const reporte: Reporte = {
                 {
                   total: 0,
                 },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 1000,
+              semanas: [
+                {
+                  total: 1000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 9800,
+              semanas: [
+                {
+                  total: 9800,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 7000,
+              semanas: [
                 {
                   total: 7000,
                 },
                 {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 7140000,
+              semanas: [
+                {
                   total: 7140000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 7140000,
+              semanas: [
+                {
+                  total: 0,
                 },
                 {
                   total: 7140000,
                 },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 0,
+              semanas: [
                 {
                   total: 0,
                 },
@@ -4226,30 +22063,264 @@ export const reporte: Reporte = {
             },
           ],
         },
-        meses: [
+        {
+          id: 8,
+          nombre: 'Caja Wallas',
+          idUnidadNegocio: '9',
+          negativa: false,
+          fechaBorrado: null,
+          total: 289090,
+          meses: [
+            {
+              total: 10,
+              semanas: [
+                {
+                  total: 10,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 780,
+              semanas: [
+                {
+                  total: 780,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 12300,
+              semanas: [
+                {
+                  total: 12300,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 70000,
+              semanas: [
+                {
+                  total: 70000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 70000,
+              semanas: [
+                {
+                  total: 70000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 6000,
+              semanas: [
+                {
+                  total: 6000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 78000,
+              semanas: [
+                {
+                  total: 78000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 1000,
+              semanas: [
+                {
+                  total: 1000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 15000,
+              semanas: [
+                {
+                  total: 15000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 12000,
+              semanas: [
+                {
+                  total: 12000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 12000,
+              semanas: [
+                {
+                  total: 12000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+            {
+              total: 12000,
+              semanas: [
+                {
+                  total: 12000,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+                {
+                  total: 0,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    meses: [
+      {
+        total: 10,
+        semanas: [
           {
-            total: 0,
-          },
-          {
-            total: 0,
-          },
-          {
-            total: 0,
-          },
-          {
-            total: 0,
-          },
-          {
-            total: 7000,
-          },
-          {
-            total: 7140000,
-          },
-          {
-            total: 7140000,
-          },
-          {
-            total: 0,
+            total: 10,
           },
           {
             total: 0,
@@ -4265,140 +22336,225 @@ export const reporte: Reporte = {
           },
         ],
       },
-    ],
-    acumulado: {
-      total: 14586890,
-      cajas: [
-        {
-          id: 9,
-          nombre: 'Caja Wallas VIP',
-          idUnidadNegocio: '9',
-          negativa: false,
-          fechaBorrado: null,
-          total: 14297800,
-          meses: [
-            {
-              total: 0,
-            },
-            {
-              total: 0,
-            },
-            {
-              total: 1000,
-            },
-            {
-              total: 9800,
-            },
-            {
-              total: 7000,
-            },
-            {
-              total: 7140000,
-            },
-            {
-              total: 7140000,
-            },
-            {
-              total: 0,
-            },
-            {
-              total: 0,
-            },
-            {
-              total: 0,
-            },
-            {
-              total: 0,
-            },
-            {
-              total: 0,
-            },
-          ],
-        },
-        {
-          id: 8,
-          nombre: 'Caja Wallas',
-          idUnidadNegocio: '9',
-          negativa: false,
-          fechaBorrado: null,
-          total: 289090,
-          meses: [
-            {
-              total: 10,
-            },
-            {
-              total: 780,
-            },
-            {
-              total: 12300,
-            },
-            {
-              total: 70000,
-            },
-            {
-              total: 70000,
-            },
-            {
-              total: 6000,
-            },
-            {
-              total: 78000,
-            },
-            {
-              total: 1000,
-            },
-            {
-              total: 15000,
-            },
-            {
-              total: 12000,
-            },
-            {
-              total: 12000,
-            },
-            {
-              total: 12000,
-            },
-          ],
-        },
-      ],
-    },
-    meses: [
-      {
-        total: 10,
-      },
       {
         total: 780,
+        semanas: [
+          {
+            total: 780,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
       },
       {
         total: 13300,
+        semanas: [
+          {
+            total: 13300,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
       },
       {
         total: 79800,
+        semanas: [
+          {
+            total: 79800,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
       },
       {
         total: 77000,
+        semanas: [
+          {
+            total: 77000,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
       },
       {
         total: 7146000,
+        semanas: [
+          {
+            total: 7146000,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
       },
       {
         total: 7218000,
+        semanas: [
+          {
+            total: 78000,
+          },
+          {
+            total: 7140000,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
       },
       {
         total: 1000,
+        semanas: [
+          {
+            total: 1000,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
       },
       {
         total: 15000,
+        semanas: [
+          {
+            total: 15000,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
       },
       {
         total: 12000,
+        semanas: [
+          {
+            total: 12000,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
       },
       {
         total: 12000,
+        semanas: [
+          {
+            total: 12000,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
       },
       {
         total: 12000,
+        semanas: [
+          {
+            total: 12000,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+          {
+            total: 0,
+          },
+        ],
       },
     ],
   },

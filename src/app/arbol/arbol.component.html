@@ -13,7 +13,29 @@
   <dxi-column dataField="nombre" caption="Categorias"></dxi-column>
   <dxi-column dataField="acumulado.total"></dxi-column>
 
-  <dxi-column dataField="meses[0].total" caption="Enero"></dxi-column>
+  <dxi-column caption="Enero">
+    <dxi-column dataField="meses[0].total" caption="Total"></dxi-column>
+    <dxi-column
+      dataField="meses[0].semanas[0].total"
+      caption="Semana 1"
+    ></dxi-column>
+    <dxi-column
+      dataField="meses[0].semanas[1].total"
+      caption="Semana 2"
+    ></dxi-column>
+    <dxi-column
+      dataField="meses[0].semanas[2].total"
+      caption="Semana 3"
+    ></dxi-column>
+    <dxi-column
+      dataField="meses[0].semanas[3].total"
+      caption="Semana 4"
+    ></dxi-column>
+    <dxi-column
+      dataField="meses[0].semanas[4].total"
+      caption="Semana 5"
+    ></dxi-column>
+  </dxi-column>
   <dxi-column dataField="meses[1].total" caption="Febrero"></dxi-column>
   <dxi-column dataField="meses[2].total" caption="Marzo"></dxi-column>
   <dxi-column dataField="meses[3].total" caption="Abril"></dxi-column>
