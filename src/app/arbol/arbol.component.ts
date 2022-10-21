@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ArbolService } from './arbol.service';
-import { Reporte } from './constante';
+import { meses, Reporte } from './constante';
 
 @Component({
   selector: 'arbol',
@@ -10,11 +10,30 @@ import { Reporte } from './constante';
 })
 export class ArbolComponent implements OnInit {
   reporte: Reporte;
+  semanasEnero: boolean = true;
+  categoriasIngreso: number | undefined;
+  semanas: Array<any> = new Array(5);
+  meses: string[] = meses;
   @Input() mode!: string;
+
   constructor(servicio: ArbolService) {
     const reporte = servicio.buscarCategorias();
-    this.reporte = reporte;
+    const ingresos = [reporte.subcategorias[0], reporte.subcategorias[0]];
+    this.reporte = {
+      ...reporte,
+      subcategorias: [...reporte.subcategorias, ...reporte.cajas],
+    };
   }
 
   ngOnInit(): void {}
+
+  onCellClick(e: any) {
+    if (e.rowType === 'header' && e.column.caption === 'Febrero') {
+      e.component.columnOption(
+        'Semanas',
+        'visible',
+        !e.component.columnOption('Semanas').visible
+      ); // Hide 'Semanas'
+    }
+  }
 }

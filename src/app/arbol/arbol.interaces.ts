@@ -9,6 +9,7 @@ export interface Categoria {
   subcategorias: Categoria[];
   acumulado: Acumulado;
   meses?: Totales[];
+  cantidadSubcategorias?: number;
 }
 export enum TipoCategoria {
   in = 'in',
@@ -23,6 +24,7 @@ export interface Caja {
   total: number;
   meses: Totales[];
 }
+export type CategoriaYCajas = Categoria & Caja;
 export interface Totales {
   total: number;
   semanas: {
