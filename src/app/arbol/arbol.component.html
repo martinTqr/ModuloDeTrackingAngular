@@ -1,71 +1,46 @@
-<h1>Ingresos</h1>
-<dx-tree-list
-  id="reporte"
-  [dataSource]="reporte.ingresos.subcategorias"
-  itemsExpr="subcategorias"
-  dataStructure="tree"
-  [showRowLines]="true"
-  [showBorders]="true"
-  [columnAutoWidth]="true"
-  [expandedRowKeys]="[1]"
->
-  <dxi-column dataField="nombre" caption="Categorias"></dxi-column>
+<!-- how to enter a title in the under table -->
 
-  <dxi-column dataField="acumulado.total"></dxi-column>
-</dx-tree-list>
 <dx-tree-list
   id="reporte"
-  [dataSource]="reporte.ingresos.acumulado.cajas"
+  [dataSource]="reporte.subcategorias"
   itemsExpr="subcategorias"
   dataStructure="tree"
   [showRowLines]="true"
   [showBorders]="true"
   [columnAutoWidth]="true"
   [expandedRowKeys]="[1]"
+  [renderAsync]="true"
+  (onCellClick)="onCellClick($event)"
 >
-  <dxi-column dataField="nombre" caption="Cajas"></dxi-column>
-  <dxi-column dataField="total"></dxi-column>
-</dx-tree-list>
-<br />
-<h1>Egresos</h1>
-<dx-tree-list
-  id="reporte"
-  [dataSource]="reporte.egresos.subcategorias"
-  itemsExpr="subcategorias"
-  dataStructure="tree"
-  [showRowLines]="true"
-  [showBorders]="true"
-  [columnAutoWidth]="true"
-  [expandedRowKeys]="[1]"
->
-  <dxi-column dataField="nombre" caption="Categorias"></dxi-column>
+  <dxi-column
+    [allowSorting]="false"
+    dataField="nombre"
+    caption="Categoria"
+  ></dxi-column>
+  <dxi-column
+    [allowSorting]="false"
+    dataField="acumulado.total"
+    caption="Total categoria"
+  ></dxi-column>
 
-  <dxi-column dataField="acumulado.total"></dxi-column>
-</dx-tree-list>
-<dx-tree-list
-  id="reporte"
-  [dataSource]="reporte.egresos.acumulado.cajas"
-  itemsExpr="subcategorias"
-  dataStructure="tree"
-  [showRowLines]="true"
-  [showBorders]="true"
-  [columnAutoWidth]="true"
-  [expandedRowKeys]="[1]"
->
-  <dxi-column dataField="nombre" caption="Cajas"></dxi-column>
-  <dxi-column dataField="total"></dxi-column>
-</dx-tree-list>
-<h1>Totales</h1>
-<dx-tree-list
-  id="reporte"
-  [dataSource]="reporte.cajas"
-  itemsExpr="subcategorias"
-  dataStructure="tree"
-  [showRowLines]="true"
-  [showBorders]="true"
-  [columnAutoWidth]="true"
-  [expandedRowKeys]="[1]"
->
-  <dxi-column dataField="nombre" caption="Cajas"></dxi-column>
-  <dxi-column dataField="total"></dxi-column>
+  <dxi-column
+    [allowSorting]="false"
+    [dataField]="meses[numeroMes]"
+    [caption]="data"
+    *ngFor="let data of meses; let numeroMes = index"
+  >
+    <dxi-column
+      [allowSorting]="false"
+      dataField="meses[{{ numeroMes }}].total"
+      caption="Total"
+    ></dxi-column>
+    <dxi-column caption="Semanas de {{ meses[numeroMes] }}">
+      <dxi-column
+        [allowSorting]="false"
+        dataField="meses[{{ numeroMes }}].semanas[{{ numeroSemana }}].total"
+        caption="Semana {{ numeroSemana + 1 }}"
+        *ngFor="let data of semanas; let numeroSemana = index"
+      ></dxi-column>
+    </dxi-column>
+  </dxi-column>
 </dx-tree-list>
