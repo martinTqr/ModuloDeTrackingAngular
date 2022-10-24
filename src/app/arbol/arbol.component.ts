@@ -18,22 +18,29 @@ export class ArbolComponent implements OnInit {
 
   constructor(servicio: ArbolService) {
     const reporte = servicio.buscarCategorias();
-    const ingresos = [reporte.subcategorias[0], reporte.subcategorias[0]];
+    const cajas = reporte.cajas.map((caja) => ({
+      ...caja,
+      acumulado: {
+        total: caja.total,
+      },
+    }));
     this.reporte = {
       ...reporte,
-      subcategorias: [...reporte.subcategorias, ...reporte.cajas],
+      subcategorias: [...reporte.subcategorias, ...cajas],
     };
   }
 
   ngOnInit(): void {}
 
   onCellClick(e: any) {
-    if (e.rowType === 'header' && e.column.caption === 'Febrero') {
-      e.component.columnOption(
-        'Semanas',
-        'visible',
-        !e.component.columnOption('Semanas').visible
-      ); // Hide 'Semanas'
-    }
+    meses.forEach((mes) => {
+      if (e.rowType === 'header' && e.column.caption === mes) {
+        e.component.columnOption(
+          `Semanas de ${mes}`,
+          'visible',
+          !e.component.columnOption(`Semanas de ${mes}`).visible
+        ); // Hide 'Semanas'
+      }
+    });
   }
 }
