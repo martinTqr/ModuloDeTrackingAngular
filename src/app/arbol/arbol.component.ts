@@ -13,7 +13,7 @@ export class ArbolComponent implements OnInit {
   semanasEnero: boolean = true;
   categoriasIngreso: number | undefined;
   semanas: Array<any> = new Array(5);
-  meses: string[] = meses;
+  nombreDeMeses: string[] = meses;
   @Input() mode!: string;
 
   constructor(servicio: ArbolService) {

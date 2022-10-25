@@ -25,20 +25,20 @@
 
   <dxi-column
     [allowSorting]="false"
-    [dataField]="meses[numeroMes]"
-    [caption]="data"
-    *ngFor="let data of meses; let numeroMes = index"
+    [dataField]="nombreDeMeses[numeroMes]"
+    caption="{{ data }}"
+    *ngFor="let data of nombreDeMeses; let numeroMes = index"
   >
     <dxi-column
       [allowSorting]="false"
       dataField="meses[{{ numeroMes }}].total"
       caption="Total"
     ></dxi-column>
-    <dxi-column caption="Semanas de {{ meses[numeroMes] }}">
+    <dxi-column caption="Semanas de {{ nombreDeMeses[numeroMes] }}">
       <dxi-column
         [allowSorting]="false"
         dataField="meses[{{ numeroMes }}].semanas[{{ numeroSemana }}].total"
-        caption="Semana {{ numeroSemana + 1 }}"
+        caption="meses[{{ numeroMes }}].semanas[{{ numeroSemana }}].fechaInicio"
         *ngFor="let data of semanas; let numeroSemana = index"
       ></dxi-column>
     </dxi-column>
