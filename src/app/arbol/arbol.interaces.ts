@@ -6,10 +6,17 @@ export interface Categoria {
   idCategoriaPadre: string | null;
   orden: number | string;
   fechaBorrado: string | Date | null;
-  subcategorias: Categoria[];
+  subcategorias?: Categoria[];
   acumulado: Acumulado;
   meses?: Totales[];
-  cantidadDeSubcategorias?: number;
+}
+export interface Reporte {
+  total: number;
+  cajas: Caja[];
+  subcategorias: (Categoria | Caja)[];
+  unidadDeNegocio?: string;
+  ingresos?: Categoria;
+  egresos?: Categoria;
 }
 export enum TipoCategoria {
   in = 'in',

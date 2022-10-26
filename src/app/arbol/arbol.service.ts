@@ -1,12 +1,16 @@
 import { Injectable } from '@angular/core';
-import { Acumulado, Categoria, TipoCategoria } from './arbol.interaces';
-import { Reporte, reporte } from './constante';
+import { Reporte } from './arbol.interaces';
+import { reporteUnidadDeNegocio } from './constantes';
+import { reporteEmpresa } from './constantes/reprote-empresa';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ArbolService {
-  buscarCategorias(): Reporte {
-    return reporte;
+  buscarReporteUnidadDeNegocio(): Reporte {
+    return reporteUnidadDeNegocio;
+  }
+  buscarReporteEmpresa(): Reporte[] {
+    return reporteEmpresa;
   }
 }

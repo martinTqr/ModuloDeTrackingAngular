@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Reporte } from './arbol.interaces';
 import { ArbolService } from './arbol.service';
-import { meses, Reporte } from './constante';
+import { meses } from './constantes';
 
 @Component({
   selector: 'arbol',
@@ -17,7 +18,7 @@ export class ArbolComponent implements OnInit {
   @Input() mode!: string;
 
   constructor(servicio: ArbolService) {
-    const reporte = servicio.buscarCategorias();
+    const reporte = servicio.buscarReporteUnidadDeNegocio();
     const cajas = reporte.cajas.map((caja) => ({
       ...caja,
       acumulado: {
@@ -33,7 +34,7 @@ export class ArbolComponent implements OnInit {
   ngOnInit(): void {}
 
   onCellClick(e: any) {
-    meses.forEach((mes) => {
+    meses.forEach((mes: string) => {
       if (e.rowType === 'header' && e.column.caption === mes) {
         e.component.columnOption(
           `Semanas de ${mes}`,

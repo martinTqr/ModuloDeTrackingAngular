@@ -1,26 +1,6 @@
-import { CajaComponent } from '../caja/caja.component';
-import { Caja, Categoria } from './arbol.interaces';
-export const meses = [
-  'Enero',
-  'Febrero',
-  'Marzo',
-  'Abril',
-  'Mayo',
-  'Junio',
-  'Julio',
-  'Agosto',
-  'Septiembre',
-  'Octubre',
-  'Noviembre',
-  'Diciembre',
-];
+import { Reporte } from '../arbol.interaces';
 
-export interface Reporte {
-  total: number;
-  cajas: Caja[];
-  subcategorias: (Categoria | Caja)[];
-}
-export const reporte: Reporte = {
+export const reporteUnidadDeNegocio: Reporte = {
   total: -13783684,
   cajas: [
     {
@@ -12210,7 +12190,6 @@ export const reporte: Reporte = {
           ],
         },
       ],
-      cantidadDeSubcategorias: 15,
       acumulado: {
         total: 803206,
         cajas: [
@@ -29947,7 +29926,6 @@ export const reporte: Reporte = {
           ],
         },
       ],
-      cantidadDeSubcategorias: 24,
       acumulado: {
         total: 14586890,
         cajas: [
