@@ -1,15 +1,15 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Reporte } from './arbol.interaces';
-import { ArbolService } from './arbol.service';
+import { Reporte } from './reporteUN.interaces';
+import { ReporteUNService } from './reporteUN.service';
 import { meses } from './constantes';
 
 @Component({
-  selector: 'arbol',
-  templateUrl: './arbol.component.html',
-  styleUrls: ['./arbol.component.css'],
-  providers: [ArbolService],
+  selector: 'reporte-un',
+  templateUrl: './reporteUN.component.html',
+  styleUrls: ['./reporteUN.component.css'],
+  providers: [ReporteUNService],
 })
-export class ArbolComponent implements OnInit {
+export class ReporteUNComponent implements OnInit {
   reporte: Reporte;
   semanasEnero: boolean = true;
   categoriasIngreso: number | undefined;
@@ -17,7 +17,7 @@ export class ArbolComponent implements OnInit {
   nombreDeMeses: string[] = meses;
   @Input() mode!: string;
 
-  constructor(servicio: ArbolService) {
+  constructor(servicio: ReporteUNService) {
     const reporte = servicio.buscarReporteUnidadDeNegocio();
     const cajas = reporte.cajas.map((caja) => ({
       ...caja,

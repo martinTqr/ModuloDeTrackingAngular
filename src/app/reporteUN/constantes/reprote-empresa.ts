@@ -1,4 +1,4 @@
-import { Reporte } from '../arbol.interaces';
+import { Reporte } from '../reporteUN.interaces';
 
 export const reporteEmpresa: Reporte[] = [
   {
