@@ -2,10 +2,11 @@ import { enableProdMode, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './components/app/app.component';
 import { BannerComponent } from './components/banner';
-import { ReporteUNComponent } from './reporteUN/reporteUN.component';
+import { ReporteUNComponent } from './components/reporteUN/reporteUN.component';
 import { DxButtonModule, DxTreeListModule } from 'devextreme-angular';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { CajaComponent } from './caja/caja.component';
+import { ReporteEmpComponent } from './components/reporte-emp/reporte-emp.component';
 
 if (!/localhost/.test(document.location.host)) {
   enableProdMode();
@@ -16,6 +17,7 @@ if (!/localhost/.test(document.location.host)) {
     BannerComponent,
     ReporteUNComponent,
     CajaComponent,
+    ReporteEmpComponent,
   ],
   imports: [BrowserModule, DxTreeListModule, DxButtonModule],
   providers: [],
