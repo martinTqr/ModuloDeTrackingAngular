@@ -1,23 +1,24 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ArbolService } from './arbol.service';
-import { meses, Reporte } from './constante';
+import { Reporte } from './reporteUN.interaces';
+import { ReporteUNService } from './reporteUN.service';
+import { meses } from './constantes';
 
 @Component({
-  selector: 'arbol',
-  templateUrl: './arbol.component.html',
-  styleUrls: ['./arbol.component.css'],
-  providers: [ArbolService],
+  selector: 'reporte-un',
+  templateUrl: './reporteUN.component.html',
+  styleUrls: ['./reporteUN.component.css'],
+  providers: [ReporteUNService],
 })
-export class ArbolComponent implements OnInit {
+export class ReporteUNComponent implements OnInit {
   reporte: Reporte;
   semanasEnero: boolean = true;
   categoriasIngreso: number | undefined;
   semanas: Array<any> = new Array(5);
-  meses: string[] = meses;
+  nombreDeMeses: string[] = meses;
   @Input() mode!: string;
 
-  constructor(servicio: ArbolService) {
-    const reporte = servicio.buscarCategorias();
+  constructor(servicio: ReporteUNService) {
+    const reporte = servicio.buscarReporteUnidadDeNegocio();
     const cajas = reporte.cajas.map((caja) => ({
       ...caja,
       acumulado: {
@@ -33,7 +34,7 @@ export class ArbolComponent implements OnInit {
   ngOnInit(): void {}
 
   onCellClick(e: any) {
-    meses.forEach((mes) => {
+    meses.forEach((mes: string) => {
       if (e.rowType === 'header' && e.column.caption === mes) {
         e.component.columnOption(
           `Semanas de ${mes}`,
