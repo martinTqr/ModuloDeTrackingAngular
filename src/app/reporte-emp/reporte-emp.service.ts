@@ -5,7 +5,7 @@ import { Reporte } from '../interfaces/reporte.interaces';
 @Injectable({
   providedIn: 'root',
 })
-export class ReporteUNService {
+export class ReporteEmpresaService {
   buscarReporteEmpresa(): Reporte[] {
     return reporteEmpresa;
   }

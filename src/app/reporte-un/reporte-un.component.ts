@@ -11,7 +11,6 @@ import { ReporteUNService } from './reporte-un.service';
 })
 export class ReporteUNComponent implements OnInit {
   reporte: Reporte;
-  categoriasIngreso: number | undefined;
   semanas: Array<any> = new Array(5);
   nombreDeMeses: string[] = meses;
 
