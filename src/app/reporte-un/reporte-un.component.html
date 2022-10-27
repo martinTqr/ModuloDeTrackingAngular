@@ -36,10 +36,13 @@
     ></dxi-column>
     <dxi-column caption="Semanas de {{ nombreDeMeses[numeroMes] }}">
       <dxi-column
+        *ngFor="let data of semanas; let numeroSemana = index"
         [allowSorting]="false"
         dataField="meses[{{ numeroMes }}].semanas[{{ numeroSemana }}].total"
-        caption="meses[{{ numeroMes }}].semanas[{{ numeroSemana }}].fechaInicio"
-        *ngFor="let data of semanas; let numeroSemana = index"
+        [caption]="
+          reporte.subcategorias[0].meses[numeroMes].semanas[numeroSemana]
+            ?.semana
+        "
       ></dxi-column>
     </dxi-column>
   </dxi-column>

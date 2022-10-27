@@ -1,25 +1,23 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Reporte } from './reporteUN.interaces';
-import { ReporteUNService } from './reporteUN.service';
+import { Caja, Reporte } from './reporte-un.interaces';
 import { meses } from './constantes';
+import { ReporteUNService } from './reporte-un.service';
 
 @Component({
   selector: 'reporte-un',
-  templateUrl: './reporteUN.component.html',
-  styleUrls: ['./reporteUN.component.css'],
+  templateUrl: './reporte-un.component.html',
+  styleUrls: ['./reporte-un.component.css'],
   providers: [ReporteUNService],
 })
 export class ReporteUNComponent implements OnInit {
   reporte: Reporte;
-  semanasEnero: boolean = true;
   categoriasIngreso: number | undefined;
   semanas: Array<any> = new Array(5);
   nombreDeMeses: string[] = meses;
-  @Input() mode!: string;
 
   constructor(servicio: ReporteUNService) {
     const reporte = servicio.buscarReporteUnidadDeNegocio();
-    const cajas = reporte.cajas.map((caja) => ({
+    const cajas = reporte.cajas.map((caja: Caja) => ({
       ...caja,
       acumulado: {
         total: caja.total,

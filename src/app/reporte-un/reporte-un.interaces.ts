@@ -8,7 +8,7 @@ export interface Categoria {
   fechaBorrado: string | Date | null;
   subcategorias?: Categoria[];
   acumulado: Acumulado;
-  meses?: Totales[];
+  meses: Totales[];
 }
 export interface Reporte {
   total: number;
@@ -35,8 +35,7 @@ export type CategoriaYCajas = Categoria & Caja;
 export interface Totales {
   total: number;
   semanas: {
-    fechaInicio?: string;
-    fechaFin?: string;
+    semana?: string | null;
     total: number;
   }[];
 }

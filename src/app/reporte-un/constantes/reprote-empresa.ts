@@ -1,4 +1,4 @@
-import { Reporte } from '../reporteUN.interaces';
+import { Reporte } from '../reporte-un.interaces';
 
 export const reporteEmpresa: Reporte[] = [
   {
@@ -337,10 +337,10 @@ export const reporteEmpresa: Reporte[] = [
             ],
           },
           {
-            total: 0,
+            total: -7000,
             semanas: [
               {
-                total: 0,
+                total: -7000,
               },
               {
                 total: 0,
@@ -526,23 +526,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7810,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 7810,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -551,28 +547,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 1600,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 1600,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -581,28 +572,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7860,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 7800,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 60,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -611,28 +597,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7800,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 7800,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -641,28 +622,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 79870,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 79870,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -671,28 +647,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -701,28 +672,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -731,28 +697,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -761,28 +722,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -791,28 +747,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7800,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 7800,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -821,28 +772,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -851,28 +797,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -896,23 +837,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 10,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 10,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -921,28 +858,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -951,28 +883,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -981,28 +908,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -1011,28 +933,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -1041,28 +958,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -1071,28 +983,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -1101,28 +1008,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -1131,28 +1033,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -1161,28 +1058,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -1191,28 +1083,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -1221,28 +1108,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 110000,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 110000,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -1266,23 +1148,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -1291,28 +1169,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -1321,28 +1194,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -1351,28 +1219,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -1381,28 +1244,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -1411,28 +1269,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 456456,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 456456,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -1441,28 +1294,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 120000,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 120000,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -1471,28 +1319,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -1501,28 +1344,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -1531,28 +1369,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -1561,28 +1394,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -1591,28 +1419,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -1636,23 +1459,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -1661,28 +1480,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 3000,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 3000,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -1691,28 +1505,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -1721,28 +1530,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -1751,28 +1555,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -1781,28 +1580,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -1811,28 +1605,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -1841,28 +1630,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 1000,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 1000,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -1871,28 +1655,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -1901,28 +1680,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -1931,28 +1705,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -1961,28 +1730,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -1999,23 +1763,19 @@ export const reporteEmpresa: Reporte[] = [
             total: 7820,
             semanas: [
               {
-                fechaInicio: '2/1',
-                fechaFin: '2/7',
+                semana: '2/1 - 2/7',
                 total: 7820,
               },
               {
-                fechaInicio: '2/8',
-                fechaFin: '2/14',
+                semana: '2/8 - 2/14',
                 total: 0,
               },
               {
-                fechaInicio: '2/15',
-                fechaFin: '2/21',
+                semana: '2/15 - 2/21',
                 total: 0,
               },
               {
-                fechaInicio: '2/22',
-                fechaFin: '2/28',
+                semana: '2/22 - 2/28',
                 total: 0,
               },
             ],
@@ -2024,28 +1784,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 4600,
             semanas: [
               {
-                fechaInicio: '3/1',
-                fechaFin: '3/7',
+                semana: '3/1 - 3/7',
                 total: 4600,
               },
               {
-                fechaInicio: '3/8',
-                fechaFin: '3/14',
+                semana: '3/8 - 3/14',
                 total: 0,
               },
               {
-                fechaInicio: '3/15',
-                fechaFin: '3/21',
+                semana: '3/15 - 3/21',
                 total: 0,
               },
               {
-                fechaInicio: '3/22',
-                fechaFin: '3/28',
+                semana: '3/22 - 3/28',
                 total: 0,
               },
               {
-                fechaInicio: '3/29',
-                fechaFin: '3/31',
+                semana: '3/29 - 3/31',
                 total: 0,
               },
             ],
@@ -2054,28 +1809,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 7860,
             semanas: [
               {
-                fechaInicio: '4/1',
-                fechaFin: '4/7',
+                semana: '4/1 - 4/7',
                 total: 7800,
               },
               {
-                fechaInicio: '4/8',
-                fechaFin: '4/14',
+                semana: '4/8 - 4/14',
                 total: 0,
               },
               {
-                fechaInicio: '4/15',
-                fechaFin: '4/21',
+                semana: '4/15 - 4/21',
                 total: 60,
               },
               {
-                fechaInicio: '4/22',
-                fechaFin: '4/28',
+                semana: '4/22 - 4/28',
                 total: 0,
               },
               {
-                fechaInicio: '4/29',
-                fechaFin: '4/30',
+                semana: '4/29 - 4/30',
                 total: 0,
               },
             ],
@@ -2084,28 +1834,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 7800,
             semanas: [
               {
-                fechaInicio: '5/1',
-                fechaFin: '5/7',
+                semana: '5/1 - 5/7',
                 total: 7800,
               },
               {
-                fechaInicio: '5/8',
-                fechaFin: '5/14',
+                semana: '5/8 - 5/14',
                 total: 0,
               },
               {
-                fechaInicio: '5/15',
-                fechaFin: '5/21',
+                semana: '5/15 - 5/21',
                 total: 0,
               },
               {
-                fechaInicio: '5/22',
-                fechaFin: '5/28',
+                semana: '5/22 - 5/28',
                 total: 0,
               },
               {
-                fechaInicio: '5/29',
-                fechaFin: '5/31',
+                semana: '5/29 - 5/31',
                 total: 0,
               },
             ],
@@ -2114,28 +1859,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 79870,
             semanas: [
               {
-                fechaInicio: '6/1',
-                fechaFin: '6/7',
+                semana: '6/1 - 6/7',
                 total: 79870,
               },
               {
-                fechaInicio: '6/8',
-                fechaFin: '6/14',
+                semana: '6/8 - 6/14',
                 total: 0,
               },
               {
-                fechaInicio: '6/15',
-                fechaFin: '6/21',
+                semana: '6/15 - 6/21',
                 total: 0,
               },
               {
-                fechaInicio: '6/22',
-                fechaFin: '6/28',
+                semana: '6/22 - 6/28',
                 total: 0,
               },
               {
-                fechaInicio: '6/29',
-                fechaFin: '6/30',
+                semana: '6/29 - 6/30',
                 total: 0,
               },
             ],
@@ -2144,28 +1884,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 456456,
             semanas: [
               {
-                fechaInicio: '7/1',
-                fechaFin: '7/7',
+                semana: '7/1 - 7/7',
                 total: 456456,
               },
               {
-                fechaInicio: '7/8',
-                fechaFin: '7/14',
+                semana: '7/8 - 7/14',
                 total: 0,
               },
               {
-                fechaInicio: '7/15',
-                fechaFin: '7/21',
+                semana: '7/15 - 7/21',
                 total: 0,
               },
               {
-                fechaInicio: '7/22',
-                fechaFin: '7/28',
+                semana: '7/22 - 7/28',
                 total: 0,
               },
               {
-                fechaInicio: '7/29',
-                fechaFin: '7/31',
+                semana: '7/29 - 7/31',
                 total: 0,
               },
             ],
@@ -2174,28 +1909,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 120000,
             semanas: [
               {
-                fechaInicio: '8/1',
-                fechaFin: '8/7',
+                semana: '8/1 - 8/7',
                 total: 120000,
               },
               {
-                fechaInicio: '8/8',
-                fechaFin: '8/14',
+                semana: '8/8 - 8/14',
                 total: 0,
               },
               {
-                fechaInicio: '8/15',
-                fechaFin: '8/21',
+                semana: '8/15 - 8/21',
                 total: 0,
               },
               {
-                fechaInicio: '8/22',
-                fechaFin: '8/28',
+                semana: '8/22 - 8/28',
                 total: 0,
               },
               {
-                fechaInicio: '8/29',
-                fechaFin: '8/31',
+                semana: '8/29 - 8/31',
                 total: 0,
               },
             ],
@@ -2204,28 +1934,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 1000,
             semanas: [
               {
-                fechaInicio: '9/1',
-                fechaFin: '9/7',
+                semana: '9/1 - 9/7',
                 total: 1000,
               },
               {
-                fechaInicio: '9/8',
-                fechaFin: '9/14',
+                semana: '9/8 - 9/14',
                 total: 0,
               },
               {
-                fechaInicio: '9/15',
-                fechaFin: '9/21',
+                semana: '9/15 - 9/21',
                 total: 0,
               },
               {
-                fechaInicio: '9/22',
-                fechaFin: '9/28',
+                semana: '9/22 - 9/28',
                 total: 0,
               },
               {
-                fechaInicio: '9/29',
-                fechaFin: '9/30',
+                semana: '9/29 - 9/30',
                 total: 0,
               },
             ],
@@ -2234,28 +1959,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 0,
             semanas: [
               {
-                fechaInicio: '10/1',
-                fechaFin: '10/7',
+                semana: '10/1 - 10/7',
                 total: 0,
               },
               {
-                fechaInicio: '10/8',
-                fechaFin: '10/14',
+                semana: '10/8 - 10/14',
                 total: 0,
               },
               {
-                fechaInicio: '10/15',
-                fechaFin: '10/21',
+                semana: '10/15 - 10/21',
                 total: 0,
               },
               {
-                fechaInicio: '10/22',
-                fechaFin: '10/28',
+                semana: '10/22 - 10/28',
                 total: 0,
               },
               {
-                fechaInicio: '10/29',
-                fechaFin: '10/31',
+                semana: '10/29 - 10/31',
                 total: 0,
               },
             ],
@@ -2264,28 +1984,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 7800,
             semanas: [
               {
-                fechaInicio: '11/1',
-                fechaFin: '11/7',
+                semana: '11/1 - 11/7',
                 total: 7800,
               },
               {
-                fechaInicio: '11/8',
-                fechaFin: '11/14',
+                semana: '11/8 - 11/14',
                 total: 0,
               },
               {
-                fechaInicio: '11/15',
-                fechaFin: '11/21',
+                semana: '11/15 - 11/21',
                 total: 0,
               },
               {
-                fechaInicio: '11/22',
-                fechaFin: '11/28',
+                semana: '11/22 - 11/28',
                 total: 0,
               },
               {
-                fechaInicio: '11/29',
-                fechaFin: '11/30',
+                semana: '11/29 - 11/30',
                 total: 0,
               },
             ],
@@ -2294,28 +2009,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 0,
             semanas: [
               {
-                fechaInicio: '12/1',
-                fechaFin: '12/7',
+                semana: '12/1 - 12/7',
                 total: 0,
               },
               {
-                fechaInicio: '12/8',
-                fechaFin: '12/14',
+                semana: '12/8 - 12/14',
                 total: 0,
               },
               {
-                fechaInicio: '12/15',
-                fechaFin: '12/21',
+                semana: '12/15 - 12/21',
                 total: 0,
               },
               {
-                fechaInicio: '12/22',
-                fechaFin: '12/28',
+                semana: '12/22 - 12/28',
                 total: 0,
               },
               {
-                fechaInicio: '12/29',
-                fechaFin: '12/31',
+                semana: '12/29 - 12/31',
                 total: 0,
               },
             ],
@@ -2324,28 +2034,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 110000,
             semanas: [
               {
-                fechaInicio: '1/1',
-                fechaFin: '1/7',
+                semana: '1/1 - 1/7',
                 total: 110000,
               },
               {
-                fechaInicio: '1/8',
-                fechaFin: '1/14',
+                semana: '1/8 - 1/14',
                 total: 0,
               },
               {
-                fechaInicio: '1/15',
-                fechaFin: '1/21',
+                semana: '1/15 - 1/21',
                 total: 0,
               },
               {
-                fechaInicio: '1/22',
-                fechaFin: '1/28',
+                semana: '1/22 - 1/28',
                 total: 0,
               },
               {
-                fechaInicio: '1/29',
-                fechaFin: '1/31',
+                semana: '1/29 - 1/31',
                 total: 0,
               },
             ],
@@ -2378,23 +2083,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -2403,28 +2104,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -2433,28 +2129,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 1000,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 1000,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -2463,28 +2154,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 9800,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 9800,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -2493,28 +2179,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -2523,28 +2204,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -2553,28 +2229,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -2583,28 +2254,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -2613,28 +2279,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -2643,28 +2304,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -2673,28 +2329,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -2703,28 +2354,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -2748,23 +2394,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -2773,28 +2415,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -2803,28 +2440,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -2833,28 +2465,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -2863,28 +2490,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -2893,28 +2515,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -2923,28 +2540,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -2953,28 +2565,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -2983,28 +2590,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 12000,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 12000,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -3013,28 +2615,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 12000,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 12000,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -3043,28 +2640,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 12000,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 12000,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -3073,28 +2665,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 12000,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 12000,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -3118,23 +2705,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 10,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 10,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -3143,28 +2726,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 780,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 780,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -3173,28 +2751,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 12300,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 12300,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -3203,28 +2776,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -3233,28 +2801,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -3263,28 +2826,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -3293,28 +2851,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -3323,28 +2876,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -3353,28 +2901,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -3383,28 +2926,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -3413,28 +2951,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -3443,28 +2976,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -3488,23 +3016,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -3513,28 +3037,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -3543,28 +3062,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -3573,28 +3087,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 70000,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 70000,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -3603,28 +3112,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 70000,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 70000,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -3633,28 +3137,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -3663,28 +3162,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -3693,28 +3187,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -3723,28 +3212,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -3753,28 +3237,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -3783,28 +3262,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -3813,28 +3287,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -3858,23 +3327,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -3883,28 +3348,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -3913,28 +3373,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -3943,28 +3398,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -3973,28 +3423,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -4003,28 +3448,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 6000,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 6000,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -4033,28 +3473,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 78000,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 78000,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -4063,28 +3498,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -4093,28 +3523,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -4123,28 +3548,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -4153,28 +3573,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -4183,28 +3598,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -4228,23 +3638,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -4253,28 +3659,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -4283,28 +3684,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -4313,28 +3709,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -4343,28 +3734,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -4373,28 +3759,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -4403,28 +3784,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -4433,28 +3809,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 1000,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 1000,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -4463,28 +3834,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 3000,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 3000,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -4493,28 +3859,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -4523,28 +3884,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -4553,28 +3909,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -4604,23 +3955,19 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '2/1',
-                          fechaFin: '2/7',
+                          semana: '2/1 - 2/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '2/8',
-                          fechaFin: '2/14',
+                          semana: '2/8 - 2/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '2/15',
-                          fechaFin: '2/21',
+                          semana: '2/15 - 2/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '2/22',
-                          fechaFin: '2/28',
+                          semana: '2/22 - 2/28',
                           total: 0,
                         },
                       ],
@@ -4629,28 +3976,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '3/1',
-                          fechaFin: '3/7',
+                          semana: '3/1 - 3/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '3/8',
-                          fechaFin: '3/14',
+                          semana: '3/8 - 3/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '3/15',
-                          fechaFin: '3/21',
+                          semana: '3/15 - 3/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '3/22',
-                          fechaFin: '3/28',
+                          semana: '3/22 - 3/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '3/29',
-                          fechaFin: '3/31',
+                          semana: '3/29 - 3/31',
                           total: 0,
                         },
                       ],
@@ -4659,28 +4001,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '4/1',
-                          fechaFin: '4/7',
+                          semana: '4/1 - 4/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '4/8',
-                          fechaFin: '4/14',
+                          semana: '4/8 - 4/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '4/15',
-                          fechaFin: '4/21',
+                          semana: '4/15 - 4/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '4/22',
-                          fechaFin: '4/28',
+                          semana: '4/22 - 4/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '4/29',
-                          fechaFin: '4/30',
+                          semana: '4/29 - 4/30',
                           total: 0,
                         },
                       ],
@@ -4689,28 +4026,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '5/1',
-                          fechaFin: '5/7',
+                          semana: '5/1 - 5/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '5/8',
-                          fechaFin: '5/14',
+                          semana: '5/8 - 5/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '5/15',
-                          fechaFin: '5/21',
+                          semana: '5/15 - 5/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '5/22',
-                          fechaFin: '5/28',
+                          semana: '5/22 - 5/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '5/29',
-                          fechaFin: '5/31',
+                          semana: '5/29 - 5/31',
                           total: 0,
                         },
                       ],
@@ -4719,28 +4051,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 7000,
                       semanas: [
                         {
-                          fechaInicio: '6/1',
-                          fechaFin: '6/7',
+                          semana: '6/1 - 6/7',
                           total: 7000,
                         },
                         {
-                          fechaInicio: '6/8',
-                          fechaFin: '6/14',
+                          semana: '6/8 - 6/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '6/15',
-                          fechaFin: '6/21',
+                          semana: '6/15 - 6/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '6/22',
-                          fechaFin: '6/28',
+                          semana: '6/22 - 6/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '6/29',
-                          fechaFin: '6/30',
+                          semana: '6/29 - 6/30',
                           total: 0,
                         },
                       ],
@@ -4749,28 +4076,48 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '7/1',
-                          fechaFin: '7/7',
+                          semana: '7/1 - 7/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '7/8',
-                          fechaFin: '7/14',
+                          semana: '7/8 - 7/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '7/15',
-                          fechaFin: '7/21',
+                          semana: '7/15 - 7/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '7/22',
-                          fechaFin: '7/28',
+                          semana: '7/22 - 7/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '7/29',
-                          fechaFin: '7/31',
+                          semana: '7/29 - 7/31',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 7140000,
+                      semanas: [
+                        {
+                          semana: '8/1 - 8/7',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/8 - 8/14',
+                          total: 7140000,
+                        },
+                        {
+                          semana: '8/15 - 8/21',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/22 - 8/28',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/29 - 8/31',
                           total: 0,
                         },
                       ],
@@ -4779,28 +4126,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '8/1',
-                          fechaFin: '8/7',
+                          semana: '9/1 - 9/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '8/8',
-                          fechaFin: '8/14',
+                          semana: '9/8 - 9/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '8/15',
-                          fechaFin: '8/21',
+                          semana: '9/15 - 9/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '8/22',
-                          fechaFin: '8/28',
+                          semana: '9/22 - 9/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '8/29',
-                          fechaFin: '8/31',
+                          semana: '9/29 - 9/30',
                           total: 0,
                         },
                       ],
@@ -4809,28 +4151,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '9/1',
-                          fechaFin: '9/7',
+                          semana: '10/1 - 10/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '9/8',
-                          fechaFin: '9/14',
+                          semana: '10/8 - 10/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '9/15',
-                          fechaFin: '9/21',
+                          semana: '10/15 - 10/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '9/22',
-                          fechaFin: '9/28',
+                          semana: '10/22 - 10/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '9/29',
-                          fechaFin: '9/30',
+                          semana: '10/29 - 10/31',
                           total: 0,
                         },
                       ],
@@ -4839,28 +4176,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '10/1',
-                          fechaFin: '10/7',
+                          semana: '11/1 - 11/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '10/8',
-                          fechaFin: '10/14',
+                          semana: '11/8 - 11/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '10/15',
-                          fechaFin: '10/21',
+                          semana: '11/15 - 11/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '10/22',
-                          fechaFin: '10/28',
+                          semana: '11/22 - 11/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '10/29',
-                          fechaFin: '10/31',
+                          semana: '11/29 - 11/30',
                           total: 0,
                         },
                       ],
@@ -4869,28 +4201,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '11/1',
-                          fechaFin: '11/7',
+                          semana: '12/1 - 12/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '11/8',
-                          fechaFin: '11/14',
+                          semana: '12/8 - 12/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '11/15',
-                          fechaFin: '11/21',
+                          semana: '12/15 - 12/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '11/22',
-                          fechaFin: '11/28',
+                          semana: '12/22 - 12/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '11/29',
-                          fechaFin: '11/30',
+                          semana: '12/29 - 12/31',
                           total: 0,
                         },
                       ],
@@ -4899,58 +4226,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '12/1',
-                          fechaFin: '12/7',
+                          semana: '1/1 - 1/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '12/8',
-                          fechaFin: '12/14',
+                          semana: '1/8 - 1/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '12/15',
-                          fechaFin: '12/21',
+                          semana: '1/15 - 1/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '12/22',
-                          fechaFin: '12/28',
+                          semana: '1/22 - 1/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '12/29',
-                          fechaFin: '12/31',
-                          total: 0,
-                        },
-                      ],
-                    },
-                    {
-                      total: 0,
-                      semanas: [
-                        {
-                          fechaInicio: '1/1',
-                          fechaFin: '1/7',
-                          total: 0,
-                        },
-                        {
-                          fechaInicio: '1/8',
-                          fechaFin: '1/14',
-                          total: 0,
-                        },
-                        {
-                          fechaInicio: '1/15',
-                          fechaFin: '1/21',
-                          total: 0,
-                        },
-                        {
-                          fechaInicio: '1/22',
-                          fechaFin: '1/28',
-                          total: 0,
-                        },
-                        {
-                          fechaInicio: '1/29',
-                          fechaFin: '1/31',
+                          semana: '1/29 - 1/31',
                           total: 0,
                         },
                       ],
@@ -4964,23 +4256,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -4989,28 +4277,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -5019,28 +4302,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -5049,28 +4327,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -5079,28 +4352,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7000,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 7000,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -5109,28 +4377,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7140000,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 7140000,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -5139,28 +4402,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7140000,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 7140000,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -5169,28 +4427,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -5199,28 +4452,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -5229,28 +4477,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -5259,28 +4502,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -5289,28 +4527,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -5333,23 +4566,19 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '2/1',
-                      fechaFin: '2/7',
+                      semana: '2/1 - 2/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '2/8',
-                      fechaFin: '2/14',
+                      semana: '2/8 - 2/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '2/15',
-                      fechaFin: '2/21',
+                      semana: '2/15 - 2/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '2/22',
-                      fechaFin: '2/28',
+                      semana: '2/22 - 2/28',
                       total: 0,
                     },
                   ],
@@ -5358,28 +4587,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '3/1',
-                      fechaFin: '3/7',
+                      semana: '3/1 - 3/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '3/8',
-                      fechaFin: '3/14',
+                      semana: '3/8 - 3/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '3/15',
-                      fechaFin: '3/21',
+                      semana: '3/15 - 3/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '3/22',
-                      fechaFin: '3/28',
+                      semana: '3/22 - 3/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '3/29',
-                      fechaFin: '3/31',
+                      semana: '3/29 - 3/31',
                       total: 0,
                     },
                   ],
@@ -5388,28 +4612,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '4/1',
-                      fechaFin: '4/7',
+                      semana: '4/1 - 4/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '4/8',
-                      fechaFin: '4/14',
+                      semana: '4/8 - 4/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '4/15',
-                      fechaFin: '4/21',
+                      semana: '4/15 - 4/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '4/22',
-                      fechaFin: '4/28',
+                      semana: '4/22 - 4/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '4/29',
-                      fechaFin: '4/30',
+                      semana: '4/29 - 4/30',
                       total: 0,
                     },
                   ],
@@ -5418,28 +4637,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '5/1',
-                      fechaFin: '5/7',
+                      semana: '5/1 - 5/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '5/8',
-                      fechaFin: '5/14',
+                      semana: '5/8 - 5/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '5/15',
-                      fechaFin: '5/21',
+                      semana: '5/15 - 5/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '5/22',
-                      fechaFin: '5/28',
+                      semana: '5/22 - 5/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '5/29',
-                      fechaFin: '5/31',
+                      semana: '5/29 - 5/31',
                       total: 0,
                     },
                   ],
@@ -5448,28 +4662,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 7000,
                   semanas: [
                     {
-                      fechaInicio: '6/1',
-                      fechaFin: '6/7',
+                      semana: '6/1 - 6/7',
                       total: 7000,
                     },
                     {
-                      fechaInicio: '6/8',
-                      fechaFin: '6/14',
+                      semana: '6/8 - 6/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '6/15',
-                      fechaFin: '6/21',
+                      semana: '6/15 - 6/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '6/22',
-                      fechaFin: '6/28',
+                      semana: '6/22 - 6/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '6/29',
-                      fechaFin: '6/30',
+                      semana: '6/29 - 6/30',
                       total: 0,
                     },
                   ],
@@ -5478,28 +4687,48 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '7/1',
-                      fechaFin: '7/7',
+                      semana: '7/1 - 7/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '7/8',
-                      fechaFin: '7/14',
+                      semana: '7/8 - 7/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '7/15',
-                      fechaFin: '7/21',
+                      semana: '7/15 - 7/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '7/22',
-                      fechaFin: '7/28',
+                      semana: '7/22 - 7/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '7/29',
-                      fechaFin: '7/31',
+                      semana: '7/29 - 7/31',
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 7140000,
+                  semanas: [
+                    {
+                      semana: '8/1 - 8/7',
+                      total: 0,
+                    },
+                    {
+                      semana: '8/8 - 8/14',
+                      total: 7140000,
+                    },
+                    {
+                      semana: '8/15 - 8/21',
+                      total: 0,
+                    },
+                    {
+                      semana: '8/22 - 8/28',
+                      total: 0,
+                    },
+                    {
+                      semana: '8/29 - 8/31',
                       total: 0,
                     },
                   ],
@@ -5508,28 +4737,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '8/1',
-                      fechaFin: '8/7',
+                      semana: '9/1 - 9/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '8/8',
-                      fechaFin: '8/14',
+                      semana: '9/8 - 9/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '8/15',
-                      fechaFin: '8/21',
+                      semana: '9/15 - 9/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '8/22',
-                      fechaFin: '8/28',
+                      semana: '9/22 - 9/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '8/29',
-                      fechaFin: '8/31',
+                      semana: '9/29 - 9/30',
                       total: 0,
                     },
                   ],
@@ -5538,28 +4762,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '9/1',
-                      fechaFin: '9/7',
+                      semana: '10/1 - 10/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '9/8',
-                      fechaFin: '9/14',
+                      semana: '10/8 - 10/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '9/15',
-                      fechaFin: '9/21',
+                      semana: '10/15 - 10/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '9/22',
-                      fechaFin: '9/28',
+                      semana: '10/22 - 10/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '9/29',
-                      fechaFin: '9/30',
+                      semana: '10/29 - 10/31',
                       total: 0,
                     },
                   ],
@@ -5568,28 +4787,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '10/1',
-                      fechaFin: '10/7',
+                      semana: '11/1 - 11/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '10/8',
-                      fechaFin: '10/14',
+                      semana: '11/8 - 11/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '10/15',
-                      fechaFin: '10/21',
+                      semana: '11/15 - 11/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '10/22',
-                      fechaFin: '10/28',
+                      semana: '11/22 - 11/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '10/29',
-                      fechaFin: '10/31',
+                      semana: '11/29 - 11/30',
                       total: 0,
                     },
                   ],
@@ -5598,28 +4812,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '11/1',
-                      fechaFin: '11/7',
+                      semana: '12/1 - 12/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '11/8',
-                      fechaFin: '11/14',
+                      semana: '12/8 - 12/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '11/15',
-                      fechaFin: '11/21',
+                      semana: '12/15 - 12/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '11/22',
-                      fechaFin: '11/28',
+                      semana: '12/22 - 12/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '11/29',
-                      fechaFin: '11/30',
+                      semana: '12/29 - 12/31',
                       total: 0,
                     },
                   ],
@@ -5628,58 +4837,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '12/1',
-                      fechaFin: '12/7',
+                      semana: '1/1 - 1/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '12/8',
-                      fechaFin: '12/14',
+                      semana: '1/8 - 1/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '12/15',
-                      fechaFin: '12/21',
+                      semana: '1/15 - 1/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '12/22',
-                      fechaFin: '12/28',
+                      semana: '1/22 - 1/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '12/29',
-                      fechaFin: '12/31',
-                      total: 0,
-                    },
-                  ],
-                },
-                {
-                  total: 0,
-                  semanas: [
-                    {
-                      fechaInicio: '1/1',
-                      fechaFin: '1/7',
-                      total: 0,
-                    },
-                    {
-                      fechaInicio: '1/8',
-                      fechaFin: '1/14',
-                      total: 0,
-                    },
-                    {
-                      fechaInicio: '1/15',
-                      fechaFin: '1/21',
-                      total: 0,
-                    },
-                    {
-                      fechaInicio: '1/22',
-                      fechaFin: '1/28',
-                      total: 0,
-                    },
-                    {
-                      fechaInicio: '1/29',
-                      fechaFin: '1/31',
+                      semana: '1/29 - 1/31',
                       total: 0,
                     },
                   ],
@@ -5693,23 +4867,19 @@ export const reporteEmpresa: Reporte[] = [
             total: 10,
             semanas: [
               {
-                fechaInicio: '2/1',
-                fechaFin: '2/7',
+                semana: '2/1 - 2/7',
                 total: 10,
               },
               {
-                fechaInicio: '2/8',
-                fechaFin: '2/14',
+                semana: '2/8 - 2/14',
                 total: 0,
               },
               {
-                fechaInicio: '2/15',
-                fechaFin: '2/21',
+                semana: '2/15 - 2/21',
                 total: 0,
               },
               {
-                fechaInicio: '2/22',
-                fechaFin: '2/28',
+                semana: '2/22 - 2/28',
                 total: 0,
               },
             ],
@@ -5718,28 +4888,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 780,
             semanas: [
               {
-                fechaInicio: '3/1',
-                fechaFin: '3/7',
+                semana: '3/1 - 3/7',
                 total: 780,
               },
               {
-                fechaInicio: '3/8',
-                fechaFin: '3/14',
+                semana: '3/8 - 3/14',
                 total: 0,
               },
               {
-                fechaInicio: '3/15',
-                fechaFin: '3/21',
+                semana: '3/15 - 3/21',
                 total: 0,
               },
               {
-                fechaInicio: '3/22',
-                fechaFin: '3/28',
+                semana: '3/22 - 3/28',
                 total: 0,
               },
               {
-                fechaInicio: '3/29',
-                fechaFin: '3/31',
+                semana: '3/29 - 3/31',
                 total: 0,
               },
             ],
@@ -5748,28 +4913,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 13300,
             semanas: [
               {
-                fechaInicio: '4/1',
-                fechaFin: '4/7',
+                semana: '4/1 - 4/7',
                 total: 13300,
               },
               {
-                fechaInicio: '4/8',
-                fechaFin: '4/14',
+                semana: '4/8 - 4/14',
                 total: 0,
               },
               {
-                fechaInicio: '4/15',
-                fechaFin: '4/21',
+                semana: '4/15 - 4/21',
                 total: 0,
               },
               {
-                fechaInicio: '4/22',
-                fechaFin: '4/28',
+                semana: '4/22 - 4/28',
                 total: 0,
               },
               {
-                fechaInicio: '4/29',
-                fechaFin: '4/30',
+                semana: '4/29 - 4/30',
                 total: 0,
               },
             ],
@@ -5778,28 +4938,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 79800,
             semanas: [
               {
-                fechaInicio: '5/1',
-                fechaFin: '5/7',
+                semana: '5/1 - 5/7',
                 total: 79800,
               },
               {
-                fechaInicio: '5/8',
-                fechaFin: '5/14',
+                semana: '5/8 - 5/14',
                 total: 0,
               },
               {
-                fechaInicio: '5/15',
-                fechaFin: '5/21',
+                semana: '5/15 - 5/21',
                 total: 0,
               },
               {
-                fechaInicio: '5/22',
-                fechaFin: '5/28',
+                semana: '5/22 - 5/28',
                 total: 0,
               },
               {
-                fechaInicio: '5/29',
-                fechaFin: '5/31',
+                semana: '5/29 - 5/31',
                 total: 0,
               },
             ],
@@ -5808,28 +4963,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 77000,
             semanas: [
               {
-                fechaInicio: '6/1',
-                fechaFin: '6/7',
+                semana: '6/1 - 6/7',
                 total: 77000,
               },
               {
-                fechaInicio: '6/8',
-                fechaFin: '6/14',
+                semana: '6/8 - 6/14',
                 total: 0,
               },
               {
-                fechaInicio: '6/15',
-                fechaFin: '6/21',
+                semana: '6/15 - 6/21',
                 total: 0,
               },
               {
-                fechaInicio: '6/22',
-                fechaFin: '6/28',
+                semana: '6/22 - 6/28',
                 total: 0,
               },
               {
-                fechaInicio: '6/29',
-                fechaFin: '6/30',
+                semana: '6/29 - 6/30',
                 total: 0,
               },
             ],
@@ -5838,28 +4988,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 7146000,
             semanas: [
               {
-                fechaInicio: '7/1',
-                fechaFin: '7/7',
+                semana: '7/1 - 7/7',
                 total: 7146000,
               },
               {
-                fechaInicio: '7/8',
-                fechaFin: '7/14',
+                semana: '7/8 - 7/14',
                 total: 0,
               },
               {
-                fechaInicio: '7/15',
-                fechaFin: '7/21',
+                semana: '7/15 - 7/21',
                 total: 0,
               },
               {
-                fechaInicio: '7/22',
-                fechaFin: '7/28',
+                semana: '7/22 - 7/28',
                 total: 0,
               },
               {
-                fechaInicio: '7/29',
-                fechaFin: '7/31',
+                semana: '7/29 - 7/31',
                 total: 0,
               },
             ],
@@ -5868,28 +5013,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 7218000,
             semanas: [
               {
-                fechaInicio: '8/1',
-                fechaFin: '8/7',
+                semana: '8/1 - 8/7',
                 total: 78000,
               },
               {
-                fechaInicio: '8/8',
-                fechaFin: '8/14',
+                semana: '8/8 - 8/14',
                 total: 7140000,
               },
               {
-                fechaInicio: '8/15',
-                fechaFin: '8/21',
+                semana: '8/15 - 8/21',
                 total: 0,
               },
               {
-                fechaInicio: '8/22',
-                fechaFin: '8/28',
+                semana: '8/22 - 8/28',
                 total: 0,
               },
               {
-                fechaInicio: '8/29',
-                fechaFin: '8/31',
+                semana: '8/29 - 8/31',
                 total: 0,
               },
             ],
@@ -5898,28 +5038,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 1000,
             semanas: [
               {
-                fechaInicio: '9/1',
-                fechaFin: '9/7',
+                semana: '9/1 - 9/7',
                 total: 1000,
               },
               {
-                fechaInicio: '9/8',
-                fechaFin: '9/14',
+                semana: '9/8 - 9/14',
                 total: 0,
               },
               {
-                fechaInicio: '9/15',
-                fechaFin: '9/21',
+                semana: '9/15 - 9/21',
                 total: 0,
               },
               {
-                fechaInicio: '9/22',
-                fechaFin: '9/28',
+                semana: '9/22 - 9/28',
                 total: 0,
               },
               {
-                fechaInicio: '9/29',
-                fechaFin: '9/30',
+                semana: '9/29 - 9/30',
                 total: 0,
               },
             ],
@@ -5928,28 +5063,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 15000,
             semanas: [
               {
-                fechaInicio: '10/1',
-                fechaFin: '10/7',
+                semana: '10/1 - 10/7',
                 total: 15000,
               },
               {
-                fechaInicio: '10/8',
-                fechaFin: '10/14',
+                semana: '10/8 - 10/14',
                 total: 0,
               },
               {
-                fechaInicio: '10/15',
-                fechaFin: '10/21',
+                semana: '10/15 - 10/21',
                 total: 0,
               },
               {
-                fechaInicio: '10/22',
-                fechaFin: '10/28',
+                semana: '10/22 - 10/28',
                 total: 0,
               },
               {
-                fechaInicio: '10/29',
-                fechaFin: '10/31',
+                semana: '10/29 - 10/31',
                 total: 0,
               },
             ],
@@ -5958,28 +5088,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 12000,
             semanas: [
               {
-                fechaInicio: '11/1',
-                fechaFin: '11/7',
+                semana: '11/1 - 11/7',
                 total: 12000,
               },
               {
-                fechaInicio: '11/8',
-                fechaFin: '11/14',
+                semana: '11/8 - 11/14',
                 total: 0,
               },
               {
-                fechaInicio: '11/15',
-                fechaFin: '11/21',
+                semana: '11/15 - 11/21',
                 total: 0,
               },
               {
-                fechaInicio: '11/22',
-                fechaFin: '11/28',
+                semana: '11/22 - 11/28',
                 total: 0,
               },
               {
-                fechaInicio: '11/29',
-                fechaFin: '11/30',
+                semana: '11/29 - 11/30',
                 total: 0,
               },
             ],
@@ -5988,28 +5113,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 12000,
             semanas: [
               {
-                fechaInicio: '12/1',
-                fechaFin: '12/7',
+                semana: '12/1 - 12/7',
                 total: 12000,
               },
               {
-                fechaInicio: '12/8',
-                fechaFin: '12/14',
+                semana: '12/8 - 12/14',
                 total: 0,
               },
               {
-                fechaInicio: '12/15',
-                fechaFin: '12/21',
+                semana: '12/15 - 12/21',
                 total: 0,
               },
               {
-                fechaInicio: '12/22',
-                fechaFin: '12/28',
+                semana: '12/22 - 12/28',
                 total: 0,
               },
               {
-                fechaInicio: '12/29',
-                fechaFin: '12/31',
+                semana: '12/29 - 12/31',
                 total: 0,
               },
             ],
@@ -6018,28 +5138,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 12000,
             semanas: [
               {
-                fechaInicio: '1/1',
-                fechaFin: '1/7',
+                semana: '1/1 - 1/7',
                 total: 12000,
               },
               {
-                fechaInicio: '1/8',
-                fechaFin: '1/14',
+                semana: '1/8 - 1/14',
                 total: 0,
               },
               {
-                fechaInicio: '1/15',
-                fechaFin: '1/21',
+                semana: '1/15 - 1/21',
                 total: 0,
               },
               {
-                fechaInicio: '1/22',
-                fechaFin: '1/28',
+                semana: '1/22 - 1/28',
                 total: 0,
               },
               {
-                fechaInicio: '1/29',
-                fechaFin: '1/31',
+                semana: '1/29 - 1/31',
                 total: 0,
               },
             ],
@@ -6078,23 +5193,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7810,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 7810,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -6103,28 +5214,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 1600,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 1600,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -6133,28 +5239,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7860,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 7800,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 60,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -6163,28 +5264,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7800,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 7800,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -6193,28 +5289,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 79870,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 79870,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -6223,28 +5314,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -6253,28 +5339,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -6283,28 +5364,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -6313,28 +5389,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -6343,28 +5414,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7800,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 7800,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -6373,28 +5439,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -6403,28 +5464,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -6448,23 +5504,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 10,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 10,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -6473,28 +5525,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -6503,28 +5550,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -6533,28 +5575,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -6563,28 +5600,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -6593,28 +5625,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -6623,28 +5650,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -6653,28 +5675,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -6683,28 +5700,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -6713,28 +5725,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -6743,28 +5750,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -6773,28 +5775,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 110000,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 110000,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -6818,23 +5815,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -6843,28 +5836,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -6873,28 +5861,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -6903,28 +5886,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -6933,28 +5911,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -6963,28 +5936,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 456456,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 456456,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -6993,28 +5961,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 120000,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 120000,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -7023,28 +5986,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -7053,28 +6011,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -7083,28 +6036,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -7113,28 +6061,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -7143,28 +6086,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -7188,23 +6126,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -7213,28 +6147,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 3000,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 3000,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -7243,28 +6172,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -7273,28 +6197,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -7303,28 +6222,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -7333,28 +6247,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -7363,28 +6272,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -7393,28 +6297,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 1000,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 1000,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -7423,28 +6322,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -7453,28 +6347,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -7483,28 +6372,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -7513,28 +6397,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -7551,23 +6430,19 @@ export const reporteEmpresa: Reporte[] = [
             total: 7820,
             semanas: [
               {
-                fechaInicio: '2/1',
-                fechaFin: '2/7',
+                semana: '2/1 - 2/7',
                 total: 7820,
               },
               {
-                fechaInicio: '2/8',
-                fechaFin: '2/14',
+                semana: '2/8 - 2/14',
                 total: 0,
               },
               {
-                fechaInicio: '2/15',
-                fechaFin: '2/21',
+                semana: '2/15 - 2/21',
                 total: 0,
               },
               {
-                fechaInicio: '2/22',
-                fechaFin: '2/28',
+                semana: '2/22 - 2/28',
                 total: 0,
               },
             ],
@@ -7576,28 +6451,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 4600,
             semanas: [
               {
-                fechaInicio: '3/1',
-                fechaFin: '3/7',
+                semana: '3/1 - 3/7',
                 total: 4600,
               },
               {
-                fechaInicio: '3/8',
-                fechaFin: '3/14',
+                semana: '3/8 - 3/14',
                 total: 0,
               },
               {
-                fechaInicio: '3/15',
-                fechaFin: '3/21',
+                semana: '3/15 - 3/21',
                 total: 0,
               },
               {
-                fechaInicio: '3/22',
-                fechaFin: '3/28',
+                semana: '3/22 - 3/28',
                 total: 0,
               },
               {
-                fechaInicio: '3/29',
-                fechaFin: '3/31',
+                semana: '3/29 - 3/31',
                 total: 0,
               },
             ],
@@ -7606,28 +6476,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 7860,
             semanas: [
               {
-                fechaInicio: '4/1',
-                fechaFin: '4/7',
+                semana: '4/1 - 4/7',
                 total: 7800,
               },
               {
-                fechaInicio: '4/8',
-                fechaFin: '4/14',
+                semana: '4/8 - 4/14',
                 total: 0,
               },
               {
-                fechaInicio: '4/15',
-                fechaFin: '4/21',
+                semana: '4/15 - 4/21',
                 total: 60,
               },
               {
-                fechaInicio: '4/22',
-                fechaFin: '4/28',
+                semana: '4/22 - 4/28',
                 total: 0,
               },
               {
-                fechaInicio: '4/29',
-                fechaFin: '4/30',
+                semana: '4/29 - 4/30',
                 total: 0,
               },
             ],
@@ -7636,28 +6501,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 7800,
             semanas: [
               {
-                fechaInicio: '5/1',
-                fechaFin: '5/7',
+                semana: '5/1 - 5/7',
                 total: 7800,
               },
               {
-                fechaInicio: '5/8',
-                fechaFin: '5/14',
+                semana: '5/8 - 5/14',
                 total: 0,
               },
               {
-                fechaInicio: '5/15',
-                fechaFin: '5/21',
+                semana: '5/15 - 5/21',
                 total: 0,
               },
               {
-                fechaInicio: '5/22',
-                fechaFin: '5/28',
+                semana: '5/22 - 5/28',
                 total: 0,
               },
               {
-                fechaInicio: '5/29',
-                fechaFin: '5/31',
+                semana: '5/29 - 5/31',
                 total: 0,
               },
             ],
@@ -7666,28 +6526,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 79870,
             semanas: [
               {
-                fechaInicio: '6/1',
-                fechaFin: '6/7',
+                semana: '6/1 - 6/7',
                 total: 79870,
               },
               {
-                fechaInicio: '6/8',
-                fechaFin: '6/14',
+                semana: '6/8 - 6/14',
                 total: 0,
               },
               {
-                fechaInicio: '6/15',
-                fechaFin: '6/21',
+                semana: '6/15 - 6/21',
                 total: 0,
               },
               {
-                fechaInicio: '6/22',
-                fechaFin: '6/28',
+                semana: '6/22 - 6/28',
                 total: 0,
               },
               {
-                fechaInicio: '6/29',
-                fechaFin: '6/30',
+                semana: '6/29 - 6/30',
                 total: 0,
               },
             ],
@@ -7696,28 +6551,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 456456,
             semanas: [
               {
-                fechaInicio: '7/1',
-                fechaFin: '7/7',
+                semana: '7/1 - 7/7',
                 total: 456456,
               },
               {
-                fechaInicio: '7/8',
-                fechaFin: '7/14',
+                semana: '7/8 - 7/14',
                 total: 0,
               },
               {
-                fechaInicio: '7/15',
-                fechaFin: '7/21',
+                semana: '7/15 - 7/21',
                 total: 0,
               },
               {
-                fechaInicio: '7/22',
-                fechaFin: '7/28',
+                semana: '7/22 - 7/28',
                 total: 0,
               },
               {
-                fechaInicio: '7/29',
-                fechaFin: '7/31',
+                semana: '7/29 - 7/31',
                 total: 0,
               },
             ],
@@ -7726,28 +6576,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 120000,
             semanas: [
               {
-                fechaInicio: '8/1',
-                fechaFin: '8/7',
+                semana: '8/1 - 8/7',
                 total: 120000,
               },
               {
-                fechaInicio: '8/8',
-                fechaFin: '8/14',
+                semana: '8/8 - 8/14',
                 total: 0,
               },
               {
-                fechaInicio: '8/15',
-                fechaFin: '8/21',
+                semana: '8/15 - 8/21',
                 total: 0,
               },
               {
-                fechaInicio: '8/22',
-                fechaFin: '8/28',
+                semana: '8/22 - 8/28',
                 total: 0,
               },
               {
-                fechaInicio: '8/29',
-                fechaFin: '8/31',
+                semana: '8/29 - 8/31',
                 total: 0,
               },
             ],
@@ -7756,28 +6601,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 1000,
             semanas: [
               {
-                fechaInicio: '9/1',
-                fechaFin: '9/7',
+                semana: '9/1 - 9/7',
                 total: 1000,
               },
               {
-                fechaInicio: '9/8',
-                fechaFin: '9/14',
+                semana: '9/8 - 9/14',
                 total: 0,
               },
               {
-                fechaInicio: '9/15',
-                fechaFin: '9/21',
+                semana: '9/15 - 9/21',
                 total: 0,
               },
               {
-                fechaInicio: '9/22',
-                fechaFin: '9/28',
+                semana: '9/22 - 9/28',
                 total: 0,
               },
               {
-                fechaInicio: '9/29',
-                fechaFin: '9/30',
+                semana: '9/29 - 9/30',
                 total: 0,
               },
             ],
@@ -7786,28 +6626,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 0,
             semanas: [
               {
-                fechaInicio: '10/1',
-                fechaFin: '10/7',
+                semana: '10/1 - 10/7',
                 total: 0,
               },
               {
-                fechaInicio: '10/8',
-                fechaFin: '10/14',
+                semana: '10/8 - 10/14',
                 total: 0,
               },
               {
-                fechaInicio: '10/15',
-                fechaFin: '10/21',
+                semana: '10/15 - 10/21',
                 total: 0,
               },
               {
-                fechaInicio: '10/22',
-                fechaFin: '10/28',
+                semana: '10/22 - 10/28',
                 total: 0,
               },
               {
-                fechaInicio: '10/29',
-                fechaFin: '10/31',
+                semana: '10/29 - 10/31',
                 total: 0,
               },
             ],
@@ -7816,28 +6651,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 7800,
             semanas: [
               {
-                fechaInicio: '11/1',
-                fechaFin: '11/7',
+                semana: '11/1 - 11/7',
                 total: 7800,
               },
               {
-                fechaInicio: '11/8',
-                fechaFin: '11/14',
+                semana: '11/8 - 11/14',
                 total: 0,
               },
               {
-                fechaInicio: '11/15',
-                fechaFin: '11/21',
+                semana: '11/15 - 11/21',
                 total: 0,
               },
               {
-                fechaInicio: '11/22',
-                fechaFin: '11/28',
+                semana: '11/22 - 11/28',
                 total: 0,
               },
               {
-                fechaInicio: '11/29',
-                fechaFin: '11/30',
+                semana: '11/29 - 11/30',
                 total: 0,
               },
             ],
@@ -7846,28 +6676,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 0,
             semanas: [
               {
-                fechaInicio: '12/1',
-                fechaFin: '12/7',
+                semana: '12/1 - 12/7',
                 total: 0,
               },
               {
-                fechaInicio: '12/8',
-                fechaFin: '12/14',
+                semana: '12/8 - 12/14',
                 total: 0,
               },
               {
-                fechaInicio: '12/15',
-                fechaFin: '12/21',
+                semana: '12/15 - 12/21',
                 total: 0,
               },
               {
-                fechaInicio: '12/22',
-                fechaFin: '12/28',
+                semana: '12/22 - 12/28',
                 total: 0,
               },
               {
-                fechaInicio: '12/29',
-                fechaFin: '12/31',
+                semana: '12/29 - 12/31',
                 total: 0,
               },
             ],
@@ -7876,28 +6701,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 110000,
             semanas: [
               {
-                fechaInicio: '1/1',
-                fechaFin: '1/7',
+                semana: '1/1 - 1/7',
                 total: 110000,
               },
               {
-                fechaInicio: '1/8',
-                fechaFin: '1/14',
+                semana: '1/8 - 1/14',
                 total: 0,
               },
               {
-                fechaInicio: '1/15',
-                fechaFin: '1/21',
+                semana: '1/15 - 1/21',
                 total: 0,
               },
               {
-                fechaInicio: '1/22',
-                fechaFin: '1/28',
+                semana: '1/22 - 1/28',
                 total: 0,
               },
               {
-                fechaInicio: '1/29',
-                fechaFin: '1/31',
+                semana: '1/29 - 1/31',
                 total: 0,
               },
             ],
@@ -7930,23 +6750,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -7955,28 +6771,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -7985,28 +6796,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 1000,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 1000,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -8015,28 +6821,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 9800,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 9800,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -8045,28 +6846,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -8075,28 +6871,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -8105,28 +6896,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -8135,28 +6921,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -8165,28 +6946,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -8195,28 +6971,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -8225,28 +6996,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -8255,28 +7021,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -8300,23 +7061,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -8325,28 +7082,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -8355,28 +7107,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -8385,28 +7132,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -8415,28 +7157,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -8445,28 +7182,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -8475,28 +7207,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -8505,28 +7232,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -8535,28 +7257,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 12000,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 12000,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -8565,28 +7282,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 12000,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 12000,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -8595,28 +7307,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 12000,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 12000,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -8625,28 +7332,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 12000,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 12000,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -8670,23 +7372,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 10,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 10,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -8695,28 +7393,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 780,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 780,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -8725,28 +7418,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 12300,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 12300,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -8755,28 +7443,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -8785,28 +7468,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -8815,28 +7493,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -8845,28 +7518,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -8875,28 +7543,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -8905,28 +7568,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -8935,28 +7593,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -8965,28 +7618,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -8995,28 +7643,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -9040,23 +7683,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -9065,28 +7704,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -9095,28 +7729,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -9125,28 +7754,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 70000,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 70000,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -9155,28 +7779,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 70000,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 70000,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -9185,28 +7804,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -9215,28 +7829,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -9245,28 +7854,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -9275,28 +7879,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -9305,28 +7904,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -9335,28 +7929,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -9365,28 +7954,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -9410,23 +7994,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -9435,28 +8015,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -9465,28 +8040,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -9495,28 +8065,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -9525,28 +8090,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -9555,28 +8115,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 6000,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 6000,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -9585,28 +8140,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 78000,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 78000,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -9615,28 +8165,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -9645,28 +8190,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -9675,28 +8215,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -9705,28 +8240,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -9735,28 +8265,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -9780,23 +8305,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -9805,28 +8326,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -9835,28 +8351,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -9865,28 +8376,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -9895,28 +8401,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -9925,28 +8426,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -9955,28 +8451,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -9985,28 +8476,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 1000,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 1000,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -10015,28 +8501,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 3000,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 3000,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -10045,28 +8526,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -10075,28 +8551,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -10105,28 +8576,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -10156,23 +8622,19 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '2/1',
-                          fechaFin: '2/7',
+                          semana: '2/1 - 2/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '2/8',
-                          fechaFin: '2/14',
+                          semana: '2/8 - 2/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '2/15',
-                          fechaFin: '2/21',
+                          semana: '2/15 - 2/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '2/22',
-                          fechaFin: '2/28',
+                          semana: '2/22 - 2/28',
                           total: 0,
                         },
                       ],
@@ -10181,28 +8643,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '3/1',
-                          fechaFin: '3/7',
+                          semana: '3/1 - 3/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '3/8',
-                          fechaFin: '3/14',
+                          semana: '3/8 - 3/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '3/15',
-                          fechaFin: '3/21',
+                          semana: '3/15 - 3/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '3/22',
-                          fechaFin: '3/28',
+                          semana: '3/22 - 3/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '3/29',
-                          fechaFin: '3/31',
+                          semana: '3/29 - 3/31',
                           total: 0,
                         },
                       ],
@@ -10211,28 +8668,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '4/1',
-                          fechaFin: '4/7',
+                          semana: '4/1 - 4/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '4/8',
-                          fechaFin: '4/14',
+                          semana: '4/8 - 4/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '4/15',
-                          fechaFin: '4/21',
+                          semana: '4/15 - 4/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '4/22',
-                          fechaFin: '4/28',
+                          semana: '4/22 - 4/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '4/29',
-                          fechaFin: '4/30',
+                          semana: '4/29 - 4/30',
                           total: 0,
                         },
                       ],
@@ -10241,28 +8693,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '5/1',
-                          fechaFin: '5/7',
+                          semana: '5/1 - 5/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '5/8',
-                          fechaFin: '5/14',
+                          semana: '5/8 - 5/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '5/15',
-                          fechaFin: '5/21',
+                          semana: '5/15 - 5/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '5/22',
-                          fechaFin: '5/28',
+                          semana: '5/22 - 5/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '5/29',
-                          fechaFin: '5/31',
+                          semana: '5/29 - 5/31',
                           total: 0,
                         },
                       ],
@@ -10271,28 +8718,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 7000,
                       semanas: [
                         {
-                          fechaInicio: '6/1',
-                          fechaFin: '6/7',
+                          semana: '6/1 - 6/7',
                           total: 7000,
                         },
                         {
-                          fechaInicio: '6/8',
-                          fechaFin: '6/14',
+                          semana: '6/8 - 6/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '6/15',
-                          fechaFin: '6/21',
+                          semana: '6/15 - 6/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '6/22',
-                          fechaFin: '6/28',
+                          semana: '6/22 - 6/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '6/29',
-                          fechaFin: '6/30',
+                          semana: '6/29 - 6/30',
                           total: 0,
                         },
                       ],
@@ -10301,28 +8743,48 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '7/1',
-                          fechaFin: '7/7',
+                          semana: '7/1 - 7/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '7/8',
-                          fechaFin: '7/14',
+                          semana: '7/8 - 7/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '7/15',
-                          fechaFin: '7/21',
+                          semana: '7/15 - 7/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '7/22',
-                          fechaFin: '7/28',
+                          semana: '7/22 - 7/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '7/29',
-                          fechaFin: '7/31',
+                          semana: '7/29 - 7/31',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 7140000,
+                      semanas: [
+                        {
+                          semana: '8/1 - 8/7',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/8 - 8/14',
+                          total: 7140000,
+                        },
+                        {
+                          semana: '8/15 - 8/21',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/22 - 8/28',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/29 - 8/31',
                           total: 0,
                         },
                       ],
@@ -10331,28 +8793,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '8/1',
-                          fechaFin: '8/7',
+                          semana: '9/1 - 9/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '8/8',
-                          fechaFin: '8/14',
+                          semana: '9/8 - 9/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '8/15',
-                          fechaFin: '8/21',
+                          semana: '9/15 - 9/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '8/22',
-                          fechaFin: '8/28',
+                          semana: '9/22 - 9/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '8/29',
-                          fechaFin: '8/31',
+                          semana: '9/29 - 9/30',
                           total: 0,
                         },
                       ],
@@ -10361,28 +8818,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '9/1',
-                          fechaFin: '9/7',
+                          semana: '10/1 - 10/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '9/8',
-                          fechaFin: '9/14',
+                          semana: '10/8 - 10/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '9/15',
-                          fechaFin: '9/21',
+                          semana: '10/15 - 10/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '9/22',
-                          fechaFin: '9/28',
+                          semana: '10/22 - 10/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '9/29',
-                          fechaFin: '9/30',
+                          semana: '10/29 - 10/31',
                           total: 0,
                         },
                       ],
@@ -10391,28 +8843,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '10/1',
-                          fechaFin: '10/7',
+                          semana: '11/1 - 11/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '10/8',
-                          fechaFin: '10/14',
+                          semana: '11/8 - 11/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '10/15',
-                          fechaFin: '10/21',
+                          semana: '11/15 - 11/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '10/22',
-                          fechaFin: '10/28',
+                          semana: '11/22 - 11/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '10/29',
-                          fechaFin: '10/31',
+                          semana: '11/29 - 11/30',
                           total: 0,
                         },
                       ],
@@ -10421,28 +8868,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '11/1',
-                          fechaFin: '11/7',
+                          semana: '12/1 - 12/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '11/8',
-                          fechaFin: '11/14',
+                          semana: '12/8 - 12/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '11/15',
-                          fechaFin: '11/21',
+                          semana: '12/15 - 12/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '11/22',
-                          fechaFin: '11/28',
+                          semana: '12/22 - 12/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '11/29',
-                          fechaFin: '11/30',
+                          semana: '12/29 - 12/31',
                           total: 0,
                         },
                       ],
@@ -10451,58 +8893,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '12/1',
-                          fechaFin: '12/7',
+                          semana: '1/1 - 1/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '12/8',
-                          fechaFin: '12/14',
+                          semana: '1/8 - 1/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '12/15',
-                          fechaFin: '12/21',
+                          semana: '1/15 - 1/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '12/22',
-                          fechaFin: '12/28',
+                          semana: '1/22 - 1/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '12/29',
-                          fechaFin: '12/31',
-                          total: 0,
-                        },
-                      ],
-                    },
-                    {
-                      total: 0,
-                      semanas: [
-                        {
-                          fechaInicio: '1/1',
-                          fechaFin: '1/7',
-                          total: 0,
-                        },
-                        {
-                          fechaInicio: '1/8',
-                          fechaFin: '1/14',
-                          total: 0,
-                        },
-                        {
-                          fechaInicio: '1/15',
-                          fechaFin: '1/21',
-                          total: 0,
-                        },
-                        {
-                          fechaInicio: '1/22',
-                          fechaFin: '1/28',
-                          total: 0,
-                        },
-                        {
-                          fechaInicio: '1/29',
-                          fechaFin: '1/31',
+                          semana: '1/29 - 1/31',
                           total: 0,
                         },
                       ],
@@ -10516,23 +8923,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -10541,28 +8944,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -10571,28 +8969,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -10601,28 +8994,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -10631,28 +9019,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7000,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 7000,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -10661,28 +9044,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7140000,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 7140000,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -10691,28 +9069,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7140000,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 7140000,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -10721,28 +9094,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -10751,28 +9119,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -10781,28 +9144,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -10811,28 +9169,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -10841,28 +9194,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -10885,23 +9233,19 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '2/1',
-                      fechaFin: '2/7',
+                      semana: '2/1 - 2/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '2/8',
-                      fechaFin: '2/14',
+                      semana: '2/8 - 2/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '2/15',
-                      fechaFin: '2/21',
+                      semana: '2/15 - 2/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '2/22',
-                      fechaFin: '2/28',
+                      semana: '2/22 - 2/28',
                       total: 0,
                     },
                   ],
@@ -10910,28 +9254,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '3/1',
-                      fechaFin: '3/7',
+                      semana: '3/1 - 3/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '3/8',
-                      fechaFin: '3/14',
+                      semana: '3/8 - 3/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '3/15',
-                      fechaFin: '3/21',
+                      semana: '3/15 - 3/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '3/22',
-                      fechaFin: '3/28',
+                      semana: '3/22 - 3/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '3/29',
-                      fechaFin: '3/31',
+                      semana: '3/29 - 3/31',
                       total: 0,
                     },
                   ],
@@ -10940,28 +9279,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '4/1',
-                      fechaFin: '4/7',
+                      semana: '4/1 - 4/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '4/8',
-                      fechaFin: '4/14',
+                      semana: '4/8 - 4/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '4/15',
-                      fechaFin: '4/21',
+                      semana: '4/15 - 4/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '4/22',
-                      fechaFin: '4/28',
+                      semana: '4/22 - 4/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '4/29',
-                      fechaFin: '4/30',
+                      semana: '4/29 - 4/30',
                       total: 0,
                     },
                   ],
@@ -10970,28 +9304,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '5/1',
-                      fechaFin: '5/7',
+                      semana: '5/1 - 5/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '5/8',
-                      fechaFin: '5/14',
+                      semana: '5/8 - 5/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '5/15',
-                      fechaFin: '5/21',
+                      semana: '5/15 - 5/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '5/22',
-                      fechaFin: '5/28',
+                      semana: '5/22 - 5/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '5/29',
-                      fechaFin: '5/31',
+                      semana: '5/29 - 5/31',
                       total: 0,
                     },
                   ],
@@ -11000,28 +9329,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 7000,
                   semanas: [
                     {
-                      fechaInicio: '6/1',
-                      fechaFin: '6/7',
+                      semana: '6/1 - 6/7',
                       total: 7000,
                     },
                     {
-                      fechaInicio: '6/8',
-                      fechaFin: '6/14',
+                      semana: '6/8 - 6/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '6/15',
-                      fechaFin: '6/21',
+                      semana: '6/15 - 6/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '6/22',
-                      fechaFin: '6/28',
+                      semana: '6/22 - 6/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '6/29',
-                      fechaFin: '6/30',
+                      semana: '6/29 - 6/30',
                       total: 0,
                     },
                   ],
@@ -11030,28 +9354,48 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '7/1',
-                      fechaFin: '7/7',
+                      semana: '7/1 - 7/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '7/8',
-                      fechaFin: '7/14',
+                      semana: '7/8 - 7/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '7/15',
-                      fechaFin: '7/21',
+                      semana: '7/15 - 7/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '7/22',
-                      fechaFin: '7/28',
+                      semana: '7/22 - 7/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '7/29',
-                      fechaFin: '7/31',
+                      semana: '7/29 - 7/31',
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 7140000,
+                  semanas: [
+                    {
+                      semana: '8/1 - 8/7',
+                      total: 0,
+                    },
+                    {
+                      semana: '8/8 - 8/14',
+                      total: 7140000,
+                    },
+                    {
+                      semana: '8/15 - 8/21',
+                      total: 0,
+                    },
+                    {
+                      semana: '8/22 - 8/28',
+                      total: 0,
+                    },
+                    {
+                      semana: '8/29 - 8/31',
                       total: 0,
                     },
                   ],
@@ -11060,28 +9404,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '8/1',
-                      fechaFin: '8/7',
+                      semana: '9/1 - 9/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '8/8',
-                      fechaFin: '8/14',
+                      semana: '9/8 - 9/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '8/15',
-                      fechaFin: '8/21',
+                      semana: '9/15 - 9/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '8/22',
-                      fechaFin: '8/28',
+                      semana: '9/22 - 9/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '8/29',
-                      fechaFin: '8/31',
+                      semana: '9/29 - 9/30',
                       total: 0,
                     },
                   ],
@@ -11090,28 +9429,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '9/1',
-                      fechaFin: '9/7',
+                      semana: '10/1 - 10/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '9/8',
-                      fechaFin: '9/14',
+                      semana: '10/8 - 10/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '9/15',
-                      fechaFin: '9/21',
+                      semana: '10/15 - 10/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '9/22',
-                      fechaFin: '9/28',
+                      semana: '10/22 - 10/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '9/29',
-                      fechaFin: '9/30',
+                      semana: '10/29 - 10/31',
                       total: 0,
                     },
                   ],
@@ -11120,28 +9454,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '10/1',
-                      fechaFin: '10/7',
+                      semana: '11/1 - 11/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '10/8',
-                      fechaFin: '10/14',
+                      semana: '11/8 - 11/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '10/15',
-                      fechaFin: '10/21',
+                      semana: '11/15 - 11/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '10/22',
-                      fechaFin: '10/28',
+                      semana: '11/22 - 11/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '10/29',
-                      fechaFin: '10/31',
+                      semana: '11/29 - 11/30',
                       total: 0,
                     },
                   ],
@@ -11150,28 +9479,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '11/1',
-                      fechaFin: '11/7',
+                      semana: '12/1 - 12/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '11/8',
-                      fechaFin: '11/14',
+                      semana: '12/8 - 12/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '11/15',
-                      fechaFin: '11/21',
+                      semana: '12/15 - 12/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '11/22',
-                      fechaFin: '11/28',
+                      semana: '12/22 - 12/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '11/29',
-                      fechaFin: '11/30',
+                      semana: '12/29 - 12/31',
                       total: 0,
                     },
                   ],
@@ -11180,58 +9504,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '12/1',
-                      fechaFin: '12/7',
+                      semana: '1/1 - 1/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '12/8',
-                      fechaFin: '12/14',
+                      semana: '1/8 - 1/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '12/15',
-                      fechaFin: '12/21',
+                      semana: '1/15 - 1/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '12/22',
-                      fechaFin: '12/28',
+                      semana: '1/22 - 1/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '12/29',
-                      fechaFin: '12/31',
-                      total: 0,
-                    },
-                  ],
-                },
-                {
-                  total: 0,
-                  semanas: [
-                    {
-                      fechaInicio: '1/1',
-                      fechaFin: '1/7',
-                      total: 0,
-                    },
-                    {
-                      fechaInicio: '1/8',
-                      fechaFin: '1/14',
-                      total: 0,
-                    },
-                    {
-                      fechaInicio: '1/15',
-                      fechaFin: '1/21',
-                      total: 0,
-                    },
-                    {
-                      fechaInicio: '1/22',
-                      fechaFin: '1/28',
-                      total: 0,
-                    },
-                    {
-                      fechaInicio: '1/29',
-                      fechaFin: '1/31',
+                      semana: '1/29 - 1/31',
                       total: 0,
                     },
                   ],
@@ -11245,23 +9534,19 @@ export const reporteEmpresa: Reporte[] = [
             total: 10,
             semanas: [
               {
-                fechaInicio: '2/1',
-                fechaFin: '2/7',
+                semana: '2/1 - 2/7',
                 total: 10,
               },
               {
-                fechaInicio: '2/8',
-                fechaFin: '2/14',
+                semana: '2/8 - 2/14',
                 total: 0,
               },
               {
-                fechaInicio: '2/15',
-                fechaFin: '2/21',
+                semana: '2/15 - 2/21',
                 total: 0,
               },
               {
-                fechaInicio: '2/22',
-                fechaFin: '2/28',
+                semana: '2/22 - 2/28',
                 total: 0,
               },
             ],
@@ -11270,28 +9555,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 780,
             semanas: [
               {
-                fechaInicio: '3/1',
-                fechaFin: '3/7',
+                semana: '3/1 - 3/7',
                 total: 780,
               },
               {
-                fechaInicio: '3/8',
-                fechaFin: '3/14',
+                semana: '3/8 - 3/14',
                 total: 0,
               },
               {
-                fechaInicio: '3/15',
-                fechaFin: '3/21',
+                semana: '3/15 - 3/21',
                 total: 0,
               },
               {
-                fechaInicio: '3/22',
-                fechaFin: '3/28',
+                semana: '3/22 - 3/28',
                 total: 0,
               },
               {
-                fechaInicio: '3/29',
-                fechaFin: '3/31',
+                semana: '3/29 - 3/31',
                 total: 0,
               },
             ],
@@ -11300,28 +9580,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 13300,
             semanas: [
               {
-                fechaInicio: '4/1',
-                fechaFin: '4/7',
+                semana: '4/1 - 4/7',
                 total: 13300,
               },
               {
-                fechaInicio: '4/8',
-                fechaFin: '4/14',
+                semana: '4/8 - 4/14',
                 total: 0,
               },
               {
-                fechaInicio: '4/15',
-                fechaFin: '4/21',
+                semana: '4/15 - 4/21',
                 total: 0,
               },
               {
-                fechaInicio: '4/22',
-                fechaFin: '4/28',
+                semana: '4/22 - 4/28',
                 total: 0,
               },
               {
-                fechaInicio: '4/29',
-                fechaFin: '4/30',
+                semana: '4/29 - 4/30',
                 total: 0,
               },
             ],
@@ -11330,28 +9605,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 79800,
             semanas: [
               {
-                fechaInicio: '5/1',
-                fechaFin: '5/7',
+                semana: '5/1 - 5/7',
                 total: 79800,
               },
               {
-                fechaInicio: '5/8',
-                fechaFin: '5/14',
+                semana: '5/8 - 5/14',
                 total: 0,
               },
               {
-                fechaInicio: '5/15',
-                fechaFin: '5/21',
+                semana: '5/15 - 5/21',
                 total: 0,
               },
               {
-                fechaInicio: '5/22',
-                fechaFin: '5/28',
+                semana: '5/22 - 5/28',
                 total: 0,
               },
               {
-                fechaInicio: '5/29',
-                fechaFin: '5/31',
+                semana: '5/29 - 5/31',
                 total: 0,
               },
             ],
@@ -11360,28 +9630,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 77000,
             semanas: [
               {
-                fechaInicio: '6/1',
-                fechaFin: '6/7',
+                semana: '6/1 - 6/7',
                 total: 77000,
               },
               {
-                fechaInicio: '6/8',
-                fechaFin: '6/14',
+                semana: '6/8 - 6/14',
                 total: 0,
               },
               {
-                fechaInicio: '6/15',
-                fechaFin: '6/21',
+                semana: '6/15 - 6/21',
                 total: 0,
               },
               {
-                fechaInicio: '6/22',
-                fechaFin: '6/28',
+                semana: '6/22 - 6/28',
                 total: 0,
               },
               {
-                fechaInicio: '6/29',
-                fechaFin: '6/30',
+                semana: '6/29 - 6/30',
                 total: 0,
               },
             ],
@@ -11390,28 +9655,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 7146000,
             semanas: [
               {
-                fechaInicio: '7/1',
-                fechaFin: '7/7',
+                semana: '7/1 - 7/7',
                 total: 7146000,
               },
               {
-                fechaInicio: '7/8',
-                fechaFin: '7/14',
+                semana: '7/8 - 7/14',
                 total: 0,
               },
               {
-                fechaInicio: '7/15',
-                fechaFin: '7/21',
+                semana: '7/15 - 7/21',
                 total: 0,
               },
               {
-                fechaInicio: '7/22',
-                fechaFin: '7/28',
+                semana: '7/22 - 7/28',
                 total: 0,
               },
               {
-                fechaInicio: '7/29',
-                fechaFin: '7/31',
+                semana: '7/29 - 7/31',
                 total: 0,
               },
             ],
@@ -11420,28 +9680,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 7218000,
             semanas: [
               {
-                fechaInicio: '8/1',
-                fechaFin: '8/7',
+                semana: '8/1 - 8/7',
                 total: 78000,
               },
               {
-                fechaInicio: '8/8',
-                fechaFin: '8/14',
+                semana: '8/8 - 8/14',
                 total: 7140000,
               },
               {
-                fechaInicio: '8/15',
-                fechaFin: '8/21',
+                semana: '8/15 - 8/21',
                 total: 0,
               },
               {
-                fechaInicio: '8/22',
-                fechaFin: '8/28',
+                semana: '8/22 - 8/28',
                 total: 0,
               },
               {
-                fechaInicio: '8/29',
-                fechaFin: '8/31',
+                semana: '8/29 - 8/31',
                 total: 0,
               },
             ],
@@ -11450,28 +9705,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 1000,
             semanas: [
               {
-                fechaInicio: '9/1',
-                fechaFin: '9/7',
+                semana: '9/1 - 9/7',
                 total: 1000,
               },
               {
-                fechaInicio: '9/8',
-                fechaFin: '9/14',
+                semana: '9/8 - 9/14',
                 total: 0,
               },
               {
-                fechaInicio: '9/15',
-                fechaFin: '9/21',
+                semana: '9/15 - 9/21',
                 total: 0,
               },
               {
-                fechaInicio: '9/22',
-                fechaFin: '9/28',
+                semana: '9/22 - 9/28',
                 total: 0,
               },
               {
-                fechaInicio: '9/29',
-                fechaFin: '9/30',
+                semana: '9/29 - 9/30',
                 total: 0,
               },
             ],
@@ -11480,28 +9730,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 15000,
             semanas: [
               {
-                fechaInicio: '10/1',
-                fechaFin: '10/7',
+                semana: '10/1 - 10/7',
                 total: 15000,
               },
               {
-                fechaInicio: '10/8',
-                fechaFin: '10/14',
+                semana: '10/8 - 10/14',
                 total: 0,
               },
               {
-                fechaInicio: '10/15',
-                fechaFin: '10/21',
+                semana: '10/15 - 10/21',
                 total: 0,
               },
               {
-                fechaInicio: '10/22',
-                fechaFin: '10/28',
+                semana: '10/22 - 10/28',
                 total: 0,
               },
               {
-                fechaInicio: '10/29',
-                fechaFin: '10/31',
+                semana: '10/29 - 10/31',
                 total: 0,
               },
             ],
@@ -11510,28 +9755,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 12000,
             semanas: [
               {
-                fechaInicio: '11/1',
-                fechaFin: '11/7',
+                semana: '11/1 - 11/7',
                 total: 12000,
               },
               {
-                fechaInicio: '11/8',
-                fechaFin: '11/14',
+                semana: '11/8 - 11/14',
                 total: 0,
               },
               {
-                fechaInicio: '11/15',
-                fechaFin: '11/21',
+                semana: '11/15 - 11/21',
                 total: 0,
               },
               {
-                fechaInicio: '11/22',
-                fechaFin: '11/28',
+                semana: '11/22 - 11/28',
                 total: 0,
               },
               {
-                fechaInicio: '11/29',
-                fechaFin: '11/30',
+                semana: '11/29 - 11/30',
                 total: 0,
               },
             ],
@@ -11540,28 +9780,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 12000,
             semanas: [
               {
-                fechaInicio: '12/1',
-                fechaFin: '12/7',
+                semana: '12/1 - 12/7',
                 total: 12000,
               },
               {
-                fechaInicio: '12/8',
-                fechaFin: '12/14',
+                semana: '12/8 - 12/14',
                 total: 0,
               },
               {
-                fechaInicio: '12/15',
-                fechaFin: '12/21',
+                semana: '12/15 - 12/21',
                 total: 0,
               },
               {
-                fechaInicio: '12/22',
-                fechaFin: '12/28',
+                semana: '12/22 - 12/28',
                 total: 0,
               },
               {
-                fechaInicio: '12/29',
-                fechaFin: '12/31',
+                semana: '12/29 - 12/31',
                 total: 0,
               },
             ],
@@ -11570,28 +9805,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 12000,
             semanas: [
               {
-                fechaInicio: '1/1',
-                fechaFin: '1/7',
+                semana: '1/1 - 1/7',
                 total: 12000,
               },
               {
-                fechaInicio: '1/8',
-                fechaFin: '1/14',
+                semana: '1/8 - 1/14',
                 total: 0,
               },
               {
-                fechaInicio: '1/15',
-                fechaFin: '1/21',
+                semana: '1/15 - 1/21',
                 total: 0,
               },
               {
-                fechaInicio: '1/22',
-                fechaFin: '1/28',
+                semana: '1/22 - 1/28',
                 total: 0,
               },
               {
-                fechaInicio: '1/29',
-                fechaFin: '1/31',
+                semana: '1/29 - 1/31',
                 total: 0,
               },
             ],
@@ -11615,23 +9845,19 @@ export const reporteEmpresa: Reporte[] = [
             total: 0,
             semanas: [
               {
-                fechaInicio: '2/1',
-                fechaFin: '2/7',
+                semana: '2/1 - 2/7',
                 total: 0,
               },
               {
-                fechaInicio: '2/8',
-                fechaFin: '2/14',
+                semana: '2/8 - 2/14',
                 total: 0,
               },
               {
-                fechaInicio: '2/15',
-                fechaFin: '2/21',
+                semana: '2/15 - 2/21',
                 total: 0,
               },
               {
-                fechaInicio: '2/22',
-                fechaFin: '2/28',
+                semana: '2/22 - 2/28',
                 total: 0,
               },
             ],
@@ -11640,28 +9866,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 0,
             semanas: [
               {
-                fechaInicio: '3/1',
-                fechaFin: '3/7',
+                semana: '3/1 - 3/7',
                 total: 0,
               },
               {
-                fechaInicio: '3/8',
-                fechaFin: '3/14',
+                semana: '3/8 - 3/14',
                 total: 0,
               },
               {
-                fechaInicio: '3/15',
-                fechaFin: '3/21',
+                semana: '3/15 - 3/21',
                 total: 0,
               },
               {
-                fechaInicio: '3/22',
-                fechaFin: '3/28',
+                semana: '3/22 - 3/28',
                 total: 0,
               },
               {
-                fechaInicio: '3/29',
-                fechaFin: '3/31',
+                semana: '3/29 - 3/31',
                 total: 0,
               },
             ],
@@ -11670,28 +9891,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 0,
             semanas: [
               {
-                fechaInicio: '4/1',
-                fechaFin: '4/7',
+                semana: '4/1 - 4/7',
                 total: 0,
               },
               {
-                fechaInicio: '4/8',
-                fechaFin: '4/14',
+                semana: '4/8 - 4/14',
                 total: 0,
               },
               {
-                fechaInicio: '4/15',
-                fechaFin: '4/21',
+                semana: '4/15 - 4/21',
                 total: 0,
               },
               {
-                fechaInicio: '4/22',
-                fechaFin: '4/28',
+                semana: '4/22 - 4/28',
                 total: 0,
               },
               {
-                fechaInicio: '4/29',
-                fechaFin: '4/30',
+                semana: '4/29 - 4/30',
                 total: 0,
               },
             ],
@@ -11700,28 +9916,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 0,
             semanas: [
               {
-                fechaInicio: '5/1',
-                fechaFin: '5/7',
+                semana: '5/1 - 5/7',
                 total: 0,
               },
               {
-                fechaInicio: '5/8',
-                fechaFin: '5/14',
+                semana: '5/8 - 5/14',
                 total: 0,
               },
               {
-                fechaInicio: '5/15',
-                fechaFin: '5/21',
+                semana: '5/15 - 5/21',
                 total: 0,
               },
               {
-                fechaInicio: '5/22',
-                fechaFin: '5/28',
+                semana: '5/22 - 5/28',
                 total: 0,
               },
               {
-                fechaInicio: '5/29',
-                fechaFin: '5/31',
+                semana: '5/29 - 5/31',
                 total: 0,
               },
             ],
@@ -11730,28 +9941,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 7000,
             semanas: [
               {
-                fechaInicio: '6/1',
-                fechaFin: '6/7',
+                semana: '6/1 - 6/7',
                 total: 7000,
               },
               {
-                fechaInicio: '6/8',
-                fechaFin: '6/14',
+                semana: '6/8 - 6/14',
                 total: 0,
               },
               {
-                fechaInicio: '6/15',
-                fechaFin: '6/21',
+                semana: '6/15 - 6/21',
                 total: 0,
               },
               {
-                fechaInicio: '6/22',
-                fechaFin: '6/28',
+                semana: '6/22 - 6/28',
                 total: 0,
               },
               {
-                fechaInicio: '6/29',
-                fechaFin: '6/30',
+                semana: '6/29 - 6/30',
                 total: 0,
               },
             ],
@@ -11760,28 +9966,48 @@ export const reporteEmpresa: Reporte[] = [
             total: 0,
             semanas: [
               {
-                fechaInicio: '7/1',
-                fechaFin: '7/7',
+                semana: '7/1 - 7/7',
                 total: 0,
               },
               {
-                fechaInicio: '7/8',
-                fechaFin: '7/14',
+                semana: '7/8 - 7/14',
                 total: 0,
               },
               {
-                fechaInicio: '7/15',
-                fechaFin: '7/21',
+                semana: '7/15 - 7/21',
                 total: 0,
               },
               {
-                fechaInicio: '7/22',
-                fechaFin: '7/28',
+                semana: '7/22 - 7/28',
                 total: 0,
               },
               {
-                fechaInicio: '7/29',
-                fechaFin: '7/31',
+                semana: '7/29 - 7/31',
+                total: 0,
+              },
+            ],
+          },
+          {
+            total: 7140000,
+            semanas: [
+              {
+                semana: '8/1 - 8/7',
+                total: 0,
+              },
+              {
+                semana: '8/8 - 8/14',
+                total: 7140000,
+              },
+              {
+                semana: '8/15 - 8/21',
+                total: 0,
+              },
+              {
+                semana: '8/22 - 8/28',
+                total: 0,
+              },
+              {
+                semana: '8/29 - 8/31',
                 total: 0,
               },
             ],
@@ -11790,28 +10016,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 0,
             semanas: [
               {
-                fechaInicio: '8/1',
-                fechaFin: '8/7',
+                semana: '9/1 - 9/7',
                 total: 0,
               },
               {
-                fechaInicio: '8/8',
-                fechaFin: '8/14',
+                semana: '9/8 - 9/14',
                 total: 0,
               },
               {
-                fechaInicio: '8/15',
-                fechaFin: '8/21',
+                semana: '9/15 - 9/21',
                 total: 0,
               },
               {
-                fechaInicio: '8/22',
-                fechaFin: '8/28',
+                semana: '9/22 - 9/28',
                 total: 0,
               },
               {
-                fechaInicio: '8/29',
-                fechaFin: '8/31',
+                semana: '9/29 - 9/30',
                 total: 0,
               },
             ],
@@ -11820,28 +10041,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 0,
             semanas: [
               {
-                fechaInicio: '9/1',
-                fechaFin: '9/7',
+                semana: '10/1 - 10/7',
                 total: 0,
               },
               {
-                fechaInicio: '9/8',
-                fechaFin: '9/14',
+                semana: '10/8 - 10/14',
                 total: 0,
               },
               {
-                fechaInicio: '9/15',
-                fechaFin: '9/21',
+                semana: '10/15 - 10/21',
                 total: 0,
               },
               {
-                fechaInicio: '9/22',
-                fechaFin: '9/28',
+                semana: '10/22 - 10/28',
                 total: 0,
               },
               {
-                fechaInicio: '9/29',
-                fechaFin: '9/30',
+                semana: '10/29 - 10/31',
                 total: 0,
               },
             ],
@@ -11850,28 +10066,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 0,
             semanas: [
               {
-                fechaInicio: '10/1',
-                fechaFin: '10/7',
+                semana: '11/1 - 11/7',
                 total: 0,
               },
               {
-                fechaInicio: '10/8',
-                fechaFin: '10/14',
+                semana: '11/8 - 11/14',
                 total: 0,
               },
               {
-                fechaInicio: '10/15',
-                fechaFin: '10/21',
+                semana: '11/15 - 11/21',
                 total: 0,
               },
               {
-                fechaInicio: '10/22',
-                fechaFin: '10/28',
+                semana: '11/22 - 11/28',
                 total: 0,
               },
               {
-                fechaInicio: '10/29',
-                fechaFin: '10/31',
+                semana: '11/29 - 11/30',
                 total: 0,
               },
             ],
@@ -11880,28 +10091,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 0,
             semanas: [
               {
-                fechaInicio: '11/1',
-                fechaFin: '11/7',
+                semana: '12/1 - 12/7',
                 total: 0,
               },
               {
-                fechaInicio: '11/8',
-                fechaFin: '11/14',
+                semana: '12/8 - 12/14',
                 total: 0,
               },
               {
-                fechaInicio: '11/15',
-                fechaFin: '11/21',
+                semana: '12/15 - 12/21',
                 total: 0,
               },
               {
-                fechaInicio: '11/22',
-                fechaFin: '11/28',
+                semana: '12/22 - 12/28',
                 total: 0,
               },
               {
-                fechaInicio: '11/29',
-                fechaFin: '11/30',
+                semana: '12/29 - 12/31',
                 total: 0,
               },
             ],
@@ -11910,58 +10116,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 0,
             semanas: [
               {
-                fechaInicio: '12/1',
-                fechaFin: '12/7',
+                semana: '1/1 - 1/7',
                 total: 0,
               },
               {
-                fechaInicio: '12/8',
-                fechaFin: '12/14',
+                semana: '1/8 - 1/14',
                 total: 0,
               },
               {
-                fechaInicio: '12/15',
-                fechaFin: '12/21',
+                semana: '1/15 - 1/21',
                 total: 0,
               },
               {
-                fechaInicio: '12/22',
-                fechaFin: '12/28',
+                semana: '1/22 - 1/28',
                 total: 0,
               },
               {
-                fechaInicio: '12/29',
-                fechaFin: '12/31',
-                total: 0,
-              },
-            ],
-          },
-          {
-            total: 0,
-            semanas: [
-              {
-                fechaInicio: '1/1',
-                fechaFin: '1/7',
-                total: 0,
-              },
-              {
-                fechaInicio: '1/8',
-                fechaFin: '1/14',
-                total: 0,
-              },
-              {
-                fechaInicio: '1/15',
-                fechaFin: '1/21',
-                total: 0,
-              },
-              {
-                fechaInicio: '1/22',
-                fechaFin: '1/28',
-                total: 0,
-              },
-              {
-                fechaInicio: '1/29',
-                fechaFin: '1/31',
+                semana: '1/29 - 1/31',
                 total: 0,
               },
             ],
@@ -11996,23 +10167,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7810,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 7810,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -12021,28 +10188,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 1600,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 1600,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -12051,28 +10213,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7860,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 7800,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 60,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -12081,28 +10238,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7800,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 7800,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -12111,28 +10263,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 79870,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 79870,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -12141,28 +10288,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -12171,28 +10313,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -12201,28 +10338,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -12231,28 +10363,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -12261,28 +10388,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7800,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 7800,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -12291,28 +10413,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -12321,28 +10438,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -12366,23 +10478,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 10,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 10,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -12391,28 +10499,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -12421,28 +10524,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -12451,28 +10549,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -12481,28 +10574,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -12511,28 +10599,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -12541,28 +10624,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -12571,28 +10649,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -12601,28 +10674,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -12631,28 +10699,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -12661,28 +10724,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -12691,28 +10749,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 110000,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 110000,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -12736,23 +10789,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -12761,28 +10810,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -12791,28 +10835,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -12821,28 +10860,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -12851,28 +10885,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -12881,28 +10910,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 456456,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 456456,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -12911,28 +10935,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 120000,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 120000,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -12941,28 +10960,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -12971,28 +10985,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -13001,28 +11010,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -13031,28 +11035,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -13061,28 +11060,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -13106,23 +11100,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -13131,28 +11121,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 3000,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 3000,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -13161,28 +11146,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -13191,28 +11171,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -13221,28 +11196,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -13251,28 +11221,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -13281,28 +11246,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -13311,28 +11271,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 1000,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 1000,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -13341,28 +11296,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -13371,28 +11321,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -13401,28 +11346,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -13431,28 +11371,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -13469,23 +11404,19 @@ export const reporteEmpresa: Reporte[] = [
             total: 7820,
             semanas: [
               {
-                fechaInicio: '2/1',
-                fechaFin: '2/7',
+                semana: '2/1 - 2/7',
                 total: 7820,
               },
               {
-                fechaInicio: '2/8',
-                fechaFin: '2/14',
+                semana: '2/8 - 2/14',
                 total: 0,
               },
               {
-                fechaInicio: '2/15',
-                fechaFin: '2/21',
+                semana: '2/15 - 2/21',
                 total: 0,
               },
               {
-                fechaInicio: '2/22',
-                fechaFin: '2/28',
+                semana: '2/22 - 2/28',
                 total: 0,
               },
             ],
@@ -13494,28 +11425,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 4600,
             semanas: [
               {
-                fechaInicio: '3/1',
-                fechaFin: '3/7',
+                semana: '3/1 - 3/7',
                 total: 4600,
               },
               {
-                fechaInicio: '3/8',
-                fechaFin: '3/14',
+                semana: '3/8 - 3/14',
                 total: 0,
               },
               {
-                fechaInicio: '3/15',
-                fechaFin: '3/21',
+                semana: '3/15 - 3/21',
                 total: 0,
               },
               {
-                fechaInicio: '3/22',
-                fechaFin: '3/28',
+                semana: '3/22 - 3/28',
                 total: 0,
               },
               {
-                fechaInicio: '3/29',
-                fechaFin: '3/31',
+                semana: '3/29 - 3/31',
                 total: 0,
               },
             ],
@@ -13524,28 +11450,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 7860,
             semanas: [
               {
-                fechaInicio: '4/1',
-                fechaFin: '4/7',
+                semana: '4/1 - 4/7',
                 total: 7800,
               },
               {
-                fechaInicio: '4/8',
-                fechaFin: '4/14',
+                semana: '4/8 - 4/14',
                 total: 0,
               },
               {
-                fechaInicio: '4/15',
-                fechaFin: '4/21',
+                semana: '4/15 - 4/21',
                 total: 60,
               },
               {
-                fechaInicio: '4/22',
-                fechaFin: '4/28',
+                semana: '4/22 - 4/28',
                 total: 0,
               },
               {
-                fechaInicio: '4/29',
-                fechaFin: '4/30',
+                semana: '4/29 - 4/30',
                 total: 0,
               },
             ],
@@ -13554,28 +11475,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 7800,
             semanas: [
               {
-                fechaInicio: '5/1',
-                fechaFin: '5/7',
+                semana: '5/1 - 5/7',
                 total: 7800,
               },
               {
-                fechaInicio: '5/8',
-                fechaFin: '5/14',
+                semana: '5/8 - 5/14',
                 total: 0,
               },
               {
-                fechaInicio: '5/15',
-                fechaFin: '5/21',
+                semana: '5/15 - 5/21',
                 total: 0,
               },
               {
-                fechaInicio: '5/22',
-                fechaFin: '5/28',
+                semana: '5/22 - 5/28',
                 total: 0,
               },
               {
-                fechaInicio: '5/29',
-                fechaFin: '5/31',
+                semana: '5/29 - 5/31',
                 total: 0,
               },
             ],
@@ -13584,28 +11500,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 79870,
             semanas: [
               {
-                fechaInicio: '6/1',
-                fechaFin: '6/7',
+                semana: '6/1 - 6/7',
                 total: 79870,
               },
               {
-                fechaInicio: '6/8',
-                fechaFin: '6/14',
+                semana: '6/8 - 6/14',
                 total: 0,
               },
               {
-                fechaInicio: '6/15',
-                fechaFin: '6/21',
+                semana: '6/15 - 6/21',
                 total: 0,
               },
               {
-                fechaInicio: '6/22',
-                fechaFin: '6/28',
+                semana: '6/22 - 6/28',
                 total: 0,
               },
               {
-                fechaInicio: '6/29',
-                fechaFin: '6/30',
+                semana: '6/29 - 6/30',
                 total: 0,
               },
             ],
@@ -13614,28 +11525,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 456456,
             semanas: [
               {
-                fechaInicio: '7/1',
-                fechaFin: '7/7',
+                semana: '7/1 - 7/7',
                 total: 456456,
               },
               {
-                fechaInicio: '7/8',
-                fechaFin: '7/14',
+                semana: '7/8 - 7/14',
                 total: 0,
               },
               {
-                fechaInicio: '7/15',
-                fechaFin: '7/21',
+                semana: '7/15 - 7/21',
                 total: 0,
               },
               {
-                fechaInicio: '7/22',
-                fechaFin: '7/28',
+                semana: '7/22 - 7/28',
                 total: 0,
               },
               {
-                fechaInicio: '7/29',
-                fechaFin: '7/31',
+                semana: '7/29 - 7/31',
                 total: 0,
               },
             ],
@@ -13644,28 +11550,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 120000,
             semanas: [
               {
-                fechaInicio: '8/1',
-                fechaFin: '8/7',
+                semana: '8/1 - 8/7',
                 total: 120000,
               },
               {
-                fechaInicio: '8/8',
-                fechaFin: '8/14',
+                semana: '8/8 - 8/14',
                 total: 0,
               },
               {
-                fechaInicio: '8/15',
-                fechaFin: '8/21',
+                semana: '8/15 - 8/21',
                 total: 0,
               },
               {
-                fechaInicio: '8/22',
-                fechaFin: '8/28',
+                semana: '8/22 - 8/28',
                 total: 0,
               },
               {
-                fechaInicio: '8/29',
-                fechaFin: '8/31',
+                semana: '8/29 - 8/31',
                 total: 0,
               },
             ],
@@ -13674,28 +11575,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 1000,
             semanas: [
               {
-                fechaInicio: '9/1',
-                fechaFin: '9/7',
+                semana: '9/1 - 9/7',
                 total: 1000,
               },
               {
-                fechaInicio: '9/8',
-                fechaFin: '9/14',
+                semana: '9/8 - 9/14',
                 total: 0,
               },
               {
-                fechaInicio: '9/15',
-                fechaFin: '9/21',
+                semana: '9/15 - 9/21',
                 total: 0,
               },
               {
-                fechaInicio: '9/22',
-                fechaFin: '9/28',
+                semana: '9/22 - 9/28',
                 total: 0,
               },
               {
-                fechaInicio: '9/29',
-                fechaFin: '9/30',
+                semana: '9/29 - 9/30',
                 total: 0,
               },
             ],
@@ -13704,28 +11600,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 0,
             semanas: [
               {
-                fechaInicio: '10/1',
-                fechaFin: '10/7',
+                semana: '10/1 - 10/7',
                 total: 0,
               },
               {
-                fechaInicio: '10/8',
-                fechaFin: '10/14',
+                semana: '10/8 - 10/14',
                 total: 0,
               },
               {
-                fechaInicio: '10/15',
-                fechaFin: '10/21',
+                semana: '10/15 - 10/21',
                 total: 0,
               },
               {
-                fechaInicio: '10/22',
-                fechaFin: '10/28',
+                semana: '10/22 - 10/28',
                 total: 0,
               },
               {
-                fechaInicio: '10/29',
-                fechaFin: '10/31',
+                semana: '10/29 - 10/31',
                 total: 0,
               },
             ],
@@ -13734,28 +11625,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 7800,
             semanas: [
               {
-                fechaInicio: '11/1',
-                fechaFin: '11/7',
+                semana: '11/1 - 11/7',
                 total: 7800,
               },
               {
-                fechaInicio: '11/8',
-                fechaFin: '11/14',
+                semana: '11/8 - 11/14',
                 total: 0,
               },
               {
-                fechaInicio: '11/15',
-                fechaFin: '11/21',
+                semana: '11/15 - 11/21',
                 total: 0,
               },
               {
-                fechaInicio: '11/22',
-                fechaFin: '11/28',
+                semana: '11/22 - 11/28',
                 total: 0,
               },
               {
-                fechaInicio: '11/29',
-                fechaFin: '11/30',
+                semana: '11/29 - 11/30',
                 total: 0,
               },
             ],
@@ -13764,28 +11650,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 0,
             semanas: [
               {
-                fechaInicio: '12/1',
-                fechaFin: '12/7',
+                semana: '12/1 - 12/7',
                 total: 0,
               },
               {
-                fechaInicio: '12/8',
-                fechaFin: '12/14',
+                semana: '12/8 - 12/14',
                 total: 0,
               },
               {
-                fechaInicio: '12/15',
-                fechaFin: '12/21',
+                semana: '12/15 - 12/21',
                 total: 0,
               },
               {
-                fechaInicio: '12/22',
-                fechaFin: '12/28',
+                semana: '12/22 - 12/28',
                 total: 0,
               },
               {
-                fechaInicio: '12/29',
-                fechaFin: '12/31',
+                semana: '12/29 - 12/31',
                 total: 0,
               },
             ],
@@ -13794,28 +11675,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 110000,
             semanas: [
               {
-                fechaInicio: '1/1',
-                fechaFin: '1/7',
+                semana: '1/1 - 1/7',
                 total: 110000,
               },
               {
-                fechaInicio: '1/8',
-                fechaFin: '1/14',
+                semana: '1/8 - 1/14',
                 total: 0,
               },
               {
-                fechaInicio: '1/15',
-                fechaFin: '1/21',
+                semana: '1/15 - 1/21',
                 total: 0,
               },
               {
-                fechaInicio: '1/22',
-                fechaFin: '1/28',
+                semana: '1/22 - 1/28',
                 total: 0,
               },
               {
-                fechaInicio: '1/29',
-                fechaFin: '1/31',
+                semana: '1/29 - 1/31',
                 total: 0,
               },
             ],
@@ -13848,23 +11724,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -13873,28 +11745,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -13903,28 +11770,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 1000,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 1000,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -13933,28 +11795,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 9800,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 9800,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -13963,28 +11820,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -13993,28 +11845,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -14023,28 +11870,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -14053,28 +11895,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -14083,28 +11920,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -14113,28 +11945,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -14143,28 +11970,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -14173,28 +11995,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -14218,23 +12035,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -14243,28 +12056,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -14273,28 +12081,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -14303,28 +12106,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -14333,28 +12131,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -14363,28 +12156,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -14393,28 +12181,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -14423,28 +12206,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -14453,28 +12231,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 12000,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 12000,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -14483,28 +12256,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 12000,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 12000,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -14513,28 +12281,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 12000,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 12000,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -14543,28 +12306,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 12000,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 12000,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -14588,23 +12346,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 10,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 10,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -14613,28 +12367,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 780,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 780,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -14643,28 +12392,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 12300,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 12300,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -14673,28 +12417,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -14703,28 +12442,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -14733,28 +12467,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -14763,28 +12492,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -14793,28 +12517,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -14823,28 +12542,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -14853,28 +12567,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -14883,28 +12592,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -14913,28 +12617,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -14958,23 +12657,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -14983,28 +12678,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -15013,28 +12703,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -15043,28 +12728,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 70000,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 70000,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -15073,28 +12753,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 70000,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 70000,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -15103,28 +12778,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -15133,28 +12803,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -15163,28 +12828,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -15193,28 +12853,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -15223,28 +12878,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -15253,28 +12903,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -15283,28 +12928,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -15328,23 +12968,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -15353,28 +12989,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -15383,28 +13014,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -15413,28 +13039,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -15443,28 +13064,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -15473,28 +13089,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 6000,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 6000,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -15503,28 +13114,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 78000,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 78000,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -15533,28 +13139,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -15563,28 +13164,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -15593,28 +13189,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -15623,28 +13214,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -15653,28 +13239,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -15698,23 +13279,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -15723,28 +13300,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -15753,28 +13325,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -15783,28 +13350,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -15813,28 +13375,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -15843,28 +13400,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -15873,28 +13425,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -15903,28 +13450,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 1000,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 1000,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -15933,28 +13475,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 3000,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 3000,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -15963,28 +13500,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -15993,28 +13525,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -16023,28 +13550,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -16074,23 +13596,19 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '2/1',
-                          fechaFin: '2/7',
+                          semana: '2/1 - 2/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '2/8',
-                          fechaFin: '2/14',
+                          semana: '2/8 - 2/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '2/15',
-                          fechaFin: '2/21',
+                          semana: '2/15 - 2/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '2/22',
-                          fechaFin: '2/28',
+                          semana: '2/22 - 2/28',
                           total: 0,
                         },
                       ],
@@ -16099,28 +13617,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '3/1',
-                          fechaFin: '3/7',
+                          semana: '3/1 - 3/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '3/8',
-                          fechaFin: '3/14',
+                          semana: '3/8 - 3/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '3/15',
-                          fechaFin: '3/21',
+                          semana: '3/15 - 3/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '3/22',
-                          fechaFin: '3/28',
+                          semana: '3/22 - 3/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '3/29',
-                          fechaFin: '3/31',
+                          semana: '3/29 - 3/31',
                           total: 0,
                         },
                       ],
@@ -16129,28 +13642,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '4/1',
-                          fechaFin: '4/7',
+                          semana: '4/1 - 4/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '4/8',
-                          fechaFin: '4/14',
+                          semana: '4/8 - 4/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '4/15',
-                          fechaFin: '4/21',
+                          semana: '4/15 - 4/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '4/22',
-                          fechaFin: '4/28',
+                          semana: '4/22 - 4/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '4/29',
-                          fechaFin: '4/30',
+                          semana: '4/29 - 4/30',
                           total: 0,
                         },
                       ],
@@ -16159,28 +13667,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '5/1',
-                          fechaFin: '5/7',
+                          semana: '5/1 - 5/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '5/8',
-                          fechaFin: '5/14',
+                          semana: '5/8 - 5/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '5/15',
-                          fechaFin: '5/21',
+                          semana: '5/15 - 5/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '5/22',
-                          fechaFin: '5/28',
+                          semana: '5/22 - 5/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '5/29',
-                          fechaFin: '5/31',
+                          semana: '5/29 - 5/31',
                           total: 0,
                         },
                       ],
@@ -16189,28 +13692,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 7000,
                       semanas: [
                         {
-                          fechaInicio: '6/1',
-                          fechaFin: '6/7',
+                          semana: '6/1 - 6/7',
                           total: 7000,
                         },
                         {
-                          fechaInicio: '6/8',
-                          fechaFin: '6/14',
+                          semana: '6/8 - 6/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '6/15',
-                          fechaFin: '6/21',
+                          semana: '6/15 - 6/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '6/22',
-                          fechaFin: '6/28',
+                          semana: '6/22 - 6/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '6/29',
-                          fechaFin: '6/30',
+                          semana: '6/29 - 6/30',
                           total: 0,
                         },
                       ],
@@ -16219,28 +13717,48 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '7/1',
-                          fechaFin: '7/7',
+                          semana: '7/1 - 7/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '7/8',
-                          fechaFin: '7/14',
+                          semana: '7/8 - 7/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '7/15',
-                          fechaFin: '7/21',
+                          semana: '7/15 - 7/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '7/22',
-                          fechaFin: '7/28',
+                          semana: '7/22 - 7/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '7/29',
-                          fechaFin: '7/31',
+                          semana: '7/29 - 7/31',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 7140000,
+                      semanas: [
+                        {
+                          semana: '8/1 - 8/7',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/8 - 8/14',
+                          total: 7140000,
+                        },
+                        {
+                          semana: '8/15 - 8/21',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/22 - 8/28',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/29 - 8/31',
                           total: 0,
                         },
                       ],
@@ -16249,28 +13767,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '8/1',
-                          fechaFin: '8/7',
+                          semana: '9/1 - 9/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '8/8',
-                          fechaFin: '8/14',
+                          semana: '9/8 - 9/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '8/15',
-                          fechaFin: '8/21',
+                          semana: '9/15 - 9/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '8/22',
-                          fechaFin: '8/28',
+                          semana: '9/22 - 9/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '8/29',
-                          fechaFin: '8/31',
+                          semana: '9/29 - 9/30',
                           total: 0,
                         },
                       ],
@@ -16279,28 +13792,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '9/1',
-                          fechaFin: '9/7',
+                          semana: '10/1 - 10/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '9/8',
-                          fechaFin: '9/14',
+                          semana: '10/8 - 10/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '9/15',
-                          fechaFin: '9/21',
+                          semana: '10/15 - 10/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '9/22',
-                          fechaFin: '9/28',
+                          semana: '10/22 - 10/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '9/29',
-                          fechaFin: '9/30',
+                          semana: '10/29 - 10/31',
                           total: 0,
                         },
                       ],
@@ -16309,28 +13817,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '10/1',
-                          fechaFin: '10/7',
+                          semana: '11/1 - 11/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '10/8',
-                          fechaFin: '10/14',
+                          semana: '11/8 - 11/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '10/15',
-                          fechaFin: '10/21',
+                          semana: '11/15 - 11/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '10/22',
-                          fechaFin: '10/28',
+                          semana: '11/22 - 11/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '10/29',
-                          fechaFin: '10/31',
+                          semana: '11/29 - 11/30',
                           total: 0,
                         },
                       ],
@@ -16339,28 +13842,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '11/1',
-                          fechaFin: '11/7',
+                          semana: '12/1 - 12/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '11/8',
-                          fechaFin: '11/14',
+                          semana: '12/8 - 12/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '11/15',
-                          fechaFin: '11/21',
+                          semana: '12/15 - 12/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '11/22',
-                          fechaFin: '11/28',
+                          semana: '12/22 - 12/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '11/29',
-                          fechaFin: '11/30',
+                          semana: '12/29 - 12/31',
                           total: 0,
                         },
                       ],
@@ -16369,58 +13867,23 @@ export const reporteEmpresa: Reporte[] = [
                       total: 0,
                       semanas: [
                         {
-                          fechaInicio: '12/1',
-                          fechaFin: '12/7',
+                          semana: '1/1 - 1/7',
                           total: 0,
                         },
                         {
-                          fechaInicio: '12/8',
-                          fechaFin: '12/14',
+                          semana: '1/8 - 1/14',
                           total: 0,
                         },
                         {
-                          fechaInicio: '12/15',
-                          fechaFin: '12/21',
+                          semana: '1/15 - 1/21',
                           total: 0,
                         },
                         {
-                          fechaInicio: '12/22',
-                          fechaFin: '12/28',
+                          semana: '1/22 - 1/28',
                           total: 0,
                         },
                         {
-                          fechaInicio: '12/29',
-                          fechaFin: '12/31',
-                          total: 0,
-                        },
-                      ],
-                    },
-                    {
-                      total: 0,
-                      semanas: [
-                        {
-                          fechaInicio: '1/1',
-                          fechaFin: '1/7',
-                          total: 0,
-                        },
-                        {
-                          fechaInicio: '1/8',
-                          fechaFin: '1/14',
-                          total: 0,
-                        },
-                        {
-                          fechaInicio: '1/15',
-                          fechaFin: '1/21',
-                          total: 0,
-                        },
-                        {
-                          fechaInicio: '1/22',
-                          fechaFin: '1/28',
-                          total: 0,
-                        },
-                        {
-                          fechaInicio: '1/29',
-                          fechaFin: '1/31',
+                          semana: '1/29 - 1/31',
                           total: 0,
                         },
                       ],
@@ -16434,23 +13897,19 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '2/1',
-                    fechaFin: '2/7',
+                    semana: '2/1 - 2/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/8',
-                    fechaFin: '2/14',
+                    semana: '2/8 - 2/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/15',
-                    fechaFin: '2/21',
+                    semana: '2/15 - 2/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '2/22',
-                    fechaFin: '2/28',
+                    semana: '2/22 - 2/28',
                     total: 0,
                   },
                 ],
@@ -16459,28 +13918,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '3/1',
-                    fechaFin: '3/7',
+                    semana: '3/1 - 3/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/8',
-                    fechaFin: '3/14',
+                    semana: '3/8 - 3/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/15',
-                    fechaFin: '3/21',
+                    semana: '3/15 - 3/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/22',
-                    fechaFin: '3/28',
+                    semana: '3/22 - 3/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '3/29',
-                    fechaFin: '3/31',
+                    semana: '3/29 - 3/31',
                     total: 0,
                   },
                 ],
@@ -16489,28 +13943,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '4/1',
-                    fechaFin: '4/7',
+                    semana: '4/1 - 4/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/8',
-                    fechaFin: '4/14',
+                    semana: '4/8 - 4/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/15',
-                    fechaFin: '4/21',
+                    semana: '4/15 - 4/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/22',
-                    fechaFin: '4/28',
+                    semana: '4/22 - 4/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '4/29',
-                    fechaFin: '4/30',
+                    semana: '4/29 - 4/30',
                     total: 0,
                   },
                 ],
@@ -16519,28 +13968,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '5/1',
-                    fechaFin: '5/7',
+                    semana: '5/1 - 5/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/8',
-                    fechaFin: '5/14',
+                    semana: '5/8 - 5/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/15',
-                    fechaFin: '5/21',
+                    semana: '5/15 - 5/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/22',
-                    fechaFin: '5/28',
+                    semana: '5/22 - 5/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '5/29',
-                    fechaFin: '5/31',
+                    semana: '5/29 - 5/31',
                     total: 0,
                   },
                 ],
@@ -16549,28 +13993,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7000,
                 semanas: [
                   {
-                    fechaInicio: '6/1',
-                    fechaFin: '6/7',
+                    semana: '6/1 - 6/7',
                     total: 7000,
                   },
                   {
-                    fechaInicio: '6/8',
-                    fechaFin: '6/14',
+                    semana: '6/8 - 6/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/15',
-                    fechaFin: '6/21',
+                    semana: '6/15 - 6/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/22',
-                    fechaFin: '6/28',
+                    semana: '6/22 - 6/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '6/29',
-                    fechaFin: '6/30',
+                    semana: '6/29 - 6/30',
                     total: 0,
                   },
                 ],
@@ -16579,28 +14018,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7140000,
                 semanas: [
                   {
-                    fechaInicio: '7/1',
-                    fechaFin: '7/7',
+                    semana: '7/1 - 7/7',
                     total: 7140000,
                   },
                   {
-                    fechaInicio: '7/8',
-                    fechaFin: '7/14',
+                    semana: '7/8 - 7/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/15',
-                    fechaFin: '7/21',
+                    semana: '7/15 - 7/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/22',
-                    fechaFin: '7/28',
+                    semana: '7/22 - 7/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '7/29',
-                    fechaFin: '7/31',
+                    semana: '7/29 - 7/31',
                     total: 0,
                   },
                 ],
@@ -16609,28 +14043,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 7140000,
                 semanas: [
                   {
-                    fechaInicio: '8/1',
-                    fechaFin: '8/7',
+                    semana: '8/1 - 8/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/8',
-                    fechaFin: '8/14',
+                    semana: '8/8 - 8/14',
                     total: 7140000,
                   },
                   {
-                    fechaInicio: '8/15',
-                    fechaFin: '8/21',
+                    semana: '8/15 - 8/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/22',
-                    fechaFin: '8/28',
+                    semana: '8/22 - 8/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '8/29',
-                    fechaFin: '8/31',
+                    semana: '8/29 - 8/31',
                     total: 0,
                   },
                 ],
@@ -16639,28 +14068,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '9/1',
-                    fechaFin: '9/7',
+                    semana: '9/1 - 9/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/8',
-                    fechaFin: '9/14',
+                    semana: '9/8 - 9/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/15',
-                    fechaFin: '9/21',
+                    semana: '9/15 - 9/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/22',
-                    fechaFin: '9/28',
+                    semana: '9/22 - 9/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '9/29',
-                    fechaFin: '9/30',
+                    semana: '9/29 - 9/30',
                     total: 0,
                   },
                 ],
@@ -16669,28 +14093,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '10/1',
-                    fechaFin: '10/7',
+                    semana: '10/1 - 10/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/8',
-                    fechaFin: '10/14',
+                    semana: '10/8 - 10/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/15',
-                    fechaFin: '10/21',
+                    semana: '10/15 - 10/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/22',
-                    fechaFin: '10/28',
+                    semana: '10/22 - 10/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '10/29',
-                    fechaFin: '10/31',
+                    semana: '10/29 - 10/31',
                     total: 0,
                   },
                 ],
@@ -16699,28 +14118,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '11/1',
-                    fechaFin: '11/7',
+                    semana: '11/1 - 11/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/8',
-                    fechaFin: '11/14',
+                    semana: '11/8 - 11/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/15',
-                    fechaFin: '11/21',
+                    semana: '11/15 - 11/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/22',
-                    fechaFin: '11/28',
+                    semana: '11/22 - 11/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '11/29',
-                    fechaFin: '11/30',
+                    semana: '11/29 - 11/30',
                     total: 0,
                   },
                 ],
@@ -16729,28 +14143,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '12/1',
-                    fechaFin: '12/7',
+                    semana: '12/1 - 12/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/8',
-                    fechaFin: '12/14',
+                    semana: '12/8 - 12/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/15',
-                    fechaFin: '12/21',
+                    semana: '12/15 - 12/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/22',
-                    fechaFin: '12/28',
+                    semana: '12/22 - 12/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '12/29',
-                    fechaFin: '12/31',
+                    semana: '12/29 - 12/31',
                     total: 0,
                   },
                 ],
@@ -16759,28 +14168,23 @@ export const reporteEmpresa: Reporte[] = [
                 total: 0,
                 semanas: [
                   {
-                    fechaInicio: '1/1',
-                    fechaFin: '1/7',
+                    semana: '1/1 - 1/7',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/8',
-                    fechaFin: '1/14',
+                    semana: '1/8 - 1/14',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/15',
-                    fechaFin: '1/21',
+                    semana: '1/15 - 1/21',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/22',
-                    fechaFin: '1/28',
+                    semana: '1/22 - 1/28',
                     total: 0,
                   },
                   {
-                    fechaInicio: '1/29',
-                    fechaFin: '1/31',
+                    semana: '1/29 - 1/31',
                     total: 0,
                   },
                 ],
@@ -16803,23 +14207,19 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '2/1',
-                      fechaFin: '2/7',
+                      semana: '2/1 - 2/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '2/8',
-                      fechaFin: '2/14',
+                      semana: '2/8 - 2/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '2/15',
-                      fechaFin: '2/21',
+                      semana: '2/15 - 2/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '2/22',
-                      fechaFin: '2/28',
+                      semana: '2/22 - 2/28',
                       total: 0,
                     },
                   ],
@@ -16828,28 +14228,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '3/1',
-                      fechaFin: '3/7',
+                      semana: '3/1 - 3/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '3/8',
-                      fechaFin: '3/14',
+                      semana: '3/8 - 3/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '3/15',
-                      fechaFin: '3/21',
+                      semana: '3/15 - 3/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '3/22',
-                      fechaFin: '3/28',
+                      semana: '3/22 - 3/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '3/29',
-                      fechaFin: '3/31',
+                      semana: '3/29 - 3/31',
                       total: 0,
                     },
                   ],
@@ -16858,28 +14253,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '4/1',
-                      fechaFin: '4/7',
+                      semana: '4/1 - 4/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '4/8',
-                      fechaFin: '4/14',
+                      semana: '4/8 - 4/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '4/15',
-                      fechaFin: '4/21',
+                      semana: '4/15 - 4/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '4/22',
-                      fechaFin: '4/28',
+                      semana: '4/22 - 4/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '4/29',
-                      fechaFin: '4/30',
+                      semana: '4/29 - 4/30',
                       total: 0,
                     },
                   ],
@@ -16888,28 +14278,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '5/1',
-                      fechaFin: '5/7',
+                      semana: '5/1 - 5/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '5/8',
-                      fechaFin: '5/14',
+                      semana: '5/8 - 5/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '5/15',
-                      fechaFin: '5/21',
+                      semana: '5/15 - 5/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '5/22',
-                      fechaFin: '5/28',
+                      semana: '5/22 - 5/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '5/29',
-                      fechaFin: '5/31',
+                      semana: '5/29 - 5/31',
                       total: 0,
                     },
                   ],
@@ -16918,28 +14303,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 7000,
                   semanas: [
                     {
-                      fechaInicio: '6/1',
-                      fechaFin: '6/7',
+                      semana: '6/1 - 6/7',
                       total: 7000,
                     },
                     {
-                      fechaInicio: '6/8',
-                      fechaFin: '6/14',
+                      semana: '6/8 - 6/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '6/15',
-                      fechaFin: '6/21',
+                      semana: '6/15 - 6/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '6/22',
-                      fechaFin: '6/28',
+                      semana: '6/22 - 6/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '6/29',
-                      fechaFin: '6/30',
+                      semana: '6/29 - 6/30',
                       total: 0,
                     },
                   ],
@@ -16948,28 +14328,48 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '7/1',
-                      fechaFin: '7/7',
+                      semana: '7/1 - 7/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '7/8',
-                      fechaFin: '7/14',
+                      semana: '7/8 - 7/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '7/15',
-                      fechaFin: '7/21',
+                      semana: '7/15 - 7/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '7/22',
-                      fechaFin: '7/28',
+                      semana: '7/22 - 7/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '7/29',
-                      fechaFin: '7/31',
+                      semana: '7/29 - 7/31',
+                      total: 0,
+                    },
+                  ],
+                },
+                {
+                  total: 7140000,
+                  semanas: [
+                    {
+                      semana: '8/1 - 8/7',
+                      total: 0,
+                    },
+                    {
+                      semana: '8/8 - 8/14',
+                      total: 7140000,
+                    },
+                    {
+                      semana: '8/15 - 8/21',
+                      total: 0,
+                    },
+                    {
+                      semana: '8/22 - 8/28',
+                      total: 0,
+                    },
+                    {
+                      semana: '8/29 - 8/31',
                       total: 0,
                     },
                   ],
@@ -16978,28 +14378,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '8/1',
-                      fechaFin: '8/7',
+                      semana: '9/1 - 9/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '8/8',
-                      fechaFin: '8/14',
+                      semana: '9/8 - 9/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '8/15',
-                      fechaFin: '8/21',
+                      semana: '9/15 - 9/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '8/22',
-                      fechaFin: '8/28',
+                      semana: '9/22 - 9/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '8/29',
-                      fechaFin: '8/31',
+                      semana: '9/29 - 9/30',
                       total: 0,
                     },
                   ],
@@ -17008,28 +14403,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '9/1',
-                      fechaFin: '9/7',
+                      semana: '10/1 - 10/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '9/8',
-                      fechaFin: '9/14',
+                      semana: '10/8 - 10/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '9/15',
-                      fechaFin: '9/21',
+                      semana: '10/15 - 10/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '9/22',
-                      fechaFin: '9/28',
+                      semana: '10/22 - 10/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '9/29',
-                      fechaFin: '9/30',
+                      semana: '10/29 - 10/31',
                       total: 0,
                     },
                   ],
@@ -17038,28 +14428,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '10/1',
-                      fechaFin: '10/7',
+                      semana: '11/1 - 11/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '10/8',
-                      fechaFin: '10/14',
+                      semana: '11/8 - 11/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '10/15',
-                      fechaFin: '10/21',
+                      semana: '11/15 - 11/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '10/22',
-                      fechaFin: '10/28',
+                      semana: '11/22 - 11/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '10/29',
-                      fechaFin: '10/31',
+                      semana: '11/29 - 11/30',
                       total: 0,
                     },
                   ],
@@ -17068,28 +14453,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '11/1',
-                      fechaFin: '11/7',
+                      semana: '12/1 - 12/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '11/8',
-                      fechaFin: '11/14',
+                      semana: '12/8 - 12/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '11/15',
-                      fechaFin: '11/21',
+                      semana: '12/15 - 12/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '11/22',
-                      fechaFin: '11/28',
+                      semana: '12/22 - 12/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '11/29',
-                      fechaFin: '11/30',
+                      semana: '12/29 - 12/31',
                       total: 0,
                     },
                   ],
@@ -17098,58 +14478,23 @@ export const reporteEmpresa: Reporte[] = [
                   total: 0,
                   semanas: [
                     {
-                      fechaInicio: '12/1',
-                      fechaFin: '12/7',
+                      semana: '1/1 - 1/7',
                       total: 0,
                     },
                     {
-                      fechaInicio: '12/8',
-                      fechaFin: '12/14',
+                      semana: '1/8 - 1/14',
                       total: 0,
                     },
                     {
-                      fechaInicio: '12/15',
-                      fechaFin: '12/21',
+                      semana: '1/15 - 1/21',
                       total: 0,
                     },
                     {
-                      fechaInicio: '12/22',
-                      fechaFin: '12/28',
+                      semana: '1/22 - 1/28',
                       total: 0,
                     },
                     {
-                      fechaInicio: '12/29',
-                      fechaFin: '12/31',
-                      total: 0,
-                    },
-                  ],
-                },
-                {
-                  total: 0,
-                  semanas: [
-                    {
-                      fechaInicio: '1/1',
-                      fechaFin: '1/7',
-                      total: 0,
-                    },
-                    {
-                      fechaInicio: '1/8',
-                      fechaFin: '1/14',
-                      total: 0,
-                    },
-                    {
-                      fechaInicio: '1/15',
-                      fechaFin: '1/21',
-                      total: 0,
-                    },
-                    {
-                      fechaInicio: '1/22',
-                      fechaFin: '1/28',
-                      total: 0,
-                    },
-                    {
-                      fechaInicio: '1/29',
-                      fechaFin: '1/31',
+                      semana: '1/29 - 1/31',
                       total: 0,
                     },
                   ],
@@ -17163,23 +14508,19 @@ export const reporteEmpresa: Reporte[] = [
             total: 10,
             semanas: [
               {
-                fechaInicio: '2/1',
-                fechaFin: '2/7',
+                semana: '2/1 - 2/7',
                 total: 10,
               },
               {
-                fechaInicio: '2/8',
-                fechaFin: '2/14',
+                semana: '2/8 - 2/14',
                 total: 0,
               },
               {
-                fechaInicio: '2/15',
-                fechaFin: '2/21',
+                semana: '2/15 - 2/21',
                 total: 0,
               },
               {
-                fechaInicio: '2/22',
-                fechaFin: '2/28',
+                semana: '2/22 - 2/28',
                 total: 0,
               },
             ],
@@ -17188,28 +14529,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 780,
             semanas: [
               {
-                fechaInicio: '3/1',
-                fechaFin: '3/7',
+                semana: '3/1 - 3/7',
                 total: 780,
               },
               {
-                fechaInicio: '3/8',
-                fechaFin: '3/14',
+                semana: '3/8 - 3/14',
                 total: 0,
               },
               {
-                fechaInicio: '3/15',
-                fechaFin: '3/21',
+                semana: '3/15 - 3/21',
                 total: 0,
               },
               {
-                fechaInicio: '3/22',
-                fechaFin: '3/28',
+                semana: '3/22 - 3/28',
                 total: 0,
               },
               {
-                fechaInicio: '3/29',
-                fechaFin: '3/31',
+                semana: '3/29 - 3/31',
                 total: 0,
               },
             ],
@@ -17218,28 +14554,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 13300,
             semanas: [
               {
-                fechaInicio: '4/1',
-                fechaFin: '4/7',
+                semana: '4/1 - 4/7',
                 total: 13300,
               },
               {
-                fechaInicio: '4/8',
-                fechaFin: '4/14',
+                semana: '4/8 - 4/14',
                 total: 0,
               },
               {
-                fechaInicio: '4/15',
-                fechaFin: '4/21',
+                semana: '4/15 - 4/21',
                 total: 0,
               },
               {
-                fechaInicio: '4/22',
-                fechaFin: '4/28',
+                semana: '4/22 - 4/28',
                 total: 0,
               },
               {
-                fechaInicio: '4/29',
-                fechaFin: '4/30',
+                semana: '4/29 - 4/30',
                 total: 0,
               },
             ],
@@ -17248,28 +14579,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 79800,
             semanas: [
               {
-                fechaInicio: '5/1',
-                fechaFin: '5/7',
+                semana: '5/1 - 5/7',
                 total: 79800,
               },
               {
-                fechaInicio: '5/8',
-                fechaFin: '5/14',
+                semana: '5/8 - 5/14',
                 total: 0,
               },
               {
-                fechaInicio: '5/15',
-                fechaFin: '5/21',
+                semana: '5/15 - 5/21',
                 total: 0,
               },
               {
-                fechaInicio: '5/22',
-                fechaFin: '5/28',
+                semana: '5/22 - 5/28',
                 total: 0,
               },
               {
-                fechaInicio: '5/29',
-                fechaFin: '5/31',
+                semana: '5/29 - 5/31',
                 total: 0,
               },
             ],
@@ -17278,28 +14604,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 77000,
             semanas: [
               {
-                fechaInicio: '6/1',
-                fechaFin: '6/7',
+                semana: '6/1 - 6/7',
                 total: 77000,
               },
               {
-                fechaInicio: '6/8',
-                fechaFin: '6/14',
+                semana: '6/8 - 6/14',
                 total: 0,
               },
               {
-                fechaInicio: '6/15',
-                fechaFin: '6/21',
+                semana: '6/15 - 6/21',
                 total: 0,
               },
               {
-                fechaInicio: '6/22',
-                fechaFin: '6/28',
+                semana: '6/22 - 6/28',
                 total: 0,
               },
               {
-                fechaInicio: '6/29',
-                fechaFin: '6/30',
+                semana: '6/29 - 6/30',
                 total: 0,
               },
             ],
@@ -17308,28 +14629,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 7146000,
             semanas: [
               {
-                fechaInicio: '7/1',
-                fechaFin: '7/7',
+                semana: '7/1 - 7/7',
                 total: 7146000,
               },
               {
-                fechaInicio: '7/8',
-                fechaFin: '7/14',
+                semana: '7/8 - 7/14',
                 total: 0,
               },
               {
-                fechaInicio: '7/15',
-                fechaFin: '7/21',
+                semana: '7/15 - 7/21',
                 total: 0,
               },
               {
-                fechaInicio: '7/22',
-                fechaFin: '7/28',
+                semana: '7/22 - 7/28',
                 total: 0,
               },
               {
-                fechaInicio: '7/29',
-                fechaFin: '7/31',
+                semana: '7/29 - 7/31',
                 total: 0,
               },
             ],
@@ -17338,28 +14654,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 7218000,
             semanas: [
               {
-                fechaInicio: '8/1',
-                fechaFin: '8/7',
+                semana: '8/1 - 8/7',
                 total: 78000,
               },
               {
-                fechaInicio: '8/8',
-                fechaFin: '8/14',
+                semana: '8/8 - 8/14',
                 total: 7140000,
               },
               {
-                fechaInicio: '8/15',
-                fechaFin: '8/21',
+                semana: '8/15 - 8/21',
                 total: 0,
               },
               {
-                fechaInicio: '8/22',
-                fechaFin: '8/28',
+                semana: '8/22 - 8/28',
                 total: 0,
               },
               {
-                fechaInicio: '8/29',
-                fechaFin: '8/31',
+                semana: '8/29 - 8/31',
                 total: 0,
               },
             ],
@@ -17368,28 +14679,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 1000,
             semanas: [
               {
-                fechaInicio: '9/1',
-                fechaFin: '9/7',
+                semana: '9/1 - 9/7',
                 total: 1000,
               },
               {
-                fechaInicio: '9/8',
-                fechaFin: '9/14',
+                semana: '9/8 - 9/14',
                 total: 0,
               },
               {
-                fechaInicio: '9/15',
-                fechaFin: '9/21',
+                semana: '9/15 - 9/21',
                 total: 0,
               },
               {
-                fechaInicio: '9/22',
-                fechaFin: '9/28',
+                semana: '9/22 - 9/28',
                 total: 0,
               },
               {
-                fechaInicio: '9/29',
-                fechaFin: '9/30',
+                semana: '9/29 - 9/30',
                 total: 0,
               },
             ],
@@ -17398,28 +14704,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 15000,
             semanas: [
               {
-                fechaInicio: '10/1',
-                fechaFin: '10/7',
+                semana: '10/1 - 10/7',
                 total: 15000,
               },
               {
-                fechaInicio: '10/8',
-                fechaFin: '10/14',
+                semana: '10/8 - 10/14',
                 total: 0,
               },
               {
-                fechaInicio: '10/15',
-                fechaFin: '10/21',
+                semana: '10/15 - 10/21',
                 total: 0,
               },
               {
-                fechaInicio: '10/22',
-                fechaFin: '10/28',
+                semana: '10/22 - 10/28',
                 total: 0,
               },
               {
-                fechaInicio: '10/29',
-                fechaFin: '10/31',
+                semana: '10/29 - 10/31',
                 total: 0,
               },
             ],
@@ -17428,28 +14729,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 12000,
             semanas: [
               {
-                fechaInicio: '11/1',
-                fechaFin: '11/7',
+                semana: '11/1 - 11/7',
                 total: 12000,
               },
               {
-                fechaInicio: '11/8',
-                fechaFin: '11/14',
+                semana: '11/8 - 11/14',
                 total: 0,
               },
               {
-                fechaInicio: '11/15',
-                fechaFin: '11/21',
+                semana: '11/15 - 11/21',
                 total: 0,
               },
               {
-                fechaInicio: '11/22',
-                fechaFin: '11/28',
+                semana: '11/22 - 11/28',
                 total: 0,
               },
               {
-                fechaInicio: '11/29',
-                fechaFin: '11/30',
+                semana: '11/29 - 11/30',
                 total: 0,
               },
             ],
@@ -17458,28 +14754,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 12000,
             semanas: [
               {
-                fechaInicio: '12/1',
-                fechaFin: '12/7',
+                semana: '12/1 - 12/7',
                 total: 12000,
               },
               {
-                fechaInicio: '12/8',
-                fechaFin: '12/14',
+                semana: '12/8 - 12/14',
                 total: 0,
               },
               {
-                fechaInicio: '12/15',
-                fechaFin: '12/21',
+                semana: '12/15 - 12/21',
                 total: 0,
               },
               {
-                fechaInicio: '12/22',
-                fechaFin: '12/28',
+                semana: '12/22 - 12/28',
                 total: 0,
               },
               {
-                fechaInicio: '12/29',
-                fechaFin: '12/31',
+                semana: '12/29 - 12/31',
                 total: 0,
               },
             ],
@@ -17488,28 +14779,23 @@ export const reporteEmpresa: Reporte[] = [
             total: 12000,
             semanas: [
               {
-                fechaInicio: '1/1',
-                fechaFin: '1/7',
+                semana: '1/1 - 1/7',
                 total: 12000,
               },
               {
-                fechaInicio: '1/8',
-                fechaFin: '1/14',
+                semana: '1/8 - 1/14',
                 total: 0,
               },
               {
-                fechaInicio: '1/15',
-                fechaFin: '1/21',
+                semana: '1/15 - 1/21',
                 total: 0,
               },
               {
-                fechaInicio: '1/22',
-                fechaFin: '1/28',
+                semana: '1/22 - 1/28',
                 total: 0,
               },
               {
-                fechaInicio: '1/29',
-                fechaFin: '1/31',
+                semana: '1/29 - 1/31',
                 total: 0,
               },
             ],
