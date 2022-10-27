@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Caja, Reporte } from './reporte-un.interaces';
-import { meses } from './constantes';
+import { Component, OnInit } from '@angular/core';
+import { Caja, Reporte } from '../interfaces/reporte.interaces';
+import { meses } from '../constantes';
 import { ReporteUNService } from './reporte-un.service';
 
 @Component({

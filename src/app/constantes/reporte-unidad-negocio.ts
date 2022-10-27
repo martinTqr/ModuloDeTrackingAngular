@@ -1,4 +1,4 @@
-import { Reporte } from '../reporte-un.interaces';
+import { Reporte } from '../interfaces/';
 
 export const reporteUnidadDeNegocio: Reporte = {
   total: -13776684,

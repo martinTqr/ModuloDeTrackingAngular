@@ -1,3 +1,11 @@
+export interface Reporte {
+  total: number;
+  cajas: Caja[];
+  subcategorias: (Categoria | Caja)[];
+  unidadDeNegocio?: string;
+  ingresos?: Categoria;
+  egresos?: Categoria;
+}
 export interface Categoria {
   id: number;
   nombre: string;
@@ -9,14 +17,6 @@ export interface Categoria {
   subcategorias?: Categoria[];
   acumulado: Acumulado;
   meses: Totales[];
-}
-export interface Reporte {
-  total: number;
-  cajas: Caja[];
-  subcategorias: (Categoria | Caja)[];
-  unidadDeNegocio?: string;
-  ingresos?: Categoria;
-  egresos?: Categoria;
 }
 export enum TipoCategoria {
   in = 'in',

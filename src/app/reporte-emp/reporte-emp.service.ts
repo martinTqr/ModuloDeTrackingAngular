@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { reporteUnidadDeNegocio } from '../constantes';
+import { reporteEmpresa } from '../constantes/reprote-empresa';
 import { Reporte } from '../interfaces/reporte.interaces';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ReporteUNService {
-  buscarReporteUnidadDeNegocio(): Reporte {
-    return reporteUnidadDeNegocio;
+  buscarReporteEmpresa(): Reporte[] {
+    return reporteEmpresa;
   }
 }
