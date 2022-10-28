@@ -2,7 +2,6 @@ export interface Reporte {
   total: number;
   cajas: Caja[];
   subcategorias: (Categoria | Caja)[];
-  unidadDeNegocio?: string;
 }
 export interface Categoria {
   id: number;

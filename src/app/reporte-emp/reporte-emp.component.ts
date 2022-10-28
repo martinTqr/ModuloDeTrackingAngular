@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { meses } from '../constantes';
-import { Reporte } from '../interfaces';
+import { meses } from '../constantes/';
 import { ReporteEmpresaService } from './reporte-emp.service';
 
 @Component({
@@ -9,16 +8,17 @@ import { ReporteEmpresaService } from './reporte-emp.service';
   styleUrls: ['./reporte-emp.component.css'],
 })
 export class ReporteEmpComponent implements OnInit {
-  reportes: Reporte[];
+  reportes: any = { cajas: [], subcategorias: [], total: 0 };
   semanas: Array<any> = new Array(5);
   nombreDeMeses: string[] = meses;
   constructor(servicio: ReporteEmpresaService) {
     const reportes = servicio.buscarReporteEmpresa();
+    this.reportes = reportes;
 
-    this.reportes = reportes.map((reporte: Reporte) => ({
+    /* reportes.map((reporte: Reporte) => ({
       ...reporte,
-      subcategorias: [...reporte.subcategorias, ...reporte.cajas],
-    }));
+      subcategorias: [...reporte.subcategorias, ...reporte.cajas], 
+    }));*/
   }
 
   ngOnInit(): void {}
