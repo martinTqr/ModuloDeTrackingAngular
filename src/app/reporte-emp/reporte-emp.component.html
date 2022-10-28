@@ -47,39 +47,5 @@
       </dxi-column>
     </dxi-column>
   </dx-tree-list>
+  <br />
 </div>
-
-<!--   <dxi-column
-    [allowSorting]="false"
-    dataField="nombre"
-    caption="Categoria"
-  ></dxi-column>
-  <dxi-column
-    [allowSorting]="false"
-    dataField="acumulado.total"
-    caption="Total categoria"
-  ></dxi-column>
-
-  <dxi-column
-    [allowSorting]="false"
-    [dataField]="nombreDeMeses[numeroMes]"
-    caption="{{ data }}"
-    *ngFor="let data of nombreDeMeses; let numeroMes = index"
-  >
-    <dxi-column
-      [allowSorting]="false"
-      dataField="meses[{{ numeroMes }}].total"
-      caption="Total"
-    ></dxi-column>
-    <dxi-column caption="Semanas de {{ nombreDeMeses[numeroMes] }}">
-      <dxi-column
-        *ngFor="let data of semanas; let numeroSemana = index"
-        [allowSorting]="false"
-        dataField="meses[{{ numeroMes }}].semanas[{{ numeroSemana }}].total"
-        [caption]="
-          reportes[0].subcategorias[0].meses[numeroMes].semanas[numeroSemana]
-            ?.semana
-        "
-      ></dxi-column>
-    </dxi-column>
-  </dxi-column> -->
