@@ -19,7 +19,6 @@ export class BannerComponent implements OnInit {
   //ngOnInit es la primer funcion que se ejecuta al montar el componente
   ngOnInit(): void {
     const [, , p3] = this.dbz;
-    console.log(p3);
   }
 
   addAge(): void {

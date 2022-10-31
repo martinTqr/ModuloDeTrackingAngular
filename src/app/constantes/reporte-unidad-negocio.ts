@@ -1,7 +1,7 @@
 import { Reporte } from '../interfaces/';
 
 export const reporteUnidadDeNegocio: Reporte = {
-  total: -13776684,
+  total: -13873774,
   cajas: [
     {
       id: 8,
@@ -9,13 +9,13 @@ export const reporteUnidadDeNegocio: Reporte = {
       idUnidadNegocio: '9',
       negativa: false,
       fechaBorrado: null,
-      total: 385506,
+      total: 296216,
       meses: [
         {
-          total: 0,
+          total: -10,
           semanas: [
             {
-              total: 0,
+              total: -10,
             },
             {
               total: 0,
@@ -32,10 +32,10 @@ export const reporteUnidadDeNegocio: Reporte = {
           ],
         },
         {
-          total: 820,
+          total: -780,
           semanas: [
             {
-              total: 820,
+              total: -780,
             },
             {
               total: 0,
@@ -49,7 +49,7 @@ export const reporteUnidadDeNegocio: Reporte = {
           ],
         },
         {
-          total: -4440,
+          total: -4450,
           semanas: [
             {
               total: -4500,
@@ -58,7 +58,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               total: 0,
             },
             {
-              total: 60,
+              total: 50,
             },
             {
               total: 0,
@@ -69,10 +69,10 @@ export const reporteUnidadDeNegocio: Reporte = {
           ],
         },
         {
-          total: -62200,
+          total: -70000,
           semanas: [
             {
-              total: -62200,
+              total: -70000,
             },
             {
               total: 0,
@@ -89,10 +89,10 @@ export const reporteUnidadDeNegocio: Reporte = {
           ],
         },
         {
-          total: 9870,
+          total: -70000,
           semanas: [
             {
-              total: 9870,
+              total: -70000,
             },
             {
               total: 0,
@@ -256,13 +256,13 @@ export const reporteUnidadDeNegocio: Reporte = {
       idUnidadNegocio: '9',
       negativa: false,
       fechaBorrado: null,
-      total: -14162190,
+      total: -14169990,
       meses: [
         {
-          total: 7810,
+          total: 10,
           semanas: [
             {
-              total: 7810,
+              total: 10,
             },
             {
               total: 0,
@@ -336,10 +336,10 @@ export const reporteUnidadDeNegocio: Reporte = {
           ],
         },
         {
-          total: -7000,
+          total: 0,
           semanas: [
             {
-              total: -7000,
+              total: 0,
             },
             {
               total: 0,
@@ -506,6 +506,7 @@ export const reporteUnidadDeNegocio: Reporte = {
       idEmpresa: null,
       nombre: 'Ingreso',
       orden: 1,
+      isGeneral: false,
       tipo: 'in',
       subcategorias: [
         {
@@ -516,6 +517,7 @@ export const reporteUnidadDeNegocio: Reporte = {
           idCategoriaPadre: null,
           orden: '1',
           fechaBorrado: null,
+          isGeneral: false,
           subcategorias: [
             {
               id: 26,
@@ -525,325 +527,333 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '15',
               orden: '1',
               fechaBorrado: null,
-              subcategorias: [],
-              acumulado: {
-                total: 1610,
-                cajas: [
-                  {
-                    id: 8,
-                    nombre: 'Caja Wallas',
-                    idUnidadNegocio: '9',
-                    negativa: false,
-                    fechaBorrado: null,
-                    total: 1610,
-                    meses: [
-                      {
-                        total: 10,
-                        semanas: [
-                          {
-                            semana: '1/1 - 7/1',
-                            total: 10,
-                          },
-                          {
-                            semana: '8/1 - 14/1',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/1 - 21/1',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/1 - 28/1',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/1 - 31/1',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 1600,
-                        semanas: [
-                          {
-                            semana: '1/2 - 7/2',
-                            total: 1600,
-                          },
-                          {
-                            semana: '8/2 - 14/2',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/2 - 21/2',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/2 - 28/2',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/3 - 7/3',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/3 - 14/3',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/3 - 21/3',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/3 - 28/3',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/3 - 31/3',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/4 - 7/4',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/4 - 14/4',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/4 - 21/4',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/4 - 28/4',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/4 - 30/4',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/5 - 7/5',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/5 - 14/5',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/5 - 21/5',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/5 - 28/5',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/5 - 31/5',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/6 - 7/6',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/6 - 14/6',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/6 - 21/6',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/6 - 28/6',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/6 - 30/6',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/7 - 7/7',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/7 - 14/7',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/7 - 21/7',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/7 - 28/7',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/7 - 31/7',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/8 - 7/8',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/8 - 14/8',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/8 - 21/8',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/8 - 28/8',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/8 - 31/8',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/9 - 7/9',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/9 - 14/9',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/9 - 21/9',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/9 - 28/9',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/9 - 30/9',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/10 - 7/10',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/10 - 14/10',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/10 - 21/10',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/10 - 28/10',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/10 - 31/10',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/11 - 7/11',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/11 - 14/11',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/11 - 21/11',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/11 - 28/11',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/11 - 30/11',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/12 - 7/12',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/12 - 14/12',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/12 - 21/12',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/12 - 28/12',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/12 - 31/12',
-                            total: 0,
-                          },
-                        ],
-                      },
-                    ],
+              isGeneral: false,
+              subcategorias: [
+                {
+                  id: 56,
+                  nombre: 'TQR',
+                  tipo: 'in',
+                  idEmpresa: '11',
+                  idCategoriaPadre: '26',
+                  orden: '1',
+                  fechaBorrado: null,
+                  isGeneral: false,
+                  subcategorias: [],
+                  acumulado: {
+                    total: 0,
+                    cajas: [],
                   },
-                ],
+                  meses: [
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/1 - 7/1',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/1 - 14/1',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/1 - 21/1',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/1 - 28/1',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/1 - 31/1',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/2 - 7/2',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/2 - 14/2',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/2 - 21/2',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/2 - 28/2',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/3 - 7/3',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/3 - 14/3',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/3 - 21/3',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/3 - 28/3',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/3 - 31/3',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/4 - 7/4',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/4 - 14/4',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/4 - 21/4',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/4 - 28/4',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/4 - 30/4',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/5 - 7/5',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/5 - 14/5',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/5 - 21/5',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/5 - 28/5',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/5 - 31/5',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/6 - 7/6',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/6 - 14/6',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/6 - 21/6',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/6 - 28/6',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/6 - 30/6',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/7 - 7/7',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/7 - 14/7',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/7 - 21/7',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/7 - 28/7',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/7 - 31/7',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/8 - 7/8',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/8 - 14/8',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/8 - 21/8',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/8 - 28/8',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/8 - 31/8',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/9 - 7/9',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/9 - 14/9',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/9 - 21/9',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/9 - 28/9',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/9 - 30/9',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/10 - 7/10',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/10 - 14/10',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/10 - 21/10',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/10 - 28/10',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/10 - 31/10',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/11 - 7/11',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/11 - 14/11',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/11 - 21/11',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/11 - 28/11',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/11 - 30/11',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/12 - 7/12',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/12 - 14/12',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/12 - 21/12',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/12 - 28/12',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/12 - 31/12',
+                          total: 0,
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+              acumulado: {
+                total: 0,
+                cajas: [],
               },
               meses: [
                 {
-                  total: 10,
+                  total: 0,
                   semanas: [
                     {
                       semana: '1/1 - 7/1',
-                      total: 10,
+                      total: 0,
                     },
                     {
                       semana: '8/1 - 14/1',
@@ -864,11 +874,11 @@ export const reporteUnidadDeNegocio: Reporte = {
                   ],
                 },
                 {
-                  total: 1600,
+                  total: 0,
                   semanas: [
                     {
                       semana: '1/2 - 7/2',
-                      total: 1600,
+                      total: 0,
                     },
                     {
                       semana: '8/2 - 14/2',
@@ -1144,9 +1154,10 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '15',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
-                total: 7860,
+                total: 7850,
                 cajas: [
                   {
                     id: 8,
@@ -1154,7 +1165,7 @@ export const reporteUnidadDeNegocio: Reporte = {
                     idUnidadNegocio: '9',
                     negativa: false,
                     fechaBorrado: null,
-                    total: 7860,
+                    total: 7850,
                     meses: [
                       {
                         total: 0,
@@ -1203,7 +1214,7 @@ export const reporteUnidadDeNegocio: Reporte = {
                         ],
                       },
                       {
-                        total: 7860,
+                        total: 7850,
                         semanas: [
                           {
                             semana: '1/3 - 7/3',
@@ -1215,7 +1226,7 @@ export const reporteUnidadDeNegocio: Reporte = {
                           },
                           {
                             semana: '15/3 - 21/3',
-                            total: 60,
+                            total: 50,
                           },
                           {
                             semana: '22/3 - 28/3',
@@ -1504,7 +1515,7 @@ export const reporteUnidadDeNegocio: Reporte = {
                   ],
                 },
                 {
-                  total: 7860,
+                  total: 7850,
                   semanas: [
                     {
                       semana: '1/3 - 7/3',
@@ -1516,7 +1527,7 @@ export const reporteUnidadDeNegocio: Reporte = {
                     },
                     {
                       semana: '15/3 - 21/3',
-                      total: 60,
+                      total: 50,
                     },
                     {
                       semana: '22/3 - 28/3',
@@ -1763,6 +1774,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '15',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 7800,
@@ -2688,631 +2700,333 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '15',
               orden: '1',
               fechaBorrado: null,
-              subcategorias: [],
+              isGeneral: false,
+              subcategorias: [
+                {
+                  id: 58,
+                  nombre: 'IBA',
+                  tipo: 'in',
+                  idEmpresa: '11',
+                  idCategoriaPadre: '29',
+                  orden: '1',
+                  fechaBorrado: null,
+                  isGeneral: false,
+                  subcategorias: [],
+                  acumulado: {
+                    total: 0,
+                    cajas: [],
+                  },
+                  meses: [
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/1 - 7/1',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/1 - 14/1',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/1 - 21/1',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/1 - 28/1',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/1 - 31/1',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/2 - 7/2',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/2 - 14/2',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/2 - 21/2',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/2 - 28/2',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/3 - 7/3',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/3 - 14/3',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/3 - 21/3',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/3 - 28/3',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/3 - 31/3',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/4 - 7/4',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/4 - 14/4',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/4 - 21/4',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/4 - 28/4',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/4 - 30/4',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/5 - 7/5',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/5 - 14/5',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/5 - 21/5',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/5 - 28/5',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/5 - 31/5',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/6 - 7/6',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/6 - 14/6',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/6 - 21/6',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/6 - 28/6',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/6 - 30/6',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/7 - 7/7',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/7 - 14/7',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/7 - 21/7',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/7 - 28/7',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/7 - 31/7',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/8 - 7/8',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/8 - 14/8',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/8 - 21/8',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/8 - 28/8',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/8 - 31/8',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/9 - 7/9',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/9 - 14/9',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/9 - 21/9',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/9 - 28/9',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/9 - 30/9',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/10 - 7/10',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/10 - 14/10',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/10 - 21/10',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/10 - 28/10',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/10 - 31/10',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/11 - 7/11',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/11 - 14/11',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/11 - 21/11',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/11 - 28/11',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/11 - 30/11',
+                          total: 0,
+                        },
+                      ],
+                    },
+                    {
+                      total: 0,
+                      semanas: [
+                        {
+                          semana: '1/12 - 7/12',
+                          total: 0,
+                        },
+                        {
+                          semana: '8/12 - 14/12',
+                          total: 0,
+                        },
+                        {
+                          semana: '15/12 - 21/12',
+                          total: 0,
+                        },
+                        {
+                          semana: '22/12 - 28/12',
+                          total: 0,
+                        },
+                        {
+                          semana: '29/12 - 31/12',
+                          total: 0,
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
               acumulado: {
-                total: 95470,
-                cajas: [
-                  {
-                    id: 9,
-                    nombre: 'Caja Wallas VIP',
-                    idUnidadNegocio: '9',
-                    negativa: false,
-                    fechaBorrado: null,
-                    total: 7800,
-                    meses: [
-                      {
-                        total: 7800,
-                        semanas: [
-                          {
-                            semana: '1/1 - 7/1',
-                            total: 7800,
-                          },
-                          {
-                            semana: '8/1 - 14/1',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/1 - 21/1',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/1 - 28/1',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/1 - 31/1',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/2 - 7/2',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/2 - 14/2',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/2 - 21/2',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/2 - 28/2',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/3 - 7/3',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/3 - 14/3',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/3 - 21/3',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/3 - 28/3',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/3 - 31/3',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/4 - 7/4',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/4 - 14/4',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/4 - 21/4',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/4 - 28/4',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/4 - 30/4',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/5 - 7/5',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/5 - 14/5',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/5 - 21/5',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/5 - 28/5',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/5 - 31/5',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/6 - 7/6',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/6 - 14/6',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/6 - 21/6',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/6 - 28/6',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/6 - 30/6',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/7 - 7/7',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/7 - 14/7',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/7 - 21/7',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/7 - 28/7',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/7 - 31/7',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/8 - 7/8',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/8 - 14/8',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/8 - 21/8',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/8 - 28/8',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/8 - 31/8',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/9 - 7/9',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/9 - 14/9',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/9 - 21/9',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/9 - 28/9',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/9 - 30/9',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/10 - 7/10',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/10 - 14/10',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/10 - 21/10',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/10 - 28/10',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/10 - 31/10',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/11 - 7/11',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/11 - 14/11',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/11 - 21/11',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/11 - 28/11',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/11 - 30/11',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/12 - 7/12',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/12 - 14/12',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/12 - 21/12',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/12 - 28/12',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/12 - 31/12',
-                            total: 0,
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    id: 8,
-                    nombre: 'Caja Wallas',
-                    idUnidadNegocio: '9',
-                    negativa: false,
-                    fechaBorrado: null,
-                    total: 87670,
-                    meses: [
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/1 - 7/1',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/1 - 14/1',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/1 - 21/1',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/1 - 28/1',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/1 - 31/1',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/2 - 7/2',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/2 - 14/2',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/2 - 21/2',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/2 - 28/2',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/3 - 7/3',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/3 - 14/3',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/3 - 21/3',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/3 - 28/3',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/3 - 31/3',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 7800,
-                        semanas: [
-                          {
-                            semana: '1/4 - 7/4',
-                            total: 7800,
-                          },
-                          {
-                            semana: '8/4 - 14/4',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/4 - 21/4',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/4 - 28/4',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/4 - 30/4',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 79870,
-                        semanas: [
-                          {
-                            semana: '1/5 - 7/5',
-                            total: 79870,
-                          },
-                          {
-                            semana: '8/5 - 14/5',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/5 - 21/5',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/5 - 28/5',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/5 - 31/5',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/6 - 7/6',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/6 - 14/6',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/6 - 21/6',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/6 - 28/6',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/6 - 30/6',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/7 - 7/7',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/7 - 14/7',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/7 - 21/7',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/7 - 28/7',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/7 - 31/7',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/8 - 7/8',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/8 - 14/8',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/8 - 21/8',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/8 - 28/8',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/8 - 31/8',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/9 - 7/9',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/9 - 14/9',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/9 - 21/9',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/9 - 28/9',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/9 - 30/9',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/10 - 7/10',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/10 - 14/10',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/10 - 21/10',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/10 - 28/10',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/10 - 31/10',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/11 - 7/11',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/11 - 14/11',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/11 - 21/11',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/11 - 28/11',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/11 - 30/11',
-                            total: 0,
-                          },
-                        ],
-                      },
-                      {
-                        total: 0,
-                        semanas: [
-                          {
-                            semana: '1/12 - 7/12',
-                            total: 0,
-                          },
-                          {
-                            semana: '8/12 - 14/12',
-                            total: 0,
-                          },
-                          {
-                            semana: '15/12 - 21/12',
-                            total: 0,
-                          },
-                          {
-                            semana: '22/12 - 28/12',
-                            total: 0,
-                          },
-                          {
-                            semana: '29/12 - 31/12',
-                            total: 0,
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                ],
+                total: 0,
+                cajas: [],
               },
               meses: [
                 {
-                  total: 7800,
+                  total: 0,
                   semanas: [
                     {
                       semana: '1/1 - 7/1',
-                      total: 7800,
+                      total: 0,
                     },
                     {
                       semana: '8/1 - 14/1',
@@ -3379,11 +3093,11 @@ export const reporteUnidadDeNegocio: Reporte = {
                   ],
                 },
                 {
-                  total: 7800,
+                  total: 0,
                   semanas: [
                     {
                       semana: '1/4 - 7/4',
-                      total: 7800,
+                      total: 0,
                     },
                     {
                       semana: '8/4 - 14/4',
@@ -3404,11 +3118,11 @@ export const reporteUnidadDeNegocio: Reporte = {
                   ],
                 },
                 {
-                  total: 79870,
+                  total: 0,
                   semanas: [
                     {
                       semana: '1/5 - 7/5',
-                      total: 79870,
+                      total: 0,
                     },
                     {
                       semana: '8/5 - 14/5',
@@ -3613,6 +3327,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '15',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 0,
@@ -3919,7 +3634,7 @@ export const reporteUnidadDeNegocio: Reporte = {
             },
           ],
           acumulado: {
-            total: 112740,
+            total: 15650,
             cajas: [
               {
                 id: 8,
@@ -3927,13 +3642,13 @@ export const reporteUnidadDeNegocio: Reporte = {
                 idUnidadNegocio: '9',
                 negativa: false,
                 fechaBorrado: null,
-                total: 97140,
+                total: 7850,
                 meses: [
                   {
-                    total: 10,
+                    total: 0,
                     semanas: [
                       {
-                        total: 10,
+                        total: 0,
                       },
                       {
                         total: 0,
@@ -3950,10 +3665,10 @@ export const reporteUnidadDeNegocio: Reporte = {
                     ],
                   },
                   {
-                    total: 1600,
+                    total: 0,
                     semanas: [
                       {
-                        total: 1600,
+                        total: 0,
                       },
                       {
                         total: 0,
@@ -3967,7 +3682,7 @@ export const reporteUnidadDeNegocio: Reporte = {
                     ],
                   },
                   {
-                    total: 7860,
+                    total: 7850,
                     semanas: [
                       {
                         total: 7800,
@@ -3976,7 +3691,7 @@ export const reporteUnidadDeNegocio: Reporte = {
                         total: 0,
                       },
                       {
-                        total: 60,
+                        total: 50,
                       },
                       {
                         total: 0,
@@ -3987,10 +3702,10 @@ export const reporteUnidadDeNegocio: Reporte = {
                     ],
                   },
                   {
-                    total: 7800,
+                    total: 0,
                     semanas: [
                       {
-                        total: 7800,
+                        total: 0,
                       },
                       {
                         total: 0,
@@ -4007,10 +3722,10 @@ export const reporteUnidadDeNegocio: Reporte = {
                     ],
                   },
                   {
-                    total: 79870,
+                    total: 0,
                     semanas: [
                       {
-                        total: 79870,
+                        total: 0,
                       },
                       {
                         total: 0,
@@ -4174,41 +3889,250 @@ export const reporteUnidadDeNegocio: Reporte = {
                 idUnidadNegocio: '9',
                 negativa: false,
                 fechaBorrado: null,
-                total: 15600,
+                total: 7800,
                 meses: [
                   {
+                    total: 0,
+                    semanas: [
+                      {
+                        semana: '1/1 - 7/1',
+                        total: 0,
+                      },
+                      {
+                        semana: '8/1 - 14/1',
+                        total: 0,
+                      },
+                      {
+                        semana: '15/1 - 21/1',
+                        total: 0,
+                      },
+                      {
+                        semana: '22/1 - 28/1',
+                        total: 0,
+                      },
+                      {
+                        semana: '29/1 - 31/1',
+                        total: 0,
+                      },
+                    ],
+                  },
+                  {
+                    total: 0,
+                    semanas: [
+                      {
+                        semana: '1/2 - 7/2',
+                        total: 0,
+                      },
+                      {
+                        semana: '8/2 - 14/2',
+                        total: 0,
+                      },
+                      {
+                        semana: '15/2 - 21/2',
+                        total: 0,
+                      },
+                      {
+                        semana: '22/2 - 28/2',
+                        total: 0,
+                      },
+                    ],
+                  },
+                  {
+                    total: 0,
+                    semanas: [
+                      {
+                        semana: '1/3 - 7/3',
+                        total: 0,
+                      },
+                      {
+                        semana: '8/3 - 14/3',
+                        total: 0,
+                      },
+                      {
+                        semana: '15/3 - 21/3',
+                        total: 0,
+                      },
+                      {
+                        semana: '22/3 - 28/3',
+                        total: 0,
+                      },
+                      {
+                        semana: '29/3 - 31/3',
+                        total: 0,
+                      },
+                    ],
+                  },
+                  {
+                    total: 0,
+                    semanas: [
+                      {
+                        semana: '1/4 - 7/4',
+                        total: 0,
+                      },
+                      {
+                        semana: '8/4 - 14/4',
+                        total: 0,
+                      },
+                      {
+                        semana: '15/4 - 21/4',
+                        total: 0,
+                      },
+                      {
+                        semana: '22/4 - 28/4',
+                        total: 0,
+                      },
+                      {
+                        semana: '29/4 - 30/4',
+                        total: 0,
+                      },
+                    ],
+                  },
+                  {
+                    total: 0,
+                    semanas: [
+                      {
+                        semana: '1/5 - 7/5',
+                        total: 0,
+                      },
+                      {
+                        semana: '8/5 - 14/5',
+                        total: 0,
+                      },
+                      {
+                        semana: '15/5 - 21/5',
+                        total: 0,
+                      },
+                      {
+                        semana: '22/5 - 28/5',
+                        total: 0,
+                      },
+                      {
+                        semana: '29/5 - 31/5',
+                        total: 0,
+                      },
+                    ],
+                  },
+                  {
+                    total: 0,
+                    semanas: [
+                      {
+                        semana: '1/6 - 7/6',
+                        total: 0,
+                      },
+                      {
+                        semana: '8/6 - 14/6',
+                        total: 0,
+                      },
+                      {
+                        semana: '15/6 - 21/6',
+                        total: 0,
+                      },
+                      {
+                        semana: '22/6 - 28/6',
+                        total: 0,
+                      },
+                      {
+                        semana: '29/6 - 30/6',
+                        total: 0,
+                      },
+                    ],
+                  },
+                  {
+                    total: 0,
+                    semanas: [
+                      {
+                        semana: '1/7 - 7/7',
+                        total: 0,
+                      },
+                      {
+                        semana: '8/7 - 14/7',
+                        total: 0,
+                      },
+                      {
+                        semana: '15/7 - 21/7',
+                        total: 0,
+                      },
+                      {
+                        semana: '22/7 - 28/7',
+                        total: 0,
+                      },
+                      {
+                        semana: '29/7 - 31/7',
+                        total: 0,
+                      },
+                    ],
+                  },
+                  {
+                    total: 0,
+                    semanas: [
+                      {
+                        semana: '1/8 - 7/8',
+                        total: 0,
+                      },
+                      {
+                        semana: '8/8 - 14/8',
+                        total: 0,
+                      },
+                      {
+                        semana: '15/8 - 21/8',
+                        total: 0,
+                      },
+                      {
+                        semana: '22/8 - 28/8',
+                        total: 0,
+                      },
+                      {
+                        semana: '29/8 - 31/8',
+                        total: 0,
+                      },
+                    ],
+                  },
+                  {
+                    total: 0,
+                    semanas: [
+                      {
+                        semana: '1/9 - 7/9',
+                        total: 0,
+                      },
+                      {
+                        semana: '8/9 - 14/9',
+                        total: 0,
+                      },
+                      {
+                        semana: '15/9 - 21/9',
+                        total: 0,
+                      },
+                      {
+                        semana: '22/9 - 28/9',
+                        total: 0,
+                      },
+                      {
+                        semana: '29/9 - 30/9',
+                        total: 0,
+                      },
+                    ],
+                  },
+                  {
                     total: 7800,
                     semanas: [
                       {
+                        semana: '1/10 - 7/10',
                         total: 7800,
                       },
                       {
+                        semana: '8/10 - 14/10',
                         total: 0,
                       },
                       {
+                        semana: '15/10 - 21/10',
                         total: 0,
                       },
                       {
+                        semana: '22/10 - 28/10',
                         total: 0,
                       },
                       {
-                        total: 0,
-                      },
-                    ],
-                  },
-                  {
-                    total: 0,
-                    semanas: [
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
+                        semana: '29/10 - 31/10',
                         total: 0,
                       },
                     ],
@@ -4217,38 +4141,23 @@ export const reporteUnidadDeNegocio: Reporte = {
                     total: 0,
                     semanas: [
                       {
+                        semana: '1/11 - 7/11',
                         total: 0,
                       },
                       {
+                        semana: '8/11 - 14/11',
                         total: 0,
                       },
                       {
+                        semana: '15/11 - 21/11',
                         total: 0,
                       },
                       {
+                        semana: '22/11 - 28/11',
                         total: 0,
                       },
                       {
-                        total: 0,
-                      },
-                    ],
-                  },
-                  {
-                    total: 0,
-                    semanas: [
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
+                        semana: '29/11 - 30/11',
                         total: 0,
                       },
                     ],
@@ -4257,158 +4166,23 @@ export const reporteUnidadDeNegocio: Reporte = {
                     total: 0,
                     semanas: [
                       {
+                        semana: '1/12 - 7/12',
                         total: 0,
                       },
                       {
+                        semana: '8/12 - 14/12',
                         total: 0,
                       },
                       {
+                        semana: '15/12 - 21/12',
                         total: 0,
                       },
                       {
+                        semana: '22/12 - 28/12',
                         total: 0,
                       },
                       {
-                        total: 0,
-                      },
-                    ],
-                  },
-                  {
-                    total: 0,
-                    semanas: [
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                    ],
-                  },
-                  {
-                    total: 0,
-                    semanas: [
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                    ],
-                  },
-                  {
-                    total: 0,
-                    semanas: [
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                    ],
-                  },
-                  {
-                    total: 0,
-                    semanas: [
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                    ],
-                  },
-                  {
-                    total: 7800,
-                    semanas: [
-                      {
-                        total: 7800,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                    ],
-                  },
-                  {
-                    total: 0,
-                    semanas: [
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                    ],
-                  },
-                  {
-                    total: 0,
-                    semanas: [
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
-                        total: 0,
-                      },
-                      {
+                        semana: '29/12 - 31/12',
                         total: 0,
                       },
                     ],
@@ -4419,11 +4193,11 @@ export const reporteUnidadDeNegocio: Reporte = {
           },
           meses: [
             {
-              total: 7810,
+              total: 0,
               semanas: [
                 {
                   semana: '1/1 - 7/1',
-                  total: 7810,
+                  total: 0,
                 },
                 {
                   semana: '8/1 - 14/1',
@@ -4444,11 +4218,11 @@ export const reporteUnidadDeNegocio: Reporte = {
               ],
             },
             {
-              total: 1600,
+              total: 0,
               semanas: [
                 {
                   semana: '1/2 - 7/2',
-                  total: 1600,
+                  total: 0,
                 },
                 {
                   semana: '8/2 - 14/2',
@@ -4465,7 +4239,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               ],
             },
             {
-              total: 7860,
+              total: 7850,
               semanas: [
                 {
                   semana: '1/3 - 7/3',
@@ -4477,7 +4251,7 @@ export const reporteUnidadDeNegocio: Reporte = {
                 },
                 {
                   semana: '15/3 - 21/3',
-                  total: 60,
+                  total: 50,
                 },
                 {
                   semana: '22/3 - 28/3',
@@ -4490,11 +4264,11 @@ export const reporteUnidadDeNegocio: Reporte = {
               ],
             },
             {
-              total: 7800,
+              total: 0,
               semanas: [
                 {
                   semana: '1/4 - 7/4',
-                  total: 7800,
+                  total: 0,
                 },
                 {
                   semana: '8/4 - 14/4',
@@ -4515,11 +4289,11 @@ export const reporteUnidadDeNegocio: Reporte = {
               ],
             },
             {
-              total: 79870,
+              total: 0,
               semanas: [
                 {
                   semana: '1/5 - 7/5',
-                  total: 79870,
+                  total: 0,
                 },
                 {
                   semana: '8/5 - 14/5',
@@ -4724,6 +4498,7 @@ export const reporteUnidadDeNegocio: Reporte = {
           idCategoriaPadre: null,
           orden: '1',
           fechaBorrado: null,
+          isGeneral: false,
           subcategorias: [
             {
               id: 31,
@@ -4733,6 +4508,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '16',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 110000,
@@ -5352,6 +5128,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '16',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 10,
@@ -6523,6 +6300,7 @@ export const reporteUnidadDeNegocio: Reporte = {
           idCategoriaPadre: null,
           orden: '1',
           fechaBorrado: null,
+          isGeneral: false,
           subcategorias: [
             {
               id: 33,
@@ -6532,6 +6310,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '17',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 456456,
@@ -7151,6 +6930,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '17',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 120000,
@@ -8322,6 +8102,7 @@ export const reporteUnidadDeNegocio: Reporte = {
           idCategoriaPadre: null,
           orden: '1',
           fechaBorrado: null,
+          isGeneral: false,
           subcategorias: [
             {
               id: 35,
@@ -8331,6 +8112,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '18',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 3000,
@@ -8950,6 +8732,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '18',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 1000,
@@ -10480,7 +10263,7 @@ export const reporteUnidadDeNegocio: Reporte = {
         },
       ],
       acumulado: {
-        total: 803206,
+        total: 706116,
         cajas: [
           {
             id: 8,
@@ -10488,13 +10271,13 @@ export const reporteUnidadDeNegocio: Reporte = {
             idUnidadNegocio: '9',
             negativa: false,
             fechaBorrado: null,
-            total: 674596,
+            total: 585306,
             meses: [
               {
-                total: 10,
+                total: 0,
                 semanas: [
                   {
-                    total: 10,
+                    total: 0,
                   },
                   {
                     total: 0,
@@ -10511,10 +10294,10 @@ export const reporteUnidadDeNegocio: Reporte = {
                 ],
               },
               {
-                total: 1600,
+                total: 0,
                 semanas: [
                   {
-                    total: 1600,
+                    total: 0,
                   },
                   {
                     total: 0,
@@ -10528,7 +10311,7 @@ export const reporteUnidadDeNegocio: Reporte = {
                 ],
               },
               {
-                total: 7860,
+                total: 7850,
                 semanas: [
                   {
                     total: 7800,
@@ -10537,7 +10320,7 @@ export const reporteUnidadDeNegocio: Reporte = {
                     total: 0,
                   },
                   {
-                    total: 60,
+                    total: 50,
                   },
                   {
                     total: 0,
@@ -10548,10 +10331,10 @@ export const reporteUnidadDeNegocio: Reporte = {
                 ],
               },
               {
-                total: 7800,
+                total: 0,
                 semanas: [
                   {
-                    total: 7800,
+                    total: 0,
                   },
                   {
                     total: 0,
@@ -10568,10 +10351,10 @@ export const reporteUnidadDeNegocio: Reporte = {
                 ],
               },
               {
-                total: 79870,
+                total: 0,
                 semanas: [
                   {
-                    total: 79870,
+                    total: 0,
                   },
                   {
                     total: 0,
@@ -10735,13 +10518,13 @@ export const reporteUnidadDeNegocio: Reporte = {
             idUnidadNegocio: '9',
             negativa: false,
             fechaBorrado: null,
-            total: 128610,
+            total: 120810,
             meses: [
               {
-                total: 7810,
+                total: 10,
                 semanas: [
                   {
-                    total: 7810,
+                    total: 10,
                   },
                   {
                     total: 0,
@@ -10980,11 +10763,11 @@ export const reporteUnidadDeNegocio: Reporte = {
       },
       meses: [
         {
-          total: 7820,
+          total: 10,
           semanas: [
             {
               semana: '1/1 - 7/1',
-              total: 7820,
+              total: 10,
             },
             {
               semana: '8/1 - 14/1',
@@ -11005,11 +10788,11 @@ export const reporteUnidadDeNegocio: Reporte = {
           ],
         },
         {
-          total: 4600,
+          total: 3000,
           semanas: [
             {
               semana: '1/2 - 7/2',
-              total: 4600,
+              total: 3000,
             },
             {
               semana: '8/2 - 14/2',
@@ -11026,7 +10809,7 @@ export const reporteUnidadDeNegocio: Reporte = {
           ],
         },
         {
-          total: 7860,
+          total: 7850,
           semanas: [
             {
               semana: '1/3 - 7/3',
@@ -11038,7 +10821,7 @@ export const reporteUnidadDeNegocio: Reporte = {
             },
             {
               semana: '15/3 - 21/3',
-              total: 60,
+              total: 50,
             },
             {
               semana: '22/3 - 28/3',
@@ -11051,11 +10834,11 @@ export const reporteUnidadDeNegocio: Reporte = {
           ],
         },
         {
-          total: 7800,
+          total: 0,
           semanas: [
             {
               semana: '1/4 - 7/4',
-              total: 7800,
+              total: 0,
             },
             {
               semana: '8/4 - 14/4',
@@ -11076,11 +10859,11 @@ export const reporteUnidadDeNegocio: Reporte = {
           ],
         },
         {
-          total: 79870,
+          total: 0,
           semanas: [
             {
               semana: '1/5 - 7/5',
-              total: 79870,
+              total: 0,
             },
             {
               semana: '8/5 - 14/5',
@@ -11284,6 +11067,7 @@ export const reporteUnidadDeNegocio: Reporte = {
       idEmpresa: null,
       nombre: 'Egreso',
       orden: 1,
+      isGeneral: false,
       tipo: 'out',
       subcategorias: [
         {
@@ -11294,6 +11078,7 @@ export const reporteUnidadDeNegocio: Reporte = {
           idCategoriaPadre: null,
           orden: '1',
           fechaBorrado: null,
+          isGeneral: false,
           subcategorias: [
             {
               id: 37,
@@ -11303,6 +11088,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '19',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 1000,
@@ -11922,6 +11708,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '19',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 9800,
@@ -13093,6 +12880,7 @@ export const reporteUnidadDeNegocio: Reporte = {
           idCategoriaPadre: null,
           orden: '1',
           fechaBorrado: null,
+          isGeneral: false,
           subcategorias: [
             {
               id: 39,
@@ -13102,6 +12890,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '20',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 12000,
@@ -13721,6 +13510,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '20',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 12000,
@@ -14340,6 +14130,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '20',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 12000,
@@ -14959,6 +14750,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '20',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 12000,
@@ -16130,6 +15922,7 @@ export const reporteUnidadDeNegocio: Reporte = {
           idCategoriaPadre: null,
           orden: '1',
           fechaBorrado: null,
+          isGeneral: false,
           subcategorias: [
             {
               id: 43,
@@ -16139,6 +15932,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '21',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 10,
@@ -16758,6 +16552,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '21',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 780,
@@ -17377,6 +17172,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '21',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 12300,
@@ -18548,6 +18344,7 @@ export const reporteUnidadDeNegocio: Reporte = {
           idCategoriaPadre: null,
           orden: '1',
           fechaBorrado: null,
+          isGeneral: false,
           subcategorias: [
             {
               id: 46,
@@ -18557,6 +18354,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '22',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 70000,
@@ -19176,6 +18974,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '22',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 70000,
@@ -20347,6 +20146,7 @@ export const reporteUnidadDeNegocio: Reporte = {
           idCategoriaPadre: null,
           orden: '1',
           fechaBorrado: null,
+          isGeneral: false,
           subcategorias: [
             {
               id: 48,
@@ -20356,6 +20156,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '23',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 6000,
@@ -20975,6 +20776,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '23',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 78000,
@@ -22146,6 +21948,7 @@ export const reporteUnidadDeNegocio: Reporte = {
           idCategoriaPadre: null,
           orden: '1',
           fechaBorrado: null,
+          isGeneral: false,
           subcategorias: [
             {
               id: 50,
@@ -22155,6 +21958,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '24',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 1000,
@@ -22774,6 +22578,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '24',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 3000,
@@ -23945,6 +23750,7 @@ export const reporteUnidadDeNegocio: Reporte = {
           idCategoriaPadre: null,
           orden: '1',
           fechaBorrado: null,
+          isGeneral: false,
           subcategorias: [
             {
               id: 52,
@@ -23954,6 +23760,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '25',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 7140000,
@@ -24063,11 +23870,11 @@ export const reporteUnidadDeNegocio: Reporte = {
                         ],
                       },
                       {
-                        total: 7000,
+                        total: 0,
                         semanas: [
                           {
                             semana: '1/5 - 7/5',
-                            total: 7000,
+                            total: 0,
                           },
                           {
                             semana: '8/5 - 14/5',
@@ -24364,11 +24171,11 @@ export const reporteUnidadDeNegocio: Reporte = {
                   ],
                 },
                 {
-                  total: 7000,
+                  total: 0,
                   semanas: [
                     {
                       semana: '1/5 - 7/5',
-                      total: 7000,
+                      total: 0,
                     },
                     {
                       semana: '8/5 - 14/5',
@@ -24573,6 +24380,7 @@ export const reporteUnidadDeNegocio: Reporte = {
               idCategoriaPadre: '25',
               orden: '1',
               fechaBorrado: null,
+              isGeneral: false,
               subcategorias: [],
               acumulado: {
                 total: 7140000,
@@ -25274,10 +25082,10 @@ export const reporteUnidadDeNegocio: Reporte = {
                     ],
                   },
                   {
-                    total: 7000,
+                    total: 0,
                     semanas: [
                       {
-                        total: 7000,
+                        total: 0,
                       },
                       {
                         total: 0,
@@ -25535,11 +25343,11 @@ export const reporteUnidadDeNegocio: Reporte = {
               ],
             },
             {
-              total: 7000,
+              total: 0,
               semanas: [
                 {
                   semana: '1/5 - 7/5',
-                  total: 7000,
+                  total: 0,
                 },
                 {
                   semana: '8/5 - 14/5',
@@ -25826,10 +25634,10 @@ export const reporteUnidadDeNegocio: Reporte = {
                 ],
               },
               {
-                total: 7000,
+                total: 0,
                 semanas: [
                   {
-                    total: 7000,
+                    total: 0,
                   },
                   {
                     total: 0,
@@ -26334,11 +26142,11 @@ export const reporteUnidadDeNegocio: Reporte = {
           ],
         },
         {
-          total: 77000,
+          total: 70000,
           semanas: [
             {
               semana: '1/5 - 7/5',
-              total: 77000,
+              total: 70000,
             },
             {
               semana: '8/5 - 14/5',

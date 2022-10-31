@@ -1,4 +1,4 @@
-<div *ngFor="let reporte of reportes">
+<div *ngFor="let reporte of reporte.reportes">
   <dx-tree-list
     id="reporte"
     [dataSource]="reporte.subcategorias"
@@ -34,14 +34,10 @@
         ></dxi-column>
         <dxi-column caption="Semanas de {{ nombreDeMeses[numeroMes] }}">
           <dxi-column
-            *ngFor="let data of semanas; let numeroSemana = index"
+            *ngFor="let data of cantidadDeSemanas; let numeroSemana = index"
             [allowSorting]="false"
             dataField="meses[{{ numeroMes }}].semanas[{{ numeroSemana }}].total"
-            [caption]="
-              reportes[0].subcategorias[0].meses[numeroMes].semanas[
-                numeroSemana
-              ]?.semana
-            "
+            [caption]="semanas[numeroMes].semanas[numeroSemana]?.semana"
           ></dxi-column>
         </dxi-column>
       </dxi-column>
@@ -49,3 +45,45 @@
   </dx-tree-list>
   <br />
 </div>
+<dx-tree-list
+  id="reporte"
+  [dataSource]="reporte.categoriasGenerales"
+  itemsExpr="subcategorias"
+  dataStructure="tree"
+  [showRowLines]="true"
+  [showBorders]="true"
+  [columnAutoWidth]="true"
+  [renderAsync]="true"
+>
+  <dxi-column
+    [allowSorting]="false"
+    dataField="nombre"
+    caption="Categoria"
+  ></dxi-column>
+  <dxi-column
+    [allowSorting]="false"
+    dataField="acumulado.total"
+    caption="Total categoria"
+  ></dxi-column>
+
+  <dxi-column
+    [allowSorting]="false"
+    [dataField]="nombreDeMeses[numeroMes]"
+    caption="{{ data }}"
+    *ngFor="let data of nombreDeMeses; let numeroMes = index"
+  >
+    <dxi-column
+      [allowSorting]="false"
+      dataField="meses[{{ numeroMes }}].total"
+      caption="Total"
+    ></dxi-column>
+    <dxi-column caption="Semanas de {{ nombreDeMeses[numeroMes] }}">
+      <dxi-column
+        *ngFor="let data of cantidadDeSemanas; let numeroSemana = index"
+        [allowSorting]="false"
+        dataField="meses[{{ numeroMes }}].semanas[{{ numeroSemana }}].total"
+        [caption]="semanas[numeroMes].semanas[numeroSemana]?.semana"
+      ></dxi-column>
+    </dxi-column>
+  </dxi-column>
+</dx-tree-list>

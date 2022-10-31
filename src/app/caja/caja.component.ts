@@ -9,7 +9,5 @@ export class CajaComponent implements OnInit {
   @Input() nombre: string = '';
   @Input() monto: string = '';
 
-  ngOnInit(): void {
-    console.log(this.nombre);
-  }
+  ngOnInit(): void {}
 }

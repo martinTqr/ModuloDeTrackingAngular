@@ -14,6 +14,7 @@ export interface Categoria {
   subcategorias?: Categoria[];
   acumulado: Acumulado;
   meses: Totales[];
+  isGeneral: boolean;
 }
 export enum TipoCategoria {
   in = 'in',
