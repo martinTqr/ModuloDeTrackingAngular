@@ -16,24 +16,25 @@ export class ReporteEmpComponent implements OnInit {
 
   nombreDeMeses: string[] = meses;
   constructor(servicio: ReporteEmpresaService) {
-    const reportes = servicio.buscarReporteEmpresa();
-    const reportesConCajas = reportes.reportes.map((reporte: Reporte) => {
+    const reporte = servicio.buscarReporteEmpresa();
+    const reportesConCajas = reporte.reportes.map((reporte: Reporte) => {
       const cajas = reporte.cajas.map((caja: any) => ({
         ...caja,
         acumulado: {
           total: caja.total,
         },
       }));
-      this.semanas = reportes.reportes[0].subcategorias[0].meses;
+
       return {
         ...reporte,
         subcategorias: [...reporte.subcategorias, ...cajas],
       };
     });
     this.reporte = {
-      categoriasGenerales: reportes.categoriasGenerales,
-      reportes: reportes.reportes,
+      categoriasGenerales: reporte.categoriasGenerales,
+      reportes: reportesConCajas,
     };
+    this.semanas = reporte.reportes[0].subcategorias[0].meses;
   }
   ngOnInit(): void {}
 }
