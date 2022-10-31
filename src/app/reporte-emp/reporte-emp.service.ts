@@ -1,6 +1,10 @@
 import { Injectable } from '@angular/core';
-import { reporteEmpresa } from '../constantes/reprote-empresa';
-import { ReportesDeEmpresa } from './reporte-emp.interface';
+import { reporteEmpresaReducido } from '../constantes';
+import { reporteEmpresa } from '../constantes/reporte-empresa';
+import {
+  ReporteEmpresaReducido,
+  ReportesDeEmpresa,
+} from './reporte-emp.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -8,5 +12,8 @@ import { ReportesDeEmpresa } from './reporte-emp.interface';
 export class ReporteEmpresaService {
   buscarReporteEmpresa(): ReportesDeEmpresa {
     return reporteEmpresa;
+  }
+  buscarReporteEmpresaReducido(): ReporteEmpresaReducido[] {
+    return reporteEmpresaReducido;
   }
 }

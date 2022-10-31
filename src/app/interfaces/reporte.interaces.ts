@@ -13,7 +13,7 @@ export interface Categoria {
   fechaBorrado: string | Date | null;
   subcategorias?: Categoria[];
   acumulado: Acumulado;
-  meses: Totales[];
+  meses: TotalesMes[];
   isGeneral: boolean;
 }
 export enum TipoCategoria {
@@ -27,10 +27,10 @@ export interface Caja {
   negativa: boolean;
   fechaBorrado: string | Date | null;
   total: number;
-  meses: Totales[];
+  meses: TotalesMes[];
 }
 export type CategoriaYCajas = Categoria & Caja;
-export interface Totales {
+export interface TotalesMes {
   total: number;
   semanas: {
     semana?: string | null;
