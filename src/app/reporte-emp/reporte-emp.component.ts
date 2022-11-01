@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { meses } from '../constantes/';
-import {
-  ReporteEmpresaReducido,
-  ReportesDeEmpresa,
-} from './reporte-emp.interface';
+import { ReporteEmpresaReducido } from './reporte-emp.interface';
 import { ReporteEmpresaService } from './reporte-emp.service';
 
 @Component({

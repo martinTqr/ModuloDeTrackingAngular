@@ -11,7 +11,7 @@ export interface ReportesDeEmpresa {
 
 export interface ReporteEmpresaReducido {
   nombre: string;
-  acumulado: Acumulado;
+  acumulado?: Acumulado;
   meses: TotalesMes[];
   subcategorias: ReporteEmpresaReducido[] | Categoria[];
 }
