@@ -7975,11 +7975,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
     },
     meses: [
       {
-        total: 0,
+        total: 10,
         semanas: [
           {
             semana: '1/1 - 7/1',
-            total: 0,
+            total: 10,
           },
           {
             semana: '8/1 - 14/1',
@@ -8000,11 +8000,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: 3000,
         semanas: [
           {
             semana: '1/2 - 7/2',
-            total: 0,
+            total: 3000,
           },
           {
             semana: '8/2 - 14/2',
@@ -8021,11 +8021,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: 7860,
         semanas: [
           {
             semana: '1/3 - 7/3',
-            total: 0,
+            total: 7800,
           },
           {
             semana: '8/3 - 14/3',
@@ -8033,7 +8033,7 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
           },
           {
             semana: '15/3 - 21/3',
-            total: 0,
+            total: 60,
           },
           {
             semana: '22/3 - 28/3',
@@ -8096,11 +8096,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: 456456,
         semanas: [
           {
             semana: '1/6 - 7/6',
-            total: 0,
+            total: 456456,
           },
           {
             semana: '8/6 - 14/6',
@@ -8121,11 +8121,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: 120000,
         semanas: [
           {
             semana: '1/7 - 7/7',
-            total: 0,
+            total: 120000,
           },
           {
             semana: '8/7 - 14/7',
@@ -8146,11 +8146,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: 1000,
         semanas: [
           {
             semana: '1/8 - 7/8',
-            total: 0,
+            total: 1000,
           },
           {
             semana: '8/8 - 14/8',
@@ -8196,11 +8196,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: 7800,
         semanas: [
           {
             semana: '1/10 - 7/10',
-            total: 0,
+            total: 7800,
           },
           {
             semana: '8/10 - 14/10',
@@ -8246,11 +8246,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: 110000,
         semanas: [
           {
             semana: '1/12 - 7/12',
-            total: 0,
+            total: 110000,
           },
           {
             semana: '8/12 - 14/12',
@@ -16886,6 +16886,308 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
     },
     meses: [
       {
+        total: 10,
+        semanas: [
+          {
+            semana: '1/1 - 7/1',
+            total: 10,
+          },
+          {
+            semana: '8/1 - 14/1',
+            total: 0,
+          },
+          {
+            semana: '15/1 - 21/1',
+            total: 0,
+          },
+          {
+            semana: '22/1 - 28/1',
+            total: 0,
+          },
+          {
+            semana: '29/1 - 31/1',
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 780,
+        semanas: [
+          {
+            semana: '1/2 - 7/2',
+            total: 780,
+          },
+          {
+            semana: '8/2 - 14/2',
+            total: 0,
+          },
+          {
+            semana: '15/2 - 21/2',
+            total: 0,
+          },
+          {
+            semana: '22/2 - 28/2',
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 13300,
+        semanas: [
+          {
+            semana: '1/3 - 7/3',
+            total: 13300,
+          },
+          {
+            semana: '8/3 - 14/3',
+            total: 0,
+          },
+          {
+            semana: '15/3 - 21/3',
+            total: 0,
+          },
+          {
+            semana: '22/3 - 28/3',
+            total: 0,
+          },
+          {
+            semana: '29/3 - 31/3',
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 79800,
+        semanas: [
+          {
+            semana: '1/4 - 7/4',
+            total: 79800,
+          },
+          {
+            semana: '8/4 - 14/4',
+            total: 0,
+          },
+          {
+            semana: '15/4 - 21/4',
+            total: 0,
+          },
+          {
+            semana: '22/4 - 28/4',
+            total: 0,
+          },
+          {
+            semana: '29/4 - 30/4',
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 77000,
+        semanas: [
+          {
+            semana: '1/5 - 7/5',
+            total: 77000,
+          },
+          {
+            semana: '8/5 - 14/5',
+            total: 0,
+          },
+          {
+            semana: '15/5 - 21/5',
+            total: 0,
+          },
+          {
+            semana: '22/5 - 28/5',
+            total: 0,
+          },
+          {
+            semana: '29/5 - 31/5',
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 7146000,
+        semanas: [
+          {
+            semana: '1/6 - 7/6',
+            total: 7146000,
+          },
+          {
+            semana: '8/6 - 14/6',
+            total: 0,
+          },
+          {
+            semana: '15/6 - 21/6',
+            total: 0,
+          },
+          {
+            semana: '22/6 - 28/6',
+            total: 0,
+          },
+          {
+            semana: '29/6 - 30/6',
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 7218000,
+        semanas: [
+          {
+            semana: '1/7 - 7/7',
+            total: 78000,
+          },
+          {
+            semana: '8/7 - 14/7',
+            total: 7140000,
+          },
+          {
+            semana: '15/7 - 21/7',
+            total: 0,
+          },
+          {
+            semana: '22/7 - 28/7',
+            total: 0,
+          },
+          {
+            semana: '29/7 - 31/7',
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 1000,
+        semanas: [
+          {
+            semana: '1/8 - 7/8',
+            total: 1000,
+          },
+          {
+            semana: '8/8 - 14/8',
+            total: 0,
+          },
+          {
+            semana: '15/8 - 21/8',
+            total: 0,
+          },
+          {
+            semana: '22/8 - 28/8',
+            total: 0,
+          },
+          {
+            semana: '29/8 - 31/8',
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 15000,
+        semanas: [
+          {
+            semana: '1/9 - 7/9',
+            total: 15000,
+          },
+          {
+            semana: '8/9 - 14/9',
+            total: 0,
+          },
+          {
+            semana: '15/9 - 21/9',
+            total: 0,
+          },
+          {
+            semana: '22/9 - 28/9',
+            total: 0,
+          },
+          {
+            semana: '29/9 - 30/9',
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 12000,
+        semanas: [
+          {
+            semana: '1/10 - 7/10',
+            total: 12000,
+          },
+          {
+            semana: '8/10 - 14/10',
+            total: 0,
+          },
+          {
+            semana: '15/10 - 21/10',
+            total: 0,
+          },
+          {
+            semana: '22/10 - 28/10',
+            total: 0,
+          },
+          {
+            semana: '29/10 - 31/10',
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 12000,
+        semanas: [
+          {
+            semana: '1/11 - 7/11',
+            total: 12000,
+          },
+          {
+            semana: '8/11 - 14/11',
+            total: 0,
+          },
+          {
+            semana: '15/11 - 21/11',
+            total: 0,
+          },
+          {
+            semana: '22/11 - 28/11',
+            total: 0,
+          },
+          {
+            semana: '29/11 - 30/11',
+            total: 0,
+          },
+        ],
+      },
+      {
+        total: 12000,
+        semanas: [
+          {
+            semana: '1/12 - 7/12',
+            total: 12000,
+          },
+          {
+            semana: '8/12 - 14/12',
+            total: 0,
+          },
+          {
+            semana: '15/12 - 21/12',
+            total: 0,
+          },
+          {
+            semana: '22/12 - 28/12',
+            total: 0,
+          },
+          {
+            semana: '29/12 - 31/12',
+            total: 0,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    nombre: 'Total',
+    subcategorias: [],
+    meses: [
+      {
         total: 0,
         semanas: [
           {
@@ -16911,11 +17213,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: 2220,
         semanas: [
           {
             semana: '1/2 - 7/2',
-            total: 0,
+            total: 2220,
           },
           {
             semana: '8/2 - 14/2',
@@ -16932,11 +17234,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: -5440,
         semanas: [
           {
             semana: '1/3 - 7/3',
-            total: 0,
+            total: -5500,
           },
           {
             semana: '8/3 - 14/3',
@@ -16944,7 +17246,7 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
           },
           {
             semana: '15/3 - 21/3',
-            total: 0,
+            total: 60,
           },
           {
             semana: '22/3 - 28/3',
@@ -16957,11 +17259,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: -79800,
         semanas: [
           {
             semana: '1/4 - 7/4',
-            total: 0,
+            total: -79800,
           },
           {
             semana: '8/4 - 14/4',
@@ -16982,11 +17284,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: -77000,
         semanas: [
           {
             semana: '1/5 - 7/5',
-            total: 0,
+            total: -77000,
           },
           {
             semana: '8/5 - 14/5',
@@ -17007,11 +17309,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: -6689544,
         semanas: [
           {
             semana: '1/6 - 7/6',
-            total: 0,
+            total: -6689544,
           },
           {
             semana: '8/6 - 14/6',
@@ -17032,15 +17334,15 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: -7098000,
         semanas: [
           {
             semana: '1/7 - 7/7',
-            total: 0,
+            total: 42000,
           },
           {
             semana: '8/7 - 14/7',
-            total: 0,
+            total: -7140000,
           },
           {
             semana: '15/7 - 21/7',
@@ -17082,11 +17384,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: -15000,
         semanas: [
           {
             semana: '1/9 - 7/9',
-            total: 0,
+            total: -15000,
           },
           {
             semana: '8/9 - 14/9',
@@ -17107,11 +17409,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: -4200,
         semanas: [
           {
             semana: '1/10 - 7/10',
-            total: 0,
+            total: -4200,
           },
           {
             semana: '8/10 - 14/10',
@@ -17132,11 +17434,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: -12000,
         semanas: [
           {
             semana: '1/11 - 7/11',
-            total: 0,
+            total: -12000,
           },
           {
             semana: '8/11 - 14/11',
@@ -17157,11 +17459,11 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
       {
-        total: 0,
+        total: 98000,
         semanas: [
           {
             semana: '1/12 - 7/12',
-            total: 0,
+            total: 98000,
           },
           {
             semana: '8/12 - 14/12',
@@ -17182,5 +17484,9 @@ export const reporteEmpresaReducido: ReporteEmpresaReducido[] = [
         ],
       },
     ],
+    acumulado: {
+      total: -13880764,
+      cajas: [],
+    },
   },
 ];
