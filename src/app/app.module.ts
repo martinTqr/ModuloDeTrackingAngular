@@ -6,10 +6,14 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { CajaComponent } from './caja/caja.component';
 import { ReporteEmpComponent } from './reporte-emp/reporte-emp.component';
 import { ReporteUNComponent } from './reporte-un/reporte-un.component';
-import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app/app-routing.module';
 import { InicioComponent } from './inicio/inicio.component';
-import { MovimientoComponent } from './movimiento/movimiento.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ListaMovimientoComponent } from './movimiento/lista-movimiento.component';
+import { NuevoMovimientoComponent } from './movimiento/nuevo-movimiento.component';
+import { DetalleMovimientoComponent } from './movimiento/detalle-movimiento.component';
 
 if (!/localhost/.test(document.location.host)) {
   enableProdMode();
@@ -21,9 +25,19 @@ if (!/localhost/.test(document.location.host)) {
     CajaComponent,
     ReporteEmpComponent,
     InicioComponent,
-    MovimientoComponent,
+    ListaMovimientoComponent,
+    NuevoMovimientoComponent,
+    DetalleMovimientoComponent,
   ],
-  imports: [BrowserModule, DxTreeListModule, DxButtonModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    DxTreeListModule,
+    DxButtonModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
