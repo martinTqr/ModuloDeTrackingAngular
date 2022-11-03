@@ -4,7 +4,6 @@ import { AppComponent } from './app/app.component';
 import { DxButtonModule, DxTreeListModule } from 'devextreme-angular';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { CajaComponent } from './caja/caja.component';
-import { ReporteEmpComponent } from './reporte-emp/reporte-emp.component';
 import { ReporteUNComponent } from './reporte-un/reporte-un.component';
 import { AppRoutingModule } from './app/app-routing.module';
 import { InicioComponent } from './inicio/inicio.component';
@@ -14,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListaMovimientoComponent } from './movimiento/lista-movimiento.component';
 import { NuevoMovimientoComponent } from './movimiento/nuevo-movimiento.component';
 import { DetalleMovimientoComponent } from './movimiento/detalle-movimiento.component';
+import { ReporteEmpComponent } from './reporte-emp/reporte-emp.component';
 
 if (!/localhost/.test(document.location.host)) {
   enableProdMode();
@@ -22,8 +22,8 @@ if (!/localhost/.test(document.location.host)) {
   declarations: [
     AppComponent,
     ReporteUNComponent,
-    CajaComponent,
     ReporteEmpComponent,
+    CajaComponent,
     InicioComponent,
     ListaMovimientoComponent,
     NuevoMovimientoComponent,

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Caja, Reporte } from '../interfaces/reporte.interaces';
 import { meses } from '../constantes';
-import { ReporteUNService } from './reporte-un.service';
+import { ReporteUNService } from '../services/reporte-un.service';
 
 @Component({
   selector: 'reporte-un',
