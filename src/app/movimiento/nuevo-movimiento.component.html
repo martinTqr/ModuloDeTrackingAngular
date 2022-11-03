@@ -1,49 +1,97 @@
 <h1>Carga Movimientos</h1>
-<form class="container" style="max-width: 600px">
+<form
+  class="container"
+  style="max-width: 600px"
+  (ngSubmit)="crear()"
+  novalidate
+  #f="ngForm"
+>
   <div class="row">
     <div class="col">
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Categoria"
-        aria-label="Categoria"
-      />
-    </div>
-    <div class="col">
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Caja"
-        aria-label="Caja"
-      />
-    </div>
-  </div>
-  <div class="row mt-3">
-    <div class="col">
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Caja"
-        aria-label="Caja"
-      />
-    </div>
-    <div class="col">
+      <label for="categoria">Categoria</label>
       <input
         type="number"
         class="form-control"
-        placeholder="Monto"
-        aria-label="Monto"
+        name="idCategoria"
+        placeholder="Categoria"
+        aria-label="Categoria"
+        [(ngModel)]="idCategoria"
+      />
+    </div>
+    <div class="col">
+      <label for="Caja">Caja</label>
+      <input
+        type="number"
+        class="form-control"
+        name="idCaja"
+        placeholder="Caja"
+        aria-label="Caja"
+        [(ngModel)]="idCaja"
       />
     </div>
   </div>
   <div class="row mt-3">
     <div class="col">
+      <label for="Usuario">Usuario</label>
+      <input
+        type="number"
+        class="form-control"
+        name="idUsuario"
+        placeholder="Usuario"
+        aria-label="Usuario"
+        [(ngModel)]="idUsuario"
+      />
+    </div>
+    <div class="col">
+      <label for="monto">Monto</label>
+      <input
+        type="number"
+        class="form-control"
+        name="monto"
+        placeholder="Monto"
+        aria-label="Monto"
+        [(ngModel)]="monto"
+      />
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col">
+      <label for="Fecha">Fecha</label>
       <input
         type="date"
         class="form-control"
+        name="fecha"
         placeholder="Fecha"
         aria-label="Fecha"
+        [(ngModel)]="fecha"
       />
     </div>
+    <div class="col">
+      <label for="Detalle">Detalle</label>
+      <input
+        type="text"
+        class="form-control"
+        name="detalle"
+        placeholder="Detalle"
+        aria-label="Detalle"
+        [(ngModel)]="detalle"
+      />
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col">
+      <label for="Unidad De Negocio">Unidad De Negocio</label>
+      <input
+        type="number"
+        class="form-control"
+        name="idUnidadNegocio"
+        placeholder="Unidad De Negocio"
+        aria-label="Unidad De Negocio"
+        [(ngModel)]="idUnidadNegocio"
+      />
+    </div>
+    <button class="btn btn-success btn-block col mx-2 btn-small" type="submit">
+      Crear
+    </button>
   </div>
 </form>

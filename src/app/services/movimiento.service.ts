@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { Movimiento } from '../models/';
+import { Movimiento, NuevoMovimiento } from '../models/';
 
 @Injectable({
   providedIn: 'root',
@@ -17,7 +17,7 @@ export class MovimientoService {
   public detalle(id: number): Observable<Movimiento> {
     return this.httpClient.get<Movimiento>(this.movimientoURL + id);
   }
-  public crear(movimiento: Movimiento): Observable<any> {
+  public crear(movimiento: NuevoMovimiento): Observable<any> {
     return this.httpClient.post<any>(this.movimientoURL, movimiento);
   }
 }
