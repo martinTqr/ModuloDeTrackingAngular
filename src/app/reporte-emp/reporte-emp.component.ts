@@ -17,12 +17,8 @@ export class ReporteEmpComponent implements OnInit {
   constructor(private reporteService: ReporteService) {}
   ngOnInit(): void {
     this.reporteService.buscarReporteEmpresa().subscribe(
-      (data: ReporteEmpresaReducido[]) => {
-        this.reporte = data;
-      },
-      ({ error }) => {
-        console.log(error);
-      }
+      (data: ReporteEmpresaReducido[]) => (this.reporte = data),
+      ({ error }) => console.error(error)
     );
   }
 }

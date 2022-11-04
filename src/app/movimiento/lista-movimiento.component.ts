@@ -16,13 +16,8 @@ export class ListaMovimientoComponent implements OnInit {
   ngOnInit(): void {}
   cargarMovimientos() {
     this.movimientoService.lista().subscribe(
-      ({ movimientos }) => {
-        this.movimientos = movimientos;
-        console.log(movimientos);
-      },
-      (error) => {
-        console.log(error);
-      }
+      ({ movimientos }) => (this.movimientos = movimientos),
+      (error) => console.error(error)
     );
   }
 }

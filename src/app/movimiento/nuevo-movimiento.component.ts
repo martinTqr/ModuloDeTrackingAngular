@@ -25,17 +25,13 @@ export class NuevoMovimientoComponent implements OnInit {
 
     const movimiento = new NuevoMovimiento({ ...this, fecha });
     this.movimientoService.crear(movimiento).subscribe(
-      ({ data, mensaje }) => {
-        console.log(data);
+      ({ data, mensaje }) =>
         swal({
           title: 'Movimiento creado',
           text: mensaje,
           icon: 'success',
-        });
-      },
-      ({ error }) => {
-        console.log(error);
-      }
+        }),
+      ({ error }) => console.error(error)
     );
   }
 }
