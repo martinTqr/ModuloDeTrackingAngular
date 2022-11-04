@@ -1,1 +1,22 @@
-<p>detalle-categoria works!</p>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">nombre</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">ID categoria padre</th>
+        <th scope="col">Es General</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ categoria.id }}</td>
+        <td>{{ categoria.nombre }}</td>
+        <td>{{ categoria.tipo }}</td>
+        <td>{{ categoria.idCategoriaPadre }}</td>
+        <td>{{ categoria.isGeneral ? "Si" : "No" }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
