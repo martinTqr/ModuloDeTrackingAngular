@@ -13,6 +13,9 @@ import { ListaMovimientoComponent } from './movimiento/lista-movimiento.componen
 import { NuevoMovimientoComponent } from './movimiento/nuevo-movimiento.component';
 import { DetalleMovimientoComponent } from './movimiento/detalle-movimiento.component';
 import { ReporteEmpComponent } from './reporte-emp/reporte-emp.component';
+import { ListaCajasComponent } from './caja/lista-cajas.component';
+import { NuevaCajaComponent } from './caja/nueva-caja.component';
+import { DetalleCajaComponent } from './caja/detalle-caja.component';
 
 if (!/localhost/.test(document.location.host)) {
   enableProdMode();
@@ -26,6 +29,9 @@ if (!/localhost/.test(document.location.host)) {
     ListaMovimientoComponent,
     NuevoMovimientoComponent,
     DetalleMovimientoComponent,
+    ListaCajasComponent,
+    NuevaCajaComponent,
+    DetalleCajaComponent,
   ],
   imports: [
     BrowserModule,
