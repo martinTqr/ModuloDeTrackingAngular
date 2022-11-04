@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DetalleCajaComponent } from '../caja/detalle-caja.component';
+import { ListaCajasComponent } from '../caja/lista-cajas.component';
+import { NuevaCajaComponent } from '../caja/nueva-caja.component';
 import { InicioComponent } from '../inicio/inicio.component';
 import { DetalleMovimientoComponent } from '../movimiento/detalle-movimiento.component';
 import { ListaMovimientoComponent } from '../movimiento/lista-movimiento.component';
@@ -14,6 +17,11 @@ const routes: Routes = [
   { path: 'movimiento/lista', component: ListaMovimientoComponent },
   { path: 'movimiento/nuevo', component: NuevoMovimientoComponent },
   { path: 'movimiento/detalle/:id', component: DetalleMovimientoComponent },
+
+  { path: 'caja/lista', component: ListaCajasComponent },
+  { path: 'caja/detalle/:id', component: DetalleCajaComponent },
+  { path: 'caja/nueva', component: NuevaCajaComponent },
+
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
