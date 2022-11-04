@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Movimiento } from '../models';
 import { MovimientoService } from '../services/movimiento.service';
-
+import { ActivatedRoute, Params } from '@angular/router';
+import swal from 'sweetalert';
 @Component({
   selector: 'app-detalle-movimiento',
   templateUrl: './detalle-movimiento.component.html',
@@ -9,12 +10,22 @@ import { MovimientoService } from '../services/movimiento.service';
 })
 export class DetalleMovimientoComponent implements OnInit {
   movimiento!: Movimiento;
-  constructor(private movimientoService: MovimientoService) {}
+  constructor(
+    private movimientoService: MovimientoService,
+    private rutaActiva: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
-    this.movimientoService.detalle(12).subscribe(
+    const { id } = this.rutaActiva.snapshot.params;
+
+    this.movimientoService.detalle(id).subscribe(
       (movimiento) => (this.movimiento = movimiento),
-      ({ error }) => console.error(error)
+      ({ error }) =>
+        swal({
+          icon: 'error',
+          title: 'Error',
+          text: error.message,
+        })
     );
   }
 }
