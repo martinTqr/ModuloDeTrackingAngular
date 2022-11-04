@@ -11,7 +11,7 @@ export class CajaService {
   cajaURL = environment.cajaURL;
   constructor(private httpClient: HttpClient) {}
 
-  public lista(): Observable<any> {
+  public lista(): Observable<Caja[]> {
     return this.httpClient.get<Caja[]>(this.cajaURL);
   }
   public detalle(id: number): Observable<Caja> {

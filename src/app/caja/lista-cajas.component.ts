@@ -13,7 +13,7 @@ export class ListaCajasComponent implements OnInit {
 
   ngOnInit(): void {
     this.cajaService.lista().subscribe(
-      ({ cajas }) => (this.cajas = cajas),
+      (cajas) => (this.cajas = cajas),
       (error) => console.error(error)
     );
   }
