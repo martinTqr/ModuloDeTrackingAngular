@@ -1,15 +1,31 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRoute } from '@angular/router';
+import { CajaService } from '../services/caja.service';
+import swal from 'sweetalert';
+import { Caja } from '../models';
 @Component({
   selector: 'app-detalle-caja',
   templateUrl: './detalle-caja.component.html',
-  styleUrls: ['./detalle-caja.component.css']
+  styleUrls: ['./detalle-caja.component.css'],
 })
 export class DetalleCajaComponent implements OnInit {
-
-  constructor() { }
+  caja!: Caja;
+  constructor(
+    private cajaService: CajaService,
+    private rutaActiva: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
-  }
+    const { id } = this.rutaActiva.snapshot.params;
 
+    this.cajaService.detalle(id).subscribe(
+      (caja) => (this.caja = caja),
+      ({ error }) =>
+        swal({
+          icon: 'error',
+          title: 'Error',
+          text: error.message,
+        })
+    );
+  }
 }
