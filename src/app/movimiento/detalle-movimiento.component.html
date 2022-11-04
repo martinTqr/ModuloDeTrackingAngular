@@ -1,1 +1,22 @@
-<p>detalle-movimiento works!</p>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Caja</th>
+        <th scope="col">Categoria</th>
+        <th scope="col">Detalle</th>
+        <th scope="col">Tipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ movimiento.id }}</td>
+        <td>{{ movimiento.caja.nombre }}</td>
+        <td>{{ movimiento.categoria.nombre }}</td>
+        <td>{{ movimiento.detalle }}</td>
+        <td>{{ movimiento.categoria.tipo }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
