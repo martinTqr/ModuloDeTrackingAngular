@@ -7,6 +7,7 @@ export const environment = {
   movimientoURL: 'http://localhost:3001/movimiento/',
   reporteEmpresaURL: 'http://localhost:3001/reportes/empresa',
   cajaURL: 'http://localhost:3001/caja/',
+  empresaURL: 'http://localhost:3001/empresa/',
 };
 
 /*

@@ -16,6 +16,9 @@ import { ReporteEmpComponent } from './reporte-emp/reporte-emp.component';
 import { ListaCajasComponent } from './caja/lista-cajas.component';
 import { NuevaCajaComponent } from './caja/nueva-caja.component';
 import { DetalleCajaComponent } from './caja/detalle-caja.component';
+import { ListaEmpresaComponent } from './empresa/lista-empresa/lista-empresa.component';
+import { NuevaEmpresaComponent } from './empresa/nueva-empresa/nueva-empresa.component';
+import { DetalleEmpresaComponent } from './empresa/detalle-empresa/detalle-empresa.component';
 
 if (!/localhost/.test(document.location.host)) {
   enableProdMode();
@@ -32,6 +35,9 @@ if (!/localhost/.test(document.location.host)) {
     ListaCajasComponent,
     NuevaCajaComponent,
     DetalleCajaComponent,
+    ListaEmpresaComponent,
+    NuevaEmpresaComponent,
+    DetalleEmpresaComponent,
   ],
   imports: [
     ReactiveFormsModule,
