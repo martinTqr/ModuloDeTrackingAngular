@@ -1,1 +1,31 @@
-<p>nueva-empresa works!</p>
+<h1>Carga Movimientos</h1>
+<form
+  class="container"
+  style="max-width: 600px"
+  (ngSubmit)="crear()"
+  [formGroup]="empresaFormulario"
+  novalidate
+  #f="ngForm"
+>
+  <div class="row">
+    <div class="col">
+      <label for="nombre">Nombre</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Nombre"
+        aria-label="Nombre"
+        formControlName="nombre"
+        required
+      />
+    </div>
+    <div class="col">
+      <button
+        class="col btn btn-success btn-block col mx-2 btn-small"
+        type="submit"
+      >
+        Crear
+      </button>
+    </div>
+  </div>
+</form>

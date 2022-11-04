@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { CajaService } from '../services/caja.service';
 import swal from 'sweetalert';
+import { transformarAString } from '../helper';
 
 @Component({
   selector: 'app-nueva-caja',
@@ -46,6 +47,3 @@ export class NuevaCajaComponent implements OnInit {
       );
   }
 }
-const transformarAString = (valor: any): string => {
-  return valor.toString();
-};
