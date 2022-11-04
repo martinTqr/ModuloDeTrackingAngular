@@ -17,24 +17,12 @@ export class ReporteEmpComponent implements OnInit {
   constructor(private reporteService: ReporteService) {}
   ngOnInit(): void {
     this.reporteService.buscarReporteEmpresa().subscribe(
-      (data) => {
-        console.log(data);
+      (data: ReporteEmpresaReducido[]) => {
         this.reporte = data;
       },
       ({ error }) => {
         console.log(error);
       }
     );
-    /*     const reporte = this.reporteEmpresaService.buscarReporteUnidadDeNegocio();
-    const cajas = reporte.cajas.map((caja: Caja) => ({
-      ...caja,
-      acumulado: {
-        total: caja.total,
-      },
-    }));
-    this.reporte = {
-      ...reporte,
-      subcategorias: [...reporte.subcategorias, ...cajas],
-    }; */
   }
 }
