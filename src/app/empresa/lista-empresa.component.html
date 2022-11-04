@@ -1,0 +1,16 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">nombre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let empresa of empresas">
+        <td>{{ empresa.id }}</td>
+        <td>{{ empresa.nombre }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { DetalleCajaComponent } from '../caja/detalle-caja.component';
 import { ListaCajasComponent } from '../caja/lista-cajas.component';
 import { NuevaCajaComponent } from '../caja/nueva-caja.component';
+import { DetalleEmpresaComponent } from '../empresa/detalle-empresa.component';
+import { ListaEmpresaComponent } from '../empresa/lista-empresa.component';
+import { NuevaEmpresaComponent } from '../empresa/nueva-empresa.component';
 import { InicioComponent } from '../inicio/inicio.component';
 import { DetalleMovimientoComponent } from '../movimiento/detalle-movimiento.component';
 import { ListaMovimientoComponent } from '../movimiento/lista-movimiento.component';
@@ -14,6 +17,7 @@ const routes: Routes = [
   { path: '', component: InicioComponent },
   { path: 'reporte-emp', component: ReporteEmpComponent },
   { path: 'reporte-un', component: ReporteUNComponent },
+
   { path: 'movimiento/lista', component: ListaMovimientoComponent },
   { path: 'movimiento/nuevo', component: NuevoMovimientoComponent },
   { path: 'movimiento/detalle/:id', component: DetalleMovimientoComponent },
@@ -21,6 +25,10 @@ const routes: Routes = [
   { path: 'caja/lista', component: ListaCajasComponent },
   { path: 'caja/detalle/:id', component: DetalleCajaComponent },
   { path: 'caja/nueva', component: NuevaCajaComponent },
+
+  { path: 'empresa/lista', component: ListaEmpresaComponent },
+  { path: 'empresa/detalle/:id', component: DetalleEmpresaComponent },
+  { path: 'empresa/nueva', component: NuevaEmpresaComponent },
 
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
