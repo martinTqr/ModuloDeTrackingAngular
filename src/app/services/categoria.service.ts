@@ -11,7 +11,7 @@ export class CategoriaService {
   categoriaURL = environment.categoriaURL;
   constructor(private httpClient: HttpClient) {}
 
-  public lista(): Observable<any> {
+  public lista(): Observable<Categoria[]> {
     return this.httpClient.get<Categoria[]>(this.categoriaURL);
   }
   public detalle(id: number): Observable<Categoria> {
