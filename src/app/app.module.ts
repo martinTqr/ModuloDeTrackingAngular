@@ -7,7 +7,7 @@ import { ReporteUNComponent } from './reporte-un/reporte-un.component';
 import { AppRoutingModule } from './app/app-routing.module';
 import { InicioComponent } from './inicio/inicio.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListaMovimientoComponent } from './movimiento/lista-movimiento.component';
 import { NuevoMovimientoComponent } from './movimiento/nuevo-movimiento.component';
@@ -34,6 +34,7 @@ if (!/localhost/.test(document.location.host)) {
     DetalleCajaComponent,
   ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule,
     DxTreeListModule,
     DxButtonModule,

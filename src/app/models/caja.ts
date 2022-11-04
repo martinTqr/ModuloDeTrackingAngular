@@ -3,7 +3,7 @@ export class Caja {
   nombre: string;
   idUnidadNegocio: number;
   negativa: boolean;
-  fechaBorrado: number;
+  fechaBorrado?: number;
   constructor({ id, nombre, idUnidadNegocio, negativa, fechaBorrado }: any) {
     this.id = id;
     this.nombre = nombre;
