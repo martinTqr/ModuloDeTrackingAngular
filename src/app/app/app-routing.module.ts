@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { DetalleCajaComponent } from '../caja/detalle-caja.component';
 import { ListaCajasComponent } from '../caja/lista-cajas.component';
 import { NuevaCajaComponent } from '../caja/nueva-caja.component';
+import { DetalleCategoriaComponent } from '../categoria/detalle-categoria/detalle-categoria.component';
+import { ListaCategoriaComponent } from '../categoria/lista-categoria/lista-categoria.component';
+import { NuevaCategoriaComponent } from '../categoria/nueva-categoria/nueva-categoria.component';
 import { DetalleEmpresaComponent } from '../empresa/detalle-empresa.component';
 import { ListaEmpresaComponent } from '../empresa/lista-empresa.component';
 import { NuevaEmpresaComponent } from '../empresa/nueva-empresa.component';
@@ -13,7 +16,7 @@ import { NuevoMovimientoComponent } from '../movimiento/nuevo-movimiento.compone
 import { ReporteEmpComponent } from '../reporte-emp/reporte-emp.component';
 import { ReporteUNComponent } from '../reporte-un/reporte-un.component';
 
-const routes: Routes = [
+const rutas: Routes = [
   { path: '', component: InicioComponent },
   { path: 'reporte-emp', component: ReporteEmpComponent },
   { path: 'reporte-un', component: ReporteUNComponent },
@@ -29,12 +32,15 @@ const routes: Routes = [
   { path: 'empresa/lista', component: ListaEmpresaComponent },
   { path: 'empresa/detalle/:id', component: DetalleEmpresaComponent },
   { path: 'empresa/nueva', component: NuevaEmpresaComponent },
-
+  //rutas para categoria
+  { path: 'categoria/lista', component: ListaCategoriaComponent },
+  { path: 'categoria/detalle/:id', component: DetalleCategoriaComponent },
+  { path: 'categoria/nueva', component: NuevaCategoriaComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(rutas)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
