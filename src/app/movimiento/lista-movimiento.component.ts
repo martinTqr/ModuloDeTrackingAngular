@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { parsearFecha } from '../helper';
 import { Movimiento } from '../models';
 import { MovimientoService } from '../services/movimiento.service';
 
@@ -19,5 +20,8 @@ export class ListaMovimientoComponent implements OnInit {
       ({ movimientos }) => (this.movimientos = movimientos),
       (error) => console.error(error)
     );
+  }
+  parsearFecha(fecha: Date): string {
+    return parsearFecha(fecha);
   }
 }

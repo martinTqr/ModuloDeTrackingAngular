@@ -3,6 +3,7 @@ import { Movimiento } from '../models';
 import { MovimientoService } from '../services/movimiento.service';
 import { ActivatedRoute } from '@angular/router';
 import swal from 'sweetalert';
+import { parsearFecha } from '../helper';
 @Component({
   selector: 'app-detalle-movimiento',
   templateUrl: './detalle-movimiento.component.html',
@@ -27,5 +28,8 @@ export class DetalleMovimientoComponent implements OnInit {
           text: error.message,
         })
     );
+  }
+  parsearFecha(fecha: Date): string {
+    return parsearFecha(fecha);
   }
 }

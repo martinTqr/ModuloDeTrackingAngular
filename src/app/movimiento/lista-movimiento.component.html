@@ -6,6 +6,8 @@
         <th scope="col">Caja</th>
         <th scope="col">Categoria</th>
         <th scope="col">Detalle</th>
+        <th scope="col">Monto</th>
+        <th scope="col">Fecha</th>
         <th scope="col">Tipo</th>
       </tr>
     </thead>
@@ -15,6 +17,8 @@
         <td>{{ movimiento.caja.nombre }}</td>
         <td>{{ movimiento.categoria.nombre }}</td>
         <td>{{ movimiento.detalle }}</td>
+        <td>{{ movimiento.monto }}</td>
+        <td>{{ parsearFecha(movimiento.fecha) }}</td>
         <td>{{ movimiento.categoria.tipo }}</td>
       </tr>
     </tbody>
