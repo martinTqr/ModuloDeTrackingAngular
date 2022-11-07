@@ -21,9 +21,10 @@ export class ReporteUNComponent implements OnInit {
 
   ngOnInit(): void {
     const { id } = this.rutaActiva.snapshot.params;
+    const { fechaInicio, fechaFin } = this.rutaActiva.snapshot.queryParams;
 
     this.reporteService
-      .buscarReporteUnidadNegocio(id)
+      .buscarReporteUnidadNegocio(id, fechaInicio, fechaFin)
       .subscribe((data: Reporte) => {
         const cajas = data.cajas.map((caja: Caja) => ({
           ...caja,

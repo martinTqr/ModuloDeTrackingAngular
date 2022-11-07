@@ -14,10 +14,14 @@ export class ReporteService {
     const { reporteEmpresaURL } = environment;
     return this.httpClient.get<any>(`${reporteEmpresaURL}?idEmpresa=${id}`);
   }
-  public buscarReporteUnidadNegocio(id: any): Observable<Reporte> {
+  public buscarReporteUnidadNegocio(
+    id: any,
+    fechaInicio?: string,
+    fechaFin?: string
+  ): Observable<Reporte> {
     const { unidadDeNegocioURL } = environment;
     return this.httpClient.get<Reporte>(
-      `${unidadDeNegocioURL}?idUnidadNegocio=${id}`
+      `${unidadDeNegocioURL}?idUnidadNegocio=${id}&fechaInicio=${fechaInicio}&fechaFin=${fechaFin}`
     );
   }
 }

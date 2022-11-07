@@ -10,11 +10,11 @@ import { MovimientoService } from '../services/movimiento.service';
 })
 export class ListaMovimientoComponent implements OnInit {
   movimientos: Movimiento[] = [];
-  constructor(private movimientoService: MovimientoService) {
+  constructor(private movimientoService: MovimientoService) {}
+
+  ngOnInit(): void {
     this.cargarMovimientos();
   }
-
-  ngOnInit(): void {}
   cargarMovimientos() {
     this.movimientoService.lista().subscribe(
       ({ movimientos }) => (this.movimientos = movimientos),
