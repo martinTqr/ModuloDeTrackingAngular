@@ -16,7 +16,7 @@ export interface Categoria {
   meses: TotalesMes[];
   isGeneral: boolean;
 }
-export enum TipoCategoria {
+enum TipoCategoria {
   in = 'in',
   out = 'out',
 }

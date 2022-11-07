@@ -1,7 +1,7 @@
 export class Categoria {
   id?: number;
   nombre: string;
-  tipo: TipoCategoria;
+  tipo: TipoCategoria | string;
   idEmpresa: number;
   idCategoriaPadre: number | null;
   orden: number;
