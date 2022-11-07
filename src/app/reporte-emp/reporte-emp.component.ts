@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { meses } from '../constantes/';
 import { ReporteService } from '../services/reporte.service';
 import { ReporteEmpresaReducido } from './reporte-emp.interface';
@@ -14,9 +15,14 @@ export class ReporteEmpComponent implements OnInit {
   cantidadDeSemanas: Array<any> = new Array(5);
   semanas: any = [];
   nombreDeMeses: string[] = meses;
-  constructor(private reporteService: ReporteService) {}
+
+  constructor(
+    private reporteService: ReporteService,
+    private rutaActiva: ActivatedRoute
+  ) {}
   ngOnInit(): void {
-    this.reporteService.buscarReporteEmpresa(11).subscribe(
+    const { id } = this.rutaActiva.snapshot.params;
+    this.reporteService.buscarReporteEmpresa(id).subscribe(
       (data: ReporteEmpresaReducido[]) => (this.reporte = data),
       ({ error }) => console.error(error)
     );

@@ -18,8 +18,8 @@ import { ReporteUNComponent } from '../reporte-un/reporte-un.component';
 
 const rutas: Routes = [
   { path: '', component: InicioComponent },
-  { path: 'reporte-emp', component: ReporteEmpComponent },
-  { path: 'reporte-un', component: ReporteUNComponent },
+  { path: 'reporte-emp/:id', component: ReporteEmpComponent },
+  { path: 'reporte-un/:id', component: ReporteUNComponent },
 
   { path: 'movimiento/lista', component: ListaMovimientoComponent },
   { path: 'movimiento/nuevo', component: NuevoMovimientoComponent },
