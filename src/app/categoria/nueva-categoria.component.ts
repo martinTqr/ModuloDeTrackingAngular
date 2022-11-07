@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { Categoria } from '../models';
+import { Categoria, Empresa } from '../models';
 import { CategoriaService } from '../services/categoria.service';
 import swal from 'sweetalert';
+import { EmpresaService } from '../services/empresa.service';
 @Component({
   selector: 'app-nueva-categoria',
   templateUrl: './nueva-categoria.component.html',
@@ -10,23 +11,35 @@ import swal from 'sweetalert';
 })
 export class NuevaCategoriaComponent implements OnInit {
   categoriaFormulario = this.fb.group({
-    nombre: ['formulario', Validators.required],
-    tipo: ['in', Validators.required],
-    idEmpresa: ['11', Validators.required],
+    nombre: ['', Validators.required],
+    tipo: ['', Validators.required],
+    idEmpresa: ['', Validators.required],
+    orden: ['1', [Validators.required, Validators.min(1)]],
+    isGeneral: ['', [Validators.required, Validators.required]],
     idCategoriaPadre: [undefined],
-    orden: ['1', Validators.required],
-    isGeneral: ['', Validators.required],
   });
+  listaEmpresa: Empresa[] = [];
+  listaCategorias: Categoria[] = [];
   constructor(
     private fb: FormBuilder,
-    private categoriaService: CategoriaService
+    private categoriaService: CategoriaService,
+    private empresaService: EmpresaService
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.empresaService
+      .lista()
+      .subscribe((lista) => (this.listaEmpresa = lista));
+    this.categoriaService.lista().subscribe((lista) => {
+      this.listaCategorias = lista;
+    });
+  }
+
   crear(): void {
     if (!this.categoriaFormulario.valid) {
       console.log(this.categoriaFormulario.get('idCategoriaPadre')?.errors);
 
+      console.log(this.categoriaFormulario.value);
       return;
     }
     let { nombre, tipo, idEmpresa, idCategoriaPadre, orden, isGeneral } =
@@ -36,7 +49,6 @@ export class NuevaCategoriaComponent implements OnInit {
     const ordenNumber = Number(orden);
     const idEmpresaString = Number(idEmpresa);
 
-    console.log(!!isGeneral);
     const isGeneralBoolean = Boolean(isGeneral);
 
     const categoria: Categoria = {
@@ -48,14 +60,14 @@ export class NuevaCategoriaComponent implements OnInit {
       isGeneral: isGeneralBoolean,
     };
 
-    this.categoriaService.crear(categoria).subscribe(
+    /*     this.categoriaService.crear(categoria).subscribe(
       (data) => {
         swal({ title: 'Categoria creada', text: data.nombre, icon: 'success' });
         this.categoriaFormulario.reset();
       },
       ({ error }) =>
         swal({ title: 'Error', text: error.message, icon: 'error' })
-    );
+    ); */
   }
   obtenerCampo(campo: string) {
     return this.categoriaFormulario.get(campo);
