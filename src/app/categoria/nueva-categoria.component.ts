@@ -75,14 +75,14 @@ export class NuevaCategoriaComponent implements OnInit {
       isGeneral: isGeneralBoolean,
     };
 
-    /*     this.categoriaService.crear(categoria).subscribe(
+    this.categoriaService.crear(categoria).subscribe(
       (data) => {
         swal({ title: 'Categoria creada', text: data.nombre, icon: 'success' });
         this.categoriaFormulario.reset();
       },
       ({ error }) =>
         swal({ title: 'Error', text: error.message, icon: 'error' })
-    ); */
+    );
   }
   obtenerCampo(campo: string) {
     return this.categoriaFormulario.get(campo);
