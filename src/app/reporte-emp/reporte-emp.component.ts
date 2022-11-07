@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { meses } from '../constantes/';
-import { ReporteService } from '../services/reporte-emp.service';
+import { ReporteService } from '../services/reporte.service';
 import { ReporteEmpresaReducido } from './reporte-emp.interface';
 
 @Component({
@@ -16,7 +16,7 @@ export class ReporteEmpComponent implements OnInit {
   nombreDeMeses: string[] = meses;
   constructor(private reporteService: ReporteService) {}
   ngOnInit(): void {
-    this.reporteService.buscarReporteEmpresa().subscribe(
+    this.reporteService.buscarReporteEmpresa(11).subscribe(
       (data: ReporteEmpresaReducido[]) => (this.reporte = data),
       ({ error }) => console.error(error)
     );
