@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { transformarAString } from '../helper';
-import { TipoCategoria } from '../models';
+import { Categoria } from '../models';
 import { CategoriaService } from '../services/categoria.service';
-
+import swal from 'sweetalert';
 @Component({
   selector: 'app-nueva-categoria',
   templateUrl: './nueva-categoria.component.html',
@@ -11,12 +10,12 @@ import { CategoriaService } from '../services/categoria.service';
 })
 export class NuevaCategoriaComponent implements OnInit {
   categoriaFormulario = this.fb.group({
-    nombre: ['', Validators.required],
-    tipo: ['', Validators.required],
-    idEmpresa: ['', Validators.required],
-    idCategoriaPadre: [null],
-    orden: ['', Validators.required],
-    isGeneral: [false],
+    nombre: ['formulario', Validators.required],
+    tipo: ['in', Validators.required],
+    idEmpresa: ['11', Validators.required],
+    idCategoriaPadre: [undefined],
+    orden: ['1', Validators.required],
+    isGeneral: ['', Validators.required],
   });
   constructor(
     private fb: FormBuilder,
@@ -25,31 +24,40 @@ export class NuevaCategoriaComponent implements OnInit {
 
   ngOnInit(): void {}
   crear(): void {
+    if (!this.categoriaFormulario.valid) {
+      console.log(this.categoriaFormulario.get('idCategoriaPadre')?.errors);
+
+      return;
+    }
     let { nombre, tipo, idEmpresa, idCategoriaPadre, orden, isGeneral } =
       this.categoriaFormulario.value;
-    //transformar a string
     nombre = String(nombre);
     const tipoString = String(tipo);
     const ordenNumber = Number(orden);
     const idEmpresaString = Number(idEmpresa);
-    const idCategoriaPadreString = Number(idCategoriaPadre);
-    isGeneral = Boolean(isGeneral);
-    //how to fix this error?
-    //Type 'string' is not assignable to type 'TipoCategoria'.
-    //how to fix this error?
-    //Type 'string' is not assignable to type 'TipoCategoria'.
-    const categoria = {
+
+    console.log(!!isGeneral);
+    const isGeneralBoolean = Boolean(isGeneral);
+
+    const categoria: Categoria = {
       nombre,
       tipo: tipoString,
       idEmpresa: idEmpresaString,
-      idCategoriaPadre: idCategoriaPadreString,
+      idCategoriaPadre,
       orden: ordenNumber,
-      isGeneral,
+      isGeneral: isGeneralBoolean,
     };
 
     this.categoriaService.crear(categoria).subscribe(
-      ({ data }) => console.log(data),
-      (err) => console.log(err)
+      (data) => {
+        swal({ title: 'Categoria creada', text: data.nombre, icon: 'success' });
+        this.categoriaFormulario.reset();
+      },
+      ({ error }) =>
+        swal({ title: 'Error', text: error.message, icon: 'error' })
     );
+  }
+  obtenerCampo(campo: string) {
+    return this.categoriaFormulario.get(campo);
   }
 }

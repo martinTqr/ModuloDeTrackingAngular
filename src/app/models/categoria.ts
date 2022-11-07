@@ -3,7 +3,7 @@ export class Categoria {
   nombre: string;
   tipo: TipoCategoria | string;
   idEmpresa: number;
-  idCategoriaPadre: number | null;
+  idCategoriaPadre: number | null | undefined;
   orden: number;
   fechaBorrado?: string | null;
   isGeneral: boolean;

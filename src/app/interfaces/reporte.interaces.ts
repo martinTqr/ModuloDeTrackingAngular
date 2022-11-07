@@ -6,7 +6,7 @@ export interface Reporte {
 export interface Categoria {
   id: number;
   nombre: string;
-  tipo: string;
+  tipo: TipoCategoria | string;
   idEmpresa: string | null;
   idCategoriaPadre: string | null;
   orden: number | string;

@@ -1,1 +1,92 @@
-<p>nueva-categoria works!</p>
+<h1>Carga Categoria</h1>
+<form
+  class="container"
+  style="max-width: 600px"
+  (ngSubmit)="crear()"
+  [formGroup]="categoriaFormulario"
+  novalidate
+  #f="ngForm"
+>
+  <div class="row mt-3">
+    <div class="col">
+      <label for="nombre">Nombre</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Nombre"
+        aria-label="Nombre"
+        formControlName="nombre"
+        required
+      />
+    </div>
+    <div class="col">
+      <label for="nombre">Tipo de categoria</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Tipo de categoria"
+        aria-label="Tipo de categoria"
+        formControlName="tipo"
+        required
+      />
+    </div>
+    <div class="row mt-3">
+      <div class="col">
+        <label for="nombre">ID Empresa</label>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="ID Empresa"
+          aria-label="ID Empresa"
+          formControlName="idEmpresa"
+          required
+        />
+      </div>
+      <div class="col">
+        <label for="nombre">ID Categoria padre</label>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="ID Categoria padre"
+          aria-label="ID Categoria padre"
+          formControlName="idCategoriaPadre"
+          required
+        />
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col">
+        <label for="nombre">Orden</label>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Orden"
+          aria-label="Orden"
+          formControlName="orden"
+          required
+        />
+      </div>
+      <div class="col">
+        <label for="nombre">Es general?</label>
+        <select
+          name="isGeneral"
+          class="form-control"
+          formControlName="isGeneral"
+          required
+        >
+          <option value="true">Si</option>
+          <option value="false">No</option>
+        </select>
+      </div>
+    </div>
+    <div class="col mt-4">
+      <button
+        class="col btn btn-success btn-block col mx-2 btn-small"
+        type="submit"
+        [disabled]="categoriaFormulario.invalid"
+      >
+        Crear
+      </button>
+    </div>
+  </div>
+</form>
