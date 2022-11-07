@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { Categoria, Empresa } from '../models';
+import { Categoria, Empresa, TipoCategoria } from '../models';
 import { CategoriaService } from '../services/categoria.service';
 import swal from 'sweetalert';
 import { EmpresaService } from '../services/empresa.service';
@@ -19,7 +19,8 @@ export class NuevaCategoriaComponent implements OnInit {
     idCategoriaPadre: [undefined],
   });
   listaEmpresa: Empresa[] = [];
-  listaCategorias: Categoria[] = [];
+  listaCategorias: Categoria[][] = [[], []];
+  tipo = 0;
   constructor(
     private fb: FormBuilder,
     private categoriaService: CategoriaService,
@@ -31,15 +32,29 @@ export class NuevaCategoriaComponent implements OnInit {
       .lista()
       .subscribe((lista) => (this.listaEmpresa = lista));
     this.categoriaService.lista().subscribe((lista) => {
-      this.listaCategorias = lista;
+      //separe lista for tipo
+      const listaSeparada = lista.reduce(
+        (acum: Categoria[][], categ) => {
+          if (categ.tipo === TipoCategoria.in) {
+            acum[0].push(categ);
+            return acum;
+          } else {
+            acum[1].push(categ);
+            return acum;
+          }
+        },
+        [[], []]
+      );
+
+      this.listaCategorias = listaSeparada;
     });
   }
-
+  cambioEnTipo(e: any) {
+    const tipo = e.target.value;
+    this.tipo = tipo === TipoCategoria.in ? 0 : 1;
+  }
   crear(): void {
     if (!this.categoriaFormulario.valid) {
-      console.log(this.categoriaFormulario.get('idCategoriaPadre')?.errors);
-
-      console.log(this.categoriaFormulario.value);
       return;
     }
     let { nombre, tipo, idEmpresa, idCategoriaPadre, orden, isGeneral } =
