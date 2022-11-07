@@ -1,24 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { Caja, Reporte } from '../interfaces/reporte.interaces';
 import { meses } from '../constantes';
-import { ReporteUNService } from '../services/reporte-un.service';
 import { ReporteService } from '../services/reporte.service';
 
 @Component({
   selector: 'reporte-un',
   templateUrl: './reporte-un.component.html',
   styleUrls: ['./reporte-un.component.css'],
-  providers: [ReporteUNService],
 })
 export class ReporteUNComponent implements OnInit {
   reporte!: Reporte;
   semanas: Array<any> = new Array(5);
   nombreDeMeses: string[] = meses;
 
-  constructor(
-    private servicio: ReporteUNService,
-    private reporteService: ReporteService
-  ) {}
+  constructor(private reporteService: ReporteService) {}
 
   ngOnInit(): void {
     this.reporteService
