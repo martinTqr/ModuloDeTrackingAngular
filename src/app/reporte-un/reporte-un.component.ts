@@ -22,6 +22,7 @@ export class ReporteUNComponent implements OnInit {
   ngOnInit(): void {
     const { id } = this.rutaActiva.snapshot.params;
     const { fechaInicio, fechaFin } = this.rutaActiva.snapshot.queryParams;
+    console.log(fechaInicio);
 
     this.reporteService
       .buscarReporteUnidadNegocio(id, fechaInicio, fechaFin)

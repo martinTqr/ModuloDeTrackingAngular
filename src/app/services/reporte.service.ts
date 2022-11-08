@@ -20,8 +20,13 @@ export class ReporteService {
     fechaFin?: string
   ): Observable<Reporte> {
     const { unidadDeNegocioURL } = environment;
+    if (fechaInicio && fechaFin) {
+      return this.httpClient.get<Reporte>(
+        `${unidadDeNegocioURL}?idUnidadNegocio=${id}&fechaInicio=${fechaInicio}&fechaFin=${fechaFin}`
+      );
+    }
     return this.httpClient.get<Reporte>(
-      `${unidadDeNegocioURL}?idUnidadNegocio=${id}&fechaInicio=${fechaInicio}&fechaFin=${fechaFin}`
+      `${unidadDeNegocioURL}?idUnidadNegocio=${id}`
     );
   }
 }
