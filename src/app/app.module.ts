@@ -22,6 +22,7 @@ import { DetalleEmpresaComponent } from './empresa/detalle-empresa.component';
 import { ListaCategoriaComponent } from './categoria/lista-categoria.component';
 import { NuevaCategoriaComponent } from './categoria/nueva-categoria.component';
 import { DetalleCategoriaComponent } from './categoria/detalle-categoria.component';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 if (!/localhost/.test(document.location.host)) {
   enableProdMode();
@@ -54,6 +55,7 @@ if (!/localhost/.test(document.location.host)) {
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
+    SweetAlert2Module,
   ],
   providers: [],
   bootstrap: [AppComponent],

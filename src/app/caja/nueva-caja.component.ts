@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { CajaService } from '../services/caja.service';
-import swal from 'sweetalert';
+import swal from 'sweetalert2';
 import { transformarAString } from '../helper';
 
 @Component({
@@ -33,13 +33,13 @@ export class NuevaCajaComponent implements OnInit {
       })
       .subscribe(
         ({ data }) =>
-          swal({
+          swal.fire({
             title: 'Caja creada',
             text: `La caja ${data.nombre} ha sido creada con éxito`,
             icon: 'success',
           }),
         ({ error }) =>
-          swal({
+          swal.fire({
             icon: 'error',
             title: 'Error',
             text: error.message.map((mensaje: string) => mensaje).join(' '),

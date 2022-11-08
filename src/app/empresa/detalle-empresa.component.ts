@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Empresa } from '../models';
 import { EmpresaService } from '../services/empresa.service';
-import swal from 'sweetalert';
+import swal from 'sweetalert2';
 @Component({
   selector: 'app-detalle-empresa',
   templateUrl: './detalle-empresa.component.html',
@@ -20,7 +20,7 @@ export class DetalleEmpresaComponent implements OnInit {
     this.empresaService.detalle(id).subscribe(
       (empresa) => (this.empresa = empresa),
       ({ error }) =>
-        swal({
+        swal.fire({
           icon: 'error',
           title: 'Error',
           text: error.message,

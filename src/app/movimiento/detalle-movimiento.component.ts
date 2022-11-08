@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Movimiento } from '../models';
 import { MovimientoService } from '../services/movimiento.service';
 import { ActivatedRoute } from '@angular/router';
-import swal from 'sweetalert';
+import swal from 'sweetalert2';
 import { parsearFecha } from '../helper';
 @Component({
   selector: 'app-detalle-movimiento',
@@ -22,7 +22,7 @@ export class DetalleMovimientoComponent implements OnInit {
     this.movimientoService.detalle(id).subscribe(
       (movimiento) => (this.movimiento = movimiento),
       ({ error }) =>
-        swal({
+        swal.fire({
           icon: 'error',
           title: 'Error',
           text: error.message,

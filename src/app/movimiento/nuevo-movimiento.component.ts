@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import swal from 'sweetalert';
+import swal from 'sweetalert2';
 import { NuevoMovimiento } from '../models';
 import { MovimientoService } from '../services/movimiento.service';
 
@@ -26,7 +26,7 @@ export class NuevoMovimientoComponent implements OnInit {
     const movimiento = new NuevoMovimiento({ ...this, fecha });
     this.movimientoService.crear(movimiento).subscribe(
       ({ mensaje }) =>
-        swal({
+        swal.fire({
           title: 'Movimiento creado',
           text: mensaje,
           icon: 'success',

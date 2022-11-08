@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CajaService } from '../services/caja.service';
-import swal from 'sweetalert';
+import swal from 'sweetalert2';
 import { Caja } from '../models';
 @Component({
   selector: 'app-detalle-caja',
@@ -21,10 +21,10 @@ export class DetalleCajaComponent implements OnInit {
     this.cajaService.detalle(id).subscribe(
       (caja) => (this.caja = caja),
       ({ error }) =>
-        swal({
-          icon: 'error',
+        swal.fire({
           title: 'Error',
-          text: error.message,
+          text: error.mensaje,
+          icon: 'error',
         })
     );
   }
