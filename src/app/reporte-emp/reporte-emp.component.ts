@@ -22,9 +22,12 @@ export class ReporteEmpComponent implements OnInit {
   ) {}
   ngOnInit(): void {
     const { id } = this.rutaActiva.snapshot.params;
-    this.reporteService.buscarReporteEmpresa(id).subscribe(
-      (data: ReporteEmpresaReducido[]) => (this.reporte = data),
-      ({ error }) => console.error(error)
-    );
+    const { fechaInicio, fechaFin } = this.rutaActiva.snapshot.queryParams;
+    this.reporteService
+      .buscarReporteEmpresa(id, fechaInicio, fechaFin)
+      .subscribe(
+        (data: ReporteEmpresaReducido[]) => (this.reporte = data),
+        ({ error }) => console.error(error)
+      );
   }
 }

@@ -19,7 +19,7 @@ export class DetalleCategoriaComponent implements OnInit {
     const { id } = this.rutaActiva.snapshot.params;
     this.categoriaService.detalle(id).subscribe(
       (categoria) => (this.categoria = categoria),
-      (err) => console.log(err)
+      (err) => console.error(err)
     );
   }
 }

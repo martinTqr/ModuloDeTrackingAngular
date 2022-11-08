@@ -10,8 +10,17 @@ import { Reporte } from '../interfaces';
 export class ReporteService {
   constructor(private httpClient: HttpClient) {}
 
-  public buscarReporteEmpresa(id: any): Observable<any> {
+  public buscarReporteEmpresa(
+    id: any,
+    fechaInicio?: string,
+    fechaFin?: string
+  ): Observable<any> {
     const { reporteEmpresaURL } = environment;
+    if (fechaInicio && fechaFin) {
+      return this.httpClient.get<any>(
+        `${reporteEmpresaURL}?idEmpresa=${id}&fechaInicio=${fechaInicio}&fechaFin=${fechaFin}`
+      );
+    }
     return this.httpClient.get<any>(`${reporteEmpresaURL}?idEmpresa=${id}`);
   }
   public buscarReporteUnidadNegocio(
