@@ -5,7 +5,6 @@ import { DxButtonModule, DxTreeListModule } from 'devextreme-angular';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { ReporteUNComponent } from './reporte-un/reporte-un.component';
 import { AppRoutingModule } from './app/app-routing.module';
-import { InicioComponent } from './inicio/inicio.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -23,6 +22,7 @@ import { ListaCategoriaComponent } from './categoria/lista-categoria.component';
 import { NuevaCategoriaComponent } from './categoria/nueva-categoria.component';
 import { DetalleCategoriaComponent } from './categoria/detalle-categoria.component';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+import { HomeComponent } from './home/home.component';
 
 if (!/localhost/.test(document.location.host)) {
   enableProdMode();
@@ -32,7 +32,7 @@ if (!/localhost/.test(document.location.host)) {
     AppComponent,
     ReporteUNComponent,
     ReporteEmpComponent,
-    InicioComponent,
+    HomeComponent,
     ListaMovimientoComponent,
     NuevoMovimientoComponent,
     DetalleMovimientoComponent,
@@ -45,6 +45,7 @@ if (!/localhost/.test(document.location.host)) {
     ListaCategoriaComponent,
     NuevaCategoriaComponent,
     DetalleCategoriaComponent,
+    HomeComponent,
   ],
   imports: [
     ReactiveFormsModule,

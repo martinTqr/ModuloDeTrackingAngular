@@ -9,7 +9,7 @@ import { NuevaCategoriaComponent } from '../categoria/nueva-categoria.component'
 import { DetalleEmpresaComponent } from '../empresa/detalle-empresa.component';
 import { ListaEmpresaComponent } from '../empresa/lista-empresa.component';
 import { NuevaEmpresaComponent } from '../empresa/nueva-empresa.component';
-import { InicioComponent } from '../inicio/inicio.component';
+import { HomeComponent } from '../home/home.component';
 import { DetalleMovimientoComponent } from '../movimiento/detalle-movimiento.component';
 import { ListaMovimientoComponent } from '../movimiento/lista-movimiento.component';
 import { NuevoMovimientoComponent } from '../movimiento/nuevo-movimiento.component';
@@ -17,7 +17,7 @@ import { ReporteEmpComponent } from '../reporte-emp/reporte-emp.component';
 import { ReporteUNComponent } from '../reporte-un/reporte-un.component';
 
 const rutas: Routes = [
-  { path: '', component: InicioComponent },
+  { path: '', component: HomeComponent },
   { path: 'reporte-emp/:id', component: ReporteEmpComponent },
   { path: 'reporte-un/:id', component: ReporteUNComponent },
 
