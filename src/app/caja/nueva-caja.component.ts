@@ -3,6 +3,8 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { CajaService } from '../services/caja.service';
 import swal from 'sweetalert2';
 import { transformarAString } from '../helper';
+import { UnidadNegocio } from '../models';
+import { UnidadNegocioService } from '../services/unidad-negocio.service';
 
 @Component({
   selector: 'app-nueva-caja',
@@ -15,11 +17,24 @@ export class NuevaCajaComponent implements OnInit {
     idUnidadNegocio: [9, Validators.required],
     negativa: [false, Validators.required],
   });
+  unidadesNegocio: UnidadNegocio[] = [];
 
-  constructor(private fb: FormBuilder, private cajaService: CajaService) {}
+  constructor(
+    private fb: FormBuilder,
+    private cajaService: CajaService,
+    private unidadNegocioService: UnidadNegocioService
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.cargarUnidadesNegocio();
+  }
+  cargarUnidadesNegocio() {
+    this.unidadNegocioService
+      .lista()
+      .subscribe((unidades) => (this.unidadesNegocio = unidades));
+  }
   crear(): void {
+    if (this.cajaFormulario.invalid) return;
     let { idUnidadNegocio, negativa, nombre } = this.cajaFormulario.value;
     idUnidadNegocio = Number(idUnidadNegocio);
     negativa = !!negativa;

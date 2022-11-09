@@ -34,20 +34,23 @@
     <div class="row mt-3">
       <div class="col">
         <label for="nombre">Unidad de negocio</label>
-        <input
-          type="number"
-          class="form-control"
-          placeholder="Wallas"
-          aria-label="ID Unidad de negocio"
-          [disabled]="true"
-        />
+        <select name="idUnidadNegocio" id="" class="form-control">
+          <option
+            *ngFor="let unidad of unidadesNegocio"
+            value="{{ unidad.id }}"
+          >
+            {{ unidad.nombre }}
+          </option>
+        </select>
       </div>
-      <button
-        class="col btn btn-success btn-block col mx-2 btn-small"
-        type="submit"
-      >
-        Crear
-      </button>
+      <div class="col">
+        <button
+          class="mt-3 ms-3 btn btn-success btn-block col mx-2 btn-small"
+          type="submit"
+        >
+          Crear
+        </button>
+      </div>
     </div>
   </div>
 </form>
