@@ -12,7 +12,7 @@ import { transformarAString } from '../helper';
 export class NuevaCajaComponent implements OnInit {
   cajaFormulario = this.fb.group({
     nombre: ['', Validators.required],
-    idUnidadNegocio: [0, Validators.required],
+    idUnidadNegocio: [9, Validators.required],
     negativa: [false, Validators.required],
   });
 

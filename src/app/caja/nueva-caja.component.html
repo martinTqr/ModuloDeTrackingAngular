@@ -25,23 +25,22 @@
       />
     </div>
     <div class="col">
-      <label for="nombre">ID unidad de negocio</label>
-      <input
-        type="number"
-        class="form-control"
-        placeholder="ID Unidad de negocio"
-        aria-label="ID Unidad de negocio"
-        formControlName="idUnidadNegocio"
-        required
-      />
+      <label for="nombre">Acepta negativos?</label>
+      <select name="negativa" class="form-control" id="">
+        <option value="true">Si</option>
+        <option value="false">No</option>
+      </select>
     </div>
     <div class="row mt-3">
       <div class="col">
-        <label for="nombre">Acepta negativos?</label>
-        <select name="negativa" class="form-control" id="">
-          <option value="true">Si</option>
-          <option value="false">No</option>
-        </select>
+        <label for="nombre">Unidad de negocio</label>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Wallas"
+          aria-label="ID Unidad de negocio"
+          [disabled]="true"
+        />
       </div>
       <button
         class="col btn btn-success btn-block col mx-2 btn-small"
