@@ -1,4 +1,4 @@
-const base = 'https://modulo-traking.herokuapp.com/';
+const base = 'https://modulo-traking.herokuapp.com';
 export const environment = {
   production: false,
   movimientoURL: `${base}/movimiento/`,
