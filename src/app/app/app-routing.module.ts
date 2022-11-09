@@ -15,6 +15,9 @@ import { ListaMovimientoComponent } from '../movimiento/lista-movimiento.compone
 import { NuevoMovimientoComponent } from '../movimiento/nuevo-movimiento.component';
 import { ReporteEmpComponent } from '../reporte-emp/reporte-emp.component';
 import { ReporteUNComponent } from '../reporte-un/reporte-un.component';
+import { DetalleUnidadNegocioComponent } from '../unidad-negocio/detalle-unidad-negocio.component';
+import { ListaUnidadNegocioComponent } from '../unidad-negocio/lista-unidad-negocio.component';
+import { NuevaUnidadNegocioComponent } from '../unidad-negocio/nueva-unidad-negocio.component';
 
 const rutas: Routes = [
   { path: '', component: HomeComponent },
@@ -24,6 +27,13 @@ const rutas: Routes = [
   { path: 'movimiento/lista', component: ListaMovimientoComponent },
   { path: 'movimiento/nuevo', component: NuevoMovimientoComponent },
   { path: 'movimiento/detalle/:id', component: DetalleMovimientoComponent },
+
+  { path: 'unidad-negocio/lista', component: ListaUnidadNegocioComponent },
+  { path: 'unidad-negocio/nuevo', component: NuevaUnidadNegocioComponent },
+  {
+    path: 'unidad-negocio/detalle/:id',
+    component: DetalleUnidadNegocioComponent,
+  },
 
   { path: 'caja/lista', component: ListaCajasComponent },
   { path: 'caja/detalle/:id', component: DetalleCajaComponent },

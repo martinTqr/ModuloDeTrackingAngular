@@ -11,7 +11,7 @@ export class UnidadNegocioService {
   unidadNegocioURL = environment.unidadNegocioURL;
   constructor(private httpClient: HttpClient) {}
 
-  public lista(): Observable<any> {
+  public lista(): Observable<UnidadNegocio[]> {
     return this.httpClient.get<UnidadNegocio[]>(this.unidadNegocioURL);
   }
   public detalle(id: number): Observable<UnidadNegocio> {
