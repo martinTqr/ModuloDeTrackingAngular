@@ -55,7 +55,6 @@
         class="form-control"
         placeholder="Categoria padre"
         aria-label="Categoria padre"
-        formControlName="idCategoriaPadre"
       >
         <option value="0" [defaultSelected]="true">Sin categoria padre</option>
         <option
@@ -91,7 +90,6 @@
     <button
       class="col btn btn-success btn-block col mx-2 btn-small"
       type="submit"
-      [disabled]="categoriaFormulario.invalid"
     >
       Crear
     </button>

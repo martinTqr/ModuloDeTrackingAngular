@@ -12,7 +12,7 @@ import { EmpresaService } from '../services/empresa.service';
 export class NuevaCategoriaComponent implements OnInit {
   categoriaFormulario = this.fb.group({
     nombre: ['', Validators.required],
-    tipo: ['', Validators.required],
+    tipo: ['in', Validators.required],
     idEmpresa: ['', Validators.required],
     orden: ['1', [Validators.required, Validators.min(1)]],
     isGeneral: ['', [Validators.required, Validators.required]],
@@ -54,6 +54,8 @@ export class NuevaCategoriaComponent implements OnInit {
     this.tipo = tipo === TipoCategoria.in ? 0 : 1;
   }
   crear(): void {
+    console.log(this.categoriaFormulario.value);
+
     if (!this.categoriaFormulario.valid) {
       return;
     }
