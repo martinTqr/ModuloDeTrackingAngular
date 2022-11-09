@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { parsearFecha } from '../helper';
-import { Movimiento } from '../models';
+import { Categoria, Movimiento } from '../models';
+import { CategoriaService } from '../services/categoria.service';
 import { MovimientoService } from '../services/movimiento.service';
 
 @Component({
@@ -10,11 +11,13 @@ import { MovimientoService } from '../services/movimiento.service';
 })
 export class ListaMovimientoComponent implements OnInit {
   movimientos: Movimiento[] = [];
+  categorias: Categoria[] = [];
   constructor(private movimientoService: MovimientoService) {}
 
   ngOnInit(): void {
     this.cargarMovimientos();
   }
+
   cargarMovimientos() {
     this.movimientoService.lista().subscribe(
       ({ movimientos }) => (this.movimientos = movimientos),

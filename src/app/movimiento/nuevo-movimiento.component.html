@@ -13,37 +13,31 @@
   <div class="row">
     <div class="col">
       <label for="categoria">Categoria</label>
-      <input
-        type="number"
-        class="form-control"
-        name="idCategoria"
-        placeholder="Categoria"
-        aria-label="Categoria"
-        [(ngModel)]="idCategoria"
-      />
+      <select name="idCategoria" id="" class="form-control">
+        <option *ngFor="let categoria of categorias" value="{{ categoria.id }}">
+          {{ categoria.nombre }}
+        </option>
+      </select>
     </div>
     <div class="col">
       <label for="Caja">Caja</label>
-      <input
-        type="number"
-        class="form-control"
-        name="idCaja"
-        placeholder="Caja"
-        aria-label="Caja"
-        [(ngModel)]="idCaja"
-      />
+      <select name="idCaja" id="" class="form-control">
+        <option *ngFor="let caja of cajas" value="{{ caja.id }}">
+          {{ caja.nombre }}
+        </option>
+      </select>
     </div>
   </div>
   <div class="row mt-3">
     <div class="col">
-      <label for="Usuario">Usuario</label>
+      <label for="Detalle">Detalle</label>
       <input
-        type="number"
+        type="text"
         class="form-control"
-        name="idUsuario"
-        placeholder="Usuario"
-        aria-label="Usuario"
-        [(ngModel)]="idUsuario"
+        name="detalle"
+        placeholder="Detalle"
+        aria-label="Detalle"
+        [(ngModel)]="detalle"
       />
     </div>
     <div class="col">
@@ -71,14 +65,14 @@
       />
     </div>
     <div class="col">
-      <label for="Detalle">Detalle</label>
+      <label for="Usuario">Usuario</label>
       <input
-        type="text"
+        type="number"
         class="form-control"
-        name="detalle"
-        placeholder="Detalle"
-        aria-label="Detalle"
-        [(ngModel)]="detalle"
+        name="idUsuario"
+        placeholder="Raul"
+        aria-label="Usuario"
+        disabled="true"
       />
     </div>
   </div>
@@ -89,9 +83,9 @@
         type="number"
         class="form-control"
         name="idUnidadNegocio"
-        placeholder="Unidad De Negocio"
+        placeholder="Wallas"
         aria-label="Unidad De Negocio"
-        [(ngModel)]="idUnidadNegocio"
+        disabled="true"
       />
     </div>
     <button class="btn btn-success btn-block col mx-2 btn-small" type="submit">

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import swal from 'sweetalert2';
-import { NuevoMovimiento } from '../models';
+import { Caja, Categoria, NuevoMovimiento } from '../models';
+import { CajaService } from '../services/caja.service';
+import { CategoriaService } from '../services/categoria.service';
 import { MovimientoService } from '../services/movimiento.service';
 
 @Component({
@@ -13,17 +15,40 @@ export class NuevoMovimientoComponent implements OnInit {
   idCaja: any = 8;
   idUnidadNegocio: number = 9;
   idCategoria: number = 28;
-  monto: number = 12312312;
-  detalle: string = 'TQR noviembre';
-  fecha: string = '03-11-2022';
-  constructor(private movimientoService: MovimientoService) {}
+  monto: number = 0;
+  detalle: string = '';
+  fecha: string = '';
+  categorias: Categoria[] = [];
+  cajas: Caja[] = [];
+  constructor(
+    private movimientoService: MovimientoService,
+    private categoriasService: CategoriaService,
+    private cajaService: CajaService
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.cargarCategorias();
+    this.cargarCajas();
+  }
+  cargarCategorias() {
+    this.categoriasService.lista().subscribe(
+      (categorias) => (this.categorias = categorias),
+      (error) => console.error(error)
+    );
+  }
+  cargarCajas() {
+    this.cajaService.lista().subscribe(
+      (cajas) => (this.cajas = cajas),
+      (error) => console.error(error)
+    );
+  }
 
   crear(): void {
-    const fecha = new Date(this.fecha).toISOString();
+    console.log(this.idCategoria);
 
-    const movimiento = new NuevoMovimiento({ ...this, fecha });
+    const fecha = new Date(this.fecha).toISOString();
+    const idCategoria = +this.idCategoria;
+    const movimiento = new NuevoMovimiento({ ...this, fecha, idCategoria });
     this.movimientoService.crear(movimiento).subscribe(
       ({ mensaje }) =>
         swal.fire({
@@ -31,7 +56,12 @@ export class NuevoMovimientoComponent implements OnInit {
           text: mensaje,
           icon: 'success',
         }),
-      ({ error }) => console.error(error)
+      ({ error }) =>
+        swal.fire({
+          title: 'Error al crear movimiento',
+          text: error.message.map((mensaje: string) => mensaje).join(' '),
+          icon: 'error',
+        })
     );
   }
 }
