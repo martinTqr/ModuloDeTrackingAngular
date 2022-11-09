@@ -68,30 +68,35 @@
   </div>
   <div class="row mt-3">
     <div class="col">
-      <label for="nombre">Orden</label>
-      <input
-        type="number"
-        class="form-control"
-        placeholder="Orden"
-        aria-label="Orden"
-        min="1"
-        formControlName="orden"
-      />
-    </div>
-    <div class="col">
       <label for="nombre">Es general?</label>
       <select name="isGeneral" class="form-control" formControlName="isGeneral">
         <option value="true">Si</option>
         <option value="false">No</option>
       </select>
     </div>
-  </div>
-  <div class="col mt-4">
-    <button
-      class="col btn btn-success btn-block col mx-2 btn-small"
-      type="submit"
-    >
-      Crear
-    </button>
+    <div class="col mt-3">
+      <button
+        class="col btn btn-success btn-block col mx-2 btn-small"
+        type="submit"
+      >
+        Crear
+      </button>
+    </div>
   </div>
 </form>
+<br />
+<div id="tree-list-demo">
+  <dx-tree-list
+    id="listaCategorias"
+    [dataSource]="listaCategorias[0]"
+    itemsExpr="subcategorias"
+    dataStructure="tree"
+    [showRowLines]="true"
+    [showBorders]="true"
+    (onCellClick)="selccionarCategoria($event)"
+  >
+    <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
+    <dxi-column dataField="tipo" caption="Tipo"></dxi-column>
+    <dxi-column dataField="isGeneral" caption="Es general?"></dxi-column>
+  </dx-tree-list>
+</div>

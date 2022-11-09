@@ -46,7 +46,6 @@ const rutas: Routes = [
   { path: 'categoria/lista', component: ListaCategoriaComponent },
   { path: 'categoria/detalle/:id', component: DetalleCategoriaComponent },
   { path: 'categoria/nueva', component: NuevaCategoriaComponent },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({
