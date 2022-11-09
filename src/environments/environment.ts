@@ -10,6 +10,7 @@ export const environment = {
   empresaURL: `${base}/empresa/`,
   unidadDeNegocioURL: `${base}/reportes/unidad-de-negocio/`,
   categoriaURL: `${base}/categoria/`,
+  unidadNegocioURL: `${base}/unidad-negocio/`,
 };
 
 /*
