@@ -29,7 +29,7 @@ const rutas: Routes = [
   { path: 'movimiento/detalle/:id', component: DetalleMovimientoComponent },
 
   { path: 'unidad-negocio/lista', component: ListaUnidadNegocioComponent },
-  { path: 'unidad-negocio/nuevo', component: NuevaUnidadNegocioComponent },
+  { path: 'unidad-negocia/nueva', component: NuevaUnidadNegocioComponent },
   {
     path: 'unidad-negocio/detalle/:id',
     component: DetalleUnidadNegocioComponent,

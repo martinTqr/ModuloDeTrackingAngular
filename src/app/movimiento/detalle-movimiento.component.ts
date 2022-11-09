@@ -17,6 +17,9 @@ export class DetalleMovimientoComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.buscarMovimiento();
+  }
+  buscarMovimiento() {
     const { id } = this.rutaActiva.snapshot.params;
 
     this.movimientoService.detalle(id).subscribe(
