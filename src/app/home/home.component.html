@@ -1,59 +1,95 @@
-<nav class="p-3">
-  <h4>Menu</h4>
-  <ul class="list-group mb-3" style="display: flex; width: 500px">
-    <li class="list-group-item" style="margin: 0 10px">
-      <a routerLink="/reporte-un/9">reporte unidad de negocio</a>
-    </li>
-    <li class="list-group-item" style="margin: 0 10px">
-      <a routerLink="/reporte-emp/11">reporte empresa</a>
-    </li>
-  </ul>
-  <h4>Movimientos</h4>
-  <ul class="list-group mb-3" style="display: flex; width: 500px">
-    <li class="list-group-item" style="margin: 0 10px">
-      <a routerLink="/movimiento/lista">Lista</a>
-    </li>
-    <li class="list-group-item" style="margin: 0 10px">
-      <a routerLink="/movimiento/nuevo">Nuevo</a>
-    </li>
-    <li class="list-group-item" style="margin: 0 10px">
-      <a routerLink="/movimiento/detalle/1">Detalle</a>
-    </li>
-  </ul>
-  <h4>Cajas</h4>
-  <ul class="list-group mb-3" style="display: flex; width: 500px">
-    <li class="list-group-item" style="margin: 0 10px">
-      <a routerLink="/caja/lista">Lista</a>
-    </li>
-    <li class="list-group-item" style="margin: 0 10px">
-      <a routerLink="/caja/nueva">Nuevo</a>
-    </li>
-    <li class="list-group-item" style="margin: 0 10px">
-      <a routerLink="/caja/detalle/1">Detalle</a>
-    </li>
-  </ul>
-  <h4>Empresas</h4>
-  <ul class="list-group mb-3" style="display: flex; width: 500px">
-    <li class="list-group-item" style="margin: 0 10px">
-      <a routerLink="/empresa/lista">Lista</a>
-    </li>
-    <li class="list-group-item" style="margin: 0 10px">
-      <a routerLink="/empresa/nueva">Nuevo</a>
-    </li>
-    <li class="list-group-item" style="margin: 0 10px">
-      <a routerLink="/empresa/detalle/1">Detalle</a>
-    </li>
-  </ul>
-  <h4>Categorias</h4>
-  <ul class="list-group mb-3" style="display: flex; width: 500px">
-    <li class="list-group-item" style="margin: 0 10px">
-      <a routerLink="/categoria/lista">Lista</a>
-    </li>
-    <li class="list-group-item" style="margin: 0 10px">
-      <a routerLink="/categoria/nueva">Nuevo</a>
-    </li>
-    <li class="list-group-item" style="margin: 0 10px">
-      <a routerLink="/categoria/detalle/1">Detalle</a>
-    </li>
-  </ul>
+<nav class="container">
+  <div class="row mb-3">
+    <div class="col">
+      <div class="card" style="width: 500px">
+        <h4 class="card-header">Cajas</h4>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a routerLink="/categoria/lista">Lista</a>
+            </li>
+            <li class="list-group-item">
+              <a routerLink="/categoria/nueva">Nuevo</a>
+            </li>
+            <li class="list-group-item">
+              <a routerLink="/categoria/detalle/1">Detalle</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 500px">
+        <h4 class="card-header">Movimientos</h4>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a routerLink="/movimiento/lista">Lista</a>
+            </li>
+            <li class="list-group-item">
+              <a routerLink="/movimiento/nuevo">Nuevo</a>
+            </li>
+            <li class="list-group-item">
+              <a routerLink="/movimiento/detalle/1">Detalle</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="col">
+      <div class="card" style="width: 500px">
+        <h4 class="card-header">Cajas</h4>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a routerLink="/caja/lista">Lista</a>
+            </li>
+            <li class="list-group-item">
+              <a routerLink="/caja/nueva">Nueva</a>
+            </li>
+            <li class="list-group-item">
+              <a routerLink="/caja/detalle/1">Detalle</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 500px">
+        <h4 class="card-header">Empresa</h4>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a routerLink="/empresa/lista">Lista</a>
+            </li>
+            <li class="list-group-item">
+              <a routerLink="/empresa/nuevo">Nuevo</a>
+            </li>
+            <li class="list-group-item">
+              <a routerLink="/empresa/detalle/1">Detalle</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="col">
+      <div class="card" style="width: 500px">
+        <h4 class="card-header">Reportes</h4>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a routerLink="/reporte-un/9">reporte unidad de negocio</a>
+            </li>
+            <li class="list-group-item">
+              <a routerLink="/reporte-emp/11">reporte empresa</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </nav>
