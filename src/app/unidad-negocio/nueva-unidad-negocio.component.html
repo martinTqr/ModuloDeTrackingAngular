@@ -1,1 +1,36 @@
-<p>nueva-unidad-negocio works!</p>
+<div class="card">
+  <h2 class="card-header">Nueva unidad de negocio</h2>
+  <div class="d-flex justify-content-between flex-row-reverse card-body">
+    <a routerLink="/" class="btn">Volver</a>
+
+    <form
+      class="container"
+      (ngSubmit)="crear()"
+      [formGroup]="unidadNegocioFormulario"
+      novalidate
+      #f="ngForm"
+    >
+      <div class="row">
+        <div class="col">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nombre"
+            aria-label="Nombre"
+            formControlName="nombre"
+            required
+          />
+        </div>
+        <div class="col">
+          <button
+            class="col btn btn-success btn-block my-auto mx-2 btn-small"
+            type="submit"
+          >
+            Crear
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
