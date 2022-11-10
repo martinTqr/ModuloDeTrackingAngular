@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
+import { Empresa } from '../models';
+import { EmpresaService } from '../services/empresa.service';
 import { UnidadNegocioService } from '../services/unidad-negocio.service';
 
 @Component({
@@ -11,15 +13,27 @@ import { UnidadNegocioService } from '../services/unidad-negocio.service';
 export class NuevaUnidadNegocioComponent implements OnInit {
   unidadNegocioFormulario = this.fb.group({
     nombre: ['', Validators.required],
-    idEmpresa: ['11', Validators.required],
+    idEmpresa: ['', Validators.required],
   });
+  empresas: Empresa[] = [];
   constructor(
     private fb: FormBuilder,
-    private unidadNegocioService: UnidadNegocioService
+    private unidadNegocioService: UnidadNegocioService,
+    private empresaService: EmpresaService
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.obtenerEmpresas();
+  }
 
+  obtenerEmpresas() {
+    this.empresaService.lista().subscribe((empresas) => {
+      this.empresas = empresas;
+      this.unidadNegocioFormulario.patchValue({
+        idEmpresa: String(this.empresas[0].id),
+      });
+    });
+  }
   crear() {
     let { nombre, idEmpresa } = this.unidadNegocioFormulario.value;
     nombre = String(nombre);

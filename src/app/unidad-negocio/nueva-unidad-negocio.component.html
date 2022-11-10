@@ -23,8 +23,16 @@
           />
         </div>
         <div class="col">
+          <label for="nombre">Empresa</label>
+          <select name="idEmpresa" id="" class="form-control">
+            <option *ngFor="let empresa of empresas" value="{{ empresa.id }}">
+              {{ empresa.nombre }}
+            </option>
+          </select>
+        </div>
+        <div class="col">
           <button
-            class="col btn btn-success btn-block my-auto mx-2 btn-small"
+            class="mt-3 col btn btn-success btn-block my-auto mx-2 btn-small"
             type="submit"
           >
             Crear

@@ -51,23 +51,11 @@
     </div>
     <div class="col">
       <label for="nombre">Categoria padre</label>
-      <select
-        class="form-control"
-        placeholder="Categoria padre"
-        aria-label="Categoria padre"
-      >
-        <option value="0" [defaultSelected]="true">Sin categoria padre</option>
-        <option
-          *ngFor="let categoria of listaCategorias[tipo]"
-          value="{{ categoria.id }}"
-        >
-          {{ categoria.nombre }}
-        </option>
-      </select>
+      <p class="form-control">{{ categoriaSeleccionadaNombre }}</p>
     </div>
   </div>
   <div class="row mt-3">
-    <div class="col">
+    <div class="col" *ngIf="!!categoriaSeleccionadaNombre">
       <label for="nombre">Es general?</label>
       <select name="isGeneral" class="form-control" formControlName="isGeneral">
         <option value="true">Si</option>
@@ -78,6 +66,7 @@
       <button
         class="col btn btn-success btn-block col mx-2 btn-small"
         type="submit"
+        [disabled]="categoriaFormulario.invalid"
       >
         Crear
       </button>
@@ -85,18 +74,27 @@
   </div>
 </form>
 <br />
-<div id="tree-list-demo">
-  <dx-tree-list
-    id="listaCategorias"
-    [dataSource]="listaCategorias[0]"
-    itemsExpr="subcategorias"
-    dataStructure="tree"
-    [showRowLines]="true"
-    [showBorders]="true"
-    (onCellClick)="selccionarCategoria($event)"
-  >
-    <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
-    <dxi-column dataField="tipo" caption="Tipo"></dxi-column>
-    <dxi-column dataField="isGeneral" caption="Es general?"></dxi-column>
-  </dx-tree-list>
+<div class="my-3 d-flex justify-content-between">
+  <div id="tree-list-demo">
+    <dx-tree-list
+      id="listaCategorias"
+      [dataSource]="listaCategorias[tipo]"
+      itemsExpr="subcategorias"
+      dataStructure="tree"
+      [showRowLines]="true"
+      [showBorders]="true"
+      (onCellClick)="selccionarCategoria($event)"
+      [autoExpandAll]="true"
+      [hoverStateEnabled]="true"
+      width="500"
+    >
+      <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
+      <dxi-column dataField="isGeneral" caption="Es general?"></dxi-column>
+    </dx-tree-list>
+  </div>
+  <div>
+    <button class="btn btn-danger" (click)="borrarCategoriaPadre()">
+      Borrar categoria padre
+    </button>
+  </div>
 </div>

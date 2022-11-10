@@ -18,7 +18,6 @@ export class DetalleUnidadNegocioComponent implements OnInit {
 
   ngOnInit(): void {
     this.buscarUnidadNegocio();
-    console.log(this.unidadNegocio);
   }
   buscarUnidadNegocio() {
     const { id } = this.rutaActiva.snapshot.params;

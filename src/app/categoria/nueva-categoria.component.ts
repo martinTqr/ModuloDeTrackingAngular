@@ -14,7 +14,7 @@ export class NuevaCategoriaComponent implements OnInit {
   categoriaFormulario = this.fb.group({
     nombre: ['', Validators.required],
     tipo: ['in', Validators.required],
-    /* idEmpresa: ['11', Validators.required], */
+    idEmpresa: ['', Validators.required],
     /*  orden: ['1', [Validators.required, Validators.min(1)]], */
     isGeneral: ['', [Validators.required, Validators.required]],
     idCategoriaPadre: [''],
@@ -22,7 +22,7 @@ export class NuevaCategoriaComponent implements OnInit {
   listaEmpresa: Empresa[] = [];
   listaCategorias: Categoria[][] = [[], []];
   tipo = 0;
-  celdaSeleccionar = 'Seleccionar';
+  categoriaSeleccionadaNombre = '-';
   constructor(
     private fb: FormBuilder,
     private categoriaService: CategoriaService,
@@ -58,20 +58,23 @@ export class NuevaCategoriaComponent implements OnInit {
   crear(): void {
     if (!this.categoriaFormulario.valid) return;
 
-    let { nombre, tipo, idCategoriaPadre, isGeneral } =
+    let { nombre, tipo, idCategoriaPadre, isGeneral, idEmpresa } =
       this.categoriaFormulario.value;
     nombre = String(nombre);
     const tipoString = String(tipo);
     /*  const ordenNumber = Number(orden); */
-    /*  const idEmpresaNumber = Number(idEmpresa); */
-    const idCategoriaPadreNumber = Number(idCategoriaPadre);
-    const idEmpresaLotus = 11;
-    const isGeneralBoolean = Boolean(isGeneral);
+    const idEmpresaNumber = Number(idEmpresa);
+
+    const idCategoriaPadreNumber = idCategoriaPadre
+      ? Number(idCategoriaPadre)
+      : null;
+
+    const isGeneralBoolean = !!isGeneral;
 
     const categoria: Categoria = {
       nombre,
       tipo: tipoString,
-      idEmpresa: idEmpresaLotus,
+      idEmpresa: idEmpresaNumber,
       idCategoriaPadre: idCategoriaPadreNumber,
       orden: 1,
       isGeneral: isGeneralBoolean,
@@ -84,7 +87,9 @@ export class NuevaCategoriaComponent implements OnInit {
           text: data.nombre,
           icon: 'success',
         });
-        this.categoriaFormulario.reset();
+        setTimeout(() => {
+          window.location.reload(), [10000];
+        });
       },
       ({ error }) =>
         swal.fire({ title: 'Error', text: error.message, icon: 'error' })
@@ -98,6 +103,17 @@ export class NuevaCategoriaComponent implements OnInit {
       idCategoriaPadre: id,
     });
   }
+  borrarCategoriaPadre() {
+    if (this.categoriaFormulario.value.idCategoriaPadre) {
+      this.categoriaFormulario.patchValue({
+        isGeneral: '',
+      });
+    }
+    this.categoriaFormulario.patchValue({
+      idCategoriaPadre: '',
+    });
+    this.categoriaSeleccionadaNombre = '-';
+  }
   selccionarCategoria(evento: any) {
     if (evento.event.target.tagName.toLowerCase() !== 'span') {
       if (evento.row.node.hasChildren) {
@@ -107,6 +123,14 @@ export class NuevaCategoriaComponent implements OnInit {
         });
         return;
       }
+      const idCateg = evento.row.node.data.id;
+      this.categoriaFormulario.patchValue({
+        idCategoriaPadre: idCateg,
+      });
+      this.categoriaSeleccionadaNombre = evento.row.node.data.nombre;
+      this.categoriaFormulario.patchValue({
+        isGeneral: evento.row.node.data.isGeneral,
+      });
     }
   }
 }

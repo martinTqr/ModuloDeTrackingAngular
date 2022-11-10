@@ -44,8 +44,6 @@ export class NuevoMovimientoComponent implements OnInit {
   }
 
   crear(): void {
-    console.log(this.idCategoria);
-
     const fecha = new Date(this.fecha).toISOString();
     const idCategoria = +this.idCategoria;
     const movimiento = new NuevoMovimiento({ ...this, fecha, idCategoria });
