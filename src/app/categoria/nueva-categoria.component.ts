@@ -116,13 +116,6 @@ export class NuevaCategoriaComponent implements OnInit {
   }
   selccionarCategoria(evento: any) {
     if (evento.event.target.tagName.toLowerCase() !== 'span') {
-      if (evento.row.node.hasChildren) {
-        Swal.fire({
-          text: 'Seleccione una categoria sin hijos',
-          icon: 'info',
-        });
-        return;
-      }
       const idCateg = evento.row.node.data.id;
       this.categoriaFormulario.patchValue({
         idCategoriaPadre: idCateg,
