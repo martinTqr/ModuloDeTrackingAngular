@@ -14,7 +14,7 @@ export class NuevaCategoriaComponent implements OnInit {
     nombre: ['', Validators.required],
     tipo: ['in', Validators.required],
     idEmpresa: ['11', Validators.required],
-    /*  orden: ['1', [Validators.required, Validators.min(1)]], */
+    orden: ['1', [Validators.required, Validators.min(1)]],
     isGeneral: ['', [Validators.required, Validators.required]],
     idCategoriaPadre: [''],
   });
@@ -46,7 +46,9 @@ export class NuevaCategoriaComponent implements OnInit {
         },
         [[], []]
       );
-
+      listaSeparada.forEach((lista) =>
+        lista.sort((a, b) => Number(a.isGeneral) - Number(b.isGeneral))
+      );
       this.listaCategorias = listaSeparada;
     });
   }
@@ -55,11 +57,11 @@ export class NuevaCategoriaComponent implements OnInit {
     this.tipo = tipo === TipoCategoria.in ? 0 : 1;
   }
   crear(): void {
-    let { nombre, tipo, idCategoriaPadre, isGeneral, idEmpresa } =
+    let { nombre, tipo, idCategoriaPadre, isGeneral, idEmpresa, orden } =
       this.categoriaFormulario.value;
     nombre = String(nombre);
     const tipoString = String(tipo);
-    /*  const ordenNumber = Number(orden); */
+    const ordenNumber = Number(orden);
     const idEmpresaNumber = Number(idEmpresa);
 
     const idCategoriaPadreNumber = idCategoriaPadre
@@ -73,10 +75,11 @@ export class NuevaCategoriaComponent implements OnInit {
       tipo: tipoString,
       idEmpresa: idEmpresaNumber,
       idCategoriaPadre: idCategoriaPadreNumber,
-      orden: 1,
+      orden: ordenNumber,
       isGeneral: isGeneralBoolean,
     };
-    if (!!nombre) {
+
+    if (!nombre) {
       Swal.fire({
         title: 'Error',
         text: 'El nombre es requerido',
@@ -90,10 +93,8 @@ export class NuevaCategoriaComponent implements OnInit {
           title: 'Categoria creada',
           text: data.nombre,
           icon: 'success',
-        });
-        setTimeout(() => {
-          window.location.reload(), [10000];
-        });
+          timer: 3000,
+        }).then(() => window.location.reload());
       },
       ({ error }) =>
         Swal.fire({ title: 'Error', text: error.message, icon: 'error' })
