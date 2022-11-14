@@ -7,7 +7,6 @@
   <table class="table">
     <thead>
       <tr>
-        <th scope="col">ID</th>
         <th scope="col">nombre</th>
         <th scope="col">Tipo</th>
         <th scope="col">Es General</th>
@@ -15,9 +14,8 @@
     </thead>
     <tbody>
       <tr *ngFor="let categoria of categorias">
-        <td>{{ categoria.id }}</td>
         <td>{{ categoria.nombre }}</td>
-        <td>{{ categoria.tipo }}</td>
+        <td>{{ categoria.tipo === "in" ? "Ingreso" : "Egreso" }}</td>
         <td>{{ categoria.isGeneral ? "Si" : "No" }}</td>
       </tr>
     </tbody>
