@@ -13,7 +13,7 @@ export class NuevaCategoriaComponent implements OnInit {
   categoriaFormulario = this.fb.group({
     nombre: ['', Validators.required],
     tipo: ['in', Validators.required],
-    idEmpresa: ['11', Validators.required],
+    idEmpresa: ['1', Validators.required],
     orden: ['1', [Validators.required, Validators.min(1)]],
     isGeneral: ['', [Validators.required, Validators.required]],
     idCategoriaPadre: [''],
