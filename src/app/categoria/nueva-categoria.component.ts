@@ -13,7 +13,7 @@ export class NuevaCategoriaComponent implements OnInit {
   categoriaFormulario = this.fb.group({
     nombre: ['', Validators.required],
     tipo: ['in', Validators.required],
-    idEmpresa: ['', Validators.required],
+    idEmpresa: ['11', Validators.required],
     /*  orden: ['1', [Validators.required, Validators.min(1)]], */
     isGeneral: ['', [Validators.required, Validators.required]],
     idCategoriaPadre: [''],
@@ -55,8 +55,6 @@ export class NuevaCategoriaComponent implements OnInit {
     this.tipo = tipo === TipoCategoria.in ? 0 : 1;
   }
   crear(): void {
-    if (!this.categoriaFormulario.valid) return;
-
     let { nombre, tipo, idCategoriaPadre, isGeneral, idEmpresa } =
       this.categoriaFormulario.value;
     nombre = String(nombre);
@@ -78,7 +76,14 @@ export class NuevaCategoriaComponent implements OnInit {
       orden: 1,
       isGeneral: isGeneralBoolean,
     };
-
+    if (!!nombre) {
+      Swal.fire({
+        title: 'Error',
+        text: 'El nombre es requerido',
+        icon: 'error',
+      });
+      return;
+    }
     this.categoriaService.crear(categoria).subscribe(
       (data) => {
         Swal.fire({

@@ -19,8 +19,6 @@ export class ReporteService {
     const fechaInicioRuta = fechaInicio ? `&fechaInicio=${fechaInicio}` : '';
     const fechaFinRuta = fechaFin ? `&fechaFin=${fechaFin}` : '';
     const ruta = `${reporteEmpresaURL}?idEmpresa=${id}${fechaInicioRuta}${fechaFinRuta}`;
-    console.log(ruta);
-
     return this.httpClient.get<any>(ruta);
   }
   public buscarReporteUnidadNegocio(

@@ -38,7 +38,7 @@
     </div>
   </div>
   <div class="row mt-3">
-    <div class="col">
+    <!-- <div class="col">
       <label for="nombre">Empresa</label>
       <select name="idEmpresa" formControlName="idEmpresa" class="form-control">
         <option
@@ -47,6 +47,13 @@
         >
           {{ empresa.nombre }}
         </option>
+      </select>
+    </div> -->
+    <div class="col" *ngIf="!!categoriaSeleccionadaNombre">
+      <label for="nombre">Es general?</label>
+      <select name="isGeneral" class="form-control" formControlName="isGeneral">
+        <option value="true">Si</option>
+        <option value="false">No</option>
       </select>
     </div>
     <div class="col">
@@ -64,18 +71,10 @@
     </div>
   </div>
   <div class="row mt-3">
-    <div class="col" *ngIf="!!categoriaSeleccionadaNombre">
-      <label for="nombre">Es general?</label>
-      <select name="isGeneral" class="form-control" formControlName="isGeneral">
-        <option value="true">Si</option>
-        <option value="false">No</option>
-      </select>
-    </div>
     <div class="col mt-3">
       <button
         class="col btn btn-success btn-block col mx-2 btn-small"
         type="submit"
-        [disabled]="categoriaFormulario.invalid"
       >
         Crear
       </button>
