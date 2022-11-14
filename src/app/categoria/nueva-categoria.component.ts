@@ -68,7 +68,7 @@ export class NuevaCategoriaComponent implements OnInit {
       ? Number(idCategoriaPadre)
       : null;
 
-    const isGeneralBoolean = !!isGeneral;
+    const isGeneralBoolean = trasnformarABoolean(isGeneral);
 
     const categoria: Categoria = {
       nombre,
@@ -78,6 +78,7 @@ export class NuevaCategoriaComponent implements OnInit {
       orden: ordenNumber,
       isGeneral: isGeneralBoolean,
     };
+    console.log(isGeneral, isGeneralBoolean);
 
     if (!nombre) {
       Swal.fire({
@@ -132,3 +133,8 @@ export class NuevaCategoriaComponent implements OnInit {
     }
   }
 }
+const trasnformarABoolean = (value: any): boolean => {
+  if (value === 'true') return true;
+  if (value === 'false') return false;
+  return !!value;
+};
