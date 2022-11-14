@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Categoria, Empresa, TipoCategoria } from '../models';
 import { CategoriaService } from '../services/categoria.service';
-import swal from 'sweetalert2';
 import { EmpresaService } from '../services/empresa.service';
 import Swal from 'sweetalert2';
 @Component({
@@ -82,7 +81,7 @@ export class NuevaCategoriaComponent implements OnInit {
 
     this.categoriaService.crear(categoria).subscribe(
       (data) => {
-        swal.fire({
+        Swal.fire({
           title: 'Categoria creada',
           text: data.nombre,
           icon: 'success',
@@ -92,7 +91,7 @@ export class NuevaCategoriaComponent implements OnInit {
         });
       },
       ({ error }) =>
-        swal.fire({ title: 'Error', text: error.message, icon: 'error' })
+        Swal.fire({ title: 'Error', text: error.message, icon: 'error' })
     );
   }
   obtenerCampo(campo: string) {
