@@ -8,14 +8,16 @@
   <table class="table">
     <thead>
       <tr>
-        <th scope="col">ID</th>
         <th scope="col">Nombre</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let unidadNegocio of listaUnidadesDeNegocio">
-        <td>{{ unidadNegocio.id }}</td>
-        <td>{{ unidadNegocio.nombre }}</td>
+        <td>
+          <a href="reporte-un/{{ unidadNegocio.id }}">{{
+            unidadNegocio.nombre
+          }}</a>
+        </td>
       </tr>
     </tbody>
   </table>
