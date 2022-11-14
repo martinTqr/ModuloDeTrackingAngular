@@ -13,7 +13,7 @@ import { UnidadNegocioService } from '../services/unidad-negocio.service';
   styleUrls: ['./nuevo-movimiento.component.css'],
 })
 export class NuevoMovimientoComponent implements OnInit {
-  idUsuario: number = 4;
+  idUsuario: number = 1;
   idCaja!: number;
   idUnidadNegocio!: number;
   idCategoria!: number;
