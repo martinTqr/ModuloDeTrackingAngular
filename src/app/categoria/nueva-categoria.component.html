@@ -52,8 +52,8 @@
     <div class="col" *ngIf="!!categoriaSeleccionadaNombre">
       <label for="nombre">Es general?</label>
       <select name="isGeneral" class="form-control" formControlName="isGeneral">
+        <option value="false" [selected]="true">No</option>
         <option value="true">Si</option>
-        <option value="false">No</option>
       </select>
     </div>
     <div class="col">
