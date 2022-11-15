@@ -12,6 +12,10 @@ export class CategoriaService {
   constructor(private httpClient: HttpClient) {}
 
   public lista(): Observable<Categoria[]> {
+    return this.httpClient.get<Categoria[]>(`${this.categoriaURL}lista`);
+  }
+
+  public listaArbol(): Observable<Categoria[]> {
     return this.httpClient.get<Categoria[]>(this.categoriaURL);
   }
   public detalle(id: number): Observable<Categoria> {

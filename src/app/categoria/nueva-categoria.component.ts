@@ -32,7 +32,7 @@ export class NuevaCategoriaComponent implements OnInit {
     this.empresaService
       .lista()
       .subscribe((lista) => (this.listaEmpresa = lista));
-    this.categoriaService.lista().subscribe((lista) => {
+    this.categoriaService.listaArbol().subscribe((lista) => {
       //separe lista for tipo
       const listaSeparada = lista.reduce(
         (acum: Categoria[][], categ) => {

@@ -16,10 +16,19 @@
       <p class="form-control">{{ categoriaSeleccionadaNombre }}</p>
     </div>
     <div class="col">
-      <label for="Caja">Caja</label>
-      <select name="idCaja" id="" class="form-control" [(ngModel)]="idCaja">
-        <option *ngFor="let caja of cajas" value="{{ caja.id }}">
-          {{ caja.nombre }}
+      <label for="Unidad De Negocio">Unidad De Negocio</label>
+      <select
+        name="idUnidadNegocio"
+        id=""
+        class="form-control"
+        [(ngModel)]="idUnidadNegocio"
+        (ngModelChange)="seleccionarUnidadNegocio($event)"
+      >
+        <option
+          *ngFor="let unidad of unidadesDeNegocio"
+          value="{{ unidad.id }}"
+        >
+          {{ unidad.nombre }}
         </option>
       </select>
     </div>
@@ -74,18 +83,10 @@
   </div>
   <div class="row mt-3">
     <div class="col">
-      <label for="Unidad De Negocio">Unidad De Negocio</label>
-      <select
-        name="idUnidadNegocio"
-        id=""
-        class="form-control"
-        [(ngModel)]="idUnidadNegocio"
-      >
-        <option
-          *ngFor="let unidad of unidadesDeNegocio"
-          value="{{ unidad.id }}"
-        >
-          {{ unidad.nombre }}
+      <label for="Caja">Caja</label>
+      <select name="idCaja" id="" class="form-control" [(ngModel)]="idCaja">
+        <option *ngFor="let caja of cajas" value="{{ caja.id }}">
+          {{ caja.nombre }}
         </option>
       </select>
     </div>

@@ -14,11 +14,11 @@ import { UnidadNegocioService } from '../services/unidad-negocio.service';
 export class NuevoMovimientoComponent implements OnInit {
   idUsuario: number = 1;
   idCaja!: number;
-  idUnidadNegocio!: number;
+  idUnidadNegocio!: number | undefined;
   idCategoria!: number;
   monto: number = 0;
   detalle: string = '';
-  fecha: string = '';
+  fecha: string = new Date().toISOString().split('T')[0];
 
   categoriaSeleccionadaNombre: string = '-';
   categorias: Categoria[] = [];
@@ -33,26 +33,34 @@ export class NuevoMovimientoComponent implements OnInit {
 
   ngOnInit(): void {
     this.cargarCategorias();
-    this.cargarCajas();
     this.cargarUnidadNegocio();
   }
-  cargarUnidadNegocio() {
+
+  async cargarUnidadNegocio() {
     this.unidadNegocioService.lista().subscribe((unidadNegocio) => {
+      this.idUnidadNegocio = unidadNegocio[0].id;
       this.unidadesDeNegocio = unidadNegocio;
+      this.cargarCajas(Number(unidadNegocio[0].id));
     });
   }
   cargarCategorias() {
-    this.categoriasService.lista().subscribe(
+    this.categoriasService.listaArbol().subscribe(
       (categorias) => (this.categorias = categorias),
       (error) => console.error(error)
     );
   }
-  cargarCajas() {
-    this.cajaService.lista().subscribe(
-      (cajas) => (this.cajas = cajas),
-      (error) => console.error(error)
-    );
+  cargarCajas(idUnidadNegocio: number) {
+    return this.cajaService.lista().subscribe((cajas) => {
+      this.cajas = cajas.filter(
+        (caja) => Number(caja.idUnidadNegocio) === idUnidadNegocio
+      );
+    });
   }
+
+  async seleccionarUnidadNegocio(id: any) {
+    this.cargarCajas(id);
+  }
+
   selccionarCategoria(evento: any) {
     if (evento.event.target.tagName.toLowerCase() !== 'span') {
       if (evento.row.node.hasChildren) {
