@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
-import swal from 'sweetalert2';
 import { Caja, Categoria, NuevoMovimiento, UnidadNegocio } from '../models';
 import { CajaService } from '../services/caja.service';
 import { CategoriaService } from '../services/categoria.service';
@@ -83,7 +82,7 @@ export class NuevoMovimientoComponent implements OnInit {
     });
     this.movimientoService.crear(movimiento).subscribe(
       ({ mensaje }) =>
-        swal.fire({
+        Swal.fire({
           title: 'Movimiento creado',
           text: mensaje,
           icon: 'success',
@@ -91,9 +90,9 @@ export class NuevoMovimientoComponent implements OnInit {
       ({ error }) => {
         console.log(error);
 
-        swal.fire({
+        Swal.fire({
           title: 'Error al crear movimiento',
-          text: error.message.map((mensaje: string) => mensaje).join(' '),
+          text: [error.message].map((mensaje: string) => mensaje).join(' '),
           icon: 'error',
         });
       }
