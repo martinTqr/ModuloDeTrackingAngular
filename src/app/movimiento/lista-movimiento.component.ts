@@ -21,7 +21,8 @@ export class ListaMovimientoComponent implements OnInit {
 
   cargarMovimientos() {
     this.movimientoService.lista().subscribe(
-      ({ movimientos }) => (this.movimientos = movimientos),
+      ({ movimientos }) =>
+        (this.movimientos = movimientos.sort((a: any, b: any) => a.id - b.id)),
       (error) => console.error(error)
     );
   }
