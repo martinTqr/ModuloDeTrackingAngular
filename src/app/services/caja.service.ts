@@ -20,4 +20,7 @@ export class CajaService {
   public crear(caja: Caja): Observable<any> {
     return this.httpClient.post<any>(this.cajaURL, caja);
   }
+  public borrar(id: number): Observable<any> {
+    return this.httpClient.delete<any>(this.cajaURL + id);
+  }
 }
