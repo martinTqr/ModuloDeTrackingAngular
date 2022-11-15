@@ -10,6 +10,7 @@
         <th scope="col">nombre</th>
         <th scope="col">Tipo</th>
         <th scope="col">Es General</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -17,6 +18,14 @@
         <td>{{ categoria.nombre }}</td>
         <td>{{ categoria.tipo === "in" ? "Ingreso" : "Egreso" }}</td>
         <td>{{ categoria.isGeneral ? "Si" : "No" }}</td>
+        <td>
+          <button
+            class="btn btn-danger btn-sm pb-0 px-1"
+            (click)="borrar(categoria.id)"
+          >
+            <i class="bi bi-trash"></i>
+          </button>
+        </td>
       </tr>
     </tbody>
   </table>

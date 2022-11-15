@@ -20,4 +20,7 @@ export class CategoriaService {
   public crear(categoria: Categoria): Observable<any> {
     return this.httpClient.post<any>(this.categoriaURL, categoria);
   }
+  public borrar(id: number): Observable<any> {
+    return this.httpClient.delete<any>(this.categoriaURL + id);
+  }
 }
