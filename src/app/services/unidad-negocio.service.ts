@@ -20,4 +20,7 @@ export class UnidadNegocioService {
   public crear(unidadNegocio: UnidadNegocio): Observable<any> {
     return this.httpClient.post<any>(this.unidadNegocioURL, unidadNegocio);
   }
+  public borrar(id: number): Observable<any> {
+    return this.httpClient.delete<any>(this.unidadNegocioURL + id);
+  }
 }

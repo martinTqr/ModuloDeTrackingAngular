@@ -9,6 +9,7 @@
     <thead>
       <tr>
         <th scope="col">Nombre</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -17,6 +18,14 @@
           <a href="reporte-un/{{ unidadNegocio.id }}">{{
             unidadNegocio.nombre
           }}</a>
+        </td>
+        <td>
+          <button
+            class="btn btn-danger btn-sm pb-0 px-1"
+            (click)="borrar(unidadNegocio.id)"
+          >
+            <i class="bi bi-trash"></i>
+          </button>
         </td>
       </tr>
     </tbody>
