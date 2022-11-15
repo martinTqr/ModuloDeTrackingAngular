@@ -3,46 +3,55 @@
   <div></div>
   <a routerLink="/" class="btn">Volver</a>
 </div>
+<div class="container" style="max-width: 600px">
+  <div class="row">
+    <div class="col">
+      <label for="categoria">Finanzas generales?</label>
+      <select
+        name="isGeneral"
+        [(ngModel)]="isGeneral"
+        class="form-control"
+        (ngModelChange)="cambiarGeneral($event)"
+      >
+        <option value="true" [selected]="true">Si</option>
+        <option value="false">No</option>
+      </select>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
 <form
   class="container"
   style="max-width: 600px"
   (ngSubmit)="crear()"
   novalidate
+  [formGroup]="movimientoFormulario"
   #f="ngForm"
 >
-  <div class="row">
+  <div class="row mt-3">
     <div class="col">
       <label for="categoria">Categoria</label>
       <p class="form-control">{{ categoriaSeleccionadaNombre }}</p>
     </div>
     <div class="col">
-      <label for="Unidad De Negocio">Unidad De Negocio</label>
-      <select
-        name="idUnidadNegocio"
-        id=""
-        class="form-control"
-        [(ngModel)]="idUnidadNegocio"
-        (ngModelChange)="seleccionarUnidadNegocio($event)"
-      >
-        <option
-          *ngFor="let unidad of unidadesDeNegocio"
-          value="{{ unidad.id }}"
+      <label for="Caja">Caja</label>
+      <select name="idCaja" id="" class="form-control" formControlName="idCaja">
         >
-          {{ unidad.nombre }}
+        <option *ngFor="let caja of cajas" value="{{ caja.id }}">
+          {{ caja.nombre }}
         </option>
       </select>
     </div>
   </div>
-  <div class="row mt-3">
+  <div class="row">
     <div class="col">
-      <label for="Detalle">Detalle</label>
+      <label for="Fecha">Fecha</label>
       <input
-        type="text"
+        type="date"
         class="form-control"
-        name="detalle"
-        placeholder="Detalle"
-        aria-label="Detalle"
-        [(ngModel)]="detalle"
+        name="fecha"
+        aria-label="Fecha"
+        formControlName="fecha"
       />
     </div>
     <div class="col">
@@ -53,23 +62,10 @@
         name="monto"
         placeholder="Monto"
         aria-label="Monto"
-        [(ngModel)]="monto"
+        formControlName="monto"
       />
     </div>
-  </div>
-  <div class="row mt-3">
-    <div class="col">
-      <label for="Fecha">Fecha</label>
-      <input
-        type="date"
-        class="form-control"
-        name="fecha"
-        placeholder="Fecha"
-        aria-label="Fecha"
-        [(ngModel)]="fecha"
-      />
-    </div>
-    <!-- <div class="col">
+    <!--  <div *ngIf="!idUnidadNegocio" class="col">
       <label for="Usuario">Usuario</label>
       <input
         type="number"
@@ -83,13 +79,35 @@
   </div>
   <div class="row mt-3">
     <div class="col">
-      <label for="Caja">Caja</label>
-      <select name="idCaja" id="" class="form-control" [(ngModel)]="idCaja">
-        <option *ngFor="let caja of cajas" value="{{ caja.id }}">
-          {{ caja.nombre }}
+      <label for="Detalle">Detalle</label>
+      <input
+        type="text"
+        class="form-control"
+        name="detalle"
+        placeholder="Detalle"
+        aria-label="Detalle"
+        formControlName="detalle"
+      />
+    </div>
+
+    <div *ngIf="isGeneral === 'false'" class="col">
+      <label for="Unidad De Negocio">Unidad De Negocio</label>
+      <select
+        name="idUnidadNegocio"
+        formControlName="idUnidadNegocio"
+        class="form-control"
+      >
+        <option
+          *ngFor="let unidad of unidadesDeNegocio"
+          value="{{ unidad.id }}"
+        >
+          {{ unidad.nombre }}
         </option>
       </select>
     </div>
+  </div>
+  <div class="row">
+    <div class="col"></div>
     <div class="col">
       <button
         class="btn btn-success btn-block mt-3 mx-2 btn-small"
@@ -116,7 +134,7 @@
       width="500"
     >
       <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
-      <dxi-column dataField="isGeneral" caption="Es general?"></dxi-column>
+      <dxi-column dataField="isGeneral" caption="Finanzas general"></dxi-column>
     </dx-tree-list>
   </div>
 </form>

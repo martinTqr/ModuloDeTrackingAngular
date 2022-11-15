@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { Caja, Categoria, NuevoMovimiento, UnidadNegocio } from '../models';
 import { CajaService } from '../services/caja.service';
@@ -12,13 +13,16 @@ import { UnidadNegocioService } from '../services/unidad-negocio.service';
   styleUrls: ['./nuevo-movimiento.component.css'],
 })
 export class NuevoMovimientoComponent implements OnInit {
-  idUsuario: number = 1;
-  idCaja!: number;
-  idUnidadNegocio!: number | undefined;
-  idCategoria!: number;
-  monto: number = 0;
-  detalle: string = '';
-  fecha: string = new Date().toISOString().split('T')[0];
+  movimientoFormulario = this.fb.group({
+    idUsuario: ['4', Validators.required],
+    idCaja: ['', Validators.required],
+    idUnidadNegocio: [''],
+    idCategoria: ['', Validators.required],
+    fecha: ['', Validators.required],
+    detalle: ['', Validators.required],
+    monto: ['', Validators.required, Validators.min(0)],
+  });
+  isGeneral: string = 'true';
 
   categoriaSeleccionadaNombre: string = '-';
   categorias: Categoria[] = [];
@@ -28,37 +32,49 @@ export class NuevoMovimientoComponent implements OnInit {
     private movimientoService: MovimientoService,
     private categoriasService: CategoriaService,
     private cajaService: CajaService,
-    private unidadNegocioService: UnidadNegocioService
+    private unidadNegocioService: UnidadNegocioService,
+    private fb: FormBuilder
   ) {}
 
   ngOnInit(): void {
-    this.cargarCategorias();
+    this.cargarCategorias(true);
     this.cargarUnidadNegocio();
+    this.cargarCajas();
   }
 
   async cargarUnidadNegocio() {
     this.unidadNegocioService.lista().subscribe((unidadNegocio) => {
-      this.idUnidadNegocio = unidadNegocio[0].id;
       this.unidadesDeNegocio = unidadNegocio;
-      this.cargarCajas(Number(unidadNegocio[0].id));
     });
   }
-  cargarCategorias() {
-    this.categoriasService.listaArbol().subscribe(
-      (categorias) => (this.categorias = categorias),
-      (error) => console.error(error)
-    );
-  }
-  cargarCajas(idUnidadNegocio: number) {
-    return this.cajaService.lista().subscribe((cajas) => {
-      this.cajas = cajas.filter(
-        (caja) => Number(caja.idUnidadNegocio) === idUnidadNegocio
+  cargarCategorias(isGeneral: boolean) {
+    this.categoriasService
+      .listaArbol()
+      .subscribe(
+        (categorias) =>
+          (this.categorias = categorias.filter(
+            (categoria) => categoria.isGeneral === isGeneral
+          ))
       );
+  }
+  cargarCajas() {
+    return this.cajaService.lista().subscribe((cajas) => {
+      this.cajas = cajas;
     });
   }
+  async cambiarGeneral(evento: any) {
+    console.log(evento);
 
-  async seleccionarUnidadNegocio(id: any) {
-    this.cargarCajas(id);
+    this.cargarCategorias(this.isGeneral === 'true');
+    if (this.isGeneral === 'true') {
+      this.movimientoFormulario.patchValue({
+        idUnidadNegocio: '',
+        idCategoria: '',
+      });
+    } else {
+      this.cargarUnidadNegocio();
+    }
+    this.categoriaSeleccionadaNombre = '-';
   }
 
   selccionarCategoria(evento: any) {
@@ -71,22 +87,39 @@ export class NuevoMovimientoComponent implements OnInit {
         return;
       }
       const idCateg = evento.row.node.data.id;
-      this.idCategoria = idCateg;
+      this.movimientoFormulario.patchValue({
+        idCategoria: idCateg,
+      });
       this.categoriaSeleccionadaNombre = evento.row.node.data.nombre;
     }
   }
 
   crear(): void {
-    const fecha = new Date(this.fecha).toISOString();
-    const idCategoria = Number(this.idCategoria);
-    const idCaja = Number(this.idCaja);
-    const idUnidadNegocio = Number(this.idUnidadNegocio);
-    const movimiento = new NuevoMovimiento({
-      ...this,
-      idCaja,
-      idUnidadNegocio,
+    if (this.movimientoFormulario.invalid) return;
+    let {
       fecha,
+      idCaja,
       idCategoria,
+      idUnidadNegocio,
+      idUsuario,
+      detalle,
+      monto,
+    } = this.movimientoFormulario.value;
+
+    const idCategoriaNumber = Number(idCategoria);
+    const montoNumber = Number(monto);
+    const idCajaNumber = Number(idCaja);
+    const idUnidadNegocioNumber = Number(idUnidadNegocio);
+    const idUsuarioNumber = Number(idUsuario);
+
+    const movimiento = new NuevoMovimiento({
+      idCaja: idCajaNumber,
+      idUnidadNegocio: idUnidadNegocioNumber,
+      idCategoria: idCategoriaNumber,
+      monto: montoNumber,
+      idUsuario: idUsuarioNumber,
+      fecha,
+      detalle,
     });
     this.movimientoService.crear(movimiento).subscribe(
       ({ mensaje }) =>
@@ -96,8 +129,6 @@ export class NuevoMovimientoComponent implements OnInit {
           icon: 'success',
         }),
       ({ error }) => {
-        console.log(error);
-
         Swal.fire({
           title: 'Error al crear movimiento',
           text: [error.message].map((mensaje: string) => mensaje).join(' '),

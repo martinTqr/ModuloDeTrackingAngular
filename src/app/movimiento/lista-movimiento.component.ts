@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 import { parsearFecha } from '../helper';
 import { Categoria, Movimiento } from '../models';
-import { CategoriaService } from '../services/categoria.service';
 import { MovimientoService } from '../services/movimiento.service';
 
 @Component({
