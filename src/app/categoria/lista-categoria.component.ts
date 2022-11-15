@@ -31,6 +31,8 @@ export class ListaCategoriaComponent implements OnInit {
         );
       },
       ({ error }) => {
+        console.log(error);
+
         const mensajeError = error?.categorias
           ? error.mensaje +
             ': ' +
