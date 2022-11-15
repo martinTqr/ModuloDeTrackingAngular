@@ -27,7 +27,7 @@
         <td>{{ movimiento.detalle }}</td>
         <td>{{ movimiento.monto }}</td>
         <td>{{ parsearFecha(movimiento.fecha) }}</td>
-        <td>{{ movimiento.categoria.tipo }}</td>
+        <td>{{ movimiento.categoria.tipo == "in" ? "Ingreso" : "Egreso" }}</td>
       </tr>
     </tbody>
   </table>
