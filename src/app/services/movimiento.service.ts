@@ -20,4 +20,7 @@ export class MovimientoService {
   public crear(movimiento: NuevoMovimiento): Observable<any> {
     return this.httpClient.post<any>(this.movimientoURL, movimiento);
   }
+  public borrar(id: number): Observable<any> {
+    return this.httpClient.delete<any>(this.movimientoURL + id);
+  }
 }

@@ -17,6 +17,7 @@
         <th scope="col">Monto</th>
         <th scope="col">Fecha</th>
         <th scope="col">Tipo</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -28,6 +29,14 @@
         <td>{{ movimiento.monto }}</td>
         <td>{{ parsearFecha(movimiento.fecha) }}</td>
         <td>{{ movimiento.categoria.tipo == "in" ? "Ingreso" : "Egreso" }}</td>
+        <td>
+          <button
+            class="btn btn-danger btn-sm pb-0 px-1"
+            (click)="borrar(movimiento.id)"
+          >
+            <i class="bi bi-trash"></i>
+          </button>
+        </td>
       </tr>
     </tbody>
   </table>

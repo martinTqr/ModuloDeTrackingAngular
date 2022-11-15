@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 import { parsearFecha } from '../helper';
 import { Categoria, Movimiento } from '../models';
 import { CategoriaService } from '../services/categoria.service';
@@ -26,5 +27,23 @@ export class ListaMovimientoComponent implements OnInit {
   }
   parsearFecha(fecha: Date): string {
     return parsearFecha(fecha);
+  }
+  borrar(id: any): void {
+    this.movimientoService.borrar(id).subscribe(
+      () => {
+        this.movimientos = this.movimientos.filter(
+          (movimiento) => movimiento.id !== id
+        );
+        Swal.fire(
+          'Movimiento borrado',
+          `Movimiento ${id} eliminado con éxito`,
+          'success'
+        );
+      },
+
+      ({ error }) => {
+        Swal.fire('Error!', error.mensaje || error.message, 'error');
+      }
+    );
   }
 }
