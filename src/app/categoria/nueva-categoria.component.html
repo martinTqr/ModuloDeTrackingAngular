@@ -32,8 +32,8 @@
         formControlName="tipo"
         (change)="cambioEnTipo($event)"
       >
-        <option value="in" [defaultSelected]="true">Ingreso</option>
-        <option value="out">Egreso</option>
+        <option value="in">Ingreso</option>
+        <option value="out" [defaultSelected]="true">Egreso</option>
       </select>
     </div>
   </div>
@@ -52,8 +52,8 @@
     <div class="col" *ngIf="!!categoriaSeleccionadaNombre">
       <label for="nombre">Es general?</label>
       <select name="isGeneral" class="form-control" formControlName="isGeneral">
-        <option value="false" [selected]="true">No</option>
-        <option value="true">Si</option>
+        <option value="true" [selected]="true">Si</option>
+        <option value="false">No</option>
       </select>
     </div>
     <div class="col">

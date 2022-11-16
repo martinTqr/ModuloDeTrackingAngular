@@ -12,10 +12,10 @@ import Swal from 'sweetalert2';
 export class NuevaCategoriaComponent implements OnInit {
   categoriaFormulario = this.fb.group({
     nombre: ['', Validators.required],
-    tipo: ['in', Validators.required],
+    tipo: ['out', Validators.required],
     idEmpresa: ['1', Validators.required],
     orden: ['1', [Validators.required, Validators.min(1)]],
-    isGeneral: ['', [Validators.required, Validators.required]],
+    isGeneral: ['true', [Validators.required, Validators.required]],
     idCategoriaPadre: [''],
   });
   listaEmpresa: Empresa[] = [];
@@ -36,7 +36,7 @@ export class NuevaCategoriaComponent implements OnInit {
       //separe lista for tipo
       const listaSeparada = lista.reduce(
         (acum: Categoria[][], categ) => {
-          if (categ.tipo === TipoCategoria.in) {
+          if (categ.tipo === TipoCategoria.out) {
             acum[0].push(categ);
             return acum;
           } else {
@@ -54,9 +54,10 @@ export class NuevaCategoriaComponent implements OnInit {
   }
   cambioEnTipo(e: any) {
     const tipo = e.target.value;
-    this.tipo = tipo === TipoCategoria.in ? 0 : 1;
+    this.tipo = tipo === TipoCategoria.out ? 0 : 1;
   }
   crear(): void {
+    if (!this.categoriaFormulario.valid) return;
     let { nombre, tipo, idCategoriaPadre, isGeneral, idEmpresa, orden } =
       this.categoriaFormulario.value;
     nombre = String(nombre);
