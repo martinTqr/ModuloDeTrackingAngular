@@ -11,7 +11,7 @@ export class EmpresaService {
   empresaURL = environment.empresaURL;
   constructor(private httpClient: HttpClient) {}
 
-  public lista(): Observable<any> {
+  public lista(): Observable<Empresa[]> {
     return this.httpClient.get<Empresa[]>(this.empresaURL);
   }
   public detalle(id: number): Observable<Empresa> {

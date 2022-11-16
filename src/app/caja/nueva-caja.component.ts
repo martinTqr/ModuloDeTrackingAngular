@@ -5,6 +5,7 @@ import swal from 'sweetalert2';
 import { transformarAString } from '../helper';
 import { UnidadNegocio } from '../models';
 import { UnidadNegocioService } from '../services/unidad-negocio.service';
+import { EmpresaService } from '../services/empresa.service';
 
 @Component({
   selector: 'app-nueva-caja',
@@ -13,22 +14,37 @@ import { UnidadNegocioService } from '../services/unidad-negocio.service';
 })
 export class NuevaCajaComponent implements OnInit {
   cajaFormulario = this.fb.group({
+    idEmpresa: ['', [Validators.required]],
     nombre: ['', Validators.required],
     negativa: ['', Validators.required],
   });
   unidadesNegocio: UnidadNegocio[] = [];
 
-  constructor(private fb: FormBuilder, private cajaService: CajaService) {}
+  constructor(
+    private fb: FormBuilder,
+    private cajaService: CajaService,
+    private empresaService: EmpresaService
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.cargarEmpresa();
+  }
+
+  cargarEmpresa() {
+    this.empresaService.lista().subscribe((empresas) => {
+      this.cajaFormulario.patchValue({ idEmpresa: String(empresas[0].id) });
+    });
+  }
   crear(): void {
     if (this.cajaFormulario.invalid) return;
-    let { negativa, nombre } = this.cajaFormulario.value;
+    let { idEmpresa, negativa, nombre } = this.cajaFormulario.value;
+    const idEmpresaNumber = Number(idEmpresa);
     const negativaBoolean = trasnformarABoolean(negativa);
     nombre = transformarAString(nombre);
 
     this.cajaService
       .crear({
+        idEmpresa: idEmpresaNumber,
         nombre,
         negativa: negativaBoolean,
       })
@@ -39,12 +55,15 @@ export class NuevaCajaComponent implements OnInit {
             text: `La caja ${data.nombre} ha sido creada con éxito`,
             icon: 'success',
           }),
-        ({ error }) =>
+        (error) => {
+          console.log(error);
+
           swal.fire({
             icon: 'error',
             title: 'Error',
             text: error.message.map((mensaje: string) => mensaje).join(' '),
-          })
+          });
+        }
       );
   }
 }

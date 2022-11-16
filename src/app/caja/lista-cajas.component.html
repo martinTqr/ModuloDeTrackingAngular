@@ -10,6 +10,8 @@
       <tr>
         <th scope="col">ID</th>
         <th scope="col">Nombre</th>
+        <th scope="col">Id Empresa</th>
+
         <th scope="col">Negativa</th>
         <th scope="col"></th>
       </tr>
@@ -18,6 +20,7 @@
       <tr *ngFor="let caja of cajas">
         <td>{{ caja.id }}</td>
         <td>{{ caja.nombre }}</td>
+        <td>{{ caja.idEmpresa }}</td>
         <td>{{ caja.negativa ? "Si" : "No" }}</td>
         <td>
           <button
