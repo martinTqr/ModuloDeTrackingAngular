@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { parsearFecha } from '../helper';
 import { Categoria, Movimiento } from '../models';
@@ -10,16 +11,36 @@ import { MovimientoService } from '../services/movimiento.service';
   styleUrls: ['./lista-movimiento.component.css'],
 })
 export class ListaMovimientoComponent implements OnInit {
+  movimientosForm = this.fb.group({
+    fechaInicio: [''],
+    fechaFin: [''],
+  });
   movimientos: Movimiento[] = [];
   categorias: Categoria[] = [];
-  constructor(private movimientoService: MovimientoService) {}
+  constructor(
+    private movimientoService: MovimientoService,
+    private fb: FormBuilder
+  ) {}
 
   ngOnInit(): void {
     this.cargarMovimientos();
   }
 
-  cargarMovimientos() {
-    this.movimientoService.lista().subscribe(
+  /*filtrarMovimientos() {
+    const { fechaInicio, fechaFin } = this.movimientosForm.value;
+    const fechaInicioDate = fechaInicio ? new Date(fechaInicio!) : undefined;
+    const fechaFinDate = fechaFin ? new Date(fechaFin!) : undefined;
+    console.log(!!fechaInicio, !!fechaFin);
+    console.log(fechaInicioDate, fechaFinDate);
+
+    this.movimientoService.cargarMovimientos().subscribe(
+      ({ movimientos }) => (this.movimientos = movimientos),
+      (error) => console.error(error)
+    );
+  } */
+
+  cargarMovimientos(fechaInicio?: Date, fechaFin?: Date) {
+    this.movimientoService.lista(fechaInicio, fechaFin).subscribe(
       ({ movimientos }) =>
         (this.movimientos = movimientos.sort((a: any, b: any) => a.id - b.id)),
       (error) => console.error(error)

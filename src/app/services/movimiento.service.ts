@@ -11,8 +11,11 @@ export class MovimientoService {
   movimientoURL = environment.movimientoURL;
   constructor(private httpClient: HttpClient) {}
 
-  public lista(): Observable<any> {
-    return this.httpClient.get<Movimiento[]>(this.movimientoURL);
+  public lista(fechaInicio?: Date, fechaFin?: Date): Observable<any> {
+    const fechaInicioRuta = fechaInicio ? `&fechaInicio=${fechaInicio}` : '';
+    const fechaFinRuta = fechaFin ? `&fechaFin=${fechaFin}` : '';
+    const ruta = `${this.movimientoURL}?${fechaInicioRuta}${fechaFinRuta}`;
+    return this.httpClient.get<Movimiento[]>(ruta);
   }
   public detalle(id: number): Observable<Movimiento> {
     return this.httpClient.get<Movimiento>(this.movimientoURL + id);
