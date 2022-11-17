@@ -26,6 +26,9 @@ import { HomeComponent } from './home/home.component';
 import { NuevaUnidadNegocioComponent } from './unidad-negocio/nueva-unidad-negocio.component';
 import { DetalleUnidadNegocioComponent } from './unidad-negocio/detalle-unidad-negocio.component';
 import { ListaUnidadNegocioComponent } from './unidad-negocio/lista-unidad-negocio.component';
+import { NuevoGrupoCajaComponent } from './grupo-caja/nuevo-grupo-caja.component';
+import { ListaGrupoCajaComponent } from './grupo-caja/lista-grupo-caja.component';
+import { DetalleGrupoCajaComponent } from './grupo-caja/detalle-grupo-caja.component';
 
 if (!/localhost/.test(document.location.host)) {
   enableProdMode();
@@ -52,6 +55,9 @@ if (!/localhost/.test(document.location.host)) {
     NuevaUnidadNegocioComponent,
     DetalleUnidadNegocioComponent,
     ListaUnidadNegocioComponent,
+    NuevoGrupoCajaComponent,
+    ListaGrupoCajaComponent,
+    DetalleGrupoCajaComponent,
   ],
   imports: [
     ReactiveFormsModule,

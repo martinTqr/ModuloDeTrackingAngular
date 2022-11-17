@@ -8,4 +8,5 @@ export const environment = {
   unidadDeNegocioURL: `${base}/reportes/unidad-de-negocio/`,
   categoriaURL: `${base}/categoria/`,
   unidadNegocioURL: `${base}/unidad-negocio/`,
+  grupoCajaURL: `${base}/grupo-caja/`,
 };
