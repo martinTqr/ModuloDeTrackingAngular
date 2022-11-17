@@ -9,6 +9,9 @@ import { NuevaCategoriaComponent } from '../categoria/nueva-categoria.component'
 import { DetalleEmpresaComponent } from '../empresa/detalle-empresa.component';
 import { ListaEmpresaComponent } from '../empresa/lista-empresa.component';
 import { NuevaEmpresaComponent } from '../empresa/nueva-empresa.component';
+import { DetalleGrupoCajaComponent } from '../grupo-caja/detalle-grupo-caja.component';
+import { ListaGrupoCajaComponent } from '../grupo-caja/lista-grupo-caja.component';
+import { NuevoGrupoCajaComponent } from '../grupo-caja/nuevo-grupo-caja.component';
 import { HomeComponent } from '../home/home.component';
 import { DetalleMovimientoComponent } from '../movimiento/detalle-movimiento.component';
 import { ListaMovimientoComponent } from '../movimiento/lista-movimiento.component';
@@ -38,6 +41,10 @@ const rutas: Routes = [
   { path: 'caja/lista', component: ListaCajasComponent },
   { path: 'caja/detalle/:id', component: DetalleCajaComponent },
   { path: 'caja/nueva', component: NuevaCajaComponent },
+
+  { path: 'grupo-caja/lista', component: ListaGrupoCajaComponent },
+  { path: 'grupo-caja/detalle/:id', component: DetalleGrupoCajaComponent },
+  { path: 'grupo-caja/nuevo', component: NuevoGrupoCajaComponent },
 
   { path: 'empresa/lista', component: ListaEmpresaComponent },
   { path: 'empresa/detalle/:id', component: DetalleEmpresaComponent },

@@ -29,7 +29,7 @@ export class NuevaEmpresaComponent implements OnInit {
       .subscribe(
         ({ data }) =>
           swal.fire({
-            title: 'Caja creada',
+            title: 'Empresa creada',
             text: `La empresa ${data.nombre} ha sido creada con éxito`,
             icon: 'success',
           }),

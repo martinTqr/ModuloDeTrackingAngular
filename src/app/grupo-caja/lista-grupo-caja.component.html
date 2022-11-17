@@ -1,1 +1,21 @@
-<p>lista-grupo-caja works!</p>
+<h2>Lista de grupos de cajas</h2>
+<div class="my-3 d-flex justify-content-between">
+  <div></div>
+  <a routerLink="/" class="btn">Volver</a>
+</div>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">nombre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let grupoCaja of grupoCajas">
+        <td>{{ grupoCaja.id }}</td>
+        <td>{{ grupoCaja.nombre }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
