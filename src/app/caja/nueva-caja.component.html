@@ -37,13 +37,28 @@
               <option [value]="false">No</option>
             </select>
           </div>
-          <div class="col">
-            <button
-              class="mt-3 ms-3 btn btn-success btn-block col mx-2 btn-small"
-              type="submit"
-            >
-              Crear
-            </button>
+          <div class="row">
+            <div class="col">
+              <label for="nombre">Grupo de cajas</label>
+              <select
+                name="idGrupoCaja"
+                formControlName="idGrupoCaja"
+                class="form-control"
+                id=""
+              >
+                <option *ngFor="let grupo of grupoCajas" value="{{ grupo.id }}">
+                  {{ grupo.nombre }}
+                </option>
+              </select>
+            </div>
+            <div class="col">
+              <button
+                class="mt-3 ms-3 btn btn-success btn-block col mx-2 btn-small"
+                type="submit"
+              >
+                Crear
+              </button>
+            </div>
           </div>
         </div>
       </form>
