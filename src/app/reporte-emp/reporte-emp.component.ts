@@ -36,7 +36,12 @@ export class ReporteEmpComponent implements OnInit {
           this.reporte = data;
           Swal.close();
         },
-        ({ error }) => console.error(error)
+        ({ error }) =>
+          Swal.fire({
+            icon: 'error',
+            title: 'Ocurrio un error...',
+            text: error.message,
+          })
       );
   }
 }

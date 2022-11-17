@@ -19,7 +19,7 @@ export class NuevoMovimientoComponent implements OnInit {
     idUnidadNegocio: [''],
     idCategoria: ['', Validators.required],
     fecha: ['', Validators.required],
-    detalle: ['', Validators.required],
+    detalle: [''],
     monto: ['', Validators.required, Validators.min(0)],
   });
   isGeneral: string = 'true';
