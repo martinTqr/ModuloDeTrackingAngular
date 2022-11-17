@@ -105,6 +105,10 @@ export class NuevoMovimientoComponent implements OnInit {
       detalle,
       monto,
     } = this.movimientoFormulario.value;
+    if (!idCategoria) {
+      Swal.fire({ text: 'Seleccione una categoria', icon: 'info' });
+      return;
+    }
 
     const idCategoriaNumber = Number(idCategoria);
     const montoNumber = Number(monto);
