@@ -118,23 +118,83 @@
     </div>
   </div>
   <hr />
-
-  <h4>Seleccione una categoria</h4>
-  <div id="tree-list-demo">
-    <dx-tree-list
-      id="listaCategorias"
-      [dataSource]="categorias"
-      itemsExpr="subcategorias"
-      dataStructure="tree"
-      [showRowLines]="true"
-      [showBorders]="true"
-      [autoExpandAll]="true"
-      (onCellClick)="selccionarCategoria($event)"
-      [hoverStateEnabled]="true"
-      width="500"
-    >
-      <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
-      <dxi-column dataField="isGeneral" caption="Finanzas general"></dxi-column>
-    </dx-tree-list>
-  </div>
 </form>
+<h4>Seleccione una categoria</h4>
+<div class="scroll-h mx-auto">
+  <div>
+    <h5>Egresos - Generales</h5>
+    <div id="tree-list-demo">
+      <dx-tree-list
+        id="listaCategorias"
+        [dataSource]="categorias[categoriasIndice.out_general]"
+        itemsExpr="subcategorias"
+        dataStructure="tree"
+        [showRowLines]="true"
+        [showBorders]="true"
+        (onCellClick)="selccionarCategoria($event)"
+        [hoverStateEnabled]="true"
+        [autoExpandAll]="true"
+        [columnAutoWidth]="true"
+      >
+        <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
+      </dx-tree-list>
+    </div>
+  </div>
+  <div class="ms-4">
+    <h5>Egresos - No generales</h5>
+    <div id="tree-list-demo">
+      <dx-tree-list
+        id="listaCategorias"
+        [dataSource]="categorias[categoriasIndice.out_especificas]"
+        itemsExpr="subcategorias"
+        dataStructure="tree"
+        [showRowLines]="true"
+        [showBorders]="true"
+        (onCellClick)="selccionarCategoria($event)"
+        [hoverStateEnabled]="true"
+        [autoExpandAll]="true"
+        [columnAutoWidth]="true"
+      >
+        <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
+      </dx-tree-list>
+    </div>
+  </div>
+  <div class="ms-4">
+    <h5>Ingresos - Generales</h5>
+    <div id="tree-list-demo">
+      <dx-tree-list
+        id="listaCategorias"
+        [dataSource]="categorias[categoriasIndice.in_general]"
+        itemsExpr="subcategorias"
+        dataStructure="tree"
+        [showRowLines]="true"
+        [showBorders]="true"
+        (onCellClick)="selccionarCategoria($event)"
+        [hoverStateEnabled]="true"
+        [autoExpandAll]="true"
+        [columnAutoWidth]="true"
+      >
+        <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
+      </dx-tree-list>
+    </div>
+  </div>
+  <div class="ms-4">
+    <h5>Ingreso - No generales</h5>
+    <div id="tree-list-demo">
+      <dx-tree-list
+        id="listaCategorias"
+        [dataSource]="categorias[categoriasIndice.in_especificas]"
+        itemsExpr="subcategorias"
+        dataStructure="tree"
+        [showRowLines]="true"
+        [showBorders]="true"
+        (onCellClick)="selccionarCategoria($event)"
+        [hoverStateEnabled]="true"
+        [autoExpandAll]="true"
+        [columnAutoWidth]="true"
+      >
+        <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
+      </dx-tree-list>
+    </div>
+  </div>
+</div>

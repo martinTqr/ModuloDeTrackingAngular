@@ -1,0 +1,4 @@
+.scroll-h{
+  display: flex;
+  overflow-x: scroll;
+}

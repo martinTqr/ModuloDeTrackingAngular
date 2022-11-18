@@ -25,9 +25,17 @@ export class NuevoMovimientoComponent implements OnInit {
   isGeneral: string = 'true';
 
   categoriaSeleccionadaNombre: string = '-';
-  categorias: Categoria[] = [];
+  categorias: Categoria[][] = [];
   cajas: Caja[] = [];
   unidadesDeNegocio: UnidadNegocio[] = [];
+
+  categoriasIndice = {
+    out_general: 0,
+    in_general: 1,
+    out_especificas: 2,
+    in_especificas: 3,
+  };
+
   constructor(
     private movimientoService: MovimientoService,
     private categoriasService: CategoriaService,
@@ -48,23 +56,33 @@ export class NuevoMovimientoComponent implements OnInit {
     });
   }
   cargarCategorias(isGeneral: boolean) {
-    this.categoriasService
-      .listaArbol()
-      .subscribe(
-        (categorias) =>
-          (this.categorias = categorias.filter(
-            (categoria) => categoria.isGeneral === isGeneral
-          ))
-      );
+    const categorias: Categoria[][] = [[], [], [], []];
+    const { in_especificas, in_general, out_especificas, out_general } =
+      this.categoriasIndice;
+    this.categoriasService.listaArbol().subscribe((lista) => {
+      lista.forEach((categoria) => {
+        if (categoria.tipo === 'in' && categoria.isGeneral)
+          categorias[in_general].push(categoria);
+
+        if (categoria.tipo === 'in' && !categoria.isGeneral)
+          categorias[in_especificas].push(categoria);
+
+        if (categoria.tipo === 'out' && categoria.isGeneral)
+          categorias[out_general].push(categoria);
+
+        if (categoria.tipo === 'out' && !categoria.isGeneral)
+          categorias[out_especificas].push(categoria);
+      });
+      this.categorias = categorias;
+    });
   }
+
   cargarCajas() {
     return this.cajaService.lista().subscribe((cajas) => {
       this.cajas = cajas;
     });
   }
   async cambiarGeneral(evento: any) {
-    console.log(evento);
-
     this.cargarCategorias(this.isGeneral === 'true');
     if (this.isGeneral === 'true') {
       this.movimientoFormulario.patchValue({
@@ -78,6 +96,8 @@ export class NuevoMovimientoComponent implements OnInit {
   }
 
   selccionarCategoria(evento: any) {
+    console.log(evento);
+
     if (evento.event.target.tagName.toLowerCase() !== 'span') {
       if (evento.row.node.hasChildren) {
         Swal.fire({
