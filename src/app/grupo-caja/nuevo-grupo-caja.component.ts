@@ -11,6 +11,7 @@ import { GrupoCajaService } from '../services/grupo-caja.service';
 export class NuevoGrupoCajaComponent implements OnInit {
   grupoCajaFormulario = this.fb.group({
     nombre: ['', Validators.required],
+    idEmpresa: ['1', Validators.required],
   });
   constructor(
     private fb: FormBuilder,
@@ -19,12 +20,13 @@ export class NuevoGrupoCajaComponent implements OnInit {
 
   ngOnInit(): void {}
   crear(): void {
-    let { nombre } = this.grupoCajaFormulario.value;
+    let { nombre, idEmpresa } = this.grupoCajaFormulario.value;
     nombre = transformarAString(nombre);
-
+    const idEmpresaNumber = Number(idEmpresa);
     this.grupoCajaService
       .crear({
         nombre,
+        idEmpresa: idEmpresaNumber,
       })
       .subscribe(
         ({ data }) =>
