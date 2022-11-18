@@ -164,10 +164,9 @@ export class NuevoMovimientoComponent implements OnInit {
       detalle,
     });
     this.movimientoService.crear(movimiento).subscribe(
-      ({ mensaje }) =>
+      () =>
         Swal.fire({
           title: 'Movimiento creado',
-          text: mensaje,
           icon: 'success',
         }),
       ({ error }) => {
