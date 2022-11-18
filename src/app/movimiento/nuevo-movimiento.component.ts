@@ -45,7 +45,7 @@ export class NuevoMovimientoComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.cargarCategorias(true);
+    this.cargarCategorias();
     this.cargarUnidadNegocio();
     this.cargarCajas();
   }
@@ -55,7 +55,7 @@ export class NuevoMovimientoComponent implements OnInit {
       this.unidadesDeNegocio = unidadNegocio;
     });
   }
-  cargarCategorias(isGeneral: boolean) {
+  cargarCategorias() {
     const categorias: Categoria[][] = [[], [], [], []];
     const { in_especificas, in_general, out_especificas, out_general } =
       this.categoriasIndice;
@@ -82,17 +82,16 @@ export class NuevoMovimientoComponent implements OnInit {
       this.cajas = cajas;
     });
   }
-  async cambiarGeneral(evento: any) {
-    this.cargarCategorias(this.isGeneral === 'true');
-    if (this.isGeneral === 'true') {
+  async cambiarGeneral(isGeneral: boolean) {
+    if (isGeneral) {
       this.movimientoFormulario.patchValue({
         idUnidadNegocio: '',
-        idCategoria: '',
       });
+      this.isGeneral = 'true';
     } else {
+      this.isGeneral = 'false';
       this.cargarUnidadNegocio();
     }
-    this.categoriaSeleccionadaNombre = '-';
   }
 
   selccionarCategoria(evento: any) {
@@ -106,6 +105,8 @@ export class NuevoMovimientoComponent implements OnInit {
         });
         return;
       }
+      this.cambiarGeneral(evento.data.isGeneral);
+
       const idCateg = evento.row.node.data.id;
       this.movimientoFormulario.patchValue({
         idCategoria: idCateg,

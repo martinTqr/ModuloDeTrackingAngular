@@ -38,17 +38,6 @@
     </div>
   </div>
   <div class="row mt-3">
-    <!-- <div class="col">
-      <label for="nombre">Empresa</label>
-      <select name="idEmpresa" formControlName="idEmpresa" class="form-control">
-        <option
-          *ngFor="let empresa of listaEmpresa; index as i"
-          value="{{ empresa.id }}"
-        >
-          {{ empresa.nombre }}
-        </option>
-      </select>
-    </div> -->
     <div class="col" *ngIf="!!categoriaSeleccionadaNombre">
       <label for="nombre">Es general?</label>
       <select name="isGeneral" class="form-control" formControlName="isGeneral">

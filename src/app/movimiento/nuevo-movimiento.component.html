@@ -3,23 +3,7 @@
   <div></div>
   <a routerLink="/" class="btn">Volver</a>
 </div>
-<div class="container" style="max-width: 600px">
-  <div class="row">
-    <div class="col">
-      <label for="categoria">Finanzas generales?</label>
-      <select
-        name="isGeneral"
-        [(ngModel)]="isGeneral"
-        class="form-control"
-        (ngModelChange)="cambiarGeneral($event)"
-      >
-        <option value="true" [selected]="true">Si</option>
-        <option value="false">No</option>
-      </select>
-    </div>
-    <div class="col"></div>
-  </div>
-</div>
+
 <form
   class="container"
   style="max-width: 600px"
@@ -97,6 +81,7 @@
         formControlName="idUnidadNegocio"
         class="form-control"
       >
+        <option value="">Seleccione una unidad de negocio</option>
         <option
           *ngFor="let unidad of unidadesDeNegocio"
           value="{{ unidad.id }}"
