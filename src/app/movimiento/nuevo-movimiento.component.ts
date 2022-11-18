@@ -117,6 +117,16 @@ export class NuevoMovimientoComponent implements OnInit {
 
   crear(): void {
     if (this.movimientoFormulario.invalid) return;
+    if (
+      this.isGeneral === 'false' &&
+      this.movimientoFormulario.value.idUnidadNegocio === ''
+    ) {
+      Swal.fire({
+        text: 'Seleccione una unidad de negocio',
+        icon: 'info',
+      });
+      return;
+    }
     let {
       fecha,
       idCaja,
