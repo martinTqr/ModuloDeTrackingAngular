@@ -70,21 +70,22 @@
       </button>
     </div>
   </div>
+  <br />
+
+  <div id="tree-list-demo" class="mx-auto">
+    <dx-tree-list
+      id="listaCategorias"
+      [dataSource]="listaCategorias[tipo]"
+      itemsExpr="subcategorias"
+      dataStructure="tree"
+      [showRowLines]="true"
+      [showBorders]="true"
+      (onCellClick)="selccionarCategoria($event)"
+      [hoverStateEnabled]="true"
+      width="500"
+    >
+      <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
+      <dxi-column dataField="isGeneral" caption="Es general?"></dxi-column>
+    </dx-tree-list>
+  </div>
 </form>
-<br />
-<div id="tree-list-demo">
-  <dx-tree-list
-    id="listaCategorias"
-    [dataSource]="listaCategorias[tipo]"
-    itemsExpr="subcategorias"
-    dataStructure="tree"
-    [showRowLines]="true"
-    [showBorders]="true"
-    (onCellClick)="selccionarCategoria($event)"
-    [hoverStateEnabled]="true"
-    width="500"
-  >
-    <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
-    <dxi-column dataField="isGeneral" caption="Es general?"></dxi-column>
-  </dx-tree-list>
-</div>
