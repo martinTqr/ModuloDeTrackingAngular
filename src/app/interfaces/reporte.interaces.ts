@@ -1,3 +1,5 @@
+import { GrupoCaja } from '../models';
+
 export interface Reporte {
   total: number;
   cajas: Caja[];
@@ -25,6 +27,7 @@ export interface Caja {
   nombre: string;
   idUnidadNegocio: string;
   negativa: boolean;
+  grupoCaja: GrupoCaja;
   fechaBorrado: string | Date | null;
   total: number;
   meses: TotalesMes[];
