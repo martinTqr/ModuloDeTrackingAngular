@@ -127,6 +127,13 @@ export class NuevoMovimientoComponent implements OnInit {
       });
       return;
     }
+    if (this.movimientoFormulario.value.idCaja === '') {
+      Swal.fire({
+        text: 'Seleccione una caja',
+        icon: 'info',
+      });
+      return;
+    }
     let {
       fecha,
       idCaja,
