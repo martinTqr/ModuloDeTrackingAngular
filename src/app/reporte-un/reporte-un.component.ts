@@ -4,7 +4,13 @@ import { meses } from '../constantes';
 import { ReporteService } from '../services/reporte.service';
 import { ActivatedRoute } from '@angular/router';
 import { GrupoCajaService } from '../services/grupo-caja.service';
-import { agruparCajas } from '../helper';
+import {
+  acumularMeses,
+  acumularMesesTotales,
+  agruparCajas,
+  mesesVacios,
+  parsearObjeto,
+} from '../helper';
 
 @Component({
   selector: 'reporte-un',
@@ -32,11 +38,17 @@ export class ReporteUNComponent implements OnInit {
       this.reporteService
         .buscarReporteUnidadNegocio(id, fechaInicio, fechaFin)
         .subscribe((data: Reporte) => {
+          const total = acumularMesesTotales(data);
           const gruposDeCajasAcumulados = agruparCajas(data.cajas, grupoCajas);
           const reporte = {
             ...data,
-            subcategorias: [...data.subcategorias, ...gruposDeCajasAcumulados],
+            subcategorias: [
+              ...data.subcategorias,
+              ...gruposDeCajasAcumulados,
+              total,
+            ],
           };
+
           this.reporte = reporte;
         });
     });

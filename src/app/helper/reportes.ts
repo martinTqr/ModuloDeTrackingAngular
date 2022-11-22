@@ -12,6 +12,7 @@ export const agruparCajas = (cajas: any[], grupoCajas: GrupoCaja[]) => {
   //acumular cajas en los grupos de cajas y acumular totales
   const gruposCajas = grupoCajas.map((grupoCaja: GrupoCaja) => ({
     ...grupoCaja,
+    nombre: 'Cajas ' + grupoCaja.nombre,
     subcategorias: cajasModificadas.filter(
       (caja: Caja) => caja.grupoCaja.id === grupoCaja.id
     ),
@@ -38,6 +39,7 @@ export const agruparCajas = (cajas: any[], grupoCajas: GrupoCaja[]) => {
 };
 export const acumularMeses = ({ acumulador, meses, suma = true }) => {
   const suma_resta = suma ? 1 : -1;
+
   return acumulador.map((mes, numeroMes) => {
     return {
       ...mes,
@@ -50,4 +52,22 @@ export const acumularMeses = ({ acumulador, meses, suma = true }) => {
       })),
     };
   });
+};
+
+export const acumularMesesTotales = (categoria) => {
+  let meses = parsearObjeto(mesesVacios);
+  categoria.subcategorias.forEach((categoria) => {
+    meses = acumularMeses({
+      acumulador: meses,
+      meses: categoria.meses,
+    });
+  });
+  const total = {
+    nombre: 'Total',
+    acumulado: {
+      total: categoria.total,
+    },
+    meses,
+  };
+  return total;
 };
