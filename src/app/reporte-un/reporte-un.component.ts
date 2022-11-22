@@ -52,10 +52,11 @@ export class ReporteUNComponent implements OnInit {
               cajas: [],
             },
           }));
+          console.log(gruposCajas);
 
           gruposCajas.forEach((grupoCaja: GrupoCaja) => {
-            grupoCaja.acumulado!.total = grupoCaja.acumulado!.cajas.reduce(
-              (total: number, caja: Caja) => total + caja.total,
+            grupoCaja.acumulado!.total = grupoCaja.subcategorias.reduce(
+              (total: number, caja: Caja) => total + caja['acumulado'].total,
               0
             );
             grupoCaja.subcategorias.forEach((subcategoria: Caja) => {
@@ -89,14 +90,18 @@ export class ReporteUNComponent implements OnInit {
 }
 const acumularMeses = ({ acumulador, meses, suma = true }) => {
   const suma_resta = suma ? 1 : -1;
-  return acumulador.map((mes, numeroMes) => ({
-    ...mes,
-    total: mes.total + meses[numeroMes].total * suma_resta,
-    semanas: mes.semanas.map((semana, numeroSemana) => ({
-      ...semana,
-      total:
-        semana.total +
-        meses[numeroMes].semanas[numeroSemana].total * suma_resta,
-    })),
-  }));
+  return acumulador.map((mes, numeroMes) => {
+    /* console.log(mes.total + meses[numeroMes].total * suma_resta);
+     */
+    return {
+      ...mes,
+      total: mes.total + meses[numeroMes].total * suma_resta,
+      semanas: mes.semanas.map((semana, numeroSemana) => ({
+        ...semana,
+        total:
+          semana.total +
+          meses[numeroMes].semanas[numeroSemana].total * suma_resta,
+      })),
+    };
+  });
 };
