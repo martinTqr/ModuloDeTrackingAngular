@@ -33,44 +33,11 @@ export class ReporteUNComponent implements OnInit {
       this.reporteService
         .buscarReporteUnidadNegocio(id, fechaInicio, fechaFin)
         .subscribe((data: Reporte) => {
-          const cajas = data.cajas.map((caja: Caja) => ({
-            ...caja,
-            acumulado: {
-              total: caja.total,
-            },
-          }));
-          //acumular cajas en los grupos de cajas y acumular totales
-
-          const gruposCajas = grupoCajas.map((grupoCaja: GrupoCaja) => ({
-            ...grupoCaja,
-            subcategorias: cajas.filter(
-              (caja: Caja) => caja.grupoCaja.id === grupoCaja.id
-            ),
-            meses: parsearObjeto(mesesVacios),
-            acumulado: {
-              total: 0,
-              cajas: [],
-            },
-          }));
-
-          gruposCajas.forEach((grupoCaja: GrupoCaja) => {
-            grupoCaja.acumulado!.total = grupoCaja.subcategorias.reduce(
-              (total: number, caja: Caja) => total + caja['acumulado'].total,
-              0
-            );
-            grupoCaja.subcategorias.forEach((subcategoria: Caja) => {
-              grupoCaja.meses = acumularMeses({
-                acumulador: grupoCaja.meses,
-                meses: subcategoria.meses,
-              });
-            });
-          });
-
+          const gruposDeCajasAcumulados = agruparCajas(data.cajas, grupoCajas);
           const reporte = {
             ...data,
-            subcategorias: [...data.subcategorias, ...gruposCajas],
+            subcategorias: [...data.subcategorias, ...gruposDeCajasAcumulados],
           };
-
           this.reporte = reporte;
         });
     });
@@ -87,6 +54,41 @@ export class ReporteUNComponent implements OnInit {
     });
   }
 }
+const agruparCajas = (cajas: any[], grupoCajas: GrupoCaja[]) => {
+  //modificar cajas para tree list
+  const cajasModificadas = cajas.map((caja: Caja) => ({
+    ...caja,
+    acumulado: {
+      total: caja.total,
+    },
+  }));
+  //acumular cajas en los grupos de cajas y acumular totales
+  const gruposCajas = grupoCajas.map((grupoCaja: GrupoCaja) => ({
+    ...grupoCaja,
+    subcategorias: cajasModificadas.filter(
+      (caja: Caja) => caja.grupoCaja.id === grupoCaja.id
+    ),
+    meses: parsearObjeto(mesesVacios),
+    acumulado: {
+      total: 0,
+      cajas: [],
+    },
+  }));
+
+  gruposCajas.forEach((grupoCaja: GrupoCaja) => {
+    grupoCaja.acumulado!.total = grupoCaja.subcategorias.reduce(
+      (total: number, caja: Caja) => total + caja['acumulado'].total,
+      0
+    );
+    grupoCaja.subcategorias.forEach((subcategoria: Caja) => {
+      grupoCaja.meses = acumularMeses({
+        acumulador: grupoCaja.meses,
+        meses: subcategoria.meses,
+      });
+    });
+  });
+  return gruposCajas;
+};
 const acumularMeses = ({ acumulador, meses, suma = true }) => {
   const suma_resta = suma ? 1 : -1;
   return acumulador.map((mes, numeroMes) => {
