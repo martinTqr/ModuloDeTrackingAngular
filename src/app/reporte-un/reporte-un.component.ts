@@ -44,8 +44,8 @@ export class ReporteUNComponent implements OnInit {
             ...data,
             subcategorias: [
               ...data.subcategorias,
-              ...gruposDeCajasAcumulados,
               total,
+              ...gruposDeCajasAcumulados,
             ],
           };
 
