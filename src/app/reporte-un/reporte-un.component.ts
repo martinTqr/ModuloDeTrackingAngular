@@ -52,7 +52,6 @@ export class ReporteUNComponent implements OnInit {
               cajas: [],
             },
           }));
-          console.log(gruposCajas);
 
           gruposCajas.forEach((grupoCaja: GrupoCaja) => {
             grupoCaja.acumulado!.total = grupoCaja.subcategorias.reduce(
@@ -91,8 +90,6 @@ export class ReporteUNComponent implements OnInit {
 const acumularMeses = ({ acumulador, meses, suma = true }) => {
   const suma_resta = suma ? 1 : -1;
   return acumulador.map((mes, numeroMes) => {
-    /* console.log(mes.total + meses[numeroMes].total * suma_resta);
-     */
     return {
       ...mes,
       total: mes.total + meses[numeroMes].total * suma_resta,

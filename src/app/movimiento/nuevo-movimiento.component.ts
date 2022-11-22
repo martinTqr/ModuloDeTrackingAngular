@@ -95,8 +95,6 @@ export class NuevoMovimientoComponent implements OnInit {
   }
 
   selccionarCategoria(evento: any) {
-    console.log(evento);
-
     if (evento.event.target.tagName.toLowerCase() !== 'span') {
       if (evento.row.node.hasChildren) {
         Swal.fire({

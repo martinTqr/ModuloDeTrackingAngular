@@ -79,8 +79,6 @@ export class NuevaCategoriaComponent implements OnInit {
       orden: ordenNumber,
       isGeneral: isGeneralBoolean,
     };
-    console.log(isGeneral, isGeneralBoolean);
-
     if (!nombre) {
       Swal.fire({
         title: 'Error',
