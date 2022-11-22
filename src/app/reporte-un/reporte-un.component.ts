@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Caja, Reporte } from '../interfaces/reporte.interaces';
+import { Reporte } from '../interfaces/reporte.interaces';
 import { meses } from '../constantes';
 import { ReporteService } from '../services/reporte.service';
 import { ActivatedRoute } from '@angular/router';
 import { GrupoCajaService } from '../services/grupo-caja.service';
-import { GrupoCaja } from '../models';
-import { mesesVacios, parsearObjeto } from '../helper';
+import { agruparCajas } from '../helper';
 
 @Component({
   selector: 'reporte-un',
@@ -54,53 +53,3 @@ export class ReporteUNComponent implements OnInit {
     });
   }
 }
-const agruparCajas = (cajas: any[], grupoCajas: GrupoCaja[]) => {
-  //modificar cajas para tree list
-  const cajasModificadas = cajas.map((caja: Caja) => ({
-    ...caja,
-    acumulado: {
-      total: caja.total,
-    },
-  }));
-  //acumular cajas en los grupos de cajas y acumular totales
-  const gruposCajas = grupoCajas.map((grupoCaja: GrupoCaja) => ({
-    ...grupoCaja,
-    subcategorias: cajasModificadas.filter(
-      (caja: Caja) => caja.grupoCaja.id === grupoCaja.id
-    ),
-    meses: parsearObjeto(mesesVacios),
-    acumulado: {
-      total: 0,
-      cajas: [],
-    },
-  }));
-
-  gruposCajas.forEach((grupoCaja: GrupoCaja) => {
-    grupoCaja.acumulado!.total = grupoCaja.subcategorias.reduce(
-      (total: number, caja: Caja) => total + caja['acumulado'].total,
-      0
-    );
-    grupoCaja.subcategorias.forEach((subcategoria: Caja) => {
-      grupoCaja.meses = acumularMeses({
-        acumulador: grupoCaja.meses,
-        meses: subcategoria.meses,
-      });
-    });
-  });
-  return gruposCajas;
-};
-const acumularMeses = ({ acumulador, meses, suma = true }) => {
-  const suma_resta = suma ? 1 : -1;
-  return acumulador.map((mes, numeroMes) => {
-    return {
-      ...mes,
-      total: mes.total + meses[numeroMes].total * suma_resta,
-      semanas: mes.semanas.map((semana, numeroSemana) => ({
-        ...semana,
-        total:
-          semana.total +
-          meses[numeroMes].semanas[numeroSemana].total * suma_resta,
-      })),
-    };
-  });
-};

@@ -1,3 +1,5 @@
+import { GrupoCaja } from './grupo-caja';
+
 export class Caja {
   id?: number;
   idEmpresa: number;
@@ -5,6 +7,8 @@ export class Caja {
   nombre: string;
   negativa: boolean;
   fechaBorrado?: number;
+  total?: number;
+  grupoCaja?: GrupoCaja;
   constructor({
     id,
     nombre,
