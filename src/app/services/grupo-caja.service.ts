@@ -11,8 +11,10 @@ export class GrupoCajaService {
   grupoCajaURL = environment.grupoCajaURL;
   constructor(private httpClient: HttpClient) {}
 
-  public lista(): Observable<GrupoCaja[]> {
-    return this.httpClient.get<GrupoCaja[]>(this.grupoCajaURL);
+  public lista(idEmpresa?: number): Observable<GrupoCaja[]> {
+    const idEmpresaRuta = idEmpresa ? `?idEmpresa=${idEmpresa}` : '';
+    const ruta = this.grupoCajaURL + idEmpresaRuta;
+    return this.httpClient.get<GrupoCaja[]>(ruta);
   }
   public detalle(id: number): Observable<GrupoCaja> {
     return this.httpClient.get<GrupoCaja>(this.grupoCajaURL + id);
