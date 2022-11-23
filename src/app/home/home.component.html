@@ -1,1 +1,13 @@
-<p>home works!</p>
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h3 class="mb-0">Empresas</h3>
+    <button class="btn btn-outline-primary">Crear empresa</button>
+  </div>
+  <div class="card-body">
+    <div class="grid-responsive mb-3 mx-auto">
+      <a class="card p-0" *ngFor="let emp of empresas" routerLink="/admin">
+        <div class="card-header">{{ emp.nombre }}</div>
+      </a>
+    </div>
+  </div>
+</div>
