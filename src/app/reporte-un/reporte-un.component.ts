@@ -4,13 +4,7 @@ import { meses } from '../constantes';
 import { ReporteService } from '../services/reporte.service';
 import { ActivatedRoute } from '@angular/router';
 import { GrupoCajaService } from '../services/grupo-caja.service';
-import {
-  acumularMeses,
-  acumularMesesTotales,
-  agruparCajas,
-  mesesVacios,
-  parsearObjeto,
-} from '../helper';
+import { acumularMesesTotales, agruparCajas } from '../helper';
 
 @Component({
   selector: 'reporte-un',
