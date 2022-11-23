@@ -43,9 +43,7 @@ export class DashboardComponent implements OnInit {
             });
             this.grupoCajas = grupoCajas;
           },
-          (error) => {
-            console.log(error);
-          }
+          (error) => console.log(error)
         );
       },
       (error) => console.log(error)
