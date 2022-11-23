@@ -1,175 +1,186 @@
-<h2>Carga Movimientos</h2>
-<div class="my-3 d-flex justify-content-between">
-  <div></div>
-  <a routerLink="/" class="btn">Volver</a>
-</div>
-
-<form
-  class="container"
-  style="max-width: 600px"
-  (ngSubmit)="crear()"
-  novalidate
-  [formGroup]="movimientoFormulario"
-  #f="ngForm"
->
-  <div class="row mt-3">
-    <div class="col">
-      <label for="categoria">Categoria</label>
-      <p class="form-control">{{ categoriaSeleccionadaNombre }}</p>
-    </div>
-    <div class="col">
-      <label for="Caja">Caja</label>
-      <select name="idCaja" id="" class="form-control" formControlName="idCaja">
-        >
-        <option value="">Seleccione una caja</option>
-        <option *ngFor="let caja of cajas" value="{{ caja.id }}">
-          {{ caja.nombre }}
-        </option>
-      </select>
-    </div>
+<div class="card">
+  <div class="card-header">
+    <h3>Carga Movimientos</h3>
   </div>
-  <div class="row">
-    <div class="col">
-      <label for="Fecha">Fecha</label>
-      <input
-        type="date"
-        class="form-control"
-        name="fecha"
-        aria-label="Fecha"
-        formControlName="fecha"
-      />
-    </div>
-    <div class="col">
-      <label for="monto">Monto</label>
-      <input
-        type="number"
-        class="form-control"
-        name="monto"
-        placeholder="Monto"
-        aria-label="Monto"
-        formControlName="monto"
-      />
-    </div>
-  </div>
-  <div class="row mt-3">
-    <div class="col">
-      <label for="Detalle">Detalle</label>
-      <input
-        type="text"
-        class="form-control"
-        name="detalle"
-        placeholder="Detalle"
-        aria-label="Detalle"
-        formControlName="detalle"
-      />
+  <div class="card-body pt-0">
+    <div class="my-3 d-flex justify-content-between">
+      <div></div>
+      <a routerLink="/" class="btn">Volver</a>
     </div>
 
-    <div *ngIf="isGeneral === 'false'" class="col">
-      <label for="Unidad De Negocio">Unidad De Negocio</label>
-      <select
-        name="idUnidadNegocio"
-        formControlName="idUnidadNegocio"
-        class="form-control"
-      >
-        <option value="">Seleccione una unidad de negocio</option>
-        <option
-          *ngFor="let unidad of unidadesDeNegocio"
-          value="{{ unidad.id }}"
-        >
-          {{ unidad.nombre }}
-        </option>
-      </select>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col"></div>
-    <div class="col">
-      <button
-        class="btn btn-success btn-block mt-3 mx-2 btn-small"
-        type="submit"
-      >
-        Crear
-      </button>
-    </div>
-  </div>
-  <hr />
-</form>
-<h4>Seleccione una categoria</h4>
-<div class="scroll-h mx-auto">
-  <div>
-    <h5>Egresos - Generales</h5>
-    <div id="tree-list-demo">
-      <dx-tree-list
-        id="listaCategorias"
-        [dataSource]="categorias[categoriasIndice.out_general]"
-        itemsExpr="subcategorias"
-        dataStructure="tree"
-        [showRowLines]="true"
-        [showBorders]="true"
-        (onCellClick)="selccionarCategoria($event)"
-        [hoverStateEnabled]="true"
-        [autoExpandAll]="true"
-        [columnAutoWidth]="true"
-      >
-        <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
-      </dx-tree-list>
-    </div>
-  </div>
-  <div class="ms-4">
-    <h5>Egresos - No generales</h5>
-    <div id="tree-list-demo">
-      <dx-tree-list
-        id="listaCategorias"
-        [dataSource]="categorias[categoriasIndice.out_especificas]"
-        itemsExpr="subcategorias"
-        dataStructure="tree"
-        [showRowLines]="true"
-        [showBorders]="true"
-        (onCellClick)="selccionarCategoria($event)"
-        [hoverStateEnabled]="true"
-        [autoExpandAll]="true"
-        [columnAutoWidth]="true"
-      >
-        <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
-      </dx-tree-list>
-    </div>
-  </div>
-  <div class="ms-4">
-    <h5>Ingresos - Generales</h5>
-    <div id="tree-list-demo">
-      <dx-tree-list
-        id="listaCategorias"
-        [dataSource]="categorias[categoriasIndice.in_general]"
-        itemsExpr="subcategorias"
-        dataStructure="tree"
-        [showRowLines]="true"
-        [showBorders]="true"
-        (onCellClick)="selccionarCategoria($event)"
-        [hoverStateEnabled]="true"
-        [autoExpandAll]="true"
-        [columnAutoWidth]="true"
-      >
-        <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
-      </dx-tree-list>
-    </div>
-  </div>
-  <div class="ms-4">
-    <h5>Ingreso - No generales</h5>
-    <div id="tree-list-demo">
-      <dx-tree-list
-        id="listaCategorias"
-        [dataSource]="categorias[categoriasIndice.in_especificas]"
-        itemsExpr="subcategorias"
-        dataStructure="tree"
-        [showRowLines]="true"
-        [showBorders]="true"
-        (onCellClick)="selccionarCategoria($event)"
-        [hoverStateEnabled]="true"
-        [autoExpandAll]="true"
-        [columnAutoWidth]="true"
-      >
-        <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
-      </dx-tree-list>
+    <form
+      class="container"
+      style="max-width: 600px"
+      (ngSubmit)="crear()"
+      novalidate
+      [formGroup]="movimientoFormulario"
+      #f="ngForm"
+    >
+      <div class="row mt-3">
+        <div class="col">
+          <label for="categoria">Categoria</label>
+          <p class="form-control">{{ categoriaSeleccionadaNombre }}</p>
+        </div>
+        <div class="col">
+          <label for="Caja">Caja</label>
+          <select
+            name="idCaja"
+            id=""
+            class="form-control"
+            formControlName="idCaja"
+          >
+            >
+            <option value="">Seleccione una caja</option>
+            <option *ngFor="let caja of cajas" value="{{ caja.id }}">
+              {{ caja.nombre }}
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="Fecha">Fecha</label>
+          <input
+            type="date"
+            class="form-control"
+            name="fecha"
+            aria-label="Fecha"
+            formControlName="fecha"
+          />
+        </div>
+        <div class="col">
+          <label for="monto">Monto</label>
+          <input
+            type="number"
+            class="form-control"
+            name="monto"
+            placeholder="Monto"
+            aria-label="Monto"
+            formControlName="monto"
+          />
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <label for="Detalle">Detalle</label>
+          <input
+            type="text"
+            class="form-control"
+            name="detalle"
+            placeholder="Detalle"
+            aria-label="Detalle"
+            formControlName="detalle"
+          />
+        </div>
+
+        <div *ngIf="isGeneral === 'false'" class="col">
+          <label for="Unidad De Negocio">Unidad De Negocio</label>
+          <select
+            name="idUnidadNegocio"
+            formControlName="idUnidadNegocio"
+            class="form-control"
+          >
+            <option value="">Seleccione una unidad de negocio</option>
+            <option
+              *ngFor="let unidad of unidadesDeNegocio"
+              value="{{ unidad.id }}"
+            >
+              {{ unidad.nombre }}
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <button
+            class="btn btn-success btn-block mt-3 mx-2 btn-small"
+            type="submit"
+          >
+            Crear
+          </button>
+        </div>
+      </div>
+      <hr />
+    </form>
+    <h4>Seleccione una categoria</h4>
+    <div class="scroll-h mx-auto">
+      <div>
+        <h5>Egresos - Generales</h5>
+        <div id="tree-list-demo">
+          <dx-tree-list
+            id="listaCategorias"
+            [dataSource]="categorias[categoriasIndice.out_general]"
+            itemsExpr="subcategorias"
+            dataStructure="tree"
+            [showRowLines]="true"
+            [showBorders]="true"
+            (onCellClick)="selccionarCategoria($event)"
+            [hoverStateEnabled]="true"
+            [autoExpandAll]="true"
+            [columnAutoWidth]="true"
+          >
+            <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
+          </dx-tree-list>
+        </div>
+      </div>
+      <div class="ms-4">
+        <h5>Egresos - No generales</h5>
+        <div id="tree-list-demo">
+          <dx-tree-list
+            id="listaCategorias"
+            [dataSource]="categorias[categoriasIndice.out_especificas]"
+            itemsExpr="subcategorias"
+            dataStructure="tree"
+            [showRowLines]="true"
+            [showBorders]="true"
+            (onCellClick)="selccionarCategoria($event)"
+            [hoverStateEnabled]="true"
+            [autoExpandAll]="true"
+            [columnAutoWidth]="true"
+          >
+            <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
+          </dx-tree-list>
+        </div>
+      </div>
+      <div class="ms-4">
+        <h5>Ingresos - Generales</h5>
+        <div id="tree-list-demo">
+          <dx-tree-list
+            id="listaCategorias"
+            [dataSource]="categorias[categoriasIndice.in_general]"
+            itemsExpr="subcategorias"
+            dataStructure="tree"
+            [showRowLines]="true"
+            [showBorders]="true"
+            (onCellClick)="selccionarCategoria($event)"
+            [hoverStateEnabled]="true"
+            [autoExpandAll]="true"
+            [columnAutoWidth]="true"
+          >
+            <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
+          </dx-tree-list>
+        </div>
+      </div>
+      <div class="ms-4">
+        <h5>Ingreso - No generales</h5>
+        <div id="tree-list-demo">
+          <dx-tree-list
+            id="listaCategorias"
+            [dataSource]="categorias[categoriasIndice.in_especificas]"
+            itemsExpr="subcategorias"
+            dataStructure="tree"
+            [showRowLines]="true"
+            [showBorders]="true"
+            (onCellClick)="selccionarCategoria($event)"
+            [hoverStateEnabled]="true"
+            [autoExpandAll]="true"
+            [columnAutoWidth]="true"
+          >
+            <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
+          </dx-tree-list>
+        </div>
+      </div>
     </div>
   </div>
 </div>
