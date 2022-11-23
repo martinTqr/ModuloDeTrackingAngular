@@ -22,11 +22,14 @@ import { DetalleUnidadNegocioComponent } from '../unidad-negocio/detalle-unidad-
 import { ListaUnidadNegocioComponent } from '../unidad-negocio/lista-unidad-negocio.component';
 import { NuevaUnidadNegocioComponent } from '../unidad-negocio/nueva-unidad-negocio.component';
 import { HomeComponent } from '../home/home.component';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 
 const rutas: Routes = [
   { path: '', component: HomeComponent },
 
+  { path: 'dashboard', component: DashboardComponent },
   { path: 'admin', component: AdminComponent },
+
   { path: 'reporte-emp/:id', component: ReporteEmpComponent },
   { path: 'reporte-un/:id', component: ReporteUNComponent },
 
