@@ -55,7 +55,7 @@ const rutas: Routes = [
   { path: 'empresa/lista', component: ListaEmpresaComponent },
   { path: 'empresa/detalle/:id', component: DetalleEmpresaComponent },
   { path: 'empresa/nueva', component: NuevaEmpresaComponent },
-  //rutas para categoria
+
   { path: 'categoria/lista', component: ListaCategoriaComponent },
   { path: 'categoria/detalle/:id', component: DetalleCategoriaComponent },
   { path: 'categoria/nueva', component: NuevaCategoriaComponent },
