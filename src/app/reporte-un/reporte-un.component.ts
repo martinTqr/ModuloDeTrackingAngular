@@ -27,34 +27,29 @@ export class ReporteUNComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.cargarReporte();
     this.empresa = this.localService.getData('empresa');
+    this.cargarReporte();
   }
-  async cargarReporte() {
-    await this.grupoCajaService
-      .lista(this.empresa.id)
-      .subscribe((grupoCajas) => {
-        const { id } = this.rutaActiva.snapshot.params;
-        const { fechaInicio, fechaFin } = this.rutaActiva.snapshot.queryParams;
-        this.reporteService
-          .buscarReporteUnidadNegocio(id, fechaInicio, fechaFin)
-          .subscribe((data: Reporte) => {
-            const total = acumularMesesTotales(data);
-            const gruposDeCajasAcumulados = agruparCajas(
-              data.cajas,
-              grupoCajas
-            );
-            const reporte = {
-              ...data,
-              subcategorias: [
-                ...data.subcategorias,
-                total,
-                ...gruposDeCajasAcumulados,
-              ],
-            };
-            this.reporte = reporte;
-          });
-      });
+  cargarReporte() {
+    this.grupoCajaService.lista(this.empresa.id).subscribe((grupoCajas) => {
+      const { id } = this.rutaActiva.snapshot.params;
+      const { fechaInicio, fechaFin } = this.rutaActiva.snapshot.queryParams;
+      this.reporteService
+        .buscarReporteUnidadNegocio(id, fechaInicio, fechaFin)
+        .subscribe((data: Reporte) => {
+          const total = acumularMesesTotales(data);
+          const gruposDeCajasAcumulados = agruparCajas(data.cajas, grupoCajas);
+          const reporte = {
+            ...data,
+            subcategorias: [
+              ...data.subcategorias,
+              total,
+              ...gruposDeCajasAcumulados,
+            ],
+          };
+          this.reporte = reporte;
+        });
+    });
   }
   mostrarColumnaSemanasPorMes(e: any) {
     meses.forEach((mes: string) => {
