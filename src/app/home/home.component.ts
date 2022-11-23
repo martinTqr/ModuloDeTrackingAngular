@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Empresa } from '../models';
 import { EmpresaService } from '../services/empresa.service';
+import { LocalService } from '../services/local.service';
 
 @Component({
   selector: 'app-home',
@@ -9,13 +10,16 @@ import { EmpresaService } from '../services/empresa.service';
 })
 export class HomeComponent implements OnInit {
   empresas: Empresa[] = [];
-  constructor(private empresaService: EmpresaService) {}
+  constructor(
+    private empresaService: EmpresaService,
+    private localService: LocalService
+  ) {}
 
   ngOnInit(): void {
     this.cargarEmpresas();
   }
   seleccionarEmpresa(empresa: Empresa) {
-    localStorage.setItem('empresa', JSON.stringify(empresa));
+    this.localService.saveData('empresa', empresa);
   }
   cargarEmpresas() {
     this.empresaService.lista().subscribe((empresas) => {
