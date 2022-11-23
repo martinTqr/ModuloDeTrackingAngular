@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { agruparCajas } from '../helper';
-import { Caja, Empresa, GrupoCaja } from '../models';
+import { Empresa, GrupoCaja } from '../models';
 import { CajaService } from '../services/caja.service';
 import { GrupoCajaService } from '../services/grupo-caja.service';
 import { LocalService } from '../services/local.service';
@@ -25,7 +24,7 @@ export class DashboardComponent implements OnInit {
     this.cargarCajas();
   }
   cargarGrupoCajas() {
-    this.grupoCajaService.lista().subscribe(
+    this.grupoCajaService.lista(this.empresa.id).subscribe(
       (grupoCajas) => (this.grupoCajas = grupoCajas),
       (error) => console.log(error)
     );

@@ -3,10 +3,10 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { CajaService } from '../services/caja.service';
 import swal from 'sweetalert2';
 import { transformarAString } from '../helper';
-import { Caja, GrupoCaja, UnidadNegocio } from '../models';
-import { UnidadNegocioService } from '../services/unidad-negocio.service';
+import { Caja, Empresa, GrupoCaja } from '../models';
 import { EmpresaService } from '../services/empresa.service';
 import { GrupoCajaService } from '../services/grupo-caja.service';
+import { LocalService } from '../services/local.service';
 
 @Component({
   selector: 'app-nueva-caja',
@@ -14,6 +14,7 @@ import { GrupoCajaService } from '../services/grupo-caja.service';
   styleUrls: ['./nueva-caja.component.css'],
 })
 export class NuevaCajaComponent implements OnInit {
+  empresa: Empresa;
   cajaFormulario = this.fb.group({
     idEmpresa: ['', [Validators.required]],
     nombre: ['', Validators.required],
@@ -25,17 +26,19 @@ export class NuevaCajaComponent implements OnInit {
     private fb: FormBuilder,
     private cajaService: CajaService,
     private empresaService: EmpresaService,
-    private grupoCajaService: GrupoCajaService
+    private grupoCajaService: GrupoCajaService,
+    private localService: LocalService
   ) {}
 
   ngOnInit(): void {
+    this.empresa = this.localService.getData('empresa');
     this.cargarEmpresa();
     this.cargarGrupoDeCajas();
   }
 
   cargarGrupoDeCajas() {
     this.grupoCajaService
-      .lista()
+      .lista(this.empresa.id)
       .subscribe((grupoCajas) => (this.grupoCajas = grupoCajas));
   }
   cargarEmpresa() {

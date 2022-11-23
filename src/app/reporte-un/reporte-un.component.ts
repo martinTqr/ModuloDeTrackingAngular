@@ -5,6 +5,8 @@ import { ReporteService } from '../services/reporte.service';
 import { ActivatedRoute } from '@angular/router';
 import { GrupoCajaService } from '../services/grupo-caja.service';
 import { acumularMesesTotales, agruparCajas } from '../helper';
+import { Empresa } from '../models';
+import { LocalService } from '../services/local.service';
 
 @Component({
   selector: 'reporte-un',
@@ -12,40 +14,47 @@ import { acumularMesesTotales, agruparCajas } from '../helper';
   styleUrls: ['./reporte-un.component.css'],
 })
 export class ReporteUNComponent implements OnInit {
-  reporte!: any;
+  empresa: Empresa;
+  reporte: any;
   semanas: Array<any> = new Array(5);
   nombreDeMeses: string[] = meses;
 
   constructor(
     private reporteService: ReporteService,
     private grupoCajaService: GrupoCajaService,
-    private rutaActiva: ActivatedRoute
+    private rutaActiva: ActivatedRoute,
+    private localService: LocalService
   ) {}
 
   ngOnInit() {
     this.cargarReporte();
+    this.empresa = this.localService.getData('empresa');
   }
   async cargarReporte() {
-    await this.grupoCajaService.lista().subscribe((grupoCajas) => {
-      const { id } = this.rutaActiva.snapshot.params;
-      const { fechaInicio, fechaFin } = this.rutaActiva.snapshot.queryParams;
-      this.reporteService
-        .buscarReporteUnidadNegocio(id, fechaInicio, fechaFin)
-        .subscribe((data: Reporte) => {
-          const total = acumularMesesTotales(data);
-          const gruposDeCajasAcumulados = agruparCajas(data.cajas, grupoCajas);
-          const reporte = {
-            ...data,
-            subcategorias: [
-              ...data.subcategorias,
-              total,
-              ...gruposDeCajasAcumulados,
-            ],
-          };
-
-          this.reporte = reporte;
-        });
-    });
+    await this.grupoCajaService
+      .lista(this.empresa.id)
+      .subscribe((grupoCajas) => {
+        const { id } = this.rutaActiva.snapshot.params;
+        const { fechaInicio, fechaFin } = this.rutaActiva.snapshot.queryParams;
+        this.reporteService
+          .buscarReporteUnidadNegocio(id, fechaInicio, fechaFin)
+          .subscribe((data: Reporte) => {
+            const total = acumularMesesTotales(data);
+            const gruposDeCajasAcumulados = agruparCajas(
+              data.cajas,
+              grupoCajas
+            );
+            const reporte = {
+              ...data,
+              subcategorias: [
+                ...data.subcategorias,
+                total,
+                ...gruposDeCajasAcumulados,
+              ],
+            };
+            this.reporte = reporte;
+          });
+      });
   }
   mostrarColumnaSemanasPorMes(e: any) {
     meses.forEach((mes: string) => {

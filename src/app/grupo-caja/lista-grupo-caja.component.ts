@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { GrupoCaja } from '../models';
+import { Empresa, GrupoCaja } from '../models';
 import { GrupoCajaService } from '../services/grupo-caja.service';
+import { LocalService } from '../services/local.service';
 
 @Component({
   selector: 'app-lista-grupo-caja',
@@ -8,12 +9,17 @@ import { GrupoCajaService } from '../services/grupo-caja.service';
   styleUrls: ['./lista-grupo-caja.component.css'],
 })
 export class ListaGrupoCajaComponent implements OnInit {
+  empresa: Empresa;
   grupoCajas: GrupoCaja[] = [];
-  constructor(private grupoCajaService: GrupoCajaService) {}
+  constructor(
+    private grupoCajaService: GrupoCajaService,
+    private localService: LocalService
+  ) {}
 
   ngOnInit(): void {
+    this.empresa = this.localService.getData('empresa');
     this.grupoCajaService
-      .lista()
+      .lista(this.empresa.id)
       .subscribe((grupoCajas) => (this.grupoCajas = grupoCajas));
   }
 }
