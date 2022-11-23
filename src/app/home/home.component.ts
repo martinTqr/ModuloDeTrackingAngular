@@ -14,7 +14,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.cargarEmpresas();
   }
-
+  seleccionarEmpresa(empresa: Empresa) {
+    localStorage.setItem('empresa', JSON.stringify(empresa));
+  }
   cargarEmpresas() {
     this.empresaService.lista().subscribe((empresas) => {
       this.empresas = empresas;

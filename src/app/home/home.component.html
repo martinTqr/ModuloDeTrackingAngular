@@ -5,7 +5,12 @@
   </div>
   <div class="card-body">
     <div class="grid-responsive mb-3 mx-auto">
-      <a class="card p-0" *ngFor="let emp of empresas" routerLink="/admin">
+      <a
+        class="card p-0"
+        *ngFor="let emp of empresas"
+        (click)="seleccionarEmpresa(emp)"
+        routerLink="/admin"
+      >
         <div class="card-header">{{ emp.nombre }}</div>
       </a>
     </div>
