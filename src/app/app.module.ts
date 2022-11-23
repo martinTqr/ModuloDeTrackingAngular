@@ -29,6 +29,7 @@ import { ListaUnidadNegocioComponent } from './unidad-negocio/lista-unidad-negoc
 import { NuevoGrupoCajaComponent } from './grupo-caja/nuevo-grupo-caja.component';
 import { ListaGrupoCajaComponent } from './grupo-caja/lista-grupo-caja.component';
 import { DetalleGrupoCajaComponent } from './grupo-caja/detalle-grupo-caja.component';
+import { HomeComponent } from './home/home.component';
 
 if (!/localhost/.test(document.location.host)) {
   enableProdMode();
@@ -57,6 +58,7 @@ if (!/localhost/.test(document.location.host)) {
     NuevoGrupoCajaComponent,
     ListaGrupoCajaComponent,
     DetalleGrupoCajaComponent,
+    HomeComponent,
   ],
   imports: [
     ReactiveFormsModule,
