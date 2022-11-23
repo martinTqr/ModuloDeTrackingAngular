@@ -83,15 +83,15 @@ export class NuevoMovimientoComponent implements OnInit {
     });
   }
   async cambiarGeneral(isGeneral: boolean) {
-    if (isGeneral) {
-      this.movimientoFormulario.patchValue({
-        idUnidadNegocio: '',
-      });
-      this.isGeneral = 'true';
-    } else {
+    if (!isGeneral) {
       this.isGeneral = 'false';
       this.cargarUnidadNegocio();
+      return;
     }
+    this.movimientoFormulario.patchValue({
+      idUnidadNegocio: '',
+    });
+    this.isGeneral = 'true';
   }
 
   selccionarCategoria(evento: any) {
@@ -114,6 +114,8 @@ export class NuevoMovimientoComponent implements OnInit {
   }
 
   crear(): void {
+    console.log(this.movimientoFormulario.value, this.isGeneral);
+
     if (this.movimientoFormulario.invalid) return;
     if (
       this.isGeneral === 'false' &&
