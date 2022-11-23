@@ -114,8 +114,6 @@ export class NuevoMovimientoComponent implements OnInit {
   }
 
   crear(): void {
-    console.log(this.movimientoFormulario.value, this.isGeneral);
-
     if (this.movimientoFormulario.invalid) return;
     if (
       this.isGeneral === 'false' &&
