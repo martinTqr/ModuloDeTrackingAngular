@@ -9,10 +9,12 @@ import { Caja } from '../models/';
 })
 export class CajaService {
   cajaURL = environment.cajaURL;
+  empresa = JSON.parse(localStorage.getItem('empresa'));
   constructor(private httpClient: HttpClient) {}
 
   public lista(): Observable<Caja[]> {
-    return this.httpClient.get<Caja[]>(this.cajaURL);
+    const ruta = `${this.cajaURL}?idEmpresa=${this.empresa.id}`;
+    return this.httpClient.get<Caja[]>(ruta);
   }
   public detalle(id: number): Observable<Caja> {
     return this.httpClient.get<Caja>(this.cajaURL + id);
