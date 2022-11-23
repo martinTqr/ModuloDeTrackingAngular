@@ -20,7 +20,6 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.empresa = this.localService.getData('empresa');
-    this.cargarGrupoCajas();
     this.cargarCajas();
   }
   cargarGrupoCajas() {
@@ -31,19 +30,25 @@ export class DashboardComponent implements OnInit {
   }
 
   cargarCajas() {
-    this.cajaService.lista().subscribe(
-      (cajas) => {
-        cajas.forEach((caja) => (caja['total'] = 0));
-        this.grupoCajas.forEach((grupoCaja) => {
-          const cajasFiltradas = cajas.filter(
-            (caja) => caja.grupoCaja.id === grupoCaja.id
-          );
-          grupoCaja.cajas = cajasFiltradas;
-        });
+    this.grupoCajaService.lista(this.empresa.id).subscribe(
+      (grupoCajas) => {
+        this.cajaService.lista().subscribe(
+          (cajas) => {
+            cajas.forEach((caja) => (caja['total'] = 0));
+            grupoCajas.forEach((grupoCaja) => {
+              const cajasFiltradas = cajas.filter(
+                (caja) => caja.grupoCaja.id === grupoCaja.id
+              );
+              grupoCaja.cajas = cajasFiltradas;
+            });
+            this.grupoCajas = grupoCajas;
+          },
+          (error) => {
+            console.log(error);
+          }
+        );
       },
-      (error) => {
-        console.log(error);
-      }
+      (error) => console.log(error)
     );
   }
 }
