@@ -17,12 +17,12 @@
             *ngFor="let caja of grupoCaja.cajas; let last = last"
             [ngClass]="{ 'last-child': last }"
           >
-            <div class="card-header">{{ caja.nombre }}</div>
-            <div class="card-body">Saldo:</div>
+            <div class="card-header">{{ caja.nombre }}: {{ caja.total }}</div>
           </div>
         </div>
       </div>
     </div>
+    <hr />
     <reporte-emp></reporte-emp>
   </div>
 </div>
