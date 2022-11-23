@@ -22,7 +22,7 @@ import { ListaCategoriaComponent } from './categoria/lista-categoria.component';
 import { NuevaCategoriaComponent } from './categoria/nueva-categoria.component';
 import { DetalleCategoriaComponent } from './categoria/detalle-categoria.component';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
-import { HomeComponent } from './home/home.component';
+import { AdminComponent } from './admin/admin.component';
 import { NuevaUnidadNegocioComponent } from './unidad-negocio/nueva-unidad-negocio.component';
 import { DetalleUnidadNegocioComponent } from './unidad-negocio/detalle-unidad-negocio.component';
 import { ListaUnidadNegocioComponent } from './unidad-negocio/lista-unidad-negocio.component';
@@ -38,7 +38,7 @@ if (!/localhost/.test(document.location.host)) {
     AppComponent,
     ReporteUNComponent,
     ReporteEmpComponent,
-    HomeComponent,
+    AdminComponent,
     ListaMovimientoComponent,
     NuevoMovimientoComponent,
     DetalleMovimientoComponent,
@@ -51,7 +51,6 @@ if (!/localhost/.test(document.location.host)) {
     ListaCategoriaComponent,
     NuevaCategoriaComponent,
     DetalleCategoriaComponent,
-    HomeComponent,
     NuevaUnidadNegocioComponent,
     DetalleUnidadNegocioComponent,
     ListaUnidadNegocioComponent,

@@ -12,7 +12,7 @@ import { NuevaEmpresaComponent } from '../empresa/nueva-empresa.component';
 import { DetalleGrupoCajaComponent } from '../grupo-caja/detalle-grupo-caja.component';
 import { ListaGrupoCajaComponent } from '../grupo-caja/lista-grupo-caja.component';
 import { NuevoGrupoCajaComponent } from '../grupo-caja/nuevo-grupo-caja.component';
-import { HomeComponent } from '../home/home.component';
+import { AdminComponent } from '../admin/admin.component';
 import { DetalleMovimientoComponent } from '../movimiento/detalle-movimiento.component';
 import { ListaMovimientoComponent } from '../movimiento/lista-movimiento.component';
 import { NuevoMovimientoComponent } from '../movimiento/nuevo-movimiento.component';
@@ -23,7 +23,7 @@ import { ListaUnidadNegocioComponent } from '../unidad-negocio/lista-unidad-nego
 import { NuevaUnidadNegocioComponent } from '../unidad-negocio/nueva-unidad-negocio.component';
 
 const rutas: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'admin', component: AdminComponent },
   { path: 'reporte-emp/:id', component: ReporteEmpComponent },
   { path: 'reporte-un/:id', component: ReporteUNComponent },
 
