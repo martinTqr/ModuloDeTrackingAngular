@@ -5,6 +5,7 @@ export class GrupoCaja {
   nombre: string;
   idEmpresa: number;
   subcategorias?: any[] = [];
+  cajas?: any[] = [];
   acumulado?: Acumulado;
   meses?: TotalesMes[];
   fechaBorrado?: number;

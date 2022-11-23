@@ -24,8 +24,8 @@ export const agruparCajas = (cajas: any[], grupoCajas: GrupoCaja[]) => {
   }));
 
   gruposCajas.forEach((grupoCaja: GrupoCaja) => {
-    grupoCaja.acumulado!.total = grupoCaja.subcategorias.reduce(
-      (total: number, caja: Caja) => total + caja['acumulado'].total,
+    grupoCaja.acumulado.total = grupoCaja.subcategorias.reduce(
+      (total: number, caja: any) => total + caja.acumulado.total,
       0
     );
     grupoCaja.subcategorias.forEach((subcategoria: Caja) => {
