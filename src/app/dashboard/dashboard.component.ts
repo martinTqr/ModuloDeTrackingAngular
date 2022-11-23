@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Empresa } from '../models';
+import { agruparCajas } from '../helper';
+import { Caja, Empresa, GrupoCaja } from '../models';
+import { CajaService } from '../services/caja.service';
+import { GrupoCajaService } from '../services/grupo-caja.service';
+import { LocalService } from '../services/local.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,9 +12,39 @@ import { Empresa } from '../models';
 })
 export class DashboardComponent implements OnInit {
   empresa: Empresa;
-  constructor() {}
+  grupoCajas: GrupoCaja[];
+  constructor(
+    private cajaService: CajaService,
+    private localService: LocalService,
+    private grupoCajaService: GrupoCajaService
+  ) {}
 
   ngOnInit(): void {
-    this.empresa = JSON.parse(localStorage.getItem('empresa'));
+    this.empresa = this.localService.getData('empresa');
+    this.cargarGrupoCajas();
+    this.cargarCajas();
+  }
+  cargarGrupoCajas() {
+    this.grupoCajaService.lista().subscribe(
+      (grupoCajas) => (this.grupoCajas = grupoCajas),
+      (error) => console.log(error)
+    );
+  }
+
+  cargarCajas() {
+    this.cajaService.lista().subscribe(
+      (cajas) => {
+        cajas.forEach((caja) => (caja['total'] = 0));
+        this.grupoCajas.forEach((grupoCaja) => {
+          const cajasFiltradas = cajas.filter(
+            (caja) => caja.grupoCaja.id === grupoCaja.id
+          );
+          grupoCaja.cajas = cajasFiltradas;
+        });
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
   }
 }

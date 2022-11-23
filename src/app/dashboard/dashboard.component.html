@@ -1,1 +1,24 @@
-<p>{{ empresa.nombre }}</p>
+<div class="card">
+  <div class="card-header">
+    <p class="mb-0">{{ empresa.nombre }}</p>
+  </div>
+  <div class="card-body">
+    <div class="grid-responsive mb-3 mx-auto">
+      <div class="card" *ngFor="let grupoCaja of grupoCajas">
+        <div class="card-header">
+          <p class="mb-0">{{ grupoCaja.nombre }}</p>
+        </div>
+        <div class="card-body">
+          <div
+            class="card mb-3"
+            *ngFor="let caja of grupoCaja.cajas; let last = last"
+            [ngClass]="{ 'last-child': last }"
+          >
+            <div class="card-header">{{ caja.nombre }}</div>
+            <div class="card-body">Saldo:</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
