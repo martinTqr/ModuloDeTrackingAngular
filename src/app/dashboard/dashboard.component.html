@@ -17,7 +17,9 @@
     <div class="grid-responsive mb-3 mx-auto">
       <div class="card" *ngFor="let grupoCaja of grupoCajas">
         <div class="card-header">
-          <p class="mb-0">{{ grupoCaja.nombre }}</p>
+          <p class="mb-0">
+            {{ grupoCaja.nombre }}: {{ grupoCaja.acumulado.total }}
+          </p>
         </div>
         <div class="card-body">
           <div

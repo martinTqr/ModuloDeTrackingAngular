@@ -32,14 +32,18 @@ export class DashboardComponent implements OnInit {
   cargarCajas() {
     this.grupoCajaService.lista(this.empresa.id).subscribe(
       (grupoCajas) => {
-        this.cajaService.lista().subscribe(
+        this.cajaService.listaConSaldo().subscribe(
           (cajas) => {
-            cajas.forEach((caja) => (caja['total'] = 0));
             grupoCajas.forEach((grupoCaja) => {
               const cajasFiltradas = cajas.filter(
                 (caja) => caja.grupoCaja.id === grupoCaja.id
               );
               grupoCaja.cajas = cajasFiltradas;
+              grupoCaja.acumulado = { total: 0 };
+              grupoCaja.acumulado.total = cajasFiltradas.reduce(
+                (acumulado, caja) => acumulado + caja.total,
+                0
+              );
             });
             this.grupoCajas = grupoCajas;
           },

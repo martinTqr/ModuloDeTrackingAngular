@@ -42,5 +42,5 @@ export interface TotalesMes {
 }
 export interface Acumulado {
   total: number;
-  cajas: Caja[];
+  cajas?: Caja[];
 }

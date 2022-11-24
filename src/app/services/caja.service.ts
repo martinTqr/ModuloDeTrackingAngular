@@ -16,6 +16,9 @@ export class CajaService {
     const ruta = `${this.cajaURL}?idEmpresa=${this.empresa.id}`;
     return this.httpClient.get<Caja[]>(ruta);
   }
+  public listaConSaldo(): Observable<Caja[]> {
+    return this.httpClient.get<Caja[]>(this.cajaURL + 'saldo');
+  }
   public detalle(id: number): Observable<Caja> {
     return this.httpClient.get<Caja>(this.cajaURL + id);
   }
