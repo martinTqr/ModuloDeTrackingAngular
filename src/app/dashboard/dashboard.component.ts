@@ -35,9 +35,13 @@ export class DashboardComponent implements OnInit {
         this.cajaService.listaConSaldo().subscribe(
           (cajas) => {
             grupoCajas.forEach((grupoCaja) => {
+              console.log(cajas);
+
               const cajasFiltradas = cajas.filter(
                 (caja) => caja.grupoCaja.id === grupoCaja.id
               );
+              console.log(cajasFiltradas);
+
               grupoCaja.cajas = cajasFiltradas;
               grupoCaja.acumulado = { total: 0 };
               grupoCaja.acumulado.total = cajasFiltradas.reduce(
@@ -45,6 +49,8 @@ export class DashboardComponent implements OnInit {
                 0
               );
             });
+            console.log('Final', grupoCajas);
+
             this.grupoCajas = grupoCajas;
           },
           (error) => console.log(error)
