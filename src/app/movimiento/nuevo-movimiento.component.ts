@@ -115,23 +115,6 @@ export class NuevoMovimientoComponent implements OnInit {
 
   crear(): void {
     if (this.movimientoFormulario.invalid) return;
-    if (
-      this.isGeneral === 'false' &&
-      this.movimientoFormulario.value.idUnidadNegocio === ''
-    ) {
-      Swal.fire({
-        text: 'Seleccione una unidad de negocio',
-        icon: 'info',
-      });
-      return;
-    }
-    if (this.movimientoFormulario.value.idCaja === '') {
-      Swal.fire({
-        text: 'Seleccione una caja',
-        icon: 'info',
-      });
-      return;
-    }
     let {
       fecha,
       idCaja,
@@ -141,10 +124,6 @@ export class NuevoMovimientoComponent implements OnInit {
       detalle,
       monto,
     } = this.movimientoFormulario.value;
-    if (!idCategoria) {
-      Swal.fire({ text: 'Seleccione una categoria', icon: 'info' });
-      return;
-    }
 
     const idCategoriaNumber = Number(idCategoria);
     const montoNumber = Number(monto);
