@@ -2,31 +2,37 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import swal from 'sweetalert2';
 import { transformarAString } from '../helper';
+import { Empresa } from '../models';
 import { GrupoCajaService } from '../services/grupo-caja.service';
+import { LocalService } from '../services/local.service';
 @Component({
   selector: 'app-nueva-grupoCaja',
   templateUrl: './nuevo-grupo-caja.component.html',
   styleUrls: ['./nuevo-grupo-caja.component.css'],
 })
 export class NuevoGrupoCajaComponent implements OnInit {
+  empresa: Empresa;
   grupoCajaFormulario = this.fb.group({
     nombre: ['', Validators.required],
-    idEmpresa: ['1', Validators.required],
   });
   constructor(
     private fb: FormBuilder,
-    private grupoCajaService: GrupoCajaService
+    private grupoCajaService: GrupoCajaService,
+    private localService: LocalService
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.empresa = this.localService.getData('empresa');
+  }
   crear(): void {
-    let { nombre, idEmpresa } = this.grupoCajaFormulario.value;
+    if (this.grupoCajaFormulario.invalid) return;
+    let { nombre } = this.grupoCajaFormulario.value;
     nombre = transformarAString(nombre);
-    const idEmpresaNumber = Number(idEmpresa);
+
     this.grupoCajaService
       .crear({
         nombre,
-        idEmpresa: idEmpresaNumber,
+        idEmpresa: this.empresa.id,
       })
       .subscribe(
         ({ data }) =>
