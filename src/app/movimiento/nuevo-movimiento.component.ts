@@ -14,7 +14,6 @@ import { UnidadNegocioService } from '../services/unidad-negocio.service';
 })
 export class NuevoMovimientoComponent implements OnInit {
   movimientoFormulario = this.fb.group({
-    idUsuario: ['4', Validators.required],
     idCaja: ['', Validators.required],
     idUnidadNegocio: [''],
     idCategoria: ['', Validators.required],
@@ -103,7 +102,8 @@ export class NuevoMovimientoComponent implements OnInit {
         });
         return;
       }
-      this.cambiarGeneral(evento.data.isGeneral);
+      evento.data.isGeneral.toString() !== this.isGeneral &&
+        this.cambiarGeneral(evento.data.isGeneral);
 
       const idCateg = evento.row.node.data.id;
       this.movimientoFormulario.patchValue({
@@ -115,37 +115,35 @@ export class NuevoMovimientoComponent implements OnInit {
 
   crear(): void {
     if (this.movimientoFormulario.invalid) return;
-    let {
-      fecha,
-      idCaja,
-      idCategoria,
-      idUnidadNegocio,
-      idUsuario,
-      detalle,
-      monto,
-    } = this.movimientoFormulario.value;
-
+    let { fecha, idCaja, idCategoria, idUnidadNegocio, detalle, monto } =
+      this.movimientoFormulario.value;
+    if (this.isGeneral === 'false' && !idUnidadNegocio) return;
     const idCategoriaNumber = Number(idCategoria);
     const montoNumber = Number(monto);
     const idCajaNumber = Number(idCaja);
     const idUnidadNegocioNumber = Number(idUnidadNegocio);
-    const idUsuarioNumber = Number(idUsuario);
-
+    const idUsuario = 4;
     const movimiento = new NuevoMovimiento({
       idCaja: idCajaNumber,
       idUnidadNegocio: idUnidadNegocioNumber,
       idCategoria: idCategoriaNumber,
       monto: montoNumber,
-      idUsuario: idUsuarioNumber,
+      idUsuario,
       fecha,
       detalle,
     });
     this.movimientoService.crear(movimiento).subscribe(
-      () =>
+      () => {
         Swal.fire({
           title: 'Movimiento creado',
           icon: 'success',
-        }),
+        });
+        this.movimientoFormulario.reset();
+        this.movimientoFormulario.patchValue({
+          detalle: '',
+        });
+        this.categoriaSeleccionadaNombre = '-';
+      },
       ({ error }) => {
         Swal.fire({
           title: 'Error al crear movimiento',
