@@ -16,16 +16,19 @@
     </div>
     <div class="grid-responsive mb-3 mx-auto">
       <div class="card" *ngFor="let grupoCaja of grupoCajas">
-        <div class="card-header">
+        <div
+          [ngClass]="tipoDeFondo(grupoCaja.acumulado.total)"
+          class="card-header text-white"
+        >
           <p class="mb-0">
             {{ grupoCaja.nombre }}: {{ grupoCaja.acumulado.total }}
           </p>
         </div>
         <div class="card-body">
           <div
-            class="card mb-3"
-            *ngFor="let caja of grupoCaja.cajas; let last = last"
-            [ngClass]="{ 'last-child': last }"
+            class="card mb-3 text-white"
+            *ngFor="let caja of grupoCaja.cajas; let ultimoHijo = last"
+            [ngClass]="tipoDeFondo(caja.total, ultimoHijo)"
           >
             <div class="card-header">{{ caja.nombre }}: {{ caja.total }}</div>
           </div>

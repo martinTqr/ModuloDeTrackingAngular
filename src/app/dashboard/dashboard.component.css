@@ -1,3 +1,9 @@
-.last-child{
+.last_child{
   margin-bottom: 0 !important;
+}
+.negativo{
+  background-color: red;
+}
+.positivo{
+  background-color: green;
 }

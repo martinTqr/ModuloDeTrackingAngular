@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Empresa, GrupoCaja } from '../models';
+import { Caja, Empresa, GrupoCaja } from '../models';
 import { CajaService } from '../services/caja.service';
 import { GrupoCajaService } from '../services/grupo-caja.service';
 import { LocalService } from '../services/local.service';
@@ -28,7 +28,15 @@ export class DashboardComponent implements OnInit {
       (error) => console.log(error)
     );
   }
-
+  tipoDeFondo(total: number, ultimoHijo?: any) {
+    return {
+      positivo: total >= 0,
+      negativo: total < 0,
+      ...(ultimoHijo && {
+        last_child: ultimoHijo,
+      }),
+    };
+  }
   cargarCajas() {
     this.grupoCajaService.lista(this.empresa.id).subscribe(
       (grupoCajas) => {
