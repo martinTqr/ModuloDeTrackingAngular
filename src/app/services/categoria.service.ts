@@ -2,21 +2,26 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { Categoria } from '../models/';
+import { Categoria, Empresa } from '../models/';
+import { LocalService } from './local.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CategoriaService {
   categoriaURL = environment.categoriaURL;
-  constructor(private httpClient: HttpClient) {}
+  empresa: Empresa;
+  constructor(private httpClient: HttpClient, localService: LocalService) {
+    this.empresa = localService.getData('empresa');
+  }
 
   public lista(): Observable<Categoria[]> {
     return this.httpClient.get<Categoria[]>(`${this.categoriaURL}lista`);
   }
 
   public listaArbol(): Observable<Categoria[]> {
-    return this.httpClient.get<Categoria[]>(this.categoriaURL);
+    const ruta = `${this.categoriaURL}?idEmpresa=${this.empresa.id}`;
+    return this.httpClient.get<Categoria[]>(ruta);
   }
   public detalle(id: number): Observable<Categoria> {
     return this.httpClient.get<Categoria>(this.categoriaURL + id);
