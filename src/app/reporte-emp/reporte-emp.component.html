@@ -9,6 +9,8 @@
   [showBorders]="true"
   [columnAutoWidth]="true"
   [hoverStateEnabled]="true"
+  (onRowPrepared)="cambiarColorFila($event)"
+  (onCellPrepared)="cambiarColorCelda($event)"
 >
   <dxi-column
     [allowSorting]="false"

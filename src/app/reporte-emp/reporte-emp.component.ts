@@ -47,4 +47,17 @@ export class ReporteEmpComponent implements OnInit {
           })
       );
   }
+  cambiarColorFila(evento) {
+    if (evento.data?.nombre === 'Saldo') {
+      evento.rowElement.style.backgroundColor = 'rgb(154,154,154,0.32)';
+    }
+  }
+  cambiarColorCelda(evento) {
+    const { columnIndex, cellElement, data, displayValue } = evento;
+    if (displayValue && columnIndex === 1 && data?.nombre === 'Saldo') {
+      const color = displayValue >= 0 ? '#00ad00' : 'red';
+      cellElement.style.backgroundColor = color;
+      cellElement.style.color = 'white';
+    }
+  }
 }
