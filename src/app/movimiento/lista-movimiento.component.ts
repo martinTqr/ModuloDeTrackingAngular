@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import Swal from 'sweetalert2';
-import { parsearFecha } from '../helper';
+import { parsearFecha, separarMiles } from '../helper';
 import { Categoria, Movimiento } from '../models';
 import { MovimientoService } from '../services/movimiento.service';
 
@@ -48,6 +48,9 @@ export class ListaMovimientoComponent implements OnInit {
   }
   parsearFecha(fecha: Date): string {
     return parsearFecha(fecha);
+  }
+  separarMiles(numero: number): string {
+    return separarMiles(numero);
   }
   borrar(id: any): void {
     this.movimientoService.borrar(id).subscribe(

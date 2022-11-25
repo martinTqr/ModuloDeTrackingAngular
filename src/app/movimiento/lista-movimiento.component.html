@@ -60,7 +60,7 @@
         <td>{{ movimiento.caja.nombre }}</td>
         <td>{{ movimiento.categoria.nombre }}</td>
         <td>{{ movimiento.detalle }}</td>
-        <td>{{ movimiento.monto }}</td>
+        <td>{{ separarMiles(movimiento.monto) }}</td>
         <td>{{ parsearFecha(movimiento.fecha) }}</td>
         <td>{{ movimiento.categoria.tipo == "in" ? "Ingreso" : "Egreso" }}</td>
         <td>
