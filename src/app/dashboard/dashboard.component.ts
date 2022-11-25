@@ -30,7 +30,8 @@ export class DashboardComponent implements OnInit {
   }
   tipoDeFondo(total: number, ultimoHijo?: any) {
     return {
-      positivo: total >= 0,
+      cero: total === 0,
+      positivo: total > 0,
       negativo: total < 0,
       ...(ultimoHijo && {
         last_child: ultimoHijo,
