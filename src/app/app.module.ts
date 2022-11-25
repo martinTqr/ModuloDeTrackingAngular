@@ -31,6 +31,7 @@ import { ListaGrupoCajaComponent } from './grupo-caja/lista-grupo-caja.component
 import { DetalleGrupoCajaComponent } from './grupo-caja/detalle-grupo-caja.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NgxMaskModule } from 'ngx-mask';
 
 if (!/localhost/.test(document.location.host)) {
   enableProdMode();
@@ -63,6 +64,7 @@ if (!/localhost/.test(document.location.host)) {
     DashboardComponent,
   ],
   imports: [
+    NgxMaskModule.forRoot(),
     ReactiveFormsModule,
     BrowserModule,
     DxTreeListModule,

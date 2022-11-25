@@ -51,12 +51,14 @@
         <div class="col">
           <label for="monto">Monto</label>
           <input
-            type="number"
-            class="form-control"
-            name="monto"
+            type="text"
+            mask="separator"
             placeholder="Monto"
             aria-label="Monto"
+            name="monto"
+            class="form-control"
             formControlName="monto"
+            thousandSeparator=","
           />
         </div>
       </div>
