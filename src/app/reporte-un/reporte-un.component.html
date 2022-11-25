@@ -25,6 +25,7 @@
     [allowSorting]="false"
     dataField="acumulado.total"
     caption="Total categoria"
+    format="fixedPoint"
   ></dxi-column>
 
   <dxi-column
@@ -36,6 +37,7 @@
     <dxi-column
       [allowSorting]="false"
       dataField="meses[{{ numeroMes }}].total"
+      format="fixedPoint"
       caption="Total"
     ></dxi-column>
     <dxi-column caption="Semanas de {{ nombreDeMeses[numeroMes] }}">
@@ -43,6 +45,7 @@
         *ngFor="let data of semanas; let numeroSemana = index"
         [allowSorting]="false"
         dataField="meses[{{ numeroMes }}].semanas[{{ numeroSemana }}].total"
+        format="fixedPoint"
         [caption]="
           reporte.subcategorias[0].meses[numeroMes].semanas[numeroSemana]
             ?.semana || ''

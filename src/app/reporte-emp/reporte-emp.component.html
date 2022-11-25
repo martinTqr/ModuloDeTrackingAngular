@@ -18,12 +18,14 @@
   <dxi-column
     [allowSorting]="false"
     dataField="acumulado.total"
+    format="fixedPoint"
     caption="Total categoria"
   ></dxi-column>
 
   <dxi-column
     [allowSorting]="false"
     dataField="meses[{{ numeroMes }}].total"
+    format="fixedPoint"
     caption="{{ data }}"
     *ngFor="let data of nombreDeMeses; let numeroMes = index"
   ></dxi-column>

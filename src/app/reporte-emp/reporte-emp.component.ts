@@ -23,6 +23,7 @@ export class ReporteEmpComponent implements OnInit {
     private rutaActiva: ActivatedRoute,
     private localService: LocalService
   ) {}
+
   ngOnInit(): void {
     const empresa = this.localService.getData('empresa');
     const { fechaInicio, fechaFin } = this.rutaActiva.snapshot.queryParams;
