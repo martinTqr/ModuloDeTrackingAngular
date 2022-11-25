@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { separarMiles } from '../helper';
 import { Caja, Empresa, GrupoCaja } from '../models';
 import { CajaService } from '../services/caja.service';
 import { GrupoCajaService } from '../services/grupo-caja.service';
@@ -27,6 +28,9 @@ export class DashboardComponent implements OnInit {
       (grupoCajas) => (this.grupoCajas = grupoCajas),
       (error) => console.log(error)
     );
+  }
+  separarMiles(numero: number) {
+    return separarMiles(numero);
   }
   tipoDeFondo(total: number, ultimoHijo?: any) {
     return {

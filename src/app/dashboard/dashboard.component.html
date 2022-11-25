@@ -21,7 +21,8 @@
           class="card-header"
         >
           <p class="mb-0">
-            {{ grupoCaja.nombre }}: {{ grupoCaja.acumulado.total }}
+            {{ grupoCaja.nombre }}:
+            {{ separarMiles(grupoCaja.acumulado.total) }}
           </p>
         </div>
         <div class="card-body">
@@ -30,7 +31,9 @@
             *ngFor="let caja of grupoCaja.cajas; let ultimoHijo = last"
             [ngClass]="tipoDeFondo(caja.total, ultimoHijo)"
           >
-            <div class="card-header">{{ caja.nombre }}: {{ caja.total }}</div>
+            <div class="card-header">
+              {{ caja.nombre }}: {{ separarMiles(caja.total) }}
+            </div>
           </div>
         </div>
       </div>
