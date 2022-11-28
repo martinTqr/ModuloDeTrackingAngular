@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { Empresa } from '../models';
-import { EmpresaService } from '../services/empresa.service';
 import { LocalService } from '../services/local.service';
 import { UnidadNegocioService } from '../services/unidad-negocio.service';
 
