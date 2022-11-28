@@ -48,7 +48,7 @@ export class DashboardComponent implements OnInit {
         this.cajaService.listaConSaldo().subscribe(
           (cajas) => {
             grupoCajas.forEach((grupoCaja) => {
-              grupoCaja.collapsed = false;
+              grupoCaja.collapsed = true;
               const cajasFiltradas = cajas.filter(
                 (caja) => caja.grupoCaja.id === grupoCaja.id
               );
