@@ -7,6 +7,8 @@ export class NuevoMovimiento {
   monto: number;
   detalle: string;
   fecha: Date;
+  fechaCreacion?: Date;
+
   constructor({
     idUsuario,
     idCaja,
@@ -15,6 +17,7 @@ export class NuevoMovimiento {
     monto,
     detalle,
     fecha,
+    fechaCreacion,
   }: any) {
     this.idUsuario = idUsuario;
     this.idCaja = idCaja;
@@ -23,6 +26,7 @@ export class NuevoMovimiento {
     this.monto = monto;
     this.detalle = detalle;
     this.fecha = fecha;
+    this.fechaCreacion = fechaCreacion;
   }
 }
 export interface Movimiento {

@@ -10,10 +10,12 @@ export class GrupoCaja {
   meses?: TotalesMes[];
   fechaBorrado?: number;
   collapsed?: boolean;
-  constructor({ id, nombre, idEmpresa, fechaBorrado }: any) {
+  fechaCreacion?: Date;
+  constructor({ id, nombre, idEmpresa, fechaBorrado, fechaCreacion }: any) {
     this.id = id;
     this.nombre = nombre;
     this.idEmpresa = idEmpresa;
     this.fechaBorrado = fechaBorrado;
+    this.fechaCreacion = fechaCreacion;
   }
 }

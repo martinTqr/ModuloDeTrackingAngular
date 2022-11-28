@@ -9,6 +9,7 @@ export class Caja {
   fechaBorrado?: number;
   total?: number;
   grupoCaja?: GrupoCaja;
+  fechaCreacion?: Date;
   constructor({
     id,
     nombre,
@@ -16,6 +17,7 @@ export class Caja {
     idGrupoCaja,
     negativa,
     fechaBorrado,
+    fechaCreacion,
   }: any) {
     this.id = id;
     this.idEmpresa = idEmpresa;
@@ -23,5 +25,6 @@ export class Caja {
     this.nombre = nombre;
     this.negativa = negativa;
     this.fechaBorrado = fechaBorrado;
+    this.fechaCreacion = fechaCreacion;
   }
 }

@@ -8,6 +8,7 @@ export class Categoria {
   fechaBorrado?: string | null;
   isGeneral: boolean;
   subcategorias?: Categoria[];
+  fechaCreacion?: Date;
   constructor({
     id,
     nombre,
@@ -18,6 +19,7 @@ export class Categoria {
     fechaBorrado,
     isGeneral,
     subcategorias,
+    fechaCreacion,
   }: any) {
     this.id = id;
     this.nombre = nombre;
@@ -28,6 +30,7 @@ export class Categoria {
     this.fechaBorrado = fechaBorrado;
     this.isGeneral = isGeneral;
     this.subcategorias = subcategorias;
+    this.fechaCreacion = fechaCreacion;
   }
 }
 export enum TipoCategoria {
