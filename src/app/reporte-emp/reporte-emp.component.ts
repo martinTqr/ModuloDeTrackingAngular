@@ -54,7 +54,7 @@ export class ReporteEmpComponent implements OnInit {
   }
   cambiarColorCelda(evento) {
     const { columnIndex, cellElement, data, displayValue } = evento;
-    if (displayValue && columnIndex === 1 && data?.nombre === 'Saldo') {
+    if (displayValue && columnIndex !== 0 && data?.nombre === 'Saldo') {
       const color = displayValue >= 0 ? '#00ad00' : 'red';
       cellElement.style.backgroundColor = color;
       cellElement.style.color = 'white';
