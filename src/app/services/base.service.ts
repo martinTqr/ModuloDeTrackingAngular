@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Empresa } from '../models';
 import { LocalService } from './local.service';
 
 @Injectable({
