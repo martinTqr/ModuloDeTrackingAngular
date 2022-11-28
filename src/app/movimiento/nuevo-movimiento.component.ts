@@ -50,8 +50,13 @@ export class NuevoMovimientoComponent implements OnInit {
   }
 
   async cargarUnidadNegocio() {
-    this.unidadNegocioService.lista().subscribe((unidadNegocio) => {
-      this.unidadesDeNegocio = unidadNegocio;
+    this.unidadNegocioService.lista().subscribe((unidadesDeNegocio) => {
+      this.unidadesDeNegocio = unidadesDeNegocio;
+      if (unidadesDeNegocio.length === 1) {
+        this.movimientoFormulario.patchValue({
+          idUnidadNegocio: String(unidadesDeNegocio[0].id),
+        });
+      }
     });
   }
   cargarCategorias() {
@@ -114,8 +119,6 @@ export class NuevoMovimientoComponent implements OnInit {
   }
 
   crear(): void {
-    console.log(this.movimientoFormulario.value);
-
     if (this.movimientoFormulario.invalid) return;
     let { fecha, idCaja, idCategoria, idUnidadNegocio, detalle, monto } =
       this.movimientoFormulario.value;
