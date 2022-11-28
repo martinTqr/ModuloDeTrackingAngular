@@ -4,16 +4,17 @@ import { Categoria, Empresa, TipoCategoria } from '../models';
 import { CategoriaService } from '../services/categoria.service';
 import { EmpresaService } from '../services/empresa.service';
 import Swal from 'sweetalert2';
+import { LocalService } from '../services/local.service';
 @Component({
   selector: 'app-nueva-categoria',
   templateUrl: './nueva-categoria.component.html',
   styleUrls: ['./nueva-categoria.component.css'],
 })
 export class NuevaCategoriaComponent implements OnInit {
+  empresa: Empresa;
   categoriaFormulario = this.fb.group({
     nombre: ['', Validators.required],
     tipo: ['out', Validators.required],
-    idEmpresa: ['1', Validators.required],
     orden: ['1', [Validators.required, Validators.min(1)]],
     isGeneral: ['true', [Validators.required, Validators.required]],
     idCategoriaPadre: [''],
@@ -25,10 +26,12 @@ export class NuevaCategoriaComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private categoriaService: CategoriaService,
-    private empresaService: EmpresaService
+    private empresaService: EmpresaService,
+    private localService: LocalService
   ) {}
 
   ngOnInit(): void {
+    this.empresa = this.localService.getData('empresa');
     this.empresaService
       .lista()
       .subscribe((lista) => (this.listaEmpresa = lista));
@@ -58,12 +61,12 @@ export class NuevaCategoriaComponent implements OnInit {
   }
   crear(): void {
     if (!this.categoriaFormulario.valid) return;
-    let { nombre, tipo, idCategoriaPadre, isGeneral, idEmpresa, orden } =
+    let { nombre, tipo, idCategoriaPadre, isGeneral, orden } =
       this.categoriaFormulario.value;
     nombre = String(nombre);
     const tipoString = String(tipo);
     const ordenNumber = Number(orden);
-    const idEmpresaNumber = Number(idEmpresa);
+    const idEmpresa = this.empresa.id;
 
     const idCategoriaPadreNumber = idCategoriaPadre
       ? Number(idCategoriaPadre)
@@ -74,7 +77,7 @@ export class NuevaCategoriaComponent implements OnInit {
     const categoria: Categoria = {
       nombre,
       tipo: tipoString,
-      idEmpresa: idEmpresaNumber,
+      idEmpresa,
       idCategoriaPadre: idCategoriaPadreNumber,
       orden: ordenNumber,
       isGeneral: isGeneralBoolean,

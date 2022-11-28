@@ -9,10 +9,13 @@ import { LocalService } from './local.service';
   providedIn: 'root',
 })
 export class CategoriaService {
-  categoriaURL = environment.categoriaURL;
   empresa: Empresa;
-  constructor(private httpClient: HttpClient, localService: LocalService) {
-    this.empresa = localService.getData('empresa');
+  categoriaURL = environment.categoriaURL;
+  constructor(
+    private httpClient: HttpClient,
+    private localService: LocalService
+  ) {
+    this.empresa = this.localService.getData('empresa');
   }
 
   public lista(): Observable<Categoria[]> {
@@ -20,13 +23,15 @@ export class CategoriaService {
   }
 
   public listaArbol(): Observable<Categoria[]> {
-    const ruta = `${this.categoriaURL}?idEmpresa=${this.empresa.id}`;
+    const ruta = this.categoriaURL + `?idEmpresa=${this.empresa.id}`;
     return this.httpClient.get<Categoria[]>(ruta);
   }
   public detalle(id: number): Observable<Categoria> {
     return this.httpClient.get<Categoria>(this.categoriaURL + id);
   }
   public crear(categoria: Categoria): Observable<any> {
+    console.log(categoria);
+
     return this.httpClient.post<any>(this.categoriaURL, categoria);
   }
   public borrar(id: number): Observable<any> {
