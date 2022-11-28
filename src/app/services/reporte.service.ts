@@ -14,7 +14,6 @@ export class ReporteService extends BaseService {
     super(ls);
   }
   public buscarReporteEmpresa(
-    id: any,
     fechaInicio?: string,
     fechaFin?: string
   ): Observable<any> {

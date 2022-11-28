@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import Swal from 'sweetalert2';
 import { meses } from '../constantes/';
-import { LocalService } from '../services/local.service';
 import { ReporteService } from '../services/reporte.service';
 import { ReporteEmpresaReducido } from './reporte-emp.interface';
 
@@ -20,32 +19,28 @@ export class ReporteEmpComponent implements OnInit {
 
   constructor(
     private reporteService: ReporteService,
-    private rutaActiva: ActivatedRoute,
-    private localService: LocalService
+    private rutaActiva: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
-    const empresa = this.localService.getData('empresa');
     const { fechaInicio, fechaFin } = this.rutaActiva.snapshot.queryParams;
     Swal.fire({
       icon: 'info',
       title: 'Cargando...',
       showConfirmButton: false,
     });
-    this.reporteService
-      .buscarReporteEmpresa(empresa.id, fechaInicio, fechaFin)
-      .subscribe(
-        (data: ReporteEmpresaReducido[]) => {
-          this.reporte = data;
-          Swal.close();
-        },
-        ({ error }) =>
-          Swal.fire({
-            icon: 'error',
-            title: 'Ocurrio un error...',
-            text: error.message,
-          })
-      );
+    this.reporteService.buscarReporteEmpresa(fechaInicio, fechaFin).subscribe(
+      (data: ReporteEmpresaReducido[]) => {
+        this.reporte = data;
+        Swal.close();
+      },
+      ({ error }) =>
+        Swal.fire({
+          icon: 'error',
+          title: 'Ocurrio un error...',
+          text: error.message,
+        })
+    );
   }
   cambiarColorFila(evento) {
     if (evento.data?.nombre === 'Saldo') {
