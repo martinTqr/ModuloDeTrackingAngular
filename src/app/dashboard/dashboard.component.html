@@ -2,12 +2,6 @@
   <div class="card-header py-0 px-4">
     <div class="my-3 d-flex justify-content-between">
       <h3 class="mb-0">{{ empresa.nombre }}</h3>
-      <a routerLink="/" class="">Volver</a>
-    </div>
-  </div>
-  <div class="card-body pt-0">
-    <div class="my-3 d-flex justify-content-between">
-      <div></div>
       <div>
         <button
           routerLink="/admin"
@@ -21,11 +15,17 @@
         >
           Unidades de negocio
         </button>
-        <button routerLink="/movimiento/nuevo" class="btn btn-outline-primary">
+        <button
+          routerLink="/movimiento/nuevo"
+          class="btn btn-outline-primary me-2"
+        >
           Crear movimiento
         </button>
+        <a routerLink="/" class="">Volver</a>
       </div>
     </div>
+  </div>
+  <div class="card-body pt-3">
     <div class="grid-responsive mb-3 mx-auto">
       <div class="card" *ngFor="let grupoCaja of grupoCajas">
         <div
