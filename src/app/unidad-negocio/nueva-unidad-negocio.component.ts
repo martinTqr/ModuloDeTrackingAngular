@@ -3,6 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { Empresa } from '../models';
 import { EmpresaService } from '../services/empresa.service';
+import { LocalService } from '../services/local.service';
 import { UnidadNegocioService } from '../services/unidad-negocio.service';
 
 @Component({
@@ -13,46 +14,32 @@ import { UnidadNegocioService } from '../services/unidad-negocio.service';
 export class NuevaUnidadNegocioComponent implements OnInit {
   unidadNegocioFormulario = this.fb.group({
     nombre: ['', Validators.required],
-    idEmpresa: ['', Validators.required],
   });
   empresas: Empresa[] = [];
   constructor(
     private fb: FormBuilder,
     private unidadNegocioService: UnidadNegocioService,
-    private empresaService: EmpresaService
+    private localService: LocalService
   ) {}
 
-  ngOnInit() {
-    this.obtenerEmpresas();
-  }
-
-  obtenerEmpresas() {
-    this.empresaService.lista().subscribe((empresas) => {
-      this.empresas = empresas;
-      this.unidadNegocioFormulario.patchValue({
-        idEmpresa: String(this.empresas[0].id),
-      });
-    });
-  }
+  ngOnInit() {}
   crear() {
-    let { nombre, idEmpresa } = this.unidadNegocioFormulario.value;
+    let { nombre } = this.unidadNegocioFormulario.value;
     nombre = String(nombre);
-    const idEmpresaNumber = Number(idEmpresa);
-    this.unidadNegocioService
-      .crear({ nombre, idEmpresa: idEmpresaNumber })
-      .subscribe(
-        () =>
-          Swal.fire({
-            title: 'Unidad de negocio creada',
-            icon: 'success',
-          }),
-        ({ error }) => {
-          Swal.fire({
-            title: 'Error al crear unidad de negocio',
-            icon: 'error',
-            text: error.message,
-          });
-        }
-      );
+    const idEmpresa = this.localService.getData('empresa').id;
+    this.unidadNegocioService.crear({ nombre, idEmpresa }).subscribe(
+      () =>
+        Swal.fire({
+          title: 'Unidad de negocio creada',
+          icon: 'success',
+        }),
+      ({ error }) => {
+        Swal.fire({
+          title: 'Error al crear unidad de negocio',
+          icon: 'error',
+          text: error.message,
+        });
+      }
+    );
   }
 }
