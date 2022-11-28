@@ -4,3 +4,4 @@ export * from './empresa';
 export * from './categoria';
 export * from './unidad-negocio';
 export * from './grupo-caja';
+export * from './usuario';

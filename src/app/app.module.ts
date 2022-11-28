@@ -35,6 +35,9 @@ import { NgxMaskModule } from 'ngx-mask';
 //configuracion dev extreme para los puntos y comas
 import config from 'devextreme/core/config';
 import * as localization from 'devextreme/localization';
+import { ListaUsuarioComponent } from './usuario/lista-usuario.component';
+import { DetalleUsuarioComponent } from './usuario/detalle-usuario.component';
+import { NuevoUsuarioComponent } from './usuario/nuevo-usuario.component';
 (localization as any).disableIntl();
 config({
   thousandsSeparator: '.',
@@ -69,6 +72,9 @@ if (!/localhost/.test(document.location.host)) {
     DetalleGrupoCajaComponent,
     HomeComponent,
     DashboardComponent,
+    ListaUsuarioComponent,
+    DetalleUsuarioComponent,
+    NuevoUsuarioComponent,
   ],
   imports: [
     NgxMaskModule.forRoot(),
