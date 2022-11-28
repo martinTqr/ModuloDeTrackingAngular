@@ -9,17 +9,12 @@ import { LocalService } from '../services/local.service';
   styleUrls: ['./lista-grupo-caja.component.css'],
 })
 export class ListaGrupoCajaComponent implements OnInit {
-  empresa: Empresa;
   grupoCajas: GrupoCaja[] = [];
-  constructor(
-    private grupoCajaService: GrupoCajaService,
-    private localService: LocalService
-  ) {}
+  constructor(private grupoCajaService: GrupoCajaService) {}
 
   ngOnInit(): void {
-    this.empresa = this.localService.getData('empresa');
     this.grupoCajaService
-      .lista(this.empresa.id)
+      .lista()
       .subscribe((grupoCajas) => (this.grupoCajas = grupoCajas));
   }
 }

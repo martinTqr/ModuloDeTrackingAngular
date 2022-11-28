@@ -43,7 +43,7 @@ export class DashboardComponent implements OnInit {
   }
 
   cargarCajas() {
-    this.grupoCajaService.lista(this.empresa.id).subscribe(
+    this.grupoCajaService.lista().subscribe(
       (grupoCajas) => {
         this.cajaService.listaConSaldo().subscribe(
           (cajas) => {

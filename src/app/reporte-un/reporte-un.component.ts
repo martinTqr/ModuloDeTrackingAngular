@@ -6,7 +6,6 @@ import { ActivatedRoute } from '@angular/router';
 import { GrupoCajaService } from '../services/grupo-caja.service';
 import { acumularMesesTotales, agruparCajas } from '../helper';
 import { Empresa } from '../models';
-import { LocalService } from '../services/local.service';
 
 @Component({
   selector: 'reporte-un',
@@ -22,16 +21,14 @@ export class ReporteUNComponent implements OnInit {
   constructor(
     private reporteService: ReporteService,
     private grupoCajaService: GrupoCajaService,
-    private rutaActiva: ActivatedRoute,
-    private localService: LocalService
+    private rutaActiva: ActivatedRoute
   ) {}
 
   ngOnInit() {
-    this.empresa = this.localService.getData('empresa');
     this.cargarReporte();
   }
   cargarReporte() {
-    this.grupoCajaService.lista(this.empresa.id).subscribe((grupoCajas) => {
+    this.grupoCajaService.lista().subscribe((grupoCajas) => {
       const { id } = this.rutaActiva.snapshot.params;
       const { fechaInicio, fechaFin } = this.rutaActiva.snapshot.queryParams;
       this.reporteService

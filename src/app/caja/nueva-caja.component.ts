@@ -16,7 +16,6 @@ import { LocalService } from '../services/local.service';
 export class NuevaCajaComponent implements OnInit {
   empresa: Empresa;
   cajaFormulario = this.fb.group({
-    idEmpresa: ['', [Validators.required]],
     nombre: ['', Validators.required],
     idGrupoCaja: ['', Validators.required],
     negativa: ['', Validators.required],
@@ -32,30 +31,24 @@ export class NuevaCajaComponent implements OnInit {
 
   ngOnInit(): void {
     this.empresa = this.localService.getData('empresa');
-    this.cargarEmpresa();
     this.cargarGrupoDeCajas();
   }
 
   cargarGrupoDeCajas() {
     this.grupoCajaService
-      .lista(this.empresa.id)
+      .lista()
       .subscribe((grupoCajas) => (this.grupoCajas = grupoCajas));
   }
-  cargarEmpresa() {
-    this.empresaService.lista().subscribe((empresas) => {
-      this.cajaFormulario.patchValue({ idEmpresa: String(empresas[0].id) });
-    });
-  }
+
   crear(): void {
     if (this.cajaFormulario.invalid) return;
-    let { idEmpresa, idGrupoCaja, negativa, nombre } =
-      this.cajaFormulario.value;
-    const idEmpresaNumber = Number(idEmpresa);
+    let { idGrupoCaja, negativa, nombre } = this.cajaFormulario.value;
+    const idEmpresa = this.empresa.id;
     const negativaBoolean = trasnformarABoolean(negativa);
     const idGrupoCajaNumber = Number(idGrupoCaja);
     nombre = transformarAString(nombre);
     const caja: Caja = {
-      idEmpresa: idEmpresaNumber,
+      idEmpresa,
       nombre,
       idGrupoCaja: idGrupoCajaNumber,
       negativa: negativaBoolean,

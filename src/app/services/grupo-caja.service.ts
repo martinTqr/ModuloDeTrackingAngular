@@ -15,7 +15,7 @@ export class GrupoCajaService extends BaseService {
     super(ls);
   }
 
-  public lista(id: number): Observable<GrupoCaja[]> {
+  public lista(): Observable<GrupoCaja[]> {
     const ruta = this.grupoCajaURL + this.empresaParametro;
     return this.httpClient.get<GrupoCaja[]>(ruta);
   }
