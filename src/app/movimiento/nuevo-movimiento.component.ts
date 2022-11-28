@@ -17,7 +17,7 @@ export class NuevoMovimientoComponent implements OnInit {
     idCaja: ['', Validators.required],
     idUnidadNegocio: [''],
     idCategoria: ['', Validators.required],
-    fecha: ['', Validators.required],
+    fecha: [new Date().toISOString().substring(0, 10), Validators.required],
     detalle: [''],
     monto: ['', [Validators.required, Validators.min(0)]],
   });
@@ -114,6 +114,8 @@ export class NuevoMovimientoComponent implements OnInit {
   }
 
   crear(): void {
+    console.log(this.movimientoFormulario.value);
+
     if (this.movimientoFormulario.invalid) return;
     let { fecha, idCaja, idCategoria, idUnidadNegocio, detalle, monto } =
       this.movimientoFormulario.value;
