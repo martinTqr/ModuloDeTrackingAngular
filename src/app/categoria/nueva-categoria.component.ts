@@ -3,13 +3,13 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { Categoria, Empresa, TipoCategoria } from '../models';
 import { CategoriaService } from '../services/categoria.service';
 import Swal from 'sweetalert2';
+import { BaseService } from '../services/base.service';
 @Component({
   selector: 'app-nueva-categoria',
   templateUrl: './nueva-categoria.component.html',
   styleUrls: ['./nueva-categoria.component.css'],
 })
 export class NuevaCategoriaComponent implements OnInit {
-  empresa: Empresa;
   categoriaFormulario = this.fb.group({
     nombre: ['', Validators.required],
     tipo: ['out', Validators.required],
@@ -22,7 +22,8 @@ export class NuevaCategoriaComponent implements OnInit {
   categoriaSeleccionadaNombre = '-';
   constructor(
     private fb: FormBuilder,
-    private categoriaService: CategoriaService
+    private categoriaService: CategoriaService,
+    private baseService: BaseService
   ) {}
 
   ngOnInit(): void {
@@ -59,7 +60,8 @@ export class NuevaCategoriaComponent implements OnInit {
     nombre = String(nombre);
     const tipoString = String(tipo);
     const ordenNumber = Number(orden);
-    const idEmpresa = this.empresa.id;
+    console.log('ase');
+    const idEmpresa = this.baseService.getIdEmpresa;
 
     const idCategoriaPadreNumber = idCategoriaPadre
       ? Number(idCategoriaPadre)
@@ -83,6 +85,7 @@ export class NuevaCategoriaComponent implements OnInit {
       });
       return;
     }
+
     this.categoriaService.crear(categoria).subscribe(
       (data) => {
         Swal.fire({
