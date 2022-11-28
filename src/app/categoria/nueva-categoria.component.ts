@@ -2,9 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Categoria, Empresa, TipoCategoria } from '../models';
 import { CategoriaService } from '../services/categoria.service';
-import { EmpresaService } from '../services/empresa.service';
 import Swal from 'sweetalert2';
-import { LocalService } from '../services/local.service';
 @Component({
   selector: 'app-nueva-categoria',
   templateUrl: './nueva-categoria.component.html',
@@ -19,24 +17,19 @@ export class NuevaCategoriaComponent implements OnInit {
     isGeneral: ['true', [Validators.required, Validators.required]],
     idCategoriaPadre: [''],
   });
-  listaEmpresa: Empresa[] = [];
   listaCategorias: Categoria[][] = [[], []];
   tipo = 0;
   categoriaSeleccionadaNombre = '-';
   constructor(
     private fb: FormBuilder,
-    private categoriaService: CategoriaService,
-    private empresaService: EmpresaService,
-    private localService: LocalService
+    private categoriaService: CategoriaService
   ) {}
 
   ngOnInit(): void {
-    this.empresa = this.localService.getData('empresa');
-    this.empresaService
-      .lista()
-      .subscribe((lista) => (this.listaEmpresa = lista));
+    this.cargarCategorias();
+  }
+  cargarCategorias() {
     this.categoriaService.listaArbol().subscribe((lista) => {
-      //separe lista for tipo
       const listaSeparada = lista.reduce(
         (acum: Categoria[][], categ) => {
           if (categ.tipo === TipoCategoria.out) {
