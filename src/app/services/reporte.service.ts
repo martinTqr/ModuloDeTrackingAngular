@@ -3,13 +3,16 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Reporte } from '../interfaces';
+import { BaseService } from './base.service';
+import { LocalService } from './local.service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ReporteService {
-  constructor(private httpClient: HttpClient) {}
-
+export class ReporteService extends BaseService {
+  constructor(private httpClient: HttpClient, ls: LocalService) {
+    super(ls);
+  }
   public buscarReporteEmpresa(
     id: any,
     fechaInicio?: string,
@@ -18,7 +21,9 @@ export class ReporteService {
     const { reporteEmpresaURL } = environment;
     const fechaInicioRuta = fechaInicio ? `&fechaInicio=${fechaInicio}` : '';
     const fechaFinRuta = fechaFin ? `&fechaFin=${fechaFin}` : '';
-    const ruta = `${reporteEmpresaURL}?idEmpresa=${id}${fechaInicioRuta}${fechaFinRuta}`;
+    const empresaRuta = this.empresaParametro;
+    const ruta =
+      reporteEmpresaURL + empresaRuta + fechaInicioRuta + fechaFinRuta;
     return this.httpClient.get<any>(ruta);
   }
   public buscarReporteUnidadNegocio(

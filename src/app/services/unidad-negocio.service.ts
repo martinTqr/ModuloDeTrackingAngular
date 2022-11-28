@@ -2,17 +2,23 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { Movimiento, NuevoMovimiento, UnidadNegocio } from '../models/';
+import { UnidadNegocio } from '../models/';
+import { BaseService } from './base.service';
+import { LocalService } from './local.service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class UnidadNegocioService {
+export class UnidadNegocioService extends BaseService {
   unidadNegocioURL = environment.unidadNegocioURL;
-  constructor(private httpClient: HttpClient) {}
+  constructor(private httpClient: HttpClient, ls: LocalService) {
+    super(ls);
+  }
 
   public lista(): Observable<UnidadNegocio[]> {
-    return this.httpClient.get<UnidadNegocio[]>(this.unidadNegocioURL);
+    return this.httpClient.get<UnidadNegocio[]>(
+      this.unidadNegocioURL + this.empresaParametro
+    );
   }
   public detalle(id: number): Observable<UnidadNegocio> {
     return this.httpClient.get<UnidadNegocio>(this.unidadNegocioURL + id);

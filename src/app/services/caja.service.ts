@@ -3,17 +3,19 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Caja } from '../models/';
+import { BaseService } from './base.service';
+import { LocalService } from './local.service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class CajaService {
+export class CajaService extends BaseService {
   cajaURL = environment.cajaURL;
-  empresa = JSON.parse(localStorage.getItem('empresa'));
-  constructor(private httpClient: HttpClient) {}
-
+  constructor(private httpClient: HttpClient, ls: LocalService) {
+    super(ls);
+  }
   public lista(): Observable<Caja[]> {
-    const ruta = `${this.cajaURL}?idEmpresa=${this.empresa.id}`;
+    const ruta = this.cajaURL + this.empresaParametro;
     return this.httpClient.get<Caja[]>(ruta);
   }
   public listaConSaldo(): Observable<Caja[]> {

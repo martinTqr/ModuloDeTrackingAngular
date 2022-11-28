@@ -3,17 +3,20 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { GrupoCaja } from '../models/';
+import { BaseService } from './base.service';
+import { LocalService } from './local.service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class GrupoCajaService {
+export class GrupoCajaService extends BaseService {
   grupoCajaURL = environment.grupoCajaURL;
-  constructor(private httpClient: HttpClient) {}
+  constructor(private httpClient: HttpClient, ls: LocalService) {
+    super(ls);
+  }
 
   public lista(id: number): Observable<GrupoCaja[]> {
-    const idEmpresaRuta = `?idEmpresa=${id}`;
-    const ruta = this.grupoCajaURL + idEmpresaRuta;
+    const ruta = this.grupoCajaURL + this.empresaParametro;
     return this.httpClient.get<GrupoCaja[]>(ruta);
   }
   public detalle(id: number): Observable<GrupoCaja> {
