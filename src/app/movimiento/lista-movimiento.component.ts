@@ -46,8 +46,8 @@ export class ListaMovimientoComponent implements OnInit {
       (error) => console.error(error)
     );
   }
-  parsearFecha(fecha: Date): string {
-    return parsearFecha(fecha);
+  parsearFecha(fecha: string, formato?: string): string {
+    return parsearFecha(fecha, formato);
   }
   separarMiles(numero: number): string {
     return separarMiles(numero);

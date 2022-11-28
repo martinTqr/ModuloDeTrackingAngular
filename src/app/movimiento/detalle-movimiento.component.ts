@@ -33,6 +33,6 @@ export class DetalleMovimientoComponent implements OnInit {
     );
   }
   parsearFecha(fecha: Date): string {
-    return parsearFecha(fecha);
+    return parsearFecha(fecha.toString());
   }
 }

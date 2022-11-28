@@ -44,19 +44,19 @@
   <table class="table">
     <thead>
       <tr>
-        <th scope="col">ID</th>
+        <th scope="col">Fecha de creacion</th>
         <th scope="col">Caja</th>
         <th scope="col">Categoria</th>
         <th scope="col">Detalle</th>
         <th scope="col">Monto</th>
-        <th scope="col">Fecha</th>
+        <th scope="col">Fecha del movimiento</th>
         <th scope="col">Tipo</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let movimiento of movimientos">
-        <td>{{ movimiento.id }}</td>
+        <td>{{ parsearFecha(movimiento.fechaCreacion, "fechaHora") }}</td>
         <td>{{ movimiento.caja.nombre }}</td>
         <td>{{ movimiento.categoria.nombre }}</td>
         <td>{{ movimiento.detalle }}</td>
