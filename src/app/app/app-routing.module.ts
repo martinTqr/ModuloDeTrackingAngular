@@ -23,6 +23,9 @@ import { ListaUnidadNegocioComponent } from '../unidad-negocio/lista-unidad-nego
 import { NuevaUnidadNegocioComponent } from '../unidad-negocio/nueva-unidad-negocio.component';
 import { HomeComponent } from '../home/home.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
+import { ListaUsuarioComponent } from '../usuario/lista-usuario.component';
+import { DetalleUsuarioComponent } from '../usuario/detalle-usuario.component';
+import { NuevoUsuarioComponent } from '../usuario/nuevo-usuario.component';
 
 const rutas: Routes = [
   { path: '', component: HomeComponent },
@@ -59,6 +62,10 @@ const rutas: Routes = [
   { path: 'categoria/lista', component: ListaCategoriaComponent },
   { path: 'categoria/detalle/:id', component: DetalleCategoriaComponent },
   { path: 'categoria/nueva', component: NuevaCategoriaComponent },
+
+  { path: 'usuario/lista', component: ListaUsuarioComponent },
+  { path: 'usuario/detalle/:id', component: DetalleUsuarioComponent },
+  { path: 'usuario/nueva', component: NuevoUsuarioComponent },
 ];
 
 @NgModule({
