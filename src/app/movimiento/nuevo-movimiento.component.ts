@@ -143,6 +143,7 @@ export class NuevoMovimientoComponent implements OnInit {
         this.movimientoFormulario.reset();
         this.movimientoFormulario.patchValue({
           detalle: '',
+          fecha: new Date().toISOString().substring(0, 10),
         });
         this.categoriaSeleccionadaNombre = '-';
       },
