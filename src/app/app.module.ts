@@ -32,7 +32,14 @@ import { DetalleGrupoCajaComponent } from './grupo-caja/detalle-grupo-caja.compo
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgxMaskModule } from 'ngx-mask';
-
+//configuracion dev extreme para los puntos y comas
+import config from 'devextreme/core/config';
+import * as localization from 'devextreme/localization';
+(localization as any).disableIntl();
+config({
+  thousandsSeparator: '.',
+  decimalSeparator: ',',
+});
 if (!/localhost/.test(document.location.host)) {
   enableProdMode();
 }
