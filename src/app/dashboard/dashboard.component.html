@@ -7,12 +7,24 @@
   </div>
   <div class="card-body pt-0">
     <div class="my-3 d-flex justify-content-between">
-      <button routerLink="/admin" class="btn btn-primary text-white">
-        Panel de admin
-      </button>
-      <a routerLink="/movimiento/nuevo" class="btn btn-outline-primary"
-        >Crear movimiento</a
-      >
+      <div></div>
+      <div>
+        <button
+          routerLink="/admin"
+          class="btn btn-outline-primary text-blue me-2"
+        >
+          Panel de admin
+        </button>
+        <button
+          routerLink="/unidad-negocio/lista"
+          class="btn btn-outline-primary text-blue me-2"
+        >
+          Unidades de negocio
+        </button>
+        <button routerLink="/movimiento/nuevo" class="btn btn-outline-primary">
+          Crear movimiento
+        </button>
+      </div>
     </div>
     <div class="grid-responsive mb-3 mx-auto">
       <div class="card" *ngFor="let grupoCaja of grupoCajas">
