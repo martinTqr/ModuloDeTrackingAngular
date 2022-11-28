@@ -23,12 +23,6 @@ export class DashboardComponent implements OnInit {
     this.empresa = this.localService.getData('empresa');
     this.cargarCajas();
   }
-  cargarGrupoCajas() {
-    this.grupoCajaService.lista(this.empresa.id).subscribe(
-      (grupoCajas) => (this.grupoCajas = grupoCajas),
-      (error) => console.log(error)
-    );
-  }
   separarMiles(numero: number) {
     return separarMiles(numero);
   }
@@ -42,12 +36,19 @@ export class DashboardComponent implements OnInit {
       }),
     };
   }
+  cambiarColapso(grupoCajas: GrupoCaja[]) {
+    grupoCajas.forEach((gc) => {
+      gc.collapsed = !gc.collapsed;
+    });
+  }
+
   cargarCajas() {
     this.grupoCajaService.lista(this.empresa.id).subscribe(
       (grupoCajas) => {
         this.cajaService.listaConSaldo().subscribe(
           (cajas) => {
             grupoCajas.forEach((grupoCaja) => {
+              grupoCaja.collapsed = false;
               const cajasFiltradas = cajas.filter(
                 (caja) => caja.grupoCaja.id === grupoCaja.id
               );

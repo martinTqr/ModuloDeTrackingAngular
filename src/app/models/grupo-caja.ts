@@ -9,6 +9,7 @@ export class GrupoCaja {
   acumulado?: Acumulado;
   meses?: TotalesMes[];
   fechaBorrado?: number;
+  collapsed?: boolean;
   constructor({ id, nombre, idEmpresa, fechaBorrado }: any) {
     this.id = id;
     this.nombre = nombre;
