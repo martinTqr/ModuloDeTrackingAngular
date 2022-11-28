@@ -8,5 +8,8 @@ export const parsearObjeto = (objeto: any) =>
   JSON.parse(JSON.stringify(objeto));
 
 export const separarMiles = (numero: number): string => {
-  return numero.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  let numeroString = numero.toString().replace('.', ',');
+  //separar los miles
+  numeroString = numeroString.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  return numeroString;
 };
