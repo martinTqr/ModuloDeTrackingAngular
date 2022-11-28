@@ -9,6 +9,7 @@
     <thead>
       <tr>
         <th scope="col">ID</th>
+        <th scope="col">Grupo de cajas</th>
         <th scope="col">Nombre</th>
         <th scope="col">Negativa</th>
         <th scope="col"></th>
@@ -17,6 +18,7 @@
     <tbody>
       <tr *ngFor="let caja of cajas">
         <td>{{ caja.id }}</td>
+        <td>{{ caja.grupoCaja.nombre }}</td>
         <td>{{ caja.nombre }}</td>
         <td>{{ caja.negativa ? "Si" : "No" }}</td>
         <td>

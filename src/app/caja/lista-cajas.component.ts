@@ -14,7 +14,12 @@ export class ListaCajasComponent implements OnInit {
 
   ngOnInit(): void {
     this.cajaService.lista().subscribe(
-      (cajas) => (this.cajas = cajas),
+      (cajas) => {
+        this.cajas = cajas.sort((a, b) =>
+          a.grupoCaja.nombre.localeCompare(b.grupoCaja.nombre)
+        );
+        this.cajas = cajas;
+      },
       (error) => console.error(error)
     );
   }
