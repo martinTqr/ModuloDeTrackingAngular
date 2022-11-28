@@ -1,11 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
-import { Caja, Categoria, NuevoMovimiento, UnidadNegocio } from '../models';
+import {
+  Caja,
+  Categoria,
+  NuevoMovimiento,
+  UnidadNegocio,
+  Usuario,
+} from '../models';
 import { CajaService } from '../services/caja.service';
 import { CategoriaService } from '../services/categoria.service';
 import { MovimientoService } from '../services/movimiento.service';
 import { UnidadNegocioService } from '../services/unidad-negocio.service';
+import { UsuarioService } from '../services/usuario.service';
 
 @Component({
   selector: 'app-nuevo-movimiento',
@@ -17,6 +24,7 @@ export class NuevoMovimientoComponent implements OnInit {
     idCaja: ['', Validators.required],
     idUnidadNegocio: [''],
     idCategoria: ['', Validators.required],
+    idUsuario: ['', Validators.required],
     fecha: [new Date().toISOString().substring(0, 10), Validators.required],
     detalle: [''],
     monto: ['', [Validators.required, Validators.min(0)]],
@@ -27,7 +35,7 @@ export class NuevoMovimientoComponent implements OnInit {
   categorias: Categoria[][] = [];
   cajas: Caja[] = [];
   unidadesDeNegocio: UnidadNegocio[] = [];
-
+  usuarios: Usuario[] = [];
   categoriasIndice = {
     out_general: 0,
     in_general: 1,
@@ -40,6 +48,7 @@ export class NuevoMovimientoComponent implements OnInit {
     private categoriasService: CategoriaService,
     private cajaService: CajaService,
     private unidadNegocioService: UnidadNegocioService,
+    private usuarioServer: UsuarioService,
     private fb: FormBuilder
   ) {}
 
@@ -47,12 +56,27 @@ export class NuevoMovimientoComponent implements OnInit {
     this.cargarCategorias();
     this.cargarUnidadNegocio();
     this.cargarCajas();
+    this.cargarUsuarios();
   }
-
+  cargarUsuarios() {
+    this.usuarioServer.lista().subscribe((usuarios) => {
+      if (usuarios.length === 0) {
+        Swal.fire({
+          text: 'Debe crear un usuario para poder crear movimientos',
+          icon: 'info',
+        });
+        return;
+      }
+      this.usuarios = usuarios;
+      this.movimientoFormulario.patchValue({
+        idUsuario: String(usuarios[0].id),
+      });
+    });
+  }
   async cargarUnidadNegocio() {
     this.unidadNegocioService.lista().subscribe((unidadesDeNegocio) => {
       this.unidadesDeNegocio = unidadesDeNegocio;
-      if (unidadesDeNegocio.length === 1) {
+      if (unidadesDeNegocio.length === 1 && this.isGeneral === 'false') {
         this.movimientoFormulario.patchValue({
           idUnidadNegocio: String(unidadesDeNegocio[0].id),
         });
@@ -120,20 +144,27 @@ export class NuevoMovimientoComponent implements OnInit {
 
   crear(): void {
     if (this.movimientoFormulario.invalid) return;
-    let { fecha, idCaja, idCategoria, idUnidadNegocio, detalle, monto } =
-      this.movimientoFormulario.value;
+    let {
+      fecha,
+      idCaja,
+      idUsuario,
+      idCategoria,
+      idUnidadNegocio,
+      detalle,
+      monto,
+    } = this.movimientoFormulario.value;
     if (this.isGeneral === 'false' && !idUnidadNegocio) return;
     const idCategoriaNumber = Number(idCategoria);
     const montoNumber = Number(monto);
     const idCajaNumber = Number(idCaja);
     const idUnidadNegocioNumber = Number(idUnidadNegocio);
-    const idUsuario = 4;
+    const idUsuarioNumber = Number(idUsuario);
     const movimiento = new NuevoMovimiento({
       idCaja: idCajaNumber,
       idUnidadNegocio: idUnidadNegocioNumber,
       idCategoria: idCategoriaNumber,
       monto: montoNumber,
-      idUsuario,
+      idUsuario: idUsuarioNumber,
       fecha,
       detalle,
     });

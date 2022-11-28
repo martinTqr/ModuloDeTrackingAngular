@@ -74,7 +74,6 @@
             formControlName="detalle"
           />
         </div>
-
         <div *ngIf="isGeneral === 'false'" class="col">
           <label for="Unidad De Negocio">Unidad De Negocio</label>
           <select
@@ -93,12 +92,27 @@
             </option>
           </select>
         </div>
+        <!-- <div class="col">
+          <label for="Usuario">Usuario</label>
+          <select
+            name="idUsuario"
+            class="form-control"
+            formControlName="idUsuario"
+          >
+            >
+            <option *ngIf="usuarios.length > 1" value="">
+              Seleccione una unidad de negocio
+            </option>
+            <option *ngFor="let usuario of usuarios" value="{{ usuario.id }}">
+              {{ usuario.nombreCompleto }}
+            </option>
+          </select>
+        </div> -->
       </div>
       <div class="row">
-        <div class="col"></div>
         <div class="col">
           <button
-            class="btn btn-success btn-block mt-3 mx-2 btn-small"
+            class="btn btn-success btn-block mt-3 btn-small"
             type="submit"
           >
             Crear
