@@ -78,7 +78,6 @@ export class NuevoMovimientoComponent implements OnInit {
       this.unidadNegocioService.lista()
     )
       .forEach((value) => {
-        console.log(value);
         if (value.length === 0) mensajeError.push(mensajes[indice]);
         else {
           if (mensajes[indice] === 'usuarios') this.cargarUsuarios(value);

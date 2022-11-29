@@ -31,7 +31,10 @@ export class ReporteEmpComponent implements OnInit {
     });
     this.reporteService.buscarReporteEmpresa(fechaInicio, fechaFin).subscribe(
       (data: ReporteEmpresaReducido[]) => {
-        this.reporte = data;
+        const categorias = data.map((categoria) => {
+          return formatearObjeto(categoria);
+        });
+        this.reporte = categorias;
         Swal.close();
       },
       ({ error }) =>
@@ -56,3 +59,15 @@ export class ReporteEmpComponent implements OnInit {
     }
   }
 }
+const formatearObjeto = (objeto: any): ReporteEmpresaReducido => {
+  return {
+    nombre: objeto.nombre,
+    acumulado: objeto.acumulado,
+    meses: objeto.meses,
+    subcategorias:
+      objeto?.subcategorias &&
+      objeto.subcategorias.map((subcategoria) => {
+        return formatearObjeto(subcategoria);
+      }),
+  };
+};
