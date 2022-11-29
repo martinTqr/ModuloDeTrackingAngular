@@ -92,4 +92,3 @@ if (!/localhost/.test(document.location.host)) {
   bootstrap: [AppComponent],
 })
 export class AppModule {}
-platformBrowserDynamic().bootstrapModule(AppModule);
