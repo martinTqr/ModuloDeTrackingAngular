@@ -24,21 +24,10 @@ import { UnidadNegocioService } from '../services/unidad-negocio.service';
 import { UsuarioService } from '../services/usuario.service';
 
 const mensajes = {
-  0: {
-    atributo: 'usuarios',
-    texto: 'Debe crear un usuario para poder crear movimientos',
-  },
-  1: {
-    atributo: 'categorias',
-    texto: 'Debe crear una categoria para poder crear movimientos',
-  },
-  2: {
-    atributo: 'cajas',
-    texto: 'Debe crear una caja para poder crear movimientos',
-  },
-  3: {
-    atributo: 'unidadesDeNegocio',
-  },
+  0: 'usuarios',
+  1: 'categorias',
+  2: 'cajas',
+  3: 'unidadesDeNegocio',
 };
 @Component({
   selector: 'app-nuevo-movimiento',
@@ -90,15 +79,13 @@ export class NuevoMovimientoComponent implements OnInit {
     )
       .forEach((value) => {
         console.log(value);
-        if (value.length === 0) mensajeError.push(mensajes[indice].texto);
+        if (value.length === 0) mensajeError.push(mensajes[indice]);
         else {
-          if (mensajes[indice].atributo === 'usuarios')
-            this.cargarUsuarios(value);
-          if (mensajes[indice].atributo === 'categorias')
+          if (mensajes[indice] === 'usuarios') this.cargarUsuarios(value);
+          if (mensajes[indice] === 'categorias')
             this.cargarCategorias(value as Categoria[]);
-          if (mensajes[indice].atributo === 'cajas')
-            this.cargarCajas(value as Caja[]);
-          if (mensajes[indice].atributo === 'unidadesDeNegocio')
+          if (mensajes[indice] === 'cajas') this.cargarCajas(value as Caja[]);
+          if (mensajes[indice] === 'unidadesDeNegocio')
             this.cargarUnidadNegocio(value);
         }
         indice++;
@@ -106,7 +93,10 @@ export class NuevoMovimientoComponent implements OnInit {
       .finally(() => {
         if (mensajeError.length > 0)
           Swal.fire({
-            text: mensajeError.join('\n'),
+            text: `Debera crear ${mensajeError.join(
+              ', '
+            )} para crear movimientos`,
+
             icon: 'info',
           }).then(() => {
             window.location.href = '/admin';
