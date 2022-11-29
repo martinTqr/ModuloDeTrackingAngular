@@ -1,5 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  AfterContentInit,
+  AfterViewInit,
+  Component,
+  DoCheck,
+  OnChanges,
+  OnInit,
+  SimpleChanges,
+} from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { concat, lastValueFrom } from 'rxjs';
 import Swal from 'sweetalert2';
 import {
   Caja,
@@ -14,6 +23,23 @@ import { MovimientoService } from '../services/movimiento.service';
 import { UnidadNegocioService } from '../services/unidad-negocio.service';
 import { UsuarioService } from '../services/usuario.service';
 
+const mensajes = {
+  0: {
+    atributo: 'usuarios',
+    texto: 'Debe crear un usuario para poder crear movimientos',
+  },
+  1: {
+    atributo: 'categorias',
+    texto: 'Debe crear una categoria para poder crear movimientos',
+  },
+  2: {
+    atributo: 'cajas',
+    texto: 'Debe crear una caja para poder crear movimientos',
+  },
+  3: {
+    atributo: 'unidadesDeNegocio',
+  },
+};
 @Component({
   selector: 'app-nuevo-movimiento',
   templateUrl: './nuevo-movimiento.component.html',
@@ -48,72 +74,87 @@ export class NuevoMovimientoComponent implements OnInit {
     private categoriasService: CategoriaService,
     private cajaService: CajaService,
     private unidadNegocioService: UnidadNegocioService,
-    private usuarioServer: UsuarioService,
+    private usuarioService: UsuarioService,
     private fb: FormBuilder
   ) {}
 
-  ngOnInit(): void {
-    this.cargarCategorias();
-    this.cargarUnidadNegocio();
-    this.cargarCajas();
-    this.cargarUsuarios();
-  }
-  cargarUsuarios() {
-    this.usuarioServer.lista().subscribe((usuarios) => {
-      if (usuarios.length === 0) {
-        Swal.fire({
-          text: 'Debe crear un usuario para poder crear movimientos',
-          icon: 'info',
-        });
-        return;
-      }
-      this.usuarios = usuarios;
-      this.movimientoFormulario.patchValue({
-        idUsuario: String(usuarios[0].id),
+  ngOnInit() {
+    const mensajeError: string[] = [];
+    let indice = 0;
+
+    concat(
+      this.usuarioService.lista(),
+      this.categoriasService.listaArbol(),
+      this.cajaService.lista(),
+      this.unidadNegocioService.lista()
+    )
+      .forEach((value) => {
+        console.log(value);
+        if (value.length === 0) mensajeError.push(mensajes[indice].texto);
+        else {
+          if (mensajes[indice].atributo === 'usuarios')
+            this.cargarUsuarios(value);
+          if (mensajes[indice].atributo === 'categorias')
+            this.cargarCategorias(value as Categoria[]);
+          if (mensajes[indice].atributo === 'cajas')
+            this.cargarCajas(value as Caja[]);
+          if (mensajes[indice].atributo === 'unidadesDeNegocio')
+            this.cargarUnidadNegocio(value);
+        }
+        indice++;
+      })
+      .finally(() => {
+        if (mensajeError.length > 0)
+          Swal.fire({
+            text: mensajeError.join('\n'),
+            icon: 'info',
+          }).then(() => {
+            window.location.href = '/admin';
+          });
       });
+  }
+
+  cargarUsuarios(usuarios) {
+    this.usuarios = usuarios;
+    this.movimientoFormulario.patchValue({
+      idUsuario: String(usuarios[0].id),
     });
   }
-  async cargarUnidadNegocio() {
-    this.unidadNegocioService.lista().subscribe((unidadesDeNegocio) => {
-      this.unidadesDeNegocio = unidadesDeNegocio;
-      if (unidadesDeNegocio.length === 1 && this.isGeneral === 'false') {
-        this.movimientoFormulario.patchValue({
-          idUnidadNegocio: String(unidadesDeNegocio[0].id),
-        });
-      }
-    });
+  cargarUnidadNegocio(unidadesDeNegocio) {
+    this.unidadesDeNegocio = unidadesDeNegocio;
+    if (unidadesDeNegocio.length === 1 && this.isGeneral === 'false') {
+      this.movimientoFormulario.patchValue({
+        idUnidadNegocio: String(unidadesDeNegocio[0].id),
+      });
+    }
   }
-  cargarCategorias() {
+  cargarCategorias(cat: Categoria[]) {
     const categorias: Categoria[][] = [[], [], [], []];
     const { in_especificas, in_general, out_especificas, out_general } =
       this.categoriasIndice;
-    this.categoriasService.listaArbol().subscribe((lista) => {
-      lista.forEach((categoria) => {
-        if (categoria.tipo === 'in' && categoria.isGeneral)
-          categorias[in_general].push(categoria);
+    cat.forEach((categoria) => {
+      if (categoria.tipo === 'in' && categoria.isGeneral)
+        categorias[in_general].push(categoria);
 
-        if (categoria.tipo === 'in' && !categoria.isGeneral)
-          categorias[in_especificas].push(categoria);
+      if (categoria.tipo === 'in' && !categoria.isGeneral)
+        categorias[in_especificas].push(categoria);
 
-        if (categoria.tipo === 'out' && categoria.isGeneral)
-          categorias[out_general].push(categoria);
+      if (categoria.tipo === 'out' && categoria.isGeneral)
+        categorias[out_general].push(categoria);
 
-        if (categoria.tipo === 'out' && !categoria.isGeneral)
-          categorias[out_especificas].push(categoria);
-      });
-      this.categorias = categorias;
+      if (categoria.tipo === 'out' && !categoria.isGeneral)
+        categorias[out_especificas].push(categoria);
     });
+    this.categorias = categorias;
   }
 
-  cargarCajas() {
-    return this.cajaService.lista().subscribe((cajas) => {
-      this.cajas = cajas;
-    });
+  cargarCajas(cajas) {
+    this.cajas = cajas;
   }
   async cambiarGeneral(isGeneral: boolean) {
     if (!isGeneral) {
       this.isGeneral = 'false';
-      this.cargarUnidadNegocio();
+      this.cargarUnidadNegocio(this.unidadesDeNegocio);
       return;
     }
     this.movimientoFormulario.patchValue({
@@ -143,6 +184,8 @@ export class NuevoMovimientoComponent implements OnInit {
   }
 
   crear(): void {
+    console.log(this.movimientoFormulario.value);
+
     if (this.movimientoFormulario.invalid) return;
     let {
       fecha,
@@ -178,7 +221,10 @@ export class NuevoMovimientoComponent implements OnInit {
         this.movimientoFormulario.patchValue({
           detalle: '',
           fecha: new Date().toISOString().substring(0, 10),
+          idUnidadNegocio: '',
+          idUsuario: String(this.usuarios[0].id),
         });
+        this.cargarUnidadNegocio(this.unidadesDeNegocio);
         this.categoriaSeleccionadaNombre = '-';
       },
       ({ error }) => {
