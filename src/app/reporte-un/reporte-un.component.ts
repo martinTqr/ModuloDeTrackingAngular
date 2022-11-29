@@ -14,7 +14,7 @@ import { Empresa } from '../models';
 })
 export class ReporteUNComponent implements OnInit {
   empresa: Empresa;
-  reporte: any;
+  reporte: any = [];
   semanas: Array<any> = new Array(5);
   nombreDeMeses: string[] = meses;
 
@@ -36,15 +36,17 @@ export class ReporteUNComponent implements OnInit {
         .subscribe((data: Reporte) => {
           const total = acumularMesesTotales(data);
           const gruposDeCajasAcumulados = agruparCajas(data.cajas, grupoCajas);
-          const reporte = {
-            ...data,
-            subcategorias: [
-              ...data.subcategorias,
-              total,
-              ...gruposDeCajasAcumulados,
-            ],
-          };
+          const subcategorias = [
+            ...data.subcategorias,
+            total,
+            ...gruposDeCajasAcumulados,
+          ].map((categoria) => {
+            return formatearObjeto(categoria);
+          });
+          const reporte = subcategorias;
+
           this.reporte = reporte;
+          console.log(reporte);
         });
     });
   }
@@ -60,3 +62,18 @@ export class ReporteUNComponent implements OnInit {
     });
   }
 }
+/* nombre
+acumulado.total
+meses */
+const formatearObjeto = (objeto: any): any => {
+  return {
+    nombre: objeto.nombre,
+    acumulado: objeto.acumulado,
+    meses: objeto.meses,
+    subcategorias:
+      objeto?.subcategorias &&
+      objeto.subcategorias.map((subcategoria) => {
+        return formatearObjeto(subcategoria);
+      }),
+  };
+};

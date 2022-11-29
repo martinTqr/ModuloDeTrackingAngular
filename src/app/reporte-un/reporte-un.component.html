@@ -5,7 +5,7 @@
 </div>
 <dx-tree-list
   id="reporte"
-  [dataSource]="reporte.subcategorias"
+  [dataSource]="reporte"
   itemsExpr="subcategorias"
   dataStructure="tree"
   [showRowLines]="true"
@@ -46,10 +46,7 @@
         [allowSorting]="false"
         dataField="meses[{{ numeroMes }}].semanas[{{ numeroSemana }}].total"
         format="fixedPoint"
-        [caption]="
-          reporte.subcategorias[0].meses[numeroMes].semanas[numeroSemana]
-            ?.semana || ''
-        "
+        [caption]="reporte[0]?.meses[numeroMes].semanas[numeroSemana]?.semana"
       ></dxi-column>
     </dxi-column>
   </dxi-column>
