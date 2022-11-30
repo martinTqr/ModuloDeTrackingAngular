@@ -2,10 +2,10 @@ export class NuevoMovimiento {
   id?: number;
   idUsuario: number;
   idCaja: any;
-  idUnidadNegocio: number;
+  idUnidadNegocio?: number;
   idCategoria: number;
   monto: number;
-  detalle: string;
+  detalle?: string;
   fecha: Date;
   fechaCreacion?: Date;
 
@@ -33,9 +33,9 @@ export interface Movimiento {
   id: number;
   idUsuario: number;
   caja: any;
-  idUnidadNegocio: number;
+  idUnidadNegocio?: number;
   categoria: any;
   monto: number;
-  detalle: string;
+  detalle?: string;
   fecha: Date;
 }
