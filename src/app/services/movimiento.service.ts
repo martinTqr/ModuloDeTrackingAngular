@@ -15,10 +15,14 @@ export class MovimientoService extends BaseService {
     super(ls);
   }
 
-  public lista(fechaInicio?: Date, fechaFin?: Date): Observable<any> {
+  public lista({
+    transferecia = false,
+    fechaInicio,
+    fechaFin,
+  }: Parametros): Observable<any> {
     const fechaInicioRuta = fechaInicio ? `&fechaInicio=${fechaInicio}` : '';
     const fechaFinRuta = fechaFin ? `&fechaFin=${fechaFin}` : '';
-    const empresaRuta = this.empresaParametro;
+    const empresaRuta = transferecia ? '' : this.empresaParametro;
     const ruta =
       this.movimientoURL + empresaRuta + fechaInicioRuta + fechaFinRuta;
     return this.httpClient.get<Movimiento[]>(ruta);
@@ -32,4 +36,10 @@ export class MovimientoService extends BaseService {
   public borrar(id: number): Observable<any> {
     return this.httpClient.delete<any>(this.movimientoURL + id);
   }
+}
+
+interface Parametros {
+  transferecia?: boolean;
+  fechaInicio?: Date;
+  fechaFin?: Date;
 }

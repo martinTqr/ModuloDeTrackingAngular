@@ -7,10 +7,10 @@ import { UsuarioService } from '../services/usuario.service';
 
 @Component({
   selector: 'app-transferencia-caja',
-  templateUrl: './transferencia-caja.component.html',
-  styleUrls: ['./transferencia-caja.component.css'],
+  templateUrl: './nueva-transferencia-caja.component.html',
+  styleUrls: ['./nueva-transferencia-caja.component.css'],
 })
-export class TransferenciaCajaComponent implements OnInit {
+export class NuevaTransferenciaCajaComponent implements OnInit {
   formularioTransferencia = this.fb.group({
     idCajaOrigen: ['', Validators.required],
     idCajaDestino: ['', Validators.required],

@@ -38,7 +38,8 @@ import * as localization from 'devextreme/localization';
 import { ListaUsuarioComponent } from './usuario/lista-usuario.component';
 import { DetalleUsuarioComponent } from './usuario/detalle-usuario.component';
 import { NuevoUsuarioComponent } from './usuario/nuevo-usuario.component';
-import { TransferenciaCajaComponent } from './caja/transferencia-caja.component';
+import { ListaTransferenciaCajaListaComponent } from './caja/lista-transferencia-caja.component';
+import { NuevaTransferenciaCajaComponent } from './caja/nueva-transferencia-caja.component';
 (localization as any).disableIntl();
 config({
   thousandsSeparator: '.',
@@ -76,7 +77,8 @@ if (!/localhost/.test(document.location.host)) {
     ListaUsuarioComponent,
     DetalleUsuarioComponent,
     NuevoUsuarioComponent,
-    TransferenciaCajaComponent,
+    NuevaTransferenciaCajaComponent,
+    ListaTransferenciaCajaListaComponent,
   ],
   imports: [
     NgxMaskModule.forRoot(),

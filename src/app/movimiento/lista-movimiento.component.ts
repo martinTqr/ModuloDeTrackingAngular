@@ -40,7 +40,7 @@ export class ListaMovimientoComponent implements OnInit {
   } */
 
   cargarMovimientos(fechaInicio?: Date, fechaFin?: Date) {
-    this.movimientoService.lista(fechaInicio, fechaFin).subscribe(
+    this.movimientoService.lista({ fechaInicio, fechaFin }).subscribe(
       ({ movimientos }) =>
         (this.movimientos = movimientos.sort((a: any, b: any) => b.id - a.id)),
       (error) => console.error(error)
