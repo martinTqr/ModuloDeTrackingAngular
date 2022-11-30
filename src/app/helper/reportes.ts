@@ -37,9 +37,7 @@ export const agruparCajas = (cajas: any[], grupoCajas: GrupoCaja[]) => {
   });
   return gruposCajas;
 };
-export const acumularMeses = ({ acumulador, meses, suma = true }) => {
-  const suma_resta = suma ? 1 : -1;
-
+export const acumularMeses = ({ acumulador, meses }) => {
   return acumulador.map((mes, numeroMes) => {
     return {
       ...mes,
@@ -58,7 +56,6 @@ export const acumularMesesTotales = (categoria) => {
     meses = acumularMeses({
       acumulador: meses,
       meses: categoria.meses,
-      suma: categoria.tipo === 'in',
     });
   });
   const total = {
