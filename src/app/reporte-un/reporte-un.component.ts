@@ -46,7 +46,6 @@ export class ReporteUNComponent implements OnInit {
           const reporte = subcategorias;
 
           this.reporte = reporte;
-          console.log(reporte);
         });
     });
   }
@@ -60,6 +59,19 @@ export class ReporteUNComponent implements OnInit {
         );
       }
     });
+  }
+  cambiarColorFila(evento) {
+    if (evento.data?.nombre === 'Saldo') {
+      evento.rowElement.style.backgroundColor = 'rgb(154,154,154,0.32)';
+    }
+  }
+  cambiarColorCelda(evento) {
+    const { columnIndex, cellElement, data, displayValue } = evento;
+    if (displayValue && columnIndex !== 0 && data?.nombre === 'Saldo') {
+      const color = displayValue >= 0 ? '#00ad00' : 'red';
+      cellElement.style.backgroundColor = color;
+      cellElement.style.color = 'white';
+    }
   }
 }
 /* nombre

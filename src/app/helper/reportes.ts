@@ -43,12 +43,10 @@ export const acumularMeses = ({ acumulador, meses, suma = true }) => {
   return acumulador.map((mes, numeroMes) => {
     return {
       ...mes,
-      total: mes.total + meses[numeroMes].total * suma_resta,
+      total: mes.total + meses[numeroMes].total,
       semanas: mes.semanas.map((semana, numeroSemana) => ({
         ...semana,
-        total:
-          semana.total +
-          meses[numeroMes].semanas[numeroSemana].total * suma_resta,
+        total: semana.total + meses[numeroMes].semanas[numeroSemana].total,
       })),
     };
   });
@@ -60,6 +58,7 @@ export const acumularMesesTotales = (categoria) => {
     meses = acumularMeses({
       acumulador: meses,
       meses: categoria.meses,
+      suma: categoria.tipo === 'in',
     });
   });
   const total = {
