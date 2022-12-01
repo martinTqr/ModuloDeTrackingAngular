@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { parsearFecha, separarMiles } from '../helper';
+import { Movimiento } from '../models';
 import { CajaService } from '../services/caja.service';
 import { MovimientoService } from '../services/movimiento.service';
 
@@ -8,7 +10,7 @@ import { MovimientoService } from '../services/movimiento.service';
   styleUrls: ['./lista-transferencia-caja.component.css'],
 })
 export class ListaTransferenciaCajaListaComponent implements OnInit {
-  cajas;
+  movimientos: Movimiento[] = [];
   constructor(
     private movimientosService: MovimientoService,
     private cajaService: CajaService
@@ -16,7 +18,6 @@ export class ListaTransferenciaCajaListaComponent implements OnInit {
 
   ngOnInit(): void {
     this.cargarTransferencias();
-    this.movimientosService;
   }
   cargarTransferencias() {
     this.cajaService.listaConSaldo().subscribe((cajas) => {
@@ -24,9 +25,13 @@ export class ListaTransferenciaCajaListaComponent implements OnInit {
 
       this.movimientosService
         .trasnferenciasEntreCajas(idCajas)
-        .subscribe((movimientos) => {
-          console.log(movimientos);
-        });
+        .subscribe((movimientos) => (this.movimientos = movimientos));
     });
+  }
+  parsearFecha(fecha: string, formato?: string): string {
+    return parsearFecha(fecha, formato);
+  }
+  separarMiles(numero: number): string {
+    return separarMiles(numero);
   }
 }

@@ -1,1 +1,47 @@
-<p>transferencia-lista works!</p>
+<h2>Lista de transferencias entre cajas</h2>
+<div class="my-3 d-flex justify-content-between">
+  <a routerLink="/" class="btn">Volver</a>
+  <a routerLink="/caja/transferencia/nueva" class="btn btn-outline-primary"
+    >Crear transferencia</a
+  >
+</div>
+
+<div class="container">
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Fecha de creacion</th>
+          <th scope="col">Caja</th>
+          <th scope="col">Categoria</th>
+          <th scope="col">Detalle</th>
+          <th scope="col">Monto</th>
+          <th scope="col">Fecha del movimiento</th>
+          <th scope="col">Tipo</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let movimiento of movimientos">
+          <td>{{ parsearFecha(movimiento.fechaCreacion, "fechaHora") }}</td>
+          <td>{{ movimiento.caja.nombre }}</td>
+          <td>{{ movimiento.categoria.nombre }}</td>
+          <td>{{ movimiento.detalle }}</td>
+          <td>{{ separarMiles(movimiento.monto) }}</td>
+          <td>{{ parsearFecha(movimiento.fecha) }}</td>
+          <td>
+            {{ movimiento.categoria.tipo == "in" ? "Ingreso" : "Egreso" }}
+          </td>
+          <td>
+            <button
+              class="btn btn-danger btn-sm pb-0 px-1"
+              (click)="borrar(movimiento.id)"
+            >
+              <i class="bi bi-trash"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
