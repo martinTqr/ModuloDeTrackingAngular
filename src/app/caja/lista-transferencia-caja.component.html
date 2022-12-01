@@ -11,6 +11,7 @@
     <table class="table">
       <thead>
         <tr>
+          <th>id</th>
           <th scope="col">Fecha de creacion</th>
           <th scope="col">Caja</th>
           <th scope="col">Categoria</th>
@@ -22,20 +23,24 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let movimiento of movimientos">
-          <td>{{ parsearFecha(movimiento.fechaCreacion, "fechaHora") }}</td>
-          <td>{{ movimiento.caja.nombre }}</td>
-          <td>{{ movimiento.categoria.nombre }}</td>
-          <td>{{ movimiento.detalle }}</td>
-          <td>{{ separarMiles(movimiento.monto) }}</td>
-          <td>{{ parsearFecha(movimiento.fecha) }}</td>
+        <tr
+          *ngFor="let transferencia of transferencias"
+          class="union_transferencias"
+        >
+          <td>{{ transferencia.id }}</td>
+          <td>{{ parsearFecha(transferencia.fechaCreacion, "fechaHora") }}</td>
+          <td>{{ transferencia.caja.nombre }}</td>
+          <td>{{ transferencia.categoria.nombre }}</td>
+          <td>{{ transferencia.detalle }}</td>
+          <td>{{ separarMiles(transferencia.monto) }}</td>
+          <td>{{ parsearFecha(transferencia.fecha) }}</td>
           <td>
-            {{ movimiento.categoria.tipo == "in" ? "Ingreso" : "Egreso" }}
+            {{ transferencia.categoria.tipo == "in" ? "Ingreso" : "Egreso" }}
           </td>
-          <td>
+          <td *ngIf="transferencia.id % 2 !== 0">
             <button
               class="btn btn-danger btn-sm pb-0 px-1"
-              (click)="borrar(movimiento.id)"
+              (click)="borrar(transferencia.id)"
             >
               <i class="bi bi-trash"></i>
             </button>

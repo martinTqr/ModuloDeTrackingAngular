@@ -1,0 +1,4 @@
+ tbody tr:nth-child(odd) {
+border-bottom-color: white;
+
+ }

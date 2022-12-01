@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 import { parsearFecha, separarMiles } from '../helper';
 import { Movimiento } from '../models';
 import { CajaService } from '../services/caja.service';
@@ -10,7 +11,7 @@ import { MovimientoService } from '../services/movimiento.service';
   styleUrls: ['./lista-transferencia-caja.component.css'],
 })
 export class ListaTransferenciaCajaListaComponent implements OnInit {
-  movimientos: Movimiento[] = [];
+  transferencias: Movimiento[] = [];
   constructor(
     private movimientosService: MovimientoService,
     private cajaService: CajaService
@@ -25,13 +26,44 @@ export class ListaTransferenciaCajaListaComponent implements OnInit {
 
       this.movimientosService
         .trasnferenciasEntreCajas(idCajas)
-        .subscribe((movimientos) => (this.movimientos = movimientos));
+        .subscribe((transferencias) => {
+          transferencias = transferencias.sort((a, b) => {
+            return a.id - b.id;
+          });
+          this.transferencias = transferencias;
+        });
     });
   }
+
+  cambiarEstiloFila(transferencia: Movimiento) {
+    return {
+      union_transferencia: transferencia.id % 2 === 1,
+    };
+  }
+  /*   return {
+      cero: total === 0,
+      positivo: total > 0,
+      negativo: total < 0,
+      ...(ultimoHijo && {
+        last_child: ultimoHijo,
+      }),
+    }; */
+
   parsearFecha(fecha: string, formato?: string): string {
     return parsearFecha(fecha, formato);
   }
   separarMiles(numero: number): string {
     return separarMiles(numero);
+  }
+  borrar(id: number) {
+    this.movimientosService.borrar(id).subscribe(({ mensaje }) => {
+      if (mensaje)
+        this.movimientosService.borrar(id - 1).subscribe((data) => {
+          this.transferencias = this.transferencias.filter(
+            (t) => t.id !== id && t.id !== id - 1
+          );
+          Swal.fire('Borrado', mensaje, 'success');
+        });
+    });
   }
 }
