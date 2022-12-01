@@ -40,14 +40,6 @@ export class ListaTransferenciaCajaListaComponent implements OnInit {
       union_transferencia: transferencia.id % 2 === 1,
     };
   }
-  /*   return {
-      cero: total === 0,
-      positivo: total > 0,
-      negativo: total < 0,
-      ...(ultimoHijo && {
-        last_child: ultimoHijo,
-      }),
-    }; */
 
   parsearFecha(fecha: string, formato?: string): string {
     return parsearFecha(fecha, formato);
