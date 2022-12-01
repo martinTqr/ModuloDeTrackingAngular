@@ -16,16 +16,30 @@ export class MovimientoService extends BaseService {
   }
 
   public lista({
-    transferecia = false,
+    idCajas,
     fechaInicio,
     fechaFin,
   }: Parametros): Observable<any> {
     const fechaInicioRuta = fechaInicio ? `&fechaInicio=${fechaInicio}` : '';
     const fechaFinRuta = fechaFin ? `&fechaFin=${fechaFin}` : '';
-    const empresaRuta = transferecia ? '' : this.empresaParametro;
+    const empresaRuta = this.empresaParametro;
+    const cajasRuta = idCajas ? `&cajas=${idCajas}` : '';
+
     const ruta =
-      this.movimientoURL + empresaRuta + fechaInicioRuta + fechaFinRuta;
+      this.movimientoURL +
+      empresaRuta +
+      cajasRuta +
+      fechaInicioRuta +
+      fechaFinRuta;
     return this.httpClient.get<Movimiento[]>(ruta);
+  }
+  public trasnferenciasEntreCajas(cajas): Observable<any> {
+    const ruta =
+      this.movimientoURL +
+      'transferencias-entre-cajas' +
+      this.empresaParametro +
+      `&cajas=${cajas}`;
+    return this.httpClient.get<any>(ruta);
   }
   public detalle(id: number): Observable<Movimiento> {
     return this.httpClient.get<Movimiento>(this.movimientoURL + id);
@@ -40,6 +54,7 @@ export class MovimientoService extends BaseService {
 
 interface Parametros {
   transferecia?: boolean;
+  idCajas?: number[];
   fechaInicio?: Date;
   fechaFin?: Date;
 }

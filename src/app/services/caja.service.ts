@@ -19,7 +19,8 @@ export class CajaService extends BaseService {
     return this.httpClient.get<Caja[]>(ruta);
   }
   public listaConSaldo(): Observable<Caja[]> {
-    return this.httpClient.get<Caja[]>(this.cajaURL + 'saldo');
+    const ruta = this.cajaURL + 'saldo' + this.empresaParametro;
+    return this.httpClient.get<Caja[]>(ruta);
   }
   public detalle(id: number): Observable<Caja> {
     return this.httpClient.get<Caja>(this.cajaURL + id);
