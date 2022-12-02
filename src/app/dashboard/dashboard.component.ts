@@ -13,6 +13,8 @@ import { LocalService } from '../services/local.service';
 export class DashboardComponent implements OnInit {
   empresa: Empresa;
   grupoCajas: GrupoCaja[];
+
+  menu: string = '';
   constructor(
     private cajaService: CajaService,
     private localService: LocalService,
@@ -35,6 +37,9 @@ export class DashboardComponent implements OnInit {
         last_child: ultimoHijo,
       }),
     };
+  }
+  expandirMenu() {
+    this.menu = this.menu === '' ? 'show' : '';
   }
   cambiarColapso(grupoCajas: GrupoCaja[]) {
     grupoCajas.forEach((gc) => {
