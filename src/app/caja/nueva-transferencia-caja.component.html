@@ -20,7 +20,10 @@
             class="form-control"
             id=""
           >
-            <option *ngFor="let caja of cajas" value="{{ caja.id }}">
+            <option
+              *ngFor="let caja of quitarCajaSeleccionada('Destino')"
+              value="{{ caja.id }}"
+            >
               {{ caja.nombre }}
             </option>
           </select>
@@ -46,7 +49,10 @@
             class="form-control"
             id=""
           >
-            <option *ngFor="let caja of cajas" value="{{ caja.id }}">
+            <option
+              *ngFor="let caja of quitarCajaSeleccionada('Origen')"
+              value="{{ caja.id }}"
+            >
               {{ caja.nombre }}
             </option>
           </select>

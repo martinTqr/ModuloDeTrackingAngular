@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Caja, NuevoMovimiento, Usuario } from '../models';
 import { CajaService } from '../services/caja.service';
@@ -29,6 +29,12 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
   ngOnInit(): void {
     this.cargarCajas();
     this.cargarUsuario();
+  }
+  quitarCajaSeleccionada(tipoCaja: string) {
+    const idCaja = this.formularioTransferencia.get(`idCaja${tipoCaja}`).value;
+    const cajas = this.cajas.filter((caja) => caja.id !== Number(idCaja));
+
+    return cajas;
   }
   cargarCajas() {
     this.cajaService.listaConSaldo().subscribe((cajas) => {
