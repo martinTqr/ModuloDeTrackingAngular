@@ -1,8 +1,32 @@
 <div class="card">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+    <a class="navbar-brand" routerLink="/">TQR</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/admin">Admin</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <div class="card-header py-0 px-4">
-    <div class="my-3 d-flex justify-content-between">
+    <div
+      class="my-3 d-flex justify-content-between justify-content-end flex-wrap"
+    >
       <h3 class="mb-0">{{ empresa.nombre }}</h3>
-      <div>
+      <div class="ms-auto">
         <button
           routerLink="/admin"
           class="btn btn-outline-primary text-blue me-2"
