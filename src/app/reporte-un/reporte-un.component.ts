@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Reporte } from '../interfaces/reporte.interaces';
-import { meses } from '../constantes';
 import { ReporteService } from '../services/reporte.service';
 import { ActivatedRoute } from '@angular/router';
 import { GrupoCajaService } from '../services/grupo-caja.service';
 import { acumularMesesTotales, agruparCajas } from '../helper';
 import { Empresa } from '../models';
+import { meses } from '../helper/constantes';
 
 @Component({
   selector: 'reporte-un',

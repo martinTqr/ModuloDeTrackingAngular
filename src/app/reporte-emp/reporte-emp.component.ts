@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import Swal from 'sweetalert2';
-import { meses } from '../constantes/';
+import { meses } from '../helper/constantes';
 import { ReporteService } from '../services/reporte.service';
 import { ReporteEmpresaReducido } from './reporte-emp.interface';
 

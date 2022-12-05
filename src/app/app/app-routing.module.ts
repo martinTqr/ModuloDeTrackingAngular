@@ -28,6 +28,7 @@ import { DetalleUsuarioComponent } from '../usuario/detalle-usuario.component';
 import { NuevoUsuarioComponent } from '../usuario/nuevo-usuario.component';
 import { NuevaTransferenciaCajaComponent } from '../caja/nueva-transferencia-caja.component';
 import { ListaTransferenciaCajaListaComponent } from '../caja/lista-transferencia-caja.component';
+import { ReporteTransferenciaComponent } from '../caja/reporte-transferencia.component';
 
 const rutas: Routes = [
   { path: '', component: HomeComponent },
@@ -59,6 +60,10 @@ const rutas: Routes = [
   {
     path: 'caja/transferencia/nueva',
     component: NuevaTransferenciaCajaComponent,
+  },
+  {
+    path: 'caja/transferencia/reporte',
+    component: ReporteTransferenciaComponent,
   },
 
   { path: 'grupo-caja/lista', component: ListaGrupoCajaComponent },
