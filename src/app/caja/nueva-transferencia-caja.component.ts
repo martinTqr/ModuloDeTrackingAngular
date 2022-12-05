@@ -1,5 +1,6 @@
 import { Component, OnChanges, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import Swal from 'sweetalert2';
 import { Caja, NuevoMovimiento, Usuario } from '../models';
 import { CajaService } from '../services/caja.service';
 import { MovimientoService } from '../services/movimiento.service';
@@ -33,15 +34,6 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
   quitarCajaSeleccionada(tipoCaja: string) {
     const idCaja = this.formularioTransferencia.get(`idCaja${tipoCaja}`).value;
     const cajas = this.cajas.filter((caja) => caja.id !== Number(idCaja));
-    if (
-      tipoCaja === 'Destino' &&
-      this.formularioTransferencia.get('idCajaOrigen').value &&
-      !this.formularioTransferencia.get('idCajaDestino').value
-    ) {
-      this.formularioTransferencia.patchValue({
-        idCajaDestino: String(cajas[1].id),
-      });
-    }
     return cajas;
   }
   cargarCajas() {
@@ -72,23 +64,34 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
       fecha: new Date(),
       fechaCreacion: new Date(),
     };
-    console.log(movimientoIng);
-
-    this.movimientoService.crear(movimientoIng).subscribe((data) => {
-      console.log(data);
-    });
-    //Crear movimiento de caja destino
-    const movimientoEgr: NuevoMovimiento = {
-      idUsuario: this.usuario.id,
-      idCaja: Number(transferencia.idCajaOrigen),
-      idCategoria: idCategoriaTransferenciaCajaEgr,
-      monto: Number(transferencia.monto),
-      detalle: detalle + 'egreso',
-      fecha: new Date(),
-      fechaCreacion: new Date(),
-    };
-    this.movimientoService.crear(movimientoEgr).subscribe((data) => {
-      console.log(data);
-    });
+    Swal.fire({
+      title: 'Confirmacion',
+      text: 'Esta seguro de realizar la transferencia?',
+      icon: 'info',
+      showCancelButton: true,
+    })
+      .then(({ isConfirmed }) => {
+        if (isConfirmed) {
+          this.movimientoService.crear(movimientoIng).subscribe((data) => {
+            console.log(data);
+          });
+          //Crear movimiento de caja destino
+          const movimientoEgr: NuevoMovimiento = {
+            idUsuario: this.usuario.id,
+            idCaja: Number(transferencia.idCajaOrigen),
+            idCategoria: idCategoriaTransferenciaCajaEgr,
+            monto: Number(transferencia.monto),
+            detalle: detalle + 'egreso',
+            fecha: new Date(),
+            fechaCreacion: new Date(),
+          };
+          this.movimientoService.crear(movimientoEgr).subscribe((data) => {
+            console.log(data);
+          });
+        }
+      })
+      .catch((err) => {
+        Swal.fire('Error', 'Intente nuevamente', 'error');
+      });
   }
 }
