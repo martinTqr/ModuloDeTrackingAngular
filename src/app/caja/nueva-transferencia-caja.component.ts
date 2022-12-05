@@ -33,7 +33,15 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
   quitarCajaSeleccionada(tipoCaja: string) {
     const idCaja = this.formularioTransferencia.get(`idCaja${tipoCaja}`).value;
     const cajas = this.cajas.filter((caja) => caja.id !== Number(idCaja));
-
+    if (
+      tipoCaja === 'Destino' &&
+      this.formularioTransferencia.get('idCajaOrigen').value &&
+      !this.formularioTransferencia.get('idCajaDestino').value
+    ) {
+      this.formularioTransferencia.patchValue({
+        idCajaDestino: String(cajas[1].id),
+      });
+    }
     return cajas;
   }
   cargarCajas() {
@@ -57,7 +65,7 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
     //Crear movimiento de caja origen
     const movimientoIng: NuevoMovimiento = {
       idUsuario: this.usuario.id,
-      idCaja: Number(transferencia.idCajaOrigen),
+      idCaja: Number(transferencia.idCajaDestino),
       idCategoria: idCategoriaTransferenciaCajaIng,
       monto: Number(transferencia.monto),
       detalle: detalle + 'ingreso',
@@ -72,7 +80,7 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
     //Crear movimiento de caja destino
     const movimientoEgr: NuevoMovimiento = {
       idUsuario: this.usuario.id,
-      idCaja: Number(transferencia.idCajaDestino),
+      idCaja: Number(transferencia.idCajaOrigen),
       idCategoria: idCategoriaTransferenciaCajaEgr,
       monto: Number(transferencia.monto),
       detalle: detalle + 'egreso',
