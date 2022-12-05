@@ -28,19 +28,7 @@
             </option>
           </select>
         </div>
-        <div class="row mb-3">
-          <label for="monto">Monto</label>
-          <input
-            type="text"
-            placeholder="Monto"
-            aria-label="Monto"
-            name="monto"
-            class="form-control"
-            formControlName="monto"
-            mask="separator"
-            thousandSeparator="."
-          />
-        </div>
+
         <div class="row mb-3">
           <label for="nombre">Caja destino</label>
           <select
@@ -56,6 +44,19 @@
               {{ caja.nombre }}
             </option>
           </select>
+        </div>
+        <div class="row mb-3">
+          <label for="monto">Monto</label>
+          <input
+            type="text"
+            placeholder="Monto"
+            aria-label="Monto"
+            name="monto"
+            class="form-control"
+            formControlName="monto"
+            mask="separator"
+            thousandSeparator="."
+          />
         </div>
         <div class="d-flex justify-content-between">
           <div></div>
