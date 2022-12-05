@@ -18,6 +18,17 @@ export class ListaCategoriaComponent implements OnInit {
       (err) => console.error(err)
     );
   }
+  /*   guardado(evento) {
+    console.log(evento);
+  }
+
+  editorPrepared(e) {
+    console.log(e);
+  }
+  cambiarTipo(evento) {
+    const valor = evento.value === 'in' ? 'Ingreso' : 'Egreso';
+    return valor;
+  } */
   borrar(id: any): void {
     this.categoriaService.borrar(id).subscribe(
       () => {

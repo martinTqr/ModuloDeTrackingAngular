@@ -1,6 +1,5 @@
 <h2>Lista de categorias</h2>
 <div class="my-3 d-flex justify-content-between">
-  <div></div>
   <div>
     <a routerLink="/categoria/nueva" class="btn btn-outline-primary"
       >Nueva categoria</a
@@ -35,3 +34,20 @@
     </tbody>
   </table>
 </div>
+<!-- <dx-data-grid
+  id="dataGrid"
+  [dataSource]="categorias"
+  keyExpr="id"
+  (onEditorPrepared)="editorPrepared($event)"
+  (onSaved)="guardado($event)"
+>
+  <dxo-editing
+    mode="row"
+    [allowUpdating]="true"
+    [allowDeleting]="true"
+    [useIcons]="true"
+  ></dxo-editing>
+  <dxi-column dataField="nombre"></dxi-column>
+  <dxi-column dataField="tipo" [customizeText]="cambiarTipo"></dxi-column>
+  <dxi-column dataField="isGeneral" caption="Es general"></dxi-column>
+</dx-data-grid> -->

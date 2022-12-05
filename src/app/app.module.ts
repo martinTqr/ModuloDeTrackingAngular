@@ -1,7 +1,11 @@
 import { enableProdMode, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
-import { DxButtonModule, DxTreeListModule } from 'devextreme-angular';
+import {
+  DxButtonModule,
+  DxDataGridModule,
+  DxTreeListModule,
+} from 'devextreme-angular';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { ReporteUNComponent } from './reporte-un/reporte-un.component';
 import { AppRoutingModule } from './app/app-routing.module';
@@ -91,6 +95,7 @@ if (!/localhost/.test(document.location.host)) {
     FormsModule,
     BrowserAnimationsModule,
     SweetAlert2Module,
+    DxDataGridModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
