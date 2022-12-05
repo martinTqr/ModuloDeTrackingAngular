@@ -1,6 +1,7 @@
 import { Component, OnChanges, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
+import { redireccionar, volverPaginaAnterior } from '../helper/genreales';
 import { Caja, NuevoMovimiento, Usuario } from '../models';
 import { CajaService } from '../services/caja.service';
 import { MovimientoService } from '../services/movimiento.service';
@@ -36,6 +37,7 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
     const cajas = this.cajas.filter((caja) => caja.id !== Number(idCaja));
     return cajas;
   }
+
   cargarCajas() {
     this.cajaService.listaConSaldo().subscribe((cajas) => {
       this.cajas = cajas;
@@ -46,24 +48,12 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
       this.usuario = usuarios[0];
     });
   }
+
   crear() {
     console.log(this.formularioTransferencia.value);
 
     if (this.formularioTransferencia.invalid) return;
-    const transferencia = this.formularioTransferencia.value;
-    const idCategoriaTransferenciaCajaIng = 0;
-    const idCategoriaTransferenciaCajaEgr = -1;
-    const detalle = 'Transferencia de caja ';
-    //Crear movimiento de caja origen
-    const movimientoIng: NuevoMovimiento = {
-      idUsuario: this.usuario.id,
-      idCaja: Number(transferencia.idCajaDestino),
-      idCategoria: idCategoriaTransferenciaCajaIng,
-      monto: Number(transferencia.monto),
-      detalle: detalle + 'ingreso',
-      fecha: new Date(),
-      fechaCreacion: new Date(),
-    };
+
     Swal.fire({
       title: 'Confirmacion',
       text: 'Esta seguro de realizar la transferencia?',
@@ -72,6 +62,20 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
     })
       .then(({ isConfirmed }) => {
         if (isConfirmed) {
+          const transferencia = this.formularioTransferencia.value;
+          const idCategoriaTransferenciaCajaIng = 0;
+          const idCategoriaTransferenciaCajaEgr = -1;
+          const detalle = 'Transferencia de caja ';
+          //Crear movimiento de caja origen
+          const movimientoIng: NuevoMovimiento = {
+            idUsuario: this.usuario.id,
+            idCaja: Number(transferencia.idCajaDestino),
+            idCategoria: idCategoriaTransferenciaCajaIng,
+            monto: Number(transferencia.monto),
+            detalle: detalle + 'ingreso',
+            fecha: new Date(),
+            fechaCreacion: new Date(),
+          };
           this.movimientoService.crear(movimientoIng).subscribe((data) => {
             console.log(data);
           });
@@ -85,8 +89,14 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
             fecha: new Date(),
             fechaCreacion: new Date(),
           };
-          this.movimientoService.crear(movimientoEgr).subscribe((data) => {
-            console.log(data);
+          this.movimientoService.crear(movimientoEgr).subscribe(({ data }) => {
+            if (data)
+              Swal.fire({
+                title: 'Transferencia realizada',
+                icon: 'success',
+                timer: 2000,
+                timerProgressBar: true,
+              }).then(() => redireccionar('/caja/transferencia/lista'));
           });
         }
       })
