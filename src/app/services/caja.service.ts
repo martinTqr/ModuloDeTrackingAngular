@@ -18,8 +18,10 @@ export class CajaService extends BaseService {
     const ruta = this.cajaURL + this.empresaParametro;
     return this.httpClient.get<Caja[]>(ruta);
   }
-  public listaConSaldo(): Observable<Caja[]> {
-    const ruta = this.cajaURL + 'saldo' + this.empresaParametro;
+  public listaConSaldo(transferencias?: boolean): Observable<Caja[]> {
+    const rutaTransferencia = transferencias ? '&transferencias=true' : '';
+    const ruta =
+      this.cajaURL + 'saldo' + this.empresaParametro + rutaTransferencia;
     return this.httpClient.get<Caja[]>(ruta);
   }
   public detalle(id: number): Observable<Caja> {
