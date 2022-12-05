@@ -32,7 +32,7 @@ export class ReporteUNComponent implements OnInit {
       const { id } = this.rutaActiva.snapshot.params;
       const { fechaInicio, fechaFin } = this.rutaActiva.snapshot.queryParams;
       this.reporteService
-        .buscarReporteUnidadNegocio(id, fechaInicio, fechaFin)
+        .buscarReporteUnidadNegocio({ id, fechaInicio, fechaFin })
         .subscribe((data: Reporte) => {
           const total = acumularMesesTotales(data);
           const gruposDeCajasAcumulados = agruparCajas(data.cajas, grupoCajas);

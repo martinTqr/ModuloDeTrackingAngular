@@ -47,7 +47,8 @@ export class ReporteEmpComponent implements OnInit {
   }
   cambiarColorFila(evento) {
     if (evento.data?.nombre === 'Saldo') {
-      evento.rowElement.style.backgroundColor = 'rgb(154,154,154,0.32)';
+      const colorFila = 'rgb(154,154,154,0.32)';
+      evento.rowElement.style.backgroundColor = colorFila;
     }
   }
   cambiarColorCelda(evento) {

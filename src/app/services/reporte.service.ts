@@ -26,18 +26,30 @@ export class ReporteService extends BaseService {
     return this.httpClient.get<any>(ruta);
   }
   public buscarReporteUnidadNegocio(
-    id: any,
-    fechaInicio?: string,
-    fechaFin?: string
+    parametros: Parametros
   ): Observable<Reporte> {
+    const { id, fechaInicio, fechaFin, transferencias } = parametros;
     const { unidadDeNegocioURL } = environment;
-    if (fechaInicio && fechaFin) {
-      return this.httpClient.get<Reporte>(
-        `${unidadDeNegocioURL}?idUnidadNegocio=${id}&fechaInicio=${fechaInicio}&fechaFin=${fechaFin}`
-      );
-    }
-    return this.httpClient.get<Reporte>(
-      `${unidadDeNegocioURL}?idUnidadNegocio=${id}`
-    );
+    const unidadNegocioRuta = id ? `&idUnidadNegocio=${id}` : '';
+    const empresaRuta = this.empresaParametro;
+    const fechaInicioRuta = fechaInicio ? `&fechaInicio=${fechaInicio}` : '';
+    const fechaFinRuta = fechaFin ? `&fechaFin=${fechaFin}` : '';
+    const transferenciasRuta = transferencias ? `&transferencias=true` : '';
+    const ruta =
+      unidadDeNegocioURL +
+      empresaRuta +
+      unidadNegocioRuta +
+      fechaInicioRuta +
+      fechaFinRuta +
+      transferenciasRuta;
+    console.log(ruta);
+
+    return this.httpClient.get<Reporte>(ruta);
   }
+}
+interface Parametros {
+  id?: any;
+  fechaInicio?: string;
+  fechaFin?: string;
+  transferencias?: boolean;
 }

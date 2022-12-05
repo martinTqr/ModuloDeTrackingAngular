@@ -4,6 +4,7 @@ import { Empresa, GrupoCaja } from '../models';
 import { CajaService } from '../services/caja.service';
 import { GrupoCajaService } from '../services/grupo-caja.service';
 import { LocalService } from '../services/local.service';
+import { ReporteService } from '../services/reporte.service';
 
 @Component({
   selector: 'app-reporte-transferencia',
@@ -18,7 +19,8 @@ export class ReporteTransferenciaComponent implements OnInit {
   constructor(
     private cajaService: CajaService,
     private localService: LocalService,
-    private grupoCajaService: GrupoCajaService
+    private grupoCajaService: GrupoCajaService,
+    private reporteService: ReporteService
   ) {}
 
   ngOnInit(): void {
@@ -46,9 +48,49 @@ export class ReporteTransferenciaComponent implements OnInit {
       gc.collapsed = !gc.collapsed;
     });
   }
+  cambiarColorFila(evento) {
+    if (evento.data?.nombre === 'Saldo') {
+      evento.rowElement.style.backgroundColor = 'rgb(154,154,154,0.32)';
+    }
+  }
+  cambiarColorCelda(evento) {
+    const { columnIndex, cellElement, data, displayValue } = evento;
+    if (displayValue && columnIndex !== 0 && data?.nombre === 'Saldo') {
+      const color = displayValue >= 0 ? '#00ad00' : 'red';
+      cellElement.style.backgroundColor = color;
+      cellElement.style.color = 'white';
+    }
+  }
 
   cargarCajas() {
-    const transferencia = true;
+    this.reporteService
+      .buscarReporteUnidadNegocio({ transferencias: true })
+      .subscribe((reporte) => {
+        console.log(reporte[0]);
+
+        const asd = reporte.subcategorias[0]['subcategorias'].map(
+          (subcategoria) => {
+            return formatearObjeto(subcategoria);
+          }
+        );
+        console.log(asd);
+      });
+  }
+}
+const formatearObjeto = (objeto: any): any => {
+  return {
+    nombre: objeto.nombre,
+    acumulado: objeto.acumulado || { total: objeto.total },
+    collapsed: objeto.collapsed,
+    meses: objeto?.meses,
+    cajas:
+      objeto?.cajas &&
+      objeto.cajas.map((caja) => {
+        return formatearObjeto(caja);
+      }),
+  };
+};
+/* const transferencia = true;
     this.grupoCajaService.lista().subscribe(
       (grupoCajas) => {
         this.cajaService.listaConSaldo(transferencia).subscribe(
@@ -68,13 +110,13 @@ export class ReporteTransferenciaComponent implements OnInit {
                 0
               );
             });
-            this.grupoCajas = grupoCajas;
-            console.log(grupoCajas);
+            const gruposParseados = grupoCajas.map((grupo) => {
+              return formatearObjeto(grupo);
+            });
+            this.grupoCajas = gruposParseados;
           },
           (error) => console.log(error)
         );
       },
       (error) => console.log(error)
-    );
-  }
-}
+    ); */

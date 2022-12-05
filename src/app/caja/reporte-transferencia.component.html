@@ -1,4 +1,4 @@
-<div class="card d-block">
+<!-- <div class="card d-block">
   <h3 class="card-header">Reporte de transferencias entre cajas</h3>
   <div class="card-body pt-3 mx-auto">
     <div class="grid-responsive mb-3">
@@ -19,7 +19,7 @@
             *ngFor="let caja of grupoCaja.cajas; let ultimoHijo = last"
           >
             <div class="card-header">
-              {{ caja.nombre }}: {{ separarMiles(caja.total) }}
+              {{ caja.nombre }}: {{ separarMiles(caja.acumulado.total) }}
             </div>
           </div>
         </div>
@@ -27,3 +27,31 @@
     </div>
   </div>
 </div>
+<dx-tree-list
+  id="reporte"
+  [dataSource]="grupoCajas"
+  itemsExpr="cajas"
+  dataStructure="tree"
+  [showRowLines]="true"
+  [showBorders]="true"
+  [columnAutoWidth]="true"
+  [hoverStateEnabled]="true"
+  (onRowPrepared)="cambiarColorFila($event)"
+  (onCellPrepared)="cambiarColorCelda($event)"
+>
+  <dxi-column [allowSorting]="false" dataField="nombre"></dxi-column>
+  <dxi-column
+    [allowSorting]="false"
+    dataField="acumulado.total"
+    format="fixedPoint"
+  ></dxi-column>
+
+    <dxi-column
+    [allowSorting]="false"
+    dataField="meses[{{ numeroMes }}].total"
+    format="fixedPoint"
+    caption="{{ data }}"
+    *ngFor="let data of nombreDeMeses; let numeroMes = index"
+  ></dxi-column>
+</dx-tree-list>
+ -->
