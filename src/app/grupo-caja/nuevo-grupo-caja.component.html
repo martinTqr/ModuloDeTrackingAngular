@@ -1,36 +1,39 @@
-<h2>Nuevo grupo de cajas</h2>
-
-<div class="my-3 d-flex justify-content-between">
-  <div></div>
-  <boton-volver></boton-volver>
-</div>
-<form
-  class="container"
-  style="max-width: 600px"
-  (ngSubmit)="crear()"
-  [formGroup]="grupoCajaFormulario"
-  novalidate
-  #f="ngForm"
->
-  <div class="row">
-    <div class="col">
-      <label for="nombre">Nombre</label>
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Nombre"
-        aria-label="Nombre"
-        formControlName="nombre"
-        required
-      />
-    </div>
-    <div class="col">
-      <button
-        class="mt-3 btn btn-success btn-block col mx-2 btn-small"
-        type="submit"
+<div class="card mx-auto" style="max-width: 600px">
+  <h2 class="card-header">Nuevo grupo de cajas</h2>
+  <div class="card-body">
+    <div class="my-3 d-flex justify-content-between">
+      <div></div>
+      <form
+        class="container"
+        style="max-width: 600px"
+        (ngSubmit)="crear()"
+        [formGroup]="grupoCajaFormulario"
+        novalidate
+        #f="ngForm"
       >
-        Crear
-      </button>
+        <div class="row">
+          <div class="col">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nombre"
+              aria-label="Nombre"
+              formControlName="nombre"
+              required
+            />
+          </div>
+          <div class="col">
+            <button
+              class="mt-3 btn btn-success btn-block col mx-2 btn-small"
+              type="submit"
+            >
+              Crear
+            </button>
+          </div>
+        </div>
+      </form>
+      <boton-volver></boton-volver>
     </div>
   </div>
-</form>
+</div>
