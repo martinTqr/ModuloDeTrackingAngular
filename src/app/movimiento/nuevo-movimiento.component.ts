@@ -1,15 +1,8 @@
-import {
-  AfterContentInit,
-  AfterViewInit,
-  Component,
-  DoCheck,
-  OnChanges,
-  OnInit,
-  SimpleChanges,
-} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { concat, lastValueFrom } from 'rxjs';
+import { concat } from 'rxjs';
 import Swal from 'sweetalert2';
+import { volverPaginaAnterior } from '../helper/genreales';
 import {
   Caja,
   Categoria,
@@ -98,7 +91,7 @@ export class NuevoMovimientoComponent implements OnInit {
 
             icon: 'info',
           }).then(() => {
-            window.location.href = '/admin';
+            volverPaginaAnterior();
           });
       });
   }
