@@ -57,6 +57,9 @@ export class DashboardComponent implements OnInit {
               const cajasFiltradas = cajas.filter(
                 (caja) => caja.grupoCaja.id === grupoCaja.id
               );
+              cajasFiltradas.forEach((caja) => {
+                caja.total = Math.round(caja.total);
+              });
               grupoCaja.cajas = cajasFiltradas;
               grupoCaja.acumulado = { total: 0 };
               grupoCaja.acumulado.total = cajasFiltradas.reduce(
