@@ -44,6 +44,7 @@ import { DetalleUsuarioComponent } from './usuario/detalle-usuario.component';
 import { NuevoUsuarioComponent } from './usuario/nuevo-usuario.component';
 import { ListaTransferenciaCajaListaComponent } from './caja/lista-transferencia-caja.component';
 import { NuevaTransferenciaCajaComponent } from './caja/nueva-transferencia-caja.component';
+import { VolverComponent } from './botones/volver.component';
 (localization as any).disableIntl();
 config({
   thousandsSeparator: '.',
@@ -83,6 +84,7 @@ if (!/localhost/.test(document.location.host)) {
     NuevoUsuarioComponent,
     NuevaTransferenciaCajaComponent,
     ListaTransferenciaCajaListaComponent,
+    VolverComponent,
   ],
   imports: [
     NgxMaskModule.forRoot(),
