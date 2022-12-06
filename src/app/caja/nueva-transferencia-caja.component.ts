@@ -18,7 +18,7 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
     idCajaDestino: ['', Validators.required],
     monto: ['', Validators.required],
   });
-
+  fechaHoy = new Date().toISOString().split('T')[0];
   cajas: Caja[] = [];
   usuario: Usuario;
   constructor(
