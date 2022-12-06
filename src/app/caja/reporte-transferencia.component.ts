@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { separarMiles } from '../helper';
+import { meses } from '../helper/constantes';
 import { Empresa, GrupoCaja } from '../models';
 import { CajaService } from '../services/caja.service';
 import { GrupoCajaService } from '../services/grupo-caja.service';
@@ -14,8 +15,11 @@ import { ReporteService } from '../services/reporte.service';
 export class ReporteTransferenciaComponent implements OnInit {
   empresa: Empresa;
   grupoCajas: GrupoCaja[];
-
+  reporte: any;
   menu: string = '';
+  cantidadDeSemanas: Array<any> = new Array(5);
+  semanas: any = [];
+  nombreDeMeses: string[] = meses;
   constructor(
     private cajaService: CajaService,
     private localService: LocalService,
@@ -25,6 +29,7 @@ export class ReporteTransferenciaComponent implements OnInit {
 
   ngOnInit(): void {
     this.empresa = this.localService.getData('empresa');
+    this.cargarReporteTransferencias();
     this.cargarCajas();
   }
   separarMiles(numero: number) {
@@ -61,36 +66,8 @@ export class ReporteTransferenciaComponent implements OnInit {
       cellElement.style.color = 'white';
     }
   }
-
   cargarCajas() {
-    this.reporteService
-      .buscarReporteUnidadNegocio({ transferencias: true })
-      .subscribe((reporte) => {
-        console.log(reporte[0]);
-
-        const asd = reporte.subcategorias[0]['subcategorias'].map(
-          (subcategoria) => {
-            return formatearObjeto(subcategoria);
-          }
-        );
-        console.log(asd);
-      });
-  }
-}
-const formatearObjeto = (objeto: any): any => {
-  return {
-    nombre: objeto.nombre,
-    acumulado: objeto.acumulado || { total: objeto.total },
-    collapsed: objeto.collapsed,
-    meses: objeto?.meses,
-    cajas:
-      objeto?.cajas &&
-      objeto.cajas.map((caja) => {
-        return formatearObjeto(caja);
-      }),
-  };
-};
-/* const transferencia = true;
+    const transferencia = true;
     this.grupoCajaService.lista().subscribe(
       (grupoCajas) => {
         this.cajaService.listaConSaldo(transferencia).subscribe(
@@ -111,7 +88,7 @@ const formatearObjeto = (objeto: any): any => {
               );
             });
             const gruposParseados = grupoCajas.map((grupo) => {
-              return formatearObjeto(grupo);
+              return formatearCajas(grupo);
             });
             this.grupoCajas = gruposParseados;
           },
@@ -119,4 +96,48 @@ const formatearObjeto = (objeto: any): any => {
         );
       },
       (error) => console.log(error)
-    ); */
+    );
+  }
+  cargarReporteTransferencias() {
+    this.reporteService
+      .buscarReporteUnidadNegocio({ transferencias: true })
+      .subscribe((reporte) => {
+        const transferenciasIngreso = reporte.subcategorias[0][
+          'subcategorias'
+        ].map((transferencia) => {
+          return formatearReporte(transferencia);
+        });
+        const transferenciaEgreso = reporte.subcategorias[1][
+          'subcategorias'
+        ].map((transferencia) => {
+          return formatearReporte(transferencia);
+        });
+        this.reporte = [...transferenciasIngreso, ...transferenciaEgreso];
+        console.log(this.reporte);
+      });
+  }
+}
+const formatearReporte = (objeto: any): any => {
+  return {
+    nombre: objeto.nombre,
+    acumulado: objeto.acumulado || { total: objeto.total },
+    collapsed: objeto.collapsed,
+    meses: objeto?.meses,
+    subcategorias:
+      objeto.acumulado?.cajas.map((caja) => formatearReporte(caja)) || [],
+  };
+};
+const formatearCajas = (objeto: any): any => {
+  return {
+    id: objeto.id,
+    nombre: objeto.nombre,
+    acumulado: objeto.acumulado || { total: objeto.total },
+    collapsed: objeto.collapsed,
+    meses: objeto?.meses,
+    cajas:
+      objeto?.cajas &&
+      objeto.cajas.map((caja) => {
+        return formatearCajas(caja);
+      }),
+  };
+};
