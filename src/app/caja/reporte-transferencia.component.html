@@ -19,7 +19,7 @@
             *ngFor="let caja of grupoCaja.cajas; let ultimoHijo = last"
           >
             <div class="card-header">
-              {{ caja.nombre }} <strong>{{ caja.id }}:</strong>
+              {{ caja.nombre }}
               {{ separarMiles(caja.acumulado.total) }}
             </div>
           </div>
