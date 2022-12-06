@@ -60,7 +60,6 @@ export class NuevaCategoriaComponent implements OnInit {
     nombre = String(nombre);
     const tipoString = String(tipo);
     const ordenNumber = Number(orden);
-    console.log('ase');
     const idEmpresa = this.baseService.getIdEmpresa;
 
     const idCategoriaPadreNumber = idCategoriaPadre

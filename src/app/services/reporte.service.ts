@@ -42,7 +42,6 @@ export class ReporteService extends BaseService {
       fechaInicioRuta +
       fechaFinRuta +
       transferenciasRuta;
-    console.log(ruta);
 
     return this.httpClient.get<Reporte>(ruta);
   }
