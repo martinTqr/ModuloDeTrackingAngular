@@ -1,91 +1,97 @@
-<h2>Nueva de categoria</h2>
-
-<div class="my-3 d-flex justify-content-between">
-  <div></div>
-  <boton-volver></boton-volver>
-</div>
-<form
-  class="container"
-  style="max-width: 600px"
-  (ngSubmit)="crear()"
-  [formGroup]="categoriaFormulario"
-  novalidate
-  #f="ngForm"
->
-  <div class="row mt-3">
-    <div class="col">
-      <label for="nombre">Nombre</label>
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Nombre"
-        aria-label="Nombre"
-        formControlName="nombre"
-      />
-    </div>
-    <div class="col">
-      <label for="nombre">Tipo de categoria</label>
-      <select
-        name="tipo"
-        id=""
-        class="form-control"
-        formControlName="tipo"
-        (change)="cambioEnTipo($event)"
-      >
-        <option value="in">Ingreso</option>
-        <option value="out" [defaultSelected]="true">Egreso</option>
-      </select>
-    </div>
+<div class="card mx-auto" style="max-width: 600px">
+  <div class="card-header d-flex justify-content-between">
+    <h2 class="mb-0">Nueva categoria</h2>
+    <boton-volver></boton-volver>
   </div>
-  <div class="row mt-3">
-    <div class="col" *ngIf="!!categoriaSeleccionadaNombre">
-      <label for="nombre">Es general?</label>
-      <select name="isGeneral" class="form-control" formControlName="isGeneral">
-        <option value="true" [selected]="true">Si</option>
-        <option value="false">No</option>
-      </select>
-    </div>
-    <div class="col">
-      <label for="nombre">Categoria padre</label>
-      <div class="d-flex">
-        <p class="form-control">{{ categoriaSeleccionadaNombre }}</p>
-
-        <button
-          (click)="borrarCategoriaPadre()"
-          class="btn btn-danger mb-3 ms-2"
-          type="button"
-        >
-          <i class="bi bi-trash"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="row mt-3">
-    <div class="col mt-3">
-      <button
-        class="col btn btn-success btn-block col mx-2 btn-small"
-        type="submit"
-      >
-        Crear
-      </button>
-    </div>
-  </div>
-  <br />
-
-  <div id="tree-list-demo" class="mx-auto">
-    <dx-tree-list
-      id="listaCategorias"
-      [dataSource]="listaCategorias[tipo]"
-      itemsExpr="subcategorias"
-      dataStructure="tree"
-      [showRowLines]="true"
-      [showBorders]="true"
-      (onCellClick)="selccionarCategoria($event)"
-      [hoverStateEnabled]="true"
-      width="500"
+  <div class="card-body">
+    <form
+      class="container"
+      style="max-width: 600px"
+      (ngSubmit)="crear()"
+      [formGroup]="categoriaFormulario"
+      novalidate
+      #f="ngForm"
     >
-      <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
-      <dxi-column dataField="isGeneral" caption="Es general?"></dxi-column>
-    </dx-tree-list>
+      <div class="row mt-3">
+        <div class="col">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nombre"
+            aria-label="Nombre"
+            formControlName="nombre"
+          />
+        </div>
+        <div class="col">
+          <label for="nombre">Tipo de categoria</label>
+          <select
+            name="tipo"
+            id=""
+            class="form-control"
+            formControlName="tipo"
+            (change)="cambioEnTipo($event)"
+          >
+            <option value="in">Ingreso</option>
+            <option value="out" [defaultSelected]="true">Egreso</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col" *ngIf="!!categoriaSeleccionadaNombre">
+          <label for="nombre">Es general?</label>
+          <select
+            name="isGeneral"
+            class="form-control"
+            formControlName="isGeneral"
+          >
+            <option value="true" [selected]="true">Si</option>
+            <option value="false">No</option>
+          </select>
+        </div>
+        <div class="col">
+          <label for="nombre">Categoria padre</label>
+          <div class="d-flex">
+            <p class="form-control">{{ categoriaSeleccionadaNombre }}</p>
+
+            <button
+              (click)="borrarCategoriaPadre()"
+              class="btn btn-danger mb-3 ms-2"
+              type="button"
+            >
+              <i class="bi bi-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col mt-3">
+          <button
+            class="col btn btn-success btn-block col mx-2 btn-small"
+            type="submit"
+          >
+            Crear
+          </button>
+        </div>
+      </div>
+      <br />
+
+      <div id="tree-list-demo" class="mx-auto">
+        <dx-tree-list
+          id="listaCategorias"
+          [dataSource]="listaCategorias[tipo]"
+          itemsExpr="subcategorias"
+          dataStructure="tree"
+          [showRowLines]="true"
+          [showBorders]="true"
+          (onCellClick)="selccionarCategoria($event)"
+          [hoverStateEnabled]="true"
+          width="500"
+        >
+          <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
+          <dxi-column dataField="isGeneral" caption="Es general?"></dxi-column>
+        </dx-tree-list>
+      </div>
+    </form>
   </div>
-</form>
+</div>
