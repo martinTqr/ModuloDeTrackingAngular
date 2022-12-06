@@ -190,7 +190,7 @@ export class NuevoMovimientoComponent implements OnInit {
       idCategoria: idCategoriaNumber,
       monto: montoNumber,
       idUsuario: idUsuarioNumber,
-      fecha,
+      fecha: new Date(fecha).toISOString(),
       detalle,
     });
     this.movimientoService.crear(movimiento).subscribe(
