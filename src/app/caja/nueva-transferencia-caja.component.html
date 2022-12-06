@@ -25,7 +25,7 @@
               *ngFor="let caja of quitarCajaSeleccionada('Destino')"
               value="{{ caja.id }}"
             >
-              {{ caja.nombre }}
+              {{ caja.nombre }} Saldo: ${{ caja.total }}
             </option>
           </select>
         </div>
