@@ -47,7 +47,7 @@
           (click)="cambiarColapso(grupoCajas)"
         >
           <p class="mb-0">
-            {{ grupoCaja.nombre }}:
+            {{ grupoCaja.nombre }}: $
             {{ separarMiles(grupoCaja.acumulado.total) }}
           </p>
         </div>
@@ -57,7 +57,7 @@
             *ngFor="let caja of grupoCaja.cajas; let ultimoHijo = last"
           >
             <div class="card-header">
-              {{ caja.nombre }}: {{ separarMiles(caja.total) }}
+              {{ caja.nombre }}: $ {{ separarMiles(caja.total) }}
             </div>
           </div>
         </div>
