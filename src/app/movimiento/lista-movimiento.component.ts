@@ -26,18 +26,15 @@ export class ListaMovimientoComponent implements OnInit {
     this.cargarMovimientos();
   }
 
-  /*filtrarMovimientos() {
+  filtrarMovimientos() {
     const { fechaInicio, fechaFin } = this.movimientosForm.value;
     const fechaInicioDate = fechaInicio ? new Date(fechaInicio!) : undefined;
     const fechaFinDate = fechaFin ? new Date(fechaFin!) : undefined;
     console.log(!!fechaInicio, !!fechaFin);
     console.log(fechaInicioDate, fechaFinDate);
 
-    this.movimientoService.cargarMovimientos().subscribe(
-      ({ movimientos }) => (this.movimientos = movimientos),
-      (error) => console.error(error)
-    );
-  } */
+    this.cargarMovimientos(fechaInicioDate, fechaFinDate);
+  }
 
   cargarMovimientos(fechaInicio?: Date, fechaFin?: Date) {
     this.movimientoService.lista({ fechaInicio, fechaFin }).subscribe(
