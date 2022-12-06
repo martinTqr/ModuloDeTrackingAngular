@@ -27,9 +27,6 @@ export class ListaTransferenciaCajaListaComponent implements OnInit {
       this.movimientosService
         .trasnferenciasEntreCajas(idCajas)
         .subscribe((transferencias) => {
-          transferencias = transferencias.sort((a, b) => {
-            return a.id - b.id;
-          });
           this.transferencias = transferencias;
         });
     });
@@ -50,9 +47,9 @@ export class ListaTransferenciaCajaListaComponent implements OnInit {
   borrar(id: number) {
     this.movimientosService.borrar(id).subscribe(({ mensaje }) => {
       if (mensaje)
-        this.movimientosService.borrar(id - 1).subscribe((data) => {
+        this.movimientosService.borrar(id + 1).subscribe((data) => {
           this.transferencias = this.transferencias.filter(
-            (t) => t.id !== id && t.id !== id - 1
+            (t) => t.id !== id && t.id !== id + 1
           );
           Swal.fire('Borrado', mensaje, 'success');
         });
