@@ -50,11 +50,35 @@
           <thead>
             <tr>
               <th scope="col">Fecha del movimiento</th>
-              <th scope="col">Caja</th>
-              <th scope="col">Categoria</th>
+              <th
+                class="cursor-pointer"
+                scope="col"
+                (click)="ordenarCampo('caja')"
+              >
+                Caja
+              </th>
+              <th
+                class="cursor-pointer"
+                scope="col"
+                (click)="ordenarCampo('categoria')"
+              >
+                Categoria
+              </th>
               <th scope="col">Detalle</th>
-              <th scope="col">Monto</th>
-              <th scope="col">Tipo</th>
+              <th
+                class="cursor-pointer"
+                scope="col"
+                (click)="ordenarCampo('monto')"
+              >
+                Monto
+              </th>
+              <th
+                class="cursor-pointer"
+                scope="col"
+                (click)="ordenarCampo('tipo')"
+              >
+                Tipo
+              </th>
               <th scope="col">Fecha de creacion</th>
               <th></th>
             </tr>

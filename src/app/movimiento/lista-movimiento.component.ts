@@ -15,6 +15,14 @@ export class ListaMovimientoComponent implements OnInit {
     fechaInicio: [''],
     fechaFin: [''],
   });
+
+  orden = {
+    caja: '',
+    fecha: '',
+    categoria: '',
+    monto: '',
+    tipo: '',
+  };
   movimientos: Movimiento[] = [];
   categorias: Categoria[] = [];
   constructor(
@@ -30,10 +38,26 @@ export class ListaMovimientoComponent implements OnInit {
     const { fechaInicio, fechaFin } = this.movimientosForm.value;
     const fechaInicioDate = fechaInicio ? new Date(fechaInicio!) : undefined;
     const fechaFinDate = fechaFin ? new Date(fechaFin!) : undefined;
-    console.log(!!fechaInicio, !!fechaFin);
-    console.log(fechaInicioDate, fechaFinDate);
-
     this.cargarMovimientos(fechaInicioDate, fechaFinDate);
+  }
+  ordenarCampo(campo?: string) {
+    if (this.orden[campo] === '') {
+      this.movimientos.sort((a: any, b: any) => {
+        if (campo === 'monto') return a.monto - b.monto;
+        if (campo === 'tipo')
+          return a.categoria.tipo.localeCompare(b.categoria.tipo);
+        if (a[campo].nombre > b[campo].nombre) return 1;
+        if (a[campo].nombre < b[campo].nombre) return -1;
+        return 0;
+      });
+      this.orden[campo] = 'cambio';
+    } else this.movimientos.sort().reverse();
+  }
+  ordenarMonto() {
+    if (this.orden.monto === '') {
+      this.movimientos.sort((a: any, b: any) => a.monto - b.monto);
+      this.orden.monto = 'cambio';
+    } else this.movimientos.sort().reverse();
   }
 
   cargarMovimientos(fechaInicio?: Date, fechaFin?: Date) {
