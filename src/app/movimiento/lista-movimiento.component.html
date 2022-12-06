@@ -21,10 +21,24 @@
       >
         <div class="row">
           <div class="col">
+            <label for="">Caja</label>
+            <select
+              class="form-control"
+              name="idCaja"
+              formControlName="idCaja"
+              id=""
+            >
+              <option value="{{ undefined }}"></option>
+              <option *ngFor="let caja of cajas" value="{{ caja.id }}">
+                {{ caja.nombre }}
+              </option>
+            </select>
+          </div>
+          <div class="col">
             <label for="">Desde</label>
             <input
               type="date"
-              class="col form-control"
+              class="form-control"
               name="fechaInicio"
               formControlName="fechaInicio"
               id=""
