@@ -13,6 +13,7 @@ import { MovimientoService } from '../services/movimiento.service';
 })
 export class ListaMovimientoComponent implements OnInit {
   movimientosForm = this.fb.group({
+    tipo: [''],
     idCaja: [''],
     fechaInicio: [''],
     fechaFin: [''],
@@ -105,5 +106,13 @@ export class ListaMovimientoComponent implements OnInit {
       this.movimientos.sort((a: any, b: any) => a.monto - b.monto);
       this.orden.monto = 'cambio';
     } else this.movimientos.sort().reverse();
+  }
+  filtrarTipo(tipo: string) {
+    let tipoForm = this.movimientosForm.get('tipo').value;
+    if (tipoForm) {
+      tipoForm = tipoForm.replace(/'/g, '');
+      return tipoForm == tipo;
+    }
+    return true;
   }
 }

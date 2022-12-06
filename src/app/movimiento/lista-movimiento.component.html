@@ -13,7 +13,6 @@
     <div class="container">
       <form
         class="container mb-3"
-        style="max-width: 600px"
         (ngSubmit)="filtrarMovimientos()"
         [formGroup]="movimientosForm"
         novalidate
@@ -32,6 +31,19 @@
               <option *ngFor="let caja of cajas" value="{{ caja.id }}">
                 {{ caja.nombre }}
               </option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="">Tipo</label>
+            <select
+              class="form-control"
+              name="tipo"
+              formControlName="tipo"
+              id=""
+            >
+              <option value="{{ undefined }}"></option>
+              <option value="'in'">Ingreso</option>
+              <option value="'out'">Egreso</option>
             </select>
           </div>
           <div class="col">
@@ -60,7 +72,7 @@
         </div>
       </form>
       <div class="table-responsive">
-        <table class="table table-striped">
+        <table class="table table-hover">
           <thead>
             <tr>
               <th scope="col">Fecha del movimiento</th>
@@ -99,23 +111,25 @@
           </thead>
           <tbody>
             <tr *ngFor="let movimiento of movimientos">
-              <td>{{ parsearFecha(movimiento.fecha) }}</td>
-              <td>{{ movimiento.caja.nombre }}</td>
-              <td>{{ movimiento.categoria.nombre }}</td>
-              <td>{{ movimiento.detalle }}</td>
-              <td>{{ separarMiles(movimiento.monto) }}</td>
-              <td>
-                {{ movimiento.categoria.tipo == "in" ? "Ingreso" : "Egreso" }}
-              </td>
-              <td>{{ parsearFecha(movimiento.fechaCreacion) }}</td>
-              <td>
-                <button
-                  class="btn btn-danger btn-sm pb-0 px-1"
-                  (click)="borrar(movimiento.id)"
-                >
-                  <i class="bi bi-trash"></i>
-                </button>
-              </td>
+              <ng-container *ngIf="filtrarTipo(movimiento.categoria.tipo)">
+                <td>{{ parsearFecha(movimiento.fecha) }}</td>
+                <td>{{ movimiento.caja.nombre }}</td>
+                <td>{{ movimiento.categoria.nombre }}</td>
+                <td>{{ movimiento.detalle }}</td>
+                <td>{{ separarMiles(movimiento.monto) }}</td>
+                <td>
+                  {{ movimiento.categoria.tipo == "in" ? "Ingreso" : "Egreso" }}
+                </td>
+                <td>{{ parsearFecha(movimiento.fechaCreacion) }}</td>
+                <td>
+                  <button
+                    class="btn btn-danger btn-sm pb-0 px-1"
+                    (click)="borrar(movimiento.id)"
+                  >
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </td>
+              </ng-container>
             </tr>
           </tbody>
         </table>
