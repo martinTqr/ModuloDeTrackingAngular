@@ -6,11 +6,14 @@
   <div class="row">
     <div class="col mb-3">
       <div class="card" style="max-width: 500px">
-        <h4 class="card-header">Categorias</h4>
+        <h4 class="card-header">Reportes</h4>
         <div class="card-body">
           <ul class="list-group">
             <li class="list-group-item">
-              <a routerLink="/categoria/lista">Lista</a>
+              <a routerLink="/reporte/empresa">Finanzas generales</a>
+            </li>
+            <li class="list-group-item">
+              <a routerLink="/reporte/cajas">Acumulado de cajas</a>
             </li>
           </ul>
         </div>
@@ -18,11 +21,14 @@
     </div>
     <div class="col mb-3">
       <div class="card" style="max-width: 500px">
-        <h4 class="card-header">Movimientos</h4>
+        <h4 class="card-header">Unidades de negocio</h4>
         <div class="card-body">
           <ul class="list-group">
             <li class="list-group-item">
-              <a routerLink="/movimiento/lista">Lista</a>
+              <a routerLink="/unidad-negocio/lista">Listar</a>
+            </li>
+            <li class="list-group-item">
+              <a routerLink="/unidad-negocia/nueva">Nueva unidad de negocio</a>
             </li>
           </ul>
         </div>
@@ -36,7 +42,15 @@
         <div class="card-body">
           <ul class="list-group">
             <li class="list-group-item">
-              <a routerLink="/caja/lista">Lista</a>
+              <a routerLink="/caja/lista">Listado</a>
+            </li>
+            <li class="list-group-item">
+              <a routerLink="/grupo-caja/lista">Listado de grupos de cajas</a>
+            </li>
+            <li class="list-group-item">
+              <a routerLink="/caja/transferencia/lista"
+                >Transferencias entre cajas</a
+              >
             </li>
           </ul>
         </div>
@@ -44,11 +58,14 @@
     </div>
     <div class="col mb-3">
       <div class="card" style="max-width: 500px">
-        <h4 class="card-header">Grupo de cajas</h4>
+        <h4 class="card-header">Movimientos</h4>
         <div class="card-body">
           <ul class="list-group">
             <li class="list-group-item">
-              <a routerLink="/grupo-caja/lista">Lista</a>
+              <a routerLink="/movimiento/lista">Listar</a>
+            </li>
+            <li class="list-group-item">
+              <a routerLink="/movimiento/nuevo">Nuevo movimiento</a>
             </li>
           </ul>
         </div>
@@ -58,11 +75,14 @@
   <div class="row">
     <div class="col mb-3">
       <div class="card" style="max-width: 500px">
-        <h4 class="card-header">Transferencia de cajas</h4>
+        <h4 class="card-header">Admin</h4>
         <div class="card-body">
           <ul class="list-group">
             <li class="list-group-item">
-              <a routerLink="/caja/transferencia/lista">Lista</a>
+              <a routerLink="/categoria/lista">Gestion de categorias</a>
+            </li>
+            <li class="list-group-item">
+              <a routerLink="#">Cotización dolar</a>
             </li>
           </ul>
         </div>

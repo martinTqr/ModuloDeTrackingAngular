@@ -36,8 +36,9 @@ const rutas: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'admin', component: AdminComponent },
 
-  { path: 'reporte-emp/:id', component: ReporteEmpComponent },
-  { path: 'reporte-un/:id', component: ReporteUNComponent },
+  { path: 'reporte/empresa', component: ReporteEmpComponent },
+  { path: 'reporte/unidad/:id', component: ReporteUNComponent },
+  { path: 'reporte/cajas', component: AdminComponent },
 
   { path: 'movimiento/lista', component: ListaMovimientoComponent },
   { path: 'movimiento/nuevo', component: NuevoMovimientoComponent },
