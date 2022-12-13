@@ -46,6 +46,7 @@ import { ListaTransferenciaCajaListaComponent } from './caja/lista-transferencia
 import { NuevaTransferenciaCajaComponent } from './caja/nueva-transferencia-caja.component';
 import { VolverComponent } from './botones/volver.component';
 import { ReporteTransferenciaComponent } from './caja/reporte-transferencia.component';
+import { ReporteCajasComponent } from './reporte-cajas/reporte-cajas.component';
 (localization as any).disableIntl();
 config({
   thousandsSeparator: '.',
@@ -87,6 +88,7 @@ if (!/localhost/.test(document.location.host)) {
     ListaTransferenciaCajaListaComponent,
     VolverComponent,
     ReporteTransferenciaComponent,
+    ReporteCajasComponent,
   ],
   imports: [
     NgxMaskModule.forRoot(),

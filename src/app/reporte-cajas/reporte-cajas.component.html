@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h3 class="mb-0 pb-0">Reporte de acumulado de cajas</h3>
+    <boton-volver></boton-volver>
+  </div>
+
+  <div class="card-body pt-3">
+    <div class="grid-responsive mb-3 mx-auto">
+      <div class="card" *ngFor="let grupoCaja of grupoCajas">
+        <div
+          [ngClass]="tipoDeFondo(grupoCaja.acumulado.total)"
+          class="card-header cursor-pointer"
+          (click)="cambiarColapso(grupoCajas)"
+        >
+          <p class="mb-0">
+            {{ grupoCaja.nombre }}: $
+            {{ separarMiles(grupoCaja.acumulado.total) }}
+          </p>
+        </div>
+        <div class="card-body {{ grupoCaja.collapsed ? 'collapse' : '' }}">
+          <div
+            class="card mb-3"
+            *ngFor="let caja of grupoCaja.cajas; let ultimoHijo = last"
+          >
+            <div class="card-header">
+              {{ caja.nombre }}: $ {{ separarMiles(caja.total) }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
