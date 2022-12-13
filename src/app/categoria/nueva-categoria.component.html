@@ -30,27 +30,16 @@
             id=""
             class="form-control"
             formControlName="tipo"
-            (change)="cambioEnTipo($event)"
+            (change)="cambioEnTipo()"
           >
-            <option value="in">Ingreso</option>
-            <option value="out" [defaultSelected]="true">Egreso</option>
+            <option value="in" [defaultSelected]="true">Ingreso</option>
+            <option value="out">Egreso</option>
           </select>
         </div>
       </div>
       <div class="row mt-3">
-        <div class="col" *ngIf="!!categoriaSeleccionadaNombre">
-          <label for="nombre">Es general?</label>
-          <select
-            name="isGeneral"
-            class="form-control"
-            formControlName="isGeneral"
-          >
-            <option value="true" [selected]="true">Si</option>
-            <option value="false">No</option>
-          </select>
-        </div>
         <div class="col">
-          <label for="nombre">Categoria padre</label>
+          <label for="nombre">Categoria padre</label><br />
           <div class="d-flex">
             <p class="form-control">{{ categoriaSeleccionadaNombre }}</p>
 
@@ -63,11 +52,24 @@
             </button>
           </div>
         </div>
+        <div class="col">
+          <div *ngIf="categoriaSeleccionadaNombre == '-'">
+            <label for="nombre">Es general?</label>
+            <select
+              name="isGeneral"
+              class="form-control"
+              formControlName="isGeneral"
+            >
+              <option value="true" [selected]="true">Si</option>
+              <option value="false">No</option>
+            </select>
+          </div>
+        </div>
       </div>
-      <div class="row mt-3">
-        <div class="col mt-3">
+      <div class="row">
+        <div class="col">
           <button
-            class="col btn btn-success btn-block col mx-2 btn-small"
+            class="col btn btn-success btn-block col btn-small"
             type="submit"
           >
             Crear
@@ -75,22 +77,44 @@
         </div>
       </div>
       <br />
-
-      <div id="tree-list-demo" class="mx-auto">
-        <dx-tree-list
-          id="listaCategorias"
-          [dataSource]="listaCategorias[tipo]"
-          itemsExpr="subcategorias"
-          dataStructure="tree"
-          [showRowLines]="true"
-          [showBorders]="true"
-          (onCellClick)="selccionarCategoria($event)"
-          [hoverStateEnabled]="true"
-          width="500"
-        >
-          <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
-          <dxi-column dataField="isGeneral" caption="Es general?"></dxi-column>
-        </dx-tree-list>
+      <h4></h4>
+      <div class="scroll-x">
+        <div>
+          <h5>Generales</h5>
+          <div id="tree-list-demo">
+            <dx-tree-list
+              id="listaCategorias"
+              [dataSource]="listaCategorias[0]"
+              itemsExpr="subcategorias"
+              dataStructure="tree"
+              [showRowLines]="true"
+              [showBorders]="true"
+              (onCellClick)="selccionarCategoria($event)"
+              [hoverStateEnabled]="true"
+              width="250"
+            >
+              <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
+            </dx-tree-list>
+          </div>
+        </div>
+        <div>
+          <h5>No generales</h5>
+          <div id="tree-list-demo">
+            <dx-tree-list
+              id="listaCategorias"
+              [dataSource]="listaCategorias[1]"
+              itemsExpr="subcategorias"
+              dataStructure="tree"
+              [showRowLines]="true"
+              [showBorders]="true"
+              (onCellClick)="selccionarCategoria($event)"
+              [hoverStateEnabled]="true"
+              width="250"
+            >
+              <dxi-column dataField="nombre" caption="Nombre"></dxi-column>
+            </dx-tree-list>
+          </div>
+        </div>
       </div>
     </form>
   </div>

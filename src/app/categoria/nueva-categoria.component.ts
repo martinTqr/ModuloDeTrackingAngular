@@ -12,7 +12,7 @@ import { BaseService } from '../services/base.service';
 export class NuevaCategoriaComponent implements OnInit {
   categoriaFormulario = this.fb.group({
     nombre: ['', Validators.required],
-    tipo: ['out', Validators.required],
+    tipo: ['in', Validators.required],
     orden: ['1', [Validators.required, Validators.min(1)]],
     isGeneral: ['true', [Validators.required, Validators.required]],
     idCategoriaPadre: [''],
@@ -33,13 +33,15 @@ export class NuevaCategoriaComponent implements OnInit {
     this.categoriaService.listaArbol().subscribe((lista) => {
       const listaSeparada = lista.reduce(
         (acum: Categoria[][], categ) => {
-          if (categ.tipo === TipoCategoria.out) {
-            acum[0].push(categ);
-            return acum;
-          } else {
-            acum[1].push(categ);
-            return acum;
-          }
+          if (categ.tipo === this.categoriaFormulario.get('tipo')?.value) {
+            if (categ.isGeneral) {
+              acum[0].push(categ);
+              return acum;
+            } else {
+              acum[1].push(categ);
+              return acum;
+            }
+          } else return acum;
         },
         [[], []]
       );
@@ -49,9 +51,12 @@ export class NuevaCategoriaComponent implements OnInit {
       this.listaCategorias = listaSeparada;
     });
   }
-  cambioEnTipo(e: any) {
-    const tipo = e.target.value;
-    this.tipo = tipo === TipoCategoria.out ? 0 : 1;
+  cambioEnTipo() {
+    this.categoriaFormulario.patchValue({
+      idCategoriaPadre: '',
+    });
+    this.categoriaSeleccionadaNombre = '-';
+    this.cargarCategorias();
   }
   crear(): void {
     if (!this.categoriaFormulario.valid) return;
