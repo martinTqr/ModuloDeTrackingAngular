@@ -8,3 +8,25 @@
 .cursor-pointer{
   cursor: pointer;
 }
+.last_child {
+  margin-bottom: 0 !important;
+}
+
+.cero {
+  background-color: white;
+  color: black;
+}
+
+.negativo {
+  background-color: #E34F6F;
+  color: white;
+}
+
+.positivo {
+  background-color: #96D2A4;
+  color: white;
+}
+
+.gap-10 {
+  gap: 10px;
+}

@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { GrupoCajaService } from '../services/grupo-caja.service';
 import { acumularMesesTotales, agruparCajas } from '../helper';
 import { Empresa } from '../models';
-import { meses } from '../helper/constantes';
+import { colores, meses } from '../helper/constantes';
 
 @Component({
   selector: 'reporte-un',
@@ -66,9 +66,10 @@ export class ReporteUNComponent implements OnInit {
     }
   }
   cambiarColorCelda(evento) {
+    const { negativo, positivo } = colores;
     const { columnIndex, cellElement, data, displayValue } = evento;
     if (displayValue && columnIndex !== 0 && data?.nombre === 'Saldo') {
-      const color = displayValue >= 0 ? '#00ad00' : 'red';
+      const color = displayValue >= 0 ? positivo : negativo;
       cellElement.style.backgroundColor = color;
       cellElement.style.color = 'white';
     }
