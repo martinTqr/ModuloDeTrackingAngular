@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { separarMiles } from '../helper';
-import { Caja, Empresa, GrupoCaja } from '../models';
+import { Empresa, GrupoCaja } from '../models';
 import { CajaService } from '../services/caja.service';
 import { GrupoCajaService } from '../services/grupo-caja.service';
 import { LocalService } from '../services/local.service';
