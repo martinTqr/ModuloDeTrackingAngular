@@ -1,54 +1,57 @@
-<h2>Lista de categorias</h2>
-<div class="my-3 d-flex justify-content-between">
-  <div></div>
-  <div>
-    <a routerLink="/categoria/nueva" class="btn btn-outline-primary"
-      >Nueva categoria</a
-    >
-    <boton-volver></boton-volver>
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h3 class="mb-0">Lista de categorias</h3>
+    <div>
+      <a routerLink="/categoria/nueva" class="btn btn-outline-primary"
+        >Nueva categoria</a
+      >
+      <boton-volver></boton-volver>
+    </div>
   </div>
-</div>
-<div class="container">
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">nombre</th>
-        <th scope="col">Tipo</th>
-        <th scope="col">Es General</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let categoria of categorias">
-        <td>{{ categoria.nombre }}</td>
-        <td>{{ categoria.tipo === "in" ? "Ingreso" : "Egreso" }}</td>
-        <td>{{ categoria.isGeneral ? "Si" : "No" }}</td>
-        <td>
-          <button
-            class="btn btn-danger btn-sm pb-0 px-1"
-            (click)="borrar(categoria.id)"
-          >
-            <i class="bi bi-trash"></i>
-          </button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<!-- <dx-data-grid
-  id="dataGrid"
+  <div class="card-body">
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">nombre</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Es General</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let categoria of categorias">
+            <td>{{ categoria.nombre }}</td>
+            <td>{{ categoria.tipo === "in" ? "Ingreso" : "Egreso" }}</td>
+            <td>{{ categoria.isGeneral ? "Si" : "No" }}</td>
+            <td>
+              <button
+                class="btn btn-danger btn-sm pb-0 px-1"
+                (click)="borrar(categoria.id)"
+              >
+                <i class="bi bi-trash"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- <dx-data-grid
+    id="dataGrid"
   [dataSource]="categorias"
   keyExpr="id"
   (onEditorPrepared)="editorPrepared($event)"
   (onSaved)="guardado($event)"
->
+  >
   <dxo-editing
-    mode="row"
-    [allowUpdating]="true"
-    [allowDeleting]="true"
-    [useIcons]="true"
+  mode="row"
+  [allowUpdating]="true"
+  [allowDeleting]="true"
+  [useIcons]="true"
   ></dxo-editing>
   <dxi-column dataField="nombre"></dxi-column>
   <dxi-column dataField="tipo" [customizeText]="cambiarTipo"></dxi-column>
   <dxi-column dataField="isGeneral" caption="Es general"></dxi-column>
 </dx-data-grid> -->
+  </div>
+</div>
