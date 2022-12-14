@@ -16,34 +16,44 @@ export class ReporteEmpComponent implements OnInit {
   cantidadDeSemanas: Array<any> = new Array(5);
   semanas: any = [];
   nombreDeMeses: string[] = meses;
-
+  dolar: boolean = false;
   constructor(
     private reporteService: ReporteService,
     private rutaActiva: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
+    this.cargarReporte();
+  }
+  cargarReporte() {
     const { fechaInicio, fechaFin } = this.rutaActiva.snapshot.queryParams;
     Swal.fire({
       icon: 'info',
       title: 'Cargando...',
       showConfirmButton: false,
     });
-    this.reporteService.buscarReporteEmpresa(fechaInicio, fechaFin).subscribe(
-      (data: ReporteEmpresaReducido[]) => {
-        const categorias = data.map((categoria) => {
-          return formatearObjeto(categoria);
-        });
-        this.reporte = categorias;
-        Swal.close();
-      },
-      ({ error }) =>
-        Swal.fire({
-          icon: 'error',
-          title: 'Ocurrio un error...',
-          text: error.message,
-        })
-    );
+
+    this.reporteService
+      .buscarReporteEmpresa({ fechaInicio, fechaFin, dolar: this.dolar })
+      .subscribe(
+        (data: ReporteEmpresaReducido[]) => {
+          const categorias = data.map((categoria) => {
+            return formatearObjeto(categoria);
+          });
+          this.reporte = categorias;
+          Swal.close();
+        },
+        ({ error }) =>
+          Swal.fire({
+            icon: 'error',
+            title: 'Ocurrio un error...',
+            text: error.message,
+          })
+      );
+  }
+  cambiarDolar() {
+    this.dolar = !this.dolar;
+    this.cargarReporte();
   }
   cambiarColorFila(evento) {
     if (evento.data?.nombre === 'Saldo') {

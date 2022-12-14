@@ -13,28 +13,35 @@ export class ReporteService extends BaseService {
   constructor(private httpClient: HttpClient, ls: LocalService) {
     super(ls);
   }
-  public buscarReporteEmpresa(
-    fechaInicio?: string,
-    fechaFin?: string
-  ): Observable<any> {
+  public buscarReporteEmpresa(parametros: Parametros): Observable<any> {
+    const { dolar, fechaFin, fechaInicio } = parametros;
     const { reporteEmpresaURL } = environment;
     const fechaInicioRuta = fechaInicio ? `&fechaInicio=${fechaInicio}` : '';
     const fechaFinRuta = fechaFin ? `&fechaFin=${fechaFin}` : '';
     const empresaRuta = this.empresaParametro;
+    const dolarRuta = dolar ? `&dolar=true` : '';
+
     const ruta =
-      reporteEmpresaURL + empresaRuta + fechaInicioRuta + fechaFinRuta;
+      reporteEmpresaURL +
+      empresaRuta +
+      fechaInicioRuta +
+      fechaFinRuta +
+      dolarRuta;
+
     return this.httpClient.get<any>(ruta);
   }
   public buscarReporteUnidadNegocio(
     parametros: Parametros
   ): Observable<Reporte> {
-    const { id, fechaInicio, fechaFin, transferencias } = parametros;
+    const { id, fechaInicio, fechaFin, transferencias, dolar } = parametros;
     const { unidadDeNegocioURL } = environment;
     const unidadNegocioRuta = id ? `&idUnidadNegocio=${id}` : '';
     const empresaRuta = this.empresaParametro;
     const fechaInicioRuta = fechaInicio ? `&fechaInicio=${fechaInicio}` : '';
     const fechaFinRuta = fechaFin ? `&fechaFin=${fechaFin}` : '';
     const transferenciasRuta = transferencias ? `&transferencias=true` : '';
+    const dolarRuta = dolar ? `&dolar=true` : '';
+
     const ruta =
       unidadDeNegocioURL +
       empresaRuta +
@@ -51,4 +58,5 @@ interface Parametros {
   fechaInicio?: string;
   fechaFin?: string;
   transferencias?: boolean;
+  dolar?: boolean;
 }
