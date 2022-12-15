@@ -22,7 +22,13 @@ export class GrupoCajaService extends BaseService {
   public detalle(id: number): Observable<GrupoCaja> {
     return this.httpClient.get<GrupoCaja>(this.grupoCajaURL + id);
   }
+  public modificar(id: number, grupoCaja: GrupoCaja): Observable<any> {
+    return this.httpClient.put<any>(this.grupoCajaURL + id, grupoCaja);
+  }
   public crear(grupoCaja: GrupoCaja): Observable<any> {
     return this.httpClient.post<any>(this.grupoCajaURL, grupoCaja);
+  }
+  public borrar(id: number): Observable<any> {
+    return this.httpClient.delete<any>(this.grupoCajaURL + id);
   }
 }

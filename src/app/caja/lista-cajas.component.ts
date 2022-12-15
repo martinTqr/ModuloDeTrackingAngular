@@ -64,7 +64,7 @@ export class ListaCajasComponent implements OnInit {
 
           Swal.fire({
             title: data.mensaje.toUpperCase() + '!',
-            text: `Categoria ${data.data.nombre} actualizada con éxito`,
+            text: `Caja ${data.data.nombre} actualizada con éxito`,
             icon: 'success',
             timer: 2000,
             timerProgressBar: true,
