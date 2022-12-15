@@ -31,36 +31,36 @@ export class ListaCategoriaComponent implements OnInit {
     );
   }
   preparacionDeEdicion(evento) {
-    parsearObjeto;
     this.categoriaPorEditar = parsearObjeto(evento.data);
   }
   guardado(evento) {
-    const cambios = evento.changes;
+    if (evento?.changes[0].type === 'update') {
+      const cambios = evento.changes;
 
-    if (cambios.length > 0) {
-      const categoria = cambios[0].data;
+      if (cambios.length > 0) {
+        const categoria = cambios[0].data;
+        const diferencia = obtenerCambios({
+          original: this.categoriaPorEditar,
+          modificado: categoria,
+        });
 
-      const diferencia = obtenerCambios({
-        original: this.categoriaPorEditar,
-        modificado: categoria,
-      });
+        this.categoriaService
+          .modificar({ id: categoria.id, categoria: diferencia })
+          .subscribe(
+            (data) => {
+              console.log(data);
 
-      this.categoriaService
-        .modificar({ id: categoria.id, categoria: diferencia })
-        .subscribe(
-          (data) => {
-            console.log(data);
-
-            Swal.fire({
-              title: data.mensaje.toUpperCase() + '!',
-              text: `Categoria ${data.datos.nombre} actualizada con éxito`,
-              icon: 'success',
-              timer: 2000,
-              timerProgressBar: true,
-            });
-          },
-          (err) => console.error(err)
-        );
+              Swal.fire({
+                title: data.mensaje.toUpperCase() + '!',
+                text: `Categoria ${data.datos.nombre} actualizada con éxito`,
+                icon: 'success',
+                timer: 2000,
+                timerProgressBar: true,
+              });
+            },
+            (err) => console.error(err)
+          );
+      }
     }
   }
 
@@ -68,7 +68,11 @@ export class ListaCategoriaComponent implements OnInit {
     const valor = evento.value === 'in' ? 'Ingreso' : 'Egreso';
     return valor;
   }
-  borrar(id: any): void {
+  borrar(evento: any): void {
+    console.log(evento);
+
+    const { id } = evento.data;
+
     this.categoriaService.borrar(id).subscribe(
       () => {
         this.categorias = this.categorias.filter(

@@ -15,6 +15,7 @@
       keyExpr="id"
       (onEditingStart)="preparacionDeEdicion($event)"
       (onSaved)="guardado($event)"
+      (onRowRemoved)="borrar($event)"
     >
       <dxo-editing
         mode="row"
