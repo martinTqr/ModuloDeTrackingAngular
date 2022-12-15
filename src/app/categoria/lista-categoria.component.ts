@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
+import { obtenerCambios, parsearObjeto } from '../helper';
 import { Categoria } from '../models';
 import { CategoriaService } from '../services/categoria.service';
 
@@ -10,6 +11,17 @@ import { CategoriaService } from '../services/categoria.service';
 })
 export class ListaCategoriaComponent implements OnInit {
   categorias!: Categoria[];
+  categoriaPorEditar: Categoria;
+  tipo = [
+    {
+      id: 'in',
+      nombre: 'Ingreso',
+    },
+    {
+      id: 'out',
+      nombre: 'Egreso',
+    },
+  ];
   constructor(private categoriaService: CategoriaService) {}
 
   ngOnInit(): void {
@@ -18,17 +30,44 @@ export class ListaCategoriaComponent implements OnInit {
       (err) => console.error(err)
     );
   }
-  /*   guardado(evento) {
-    console.log(evento);
+  preparacionDeEdicion(evento) {
+    parsearObjeto;
+    this.categoriaPorEditar = parsearObjeto(evento.data);
+  }
+  guardado(evento) {
+    const cambios = evento.changes;
+
+    if (cambios.length > 0) {
+      const categoria = cambios[0].data;
+
+      const diferencia = obtenerCambios({
+        original: this.categoriaPorEditar,
+        modificado: categoria,
+      });
+
+      this.categoriaService
+        .modificar({ id: categoria.id, categoria: diferencia })
+        .subscribe(
+          (data) => {
+            console.log(data);
+
+            Swal.fire({
+              title: data.mensaje.toUpperCase() + '!',
+              text: `Categoria ${data.datos.nombre} actualizada con éxito`,
+              icon: 'success',
+              timer: 2000,
+              timerProgressBar: true,
+            });
+          },
+          (err) => console.error(err)
+        );
+    }
   }
 
-  editorPrepared(e) {
-    console.log(e);
-  }
   cambiarTipo(evento) {
     const valor = evento.value === 'in' ? 'Ingreso' : 'Egreso';
     return valor;
-  } */
+  }
   borrar(id: any): void {
     this.categoriaService.borrar(id).subscribe(
       () => {

@@ -4,6 +4,7 @@ import { AppComponent } from './app/app.component';
 import {
   DxButtonModule,
   DxDataGridModule,
+  DxPopupModule,
   DxTreeListModule,
 } from 'devextreme-angular';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
@@ -102,6 +103,7 @@ if (!/localhost/.test(document.location.host)) {
     BrowserAnimationsModule,
     SweetAlert2Module,
     DxDataGridModule,
+    DxPopupModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

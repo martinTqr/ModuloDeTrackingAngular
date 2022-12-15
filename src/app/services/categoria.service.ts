@@ -30,6 +30,9 @@ export class CategoriaService extends BaseService {
   public crear(categoria: Categoria): Observable<any> {
     return this.httpClient.post<any>(this.categoriaURL, categoria);
   }
+  public modificar({ id, categoria }): Observable<any> {
+    return this.httpClient.put<any>(this.categoriaURL + id, categoria);
+  }
   public borrar(id: number): Observable<any> {
     return this.httpClient.delete<any>(this.categoriaURL + id);
   }

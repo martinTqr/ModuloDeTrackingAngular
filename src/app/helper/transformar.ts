@@ -24,3 +24,18 @@ export const separarMiles = (numero: number): string => {
   numeroString = numeroString.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
   return numeroString;
 };
+export const obtenerCambios = ({ original, modificado }) => {
+  const diff = Object.keys(modificado)
+    .concat(Object.keys(original))
+    .filter(
+      (key) =>
+        !(key in modificado) ||
+        !(key in original) ||
+        modificado[key] !== original[key]
+    )
+    .reduce((result, key) => {
+      result[key] = key in modificado ? modificado[key] : original[key];
+      return result;
+    }, {});
+  return diff;
+};
