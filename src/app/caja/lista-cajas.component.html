@@ -1,38 +1,44 @@
-<h2>Lista de cajas</h2>
-
-<div class="my-3 d-flex justify-content-between">
-  <div></div>
-  <div>
-    <a routerLink="/caja/nueva" class="btn btn-outline-primary">Nueva caja</a>
-    <boton-volver></boton-volver>
+<div class="card">
+  <div class="card-header">
+    <div class="my-3 d-flex justify-content-between align-items-center">
+      <h3 class="mb-0">Lista de cajas</h3>
+      <div>
+        <a routerLink="/caja/nueva" class="btn btn-outline-primary"
+          >Nueva caja</a
+        >
+        <boton-volver></boton-volver>
+      </div>
+    </div>
   </div>
-</div>
-<div class="container">
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">ID</th>
-        <th scope="col">Grupo de cajas</th>
-        <th scope="col">Nombre</th>
-        <th scope="col">Negativa</th>
-        <th scope="col"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let caja of cajas">
-        <td>{{ caja.id }}</td>
-        <td>{{ caja.grupoCaja.nombre }}</td>
-        <td>{{ caja.nombre }}</td>
-        <td>{{ caja.negativa ? "Si" : "No" }}</td>
-        <td>
-          <button
-            class="btn btn-danger btn-sm pb-0 px-1"
-            (click)="borrar(caja.id)"
-          >
-            <i class="bi bi-trash"></i>
-          </button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="card-body">
+    <dx-data-grid
+      id="dataGrid"
+      [dataSource]="cajas"
+      keyExpr="id"
+      (onEditingStart)="preparacionDeEdicion($event)"
+      (onSaved)="guardado($event)"
+      (onRowRemoved)="borrar($event)"
+    >
+      <dxo-editing
+        mode="row"
+        [allowUpdating]="true"
+        [allowDeleting]="true"
+        [useIcons]="true"
+      ></dxo-editing>
+      <dxi-column dataField="nombre"></dxi-column>
+      <dxi-column
+        caption="Grupo de caja"
+        dataField="grupoCaja.id"
+        calculateDisplayValue="grupoCaja.nombre"
+      >
+        <dxo-lookup
+          [dataSource]="grupoCajas"
+          displayExpr="nombre"
+          valueExpr="id"
+        >
+        </dxo-lookup>
+      </dxi-column>
+      <dxi-column dataField="negativa" caption="Acepta negativos"></dxi-column>
+    </dx-data-grid>
+  </div>
 </div>

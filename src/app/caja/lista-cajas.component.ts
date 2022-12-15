@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
-import { Caja } from '../models';
+import { obtenerCambios, parsearObjeto } from '../helper';
+import { Caja, GrupoCaja } from '../models';
 import { CajaService } from '../services/caja.service';
+import { GrupoCajaService } from '../services/grupo-caja.service';
 
 @Component({
   selector: 'app-lista-cajas',
@@ -10,9 +12,18 @@ import { CajaService } from '../services/caja.service';
 })
 export class ListaCajasComponent implements OnInit {
   cajas: Caja[] = [];
-  constructor(private cajaService: CajaService) {}
+  cajaPorEditar: Caja;
+  grupoCajas: GrupoCaja[] = [];
+  constructor(
+    private cajaService: CajaService,
+    private grupoCajaServe: GrupoCajaService
+  ) {}
 
   ngOnInit(): void {
+    this.cargarCajas();
+    this.cargarGrupopCajas();
+  }
+  cargarCajas() {
     this.cajaService.lista().subscribe(
       (cajas) => {
         this.cajas = cajas.sort((a, b) =>
@@ -23,6 +34,47 @@ export class ListaCajasComponent implements OnInit {
       (error) => console.error(error)
     );
   }
+  cargarGrupopCajas() {
+    this.grupoCajaServe.lista().subscribe((grupos) => {
+      this.grupoCajas = grupos;
+    });
+  }
+  preparacionDeEdicion(evento) {
+    this.cajaPorEditar = parsearObjeto(evento.data);
+  }
+  guardado(evento) {
+    const cambios = evento.changes;
+
+    if (cambios.length > 0 && cambios[0].type === 'update') {
+      const caja = cambios[0].data;
+      const diferencia: any = obtenerCambios({
+        original: this.cajaPorEditar,
+        modificado: caja,
+      });
+      if (this.cajaPorEditar.grupoCaja.id !== caja.grupoCaja.id) {
+        const grupoCaja = this.grupoCajas.find(
+          (grupo) => grupo.id === caja.grupoCaja.id
+        );
+        diferencia.grupoCaja = grupoCaja;
+      }
+
+      this.cajaService.modificar({ id: caja.id, caja: diferencia }).subscribe(
+        (data) => {
+          console.log(data);
+
+          Swal.fire({
+            title: data.mensaje.toUpperCase() + '!',
+            text: `Categoria ${data.data.nombre} actualizada con éxito`,
+            icon: 'success',
+            timer: 2000,
+            timerProgressBar: true,
+          });
+        },
+        (err) => console.error(err)
+      );
+    }
+  }
+
   borrar(id: any): void {
     this.cajaService.borrar(id).subscribe(
       (response) => {
