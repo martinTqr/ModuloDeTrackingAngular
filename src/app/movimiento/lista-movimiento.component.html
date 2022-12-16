@@ -73,69 +73,67 @@
           </div>
         </div>
       </form>
-      <div class="table-responsive">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col">Fecha del movimiento</th>
-              <th
-                class="cursor-pointer"
-                scope="col"
-                (click)="ordenarCampo('caja')"
-              >
-                Caja
-              </th>
-              <th
-                class="cursor-pointer"
-                scope="col"
-                (click)="ordenarCampo('categoria')"
-              >
-                Categoria
-              </th>
-              <th scope="col">Detalle</th>
-              <th
-                class="cursor-pointer"
-                scope="col"
-                (click)="ordenarCampo('monto')"
-              >
-                Monto
-              </th>
-              <th
-                class="cursor-pointer"
-                scope="col"
-                (click)="ordenarCampo('tipo')"
-              >
-                Tipo
-              </th>
-              <th scope="col">Fecha de creacion</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let movimiento of movimientos">
-              <ng-container *ngIf="filtrarTipo(movimiento.categoria.tipo)">
-                <td>{{ parsearFecha(movimiento.fecha) }}</td>
-                <td>{{ movimiento.caja.nombre }}</td>
-                <td>{{ movimiento.categoria.nombre }}</td>
-                <td>{{ movimiento.detalle }}</td>
-                <td>{{ separarMiles(movimiento.monto) }}</td>
-                <td>
-                  {{ movimiento.categoria.tipo == "in" ? "Ingreso" : "Egreso" }}
-                </td>
-                <td>{{ parsearFecha(movimiento.fechaCreacion) }}</td>
-                <td>
-                  <button
-                    class="btn btn-danger btn-sm pb-0 px-1"
-                    (click)="borrar(movimiento.id)"
-                  >
-                    <i class="bi bi-trash"></i>
-                  </button>
-                </td>
-              </ng-container>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <dx-data-grid
+        id="dataGrid"
+        [dataSource]="movimientos"
+        keyExpr="id"
+        (onEditingStart)="preparacionDeEdicion($event)"
+        (onSaved)="guardado($event)"
+        (onRowRemoved)="borrar($event)"
+      >
+        <dxo-editing
+          mode="row"
+          [allowUpdating]="true"
+          [allowDeleting]="true"
+          [useIcons]="true"
+        ></dxo-editing>
+        <dxi-column
+          dataField="fecha"
+          dataType="date"
+          format="dd/MM/yyyy"
+        ></dxi-column>
+
+        <dxi-column
+          dataField="caja.id"
+          caption="Caja"
+          [calculateDisplayValue]="mostrarCaja"
+        >
+          <dxo-lookup [dataSource]="cajas" displayExpr="nombre" valueExpr="id">
+          </dxo-lookup
+        ></dxi-column>
+
+        <dxi-column
+          dataField="categoria.id"
+          [calculateDisplayValue]="mostrarCategoria"
+          caption="Categoria"
+        >
+          <dxo-lookup
+            [dataSource]="categorias"
+            displayExpr="nombre"
+            valueExpr="id"
+          >
+          </dxo-lookup>
+        </dxi-column>
+        <dxi-column dataField="detalle"></dxi-column>
+
+        <dxi-column
+          dataField="monto"
+          [customizeText]="separarMiles"
+        ></dxi-column>
+
+        <dxi-column
+          dataField="categoria.tipo"
+          [allowEditing]="false"
+          [customizeText]="mostrarTipo"
+        ></dxi-column>
+
+        <dxi-column
+          dataField="fechaCreacion"
+          dataType="date"
+          format="dd/MM/yyyy"
+          [allowEditing]="false"
+        ></dxi-column>
+      </dx-data-grid>
     </div>
   </div>
 </div>

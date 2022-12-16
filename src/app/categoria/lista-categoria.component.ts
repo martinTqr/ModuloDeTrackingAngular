@@ -47,12 +47,10 @@ export class ListaCategoriaComponent implements OnInit {
         this.categoriaService
           .modificar({ id: categoria.id, categoria: diferencia })
           .subscribe(
-            (data) => {
-              console.log(data);
-
+            ({ data, mensaje }) => {
               Swal.fire({
-                title: data.mensaje.toUpperCase() + '!',
-                text: `Categoria ${data.datos.nombre} actualizada con éxito`,
+                title: mensaje.toUpperCase() + '!',
+                text: `Categoria ${data.nombre} actualizada con éxito`,
                 icon: 'success',
                 timer: 2000,
                 timerProgressBar: true,

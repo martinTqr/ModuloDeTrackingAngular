@@ -47,6 +47,9 @@ export class MovimientoService extends BaseService {
   public crear(movimiento: NuevoMovimiento): Observable<any> {
     return this.httpClient.post<any>(this.movimientoURL, movimiento);
   }
+  public modificar(id, movimiento): Observable<any> {
+    return this.httpClient.put<any>(this.movimientoURL + id, movimiento);
+  }
   public borrar(id: number): Observable<any> {
     return this.httpClient.delete<any>(this.movimientoURL + id);
   }
