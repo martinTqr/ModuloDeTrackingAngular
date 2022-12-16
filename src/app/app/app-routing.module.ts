@@ -30,6 +30,8 @@ import { NuevaTransferenciaCajaComponent } from '../caja/nueva-transferencia-caj
 import { ListaTransferenciaCajaListaComponent } from '../caja/lista-transferencia-caja.component';
 import { ReporteTransferenciaComponent } from '../caja/reporte-transferencia.component';
 import { ReporteCajasComponent } from '../reporte-cajas/reporte-cajas.component';
+import { ListaCotizacionComponent } from '../cotizacion/lista-cotizacion.component';
+import { NuevaCotizacionComponent } from '../cotizacion/nueva-cotizacion.component';
 
 const rutas: Routes = [
   { path: '', component: HomeComponent },
@@ -82,7 +84,10 @@ const rutas: Routes = [
 
   { path: 'usuario/lista', component: ListaUsuarioComponent },
   { path: 'usuario/detalle/:id', component: DetalleUsuarioComponent },
-  { path: 'usuario/nueva', component: NuevoUsuarioComponent },
+  { path: 'usuario/nueoa', component: NuevoUsuarioComponent },
+
+  { path: 'cotizacion/lista', component: ListaCotizacionComponent },
+  { path: 'cotizacion/nueva', component: NuevaCotizacionComponent },
 ];
 
 @NgModule({

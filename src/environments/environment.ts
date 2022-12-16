@@ -13,6 +13,7 @@ export const environment = {
   unidadNegocioURL: `${base}/unidad-negocio/`,
   grupoCajaURL: `${base}/grupo-caja/`,
   usuarioURL: `${base}/usuario/`,
+  cotizacionURL: `${base}/cotizacion/`,
 };
 
 /*
