@@ -1,36 +1,32 @@
 <div class="card mx-auto" style="max-width: 600px">
-  <div class="card-header d-flex justify-content-between pt-3">
-    <h3 class="">Lista de unidades de negocio</h3>
-    <boton-volver></boton-volver>
-  </div>
-
-  <div class="card-body">
-    <div class="container">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Nombre</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let unidadNegocio of listaUnidadesDeNegocio">
-            <td>
-              <a href="reporte/unidad/{{ unidadNegocio.id }}">{{
-                unidadNegocio.nombre
-              }}</a>
-            </td>
-            <td>
-              <button
-                class="btn btn-danger btn-sm pb-0 px-1"
-                (click)="borrar(unidadNegocio.id)"
-              >
-                <i class="bi bi-trash"></i>
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h3 class="mb-0">Lista de unidades de negocio</h3>
+    <div>
+      <a routerLink="/unidad-negocia/nueva" class="btn btn-outline-primary"
+        >Nueva unidad</a
+      >
+      <boton-volver></boton-volver>
     </div>
+  </div>
+  <div class="card-body">
+    <dx-data-grid
+      id="dataGrid"
+      [dataSource]="unidadesNegocio"
+      keyExpr="id"
+      width="300"
+      class="mx-auto"
+      showBorders="true"
+      (onEditingStart)="preparacionDeEdicion($event)"
+      (onSaved)="guardado($event)"
+      (onRowRemoving)="borrar($event)"
+    >
+      <dxo-editing
+        mode="row"
+        [allowUpdating]="true"
+        [allowDeleting]="true"
+        [useIcons]="true"
+      ></dxo-editing>
+      <dxi-column dataField="nombre"></dxi-column>
+    </dx-data-grid>
   </div>
 </div>

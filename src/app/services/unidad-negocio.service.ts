@@ -26,6 +26,9 @@ export class UnidadNegocioService extends BaseService {
   public crear(unidadNegocio: UnidadNegocio): Observable<any> {
     return this.httpClient.post<any>(this.unidadNegocioURL, unidadNegocio);
   }
+  public modificar(id: number, unidadNegocio: UnidadNegocio): Observable<any> {
+    return this.httpClient.put<any>(this.unidadNegocioURL + id, unidadNegocio);
+  }
   public borrar(id: number): Observable<any> {
     return this.httpClient.delete<any>(this.unidadNegocioURL + id);
   }
