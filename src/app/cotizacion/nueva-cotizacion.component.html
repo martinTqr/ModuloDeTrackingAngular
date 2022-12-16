@@ -1,0 +1,48 @@
+<div class="card mx-auto" style="max-width: 600px">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h3 class="mb-0">Nueva cotización</h3>
+    <boton-volver></boton-volver>
+  </div>
+  <div class="card-body pt-0">
+    <form
+      class="container"
+      style="max-width: 600px"
+      (ngSubmit)="crear()"
+      novalidate
+      [formGroup]="cotizacionFormulario"
+      #f="ngForm"
+    >
+      <div class="row mt-3">
+        <div class="col">
+          <label for="Fecha">Fecha</label>
+          <input
+            type="date"
+            class="form-control"
+            name="fecha"
+            aria-label="Fecha"
+            formControlName="fecha"
+          />
+        </div>
+        <div class="col">
+          <label for="monto">Valor</label>
+          <input
+            type="text"
+            placeholder="Valor"
+            aria-label="Valor"
+            name="valor"
+            class="form-control"
+            formControlName="valor"
+            mask="separator"
+            thousandSeparator="."
+          />
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col"></div>
+        <div class="col">
+          <button class="btn btn-primary">Crear</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
