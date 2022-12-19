@@ -1,93 +1,97 @@
-<nav class="">
-  <div class="my-3 d-flex justify-content-between">
-    <div></div>
+<nav class="card">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h3 class="mb-0">Panel de administracion</h3>
     <boton-volver></boton-volver>
   </div>
-  <div class="row">
-    <div class="col mb-3">
-      <div class="card" style="max-width: 500px">
-        <h4 class="card-header">Reportes</h4>
-        <div class="card-body">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a routerLink="/reporte/empresa">Finanzas generales</a>
-            </li>
-            <li class="list-group-item">
-              <a routerLink="/reporte/cajas">Acumulado de cajas</a>
-            </li>
-          </ul>
+  <div class="card-body">
+    <div class="row">
+      <div class="col mb-3">
+        <div class="card" style="max-width: 500px">
+          <h4 class="card-header">Reportes</h4>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a routerLink="/reporte/empresa">Finanzas generales</a>
+              </li>
+              <li class="list-group-item">
+                <a routerLink="/reporte/cajas">Acumulado de cajas</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-3">
+        <div class="card" style="max-width: 500px">
+          <h4 class="card-header">Unidades de negocio</h4>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a routerLink="/unidad-negocio/lista">Listar</a>
+              </li>
+              <li class="list-group-item">
+                <a routerLink="/unidad-negocia/nueva"
+                  >Nueva unidad de negocio</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col mb-3">
-      <div class="card" style="max-width: 500px">
-        <h4 class="card-header">Unidades de negocio</h4>
-        <div class="card-body">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a routerLink="/unidad-negocio/lista">Listar</a>
-            </li>
-            <li class="list-group-item">
-              <a routerLink="/unidad-negocia/nueva">Nueva unidad de negocio</a>
-            </li>
-          </ul>
+    <div class="row">
+      <div class="col mb-3">
+        <div class="card" style="max-width: 500px">
+          <h4 class="card-header">Cajas</h4>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a routerLink="/caja/lista">Listado</a>
+              </li>
+              <li class="list-group-item">
+                <a routerLink="/grupo-caja/lista">Listado de grupos de cajas</a>
+              </li>
+              <li class="list-group-item">
+                <a routerLink="/caja/transferencia/lista"
+                  >Transferencias entre cajas</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-3">
+        <div class="card" style="max-width: 500px">
+          <h4 class="card-header">Movimientos</h4>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a routerLink="/movimiento/lista">Listar</a>
+              </li>
+              <li class="list-group-item">
+                <a routerLink="/movimiento/nuevo">Nuevo movimiento</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col mb-3">
-      <div class="card" style="max-width: 500px">
-        <h4 class="card-header">Cajas</h4>
-        <div class="card-body">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a routerLink="/caja/lista">Listado</a>
-            </li>
-            <li class="list-group-item">
-              <a routerLink="/grupo-caja/lista">Listado de grupos de cajas</a>
-            </li>
-            <li class="list-group-item">
-              <a routerLink="/caja/transferencia/lista"
-                >Transferencias entre cajas</a
-              >
-            </li>
-          </ul>
+    <div class="row">
+      <div class="col">
+        <div class="card" style="max-width: 500px">
+          <h4 class="card-header">Admin</h4>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a routerLink="/categoria/lista">Gestion de categorias</a>
+              </li>
+              <li class="list-group-item">
+                <a routerLink="/cotizacion/lista">Cotización dolar</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+      <div class="col"></div>
     </div>
-    <div class="col mb-3">
-      <div class="card" style="max-width: 500px">
-        <h4 class="card-header">Movimientos</h4>
-        <div class="card-body">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a routerLink="/movimiento/lista">Listar</a>
-            </li>
-            <li class="list-group-item">
-              <a routerLink="/movimiento/nuevo">Nuevo movimiento</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col mb-3">
-      <div class="card" style="max-width: 500px">
-        <h4 class="card-header">Admin</h4>
-        <div class="card-body">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a routerLink="/categoria/lista">Gestion de categorias</a>
-            </li>
-            <li class="list-group-item">
-              <a routerLink="/cotizacion/lista">Cotización dolar</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="col"></div>
   </div>
 </nav>
