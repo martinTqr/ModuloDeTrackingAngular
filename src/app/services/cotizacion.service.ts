@@ -19,6 +19,10 @@ export class CotizacionService extends BaseService {
     const ruta = this.cotizacionURL + this.empresaParametro;
     return this.httpClient.get<Cotizacion[]>(ruta);
   }
+  public ultimo(): Observable<Cotizacion> {
+    const ruta = this.cotizacionURL + 'ultimo/' + this.empresaParametro;
+    return this.httpClient.get<Cotizacion>(ruta);
+  }
   public detalle(id: number): Observable<Cotizacion> {
     return this.httpClient.get<Cotizacion>(this.cotizacionURL + id);
   }
