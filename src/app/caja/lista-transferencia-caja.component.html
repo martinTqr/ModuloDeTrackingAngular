@@ -1,55 +1,82 @@
-<h2>Lista de transferencias entre cajas</h2>
-<div class="my-3 d-flex justify-content-between">
-  <div></div>
-  <div>
-    <a routerLink="/caja/transferencia/nueva" class="btn btn-outline-primary"
-      >Crear transferencia</a
-    >
-    <boton-volver></boton-volver>
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h3 class="mb-0">Lista de transferencias entre cajas</h3>
+    <div>
+      <a routerLink="/caja/transferencia/nueva" class="btn btn-outline-primary"
+        >Crear transferencia</a
+      >
+      <boton-volver></boton-volver>
+    </div>
   </div>
-</div>
+  <div class="card-body">
+    <!-- <dx-data-grid
+      id="dataGrid"
+      [dataSource]="transferencias"
+      keyExpr="id"
+      (onRowRemoved)="borrar($event)"
+      (onEditingStart)="preparacionDeEdicion($event)"
+      (onSaved)="guardado($event)"
+    >
+      <dxo-editing
+        mode="popup"
+        [allowUpdating]="true"
+        [allowDeleting]="true"
+        [useIcons]="true"
+      ></dxo-editing>
 
-<div class="container">
-  <div class="table-responsive">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>id</th>
-          <th scope="col">Fecha de creacion</th>
-          <th scope="col">Caja</th>
-          <th scope="col">Categoria</th>
-          <th scope="col">Detalle</th>
-          <th scope="col">Monto</th>
-          <th scope="col">Fecha del movimiento</th>
-          <th scope="col">Tipo</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr
-          *ngFor="let transferencia of transferencias"
-          class="union_transferencias"
-        >
-          <td>{{ transferencia.id }}</td>
-          <td>{{ parsearFecha(transferencia.fechaCreacion, "fechaHora") }}</td>
-          <td>{{ transferencia.caja.nombre }}</td>
-          <td>{{ transferencia.categoria.nombre }}</td>
-          <td>{{ transferencia.detalle }}</td>
-          <td>{{ separarMiles(transferencia.monto) }}</td>
-          <td>{{ parsearFecha(transferencia.fecha) }}</td>
-          <td>
-            {{ transferencia.categoria.tipo == "in" ? "Ingreso" : "Egreso" }}
-          </td>
-          <td *ngIf="transferencia.id % 2 == 0">
-            <button
-              class="btn btn-danger btn-sm pb-0 px-1"
-              (click)="borrar(transferencia.id)"
+      <dxi-column dataField="fechaCreacion"></dxi-column>
+      <dxi-column dataField="caja.nombre"></dxi-column>
+      <dxi-column dataField="categoria.nombre"></dxi-column>
+      <dxi-column dataField="detalle"></dxi-column>
+      <dxi-column dataField="monto"></dxi-column>
+      <dxi-column dataField="fecha"></dxi-column>
+      <dxi-column caption="Tipo" dataField="categoria.tipo"></dxi-column>
+    </dx-data-grid> -->
+    <div class="container">
+      <div class="table-responsive">
+        <table class="table mb-0">
+          <thead>
+            <tr>
+              <th scope="col">Fecha de creacion</th>
+              <th scope="col">Caja</th>
+              <th scope="col">Categoria</th>
+              <th scope="col">Detalle</th>
+              <th scope="col">Monto</th>
+              <th scope="col">Fecha del movimiento</th>
+              <th scope="col">Tipo</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              *ngFor="let transferencia of transferencias"
+              class="union_transferencias"
             >
-              <i class="bi bi-trash"></i>
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+              <td>
+                {{ parsearFecha(transferencia.fechaCreacion, "fechaHora") }}
+              </td>
+              <td>{{ transferencia.caja.nombre }}</td>
+              <td>{{ transferencia.categoria.nombre }}</td>
+              <td>{{ transferencia.detalle }}</td>
+              <td>{{ separarMiles(transferencia.monto) }}</td>
+              <td>{{ parsearFecha(transferencia.fecha) }}</td>
+              <td>
+                {{
+                  transferencia.categoria.tipo == "in" ? "Ingreso" : "Egreso"
+                }}
+              </td>
+              <td *ngIf="transferencia.id % 2 == 0">
+                <button
+                  class="btn btn-danger btn-sm pb-0 px-1"
+                  (click)="borrar(transferencia.id)"
+                >
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </div>

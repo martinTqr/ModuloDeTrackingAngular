@@ -44,7 +44,8 @@ export class ListaTransferenciaCajaListaComponent implements OnInit {
   separarMiles(numero: number): string {
     return separarMiles(numero);
   }
-  borrar(id: number) {
+  borrar(evento: any) {
+    const { id } = evento.data;
     this.movimientosService.borrar(id).subscribe(({ mensaje }) => {
       if (mensaje)
         this.movimientosService.borrar(id + 1).subscribe((data) => {
