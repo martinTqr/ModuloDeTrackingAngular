@@ -8,7 +8,7 @@ import {
   separarMiles,
 } from '../helper';
 import { recargarPagina } from '../helper/genreales';
-import { Caja, Categoria, Movimiento } from '../models';
+import { Caja, Categoria, Movimiento, TipoCategoria } from '../models';
 import { CajaService } from '../services/caja.service';
 import { CategoriaService } from '../services/categoria.service';
 import { MovimientoService } from '../services/movimiento.service';
@@ -26,13 +26,6 @@ export class ListaMovimientoComponent implements OnInit {
     fechaFin: [''],
   });
   movimientoPorEditar: Movimiento;
-  orden = {
-    caja: '',
-    fecha: '',
-    categoria: '',
-    monto: '',
-    tipo: '',
-  };
 
   categorias: any[] = [];
   movimientos: Movimiento[] = [];
@@ -72,33 +65,49 @@ export class ListaMovimientoComponent implements OnInit {
       this.cajas = cajas;
     });
   }
-  mostrarCategoria(evento: any) {
-    return evento.categoria.nombre;
+  mostrarCategoria(movimiento: any) {
+    return movimiento.categoria.nombre;
   }
-  mostrarCaja(evento: any) {
-    return evento.caja.nombre;
+  mostrarCaja(movimiento: any) {
+    return movimiento.caja.nombre;
+  }
+  parsearFecha(movimiento: any) {
+    console.log(movimiento.fecha);
+
+    return parsearFecha(movimiento.fecha);
   }
   preparacionDeEdicion(evento) {
     this.movimientoPorEditar = parsearObjeto(evento.data);
   }
 
   filtrarMovimientos() {
-    const { fechaInicio, fechaFin, idCaja } = this.movimientosForm.value;
+    const { fechaInicio, fechaFin, idCaja, tipo } = this.movimientosForm.value;
     const fechaInicioDate = fechaInicio ? new Date(fechaInicio!) : undefined;
     const fechaFinDate = fechaFin ? new Date(fechaFin!) : undefined;
-    this.cargarMovimientos(fechaInicioDate, fechaFinDate, [idCaja]);
+    const tipoParseado = tipo ? tipo.replace(/'/g, '') : undefined;
+    this.cargarMovimientos(
+      fechaInicioDate,
+      fechaFinDate,
+      [idCaja],
+      TipoCategoria[tipoParseado]
+    );
   }
 
-  cargarMovimientos(fechaInicio?: Date, fechaFin?: Date, cajas?: any[]) {
+  cargarMovimientos(
+    fechaInicio?: Date,
+    fechaFin?: Date,
+    cajas?: any[],
+    tipo?: TipoCategoria
+  ) {
     this.movimientoService
-      .lista({ fechaInicio, fechaFin, idCajas: cajas })
-      .subscribe(
-        ({ movimientos }) =>
+      .lista({ fechaInicio, fechaFin, idCajas: cajas, tipo: tipo })
+      .subscribe({
+        next: ({ movimientos }) =>
           (this.movimientos = movimientos.sort(
             (a: any, b: any) => b.id - a.id
           )),
-        (error) => console.error(error)
-      );
+        error: (error) => console.error(error),
+      });
   }
   guardado(evento) {
     if (evento?.changes[0].type === 'update') {
@@ -165,33 +174,11 @@ export class ListaMovimientoComponent implements OnInit {
     );
   }
 
-  parsearFecha(fecha: string, formato?: string): string {
-    return parsearFecha(fecha, formato);
-  }
   separarMiles(evento: any): string {
     return separarMiles(Number(evento.value));
   }
   mostrarTipo(evento) {
     return evento.value === 'in' ? 'Ingreso' : 'Egreso';
-  }
-  ordenarCampo(campo?: string) {
-    if (this.orden[campo] === '') {
-      this.movimientos.sort((a: any, b: any) => {
-        if (campo === 'monto') return a.monto - b.monto;
-        if (campo === 'tipo')
-          return a.categoria.tipo.localeCompare(b.categoria.tipo);
-        if (a[campo].nombre > b[campo].nombre) return 1;
-        if (a[campo].nombre < b[campo].nombre) return -1;
-        return 0;
-      });
-      this.orden[campo] = 'cambio';
-    } else this.movimientos.sort().reverse();
-  }
-  ordenarMonto() {
-    if (this.orden.monto === '') {
-      this.movimientos.sort((a: any, b: any) => a.monto - b.monto);
-      this.orden.monto = 'cambio';
-    } else this.movimientos.sort().reverse();
   }
   filtrarTipo(tipo: string) {
     let tipoForm = this.movimientosForm.get('tipo').value;

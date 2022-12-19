@@ -29,7 +29,7 @@
               formControlName="idCaja"
               id=""
             >
-              <option value="{{ undefined }}"></option>
+              <option value="{{ undefined }}">Todas</option>
               <option *ngFor="let caja of cajas" value="{{ caja.id }}">
                 {{ caja.nombre }}
               </option>
@@ -43,7 +43,7 @@
               formControlName="tipo"
               id=""
             >
-              <option value="{{ undefined }}"></option>
+              <option value="{{ undefined }}">Todos</option>
               <option value="'in'">Ingreso</option>
               <option value="'out'">Egreso</option>
             </select>
@@ -87,12 +87,11 @@
           [allowDeleting]="true"
           [useIcons]="true"
         ></dxo-editing>
-        <dxi-column
-          dataField="fecha"
-          dataType="date"
-          format="dd/MM/yyyy"
-        ></dxi-column>
-
+        <dxi-column dataField="fecha" [calculateDisplayValue]="parsearFecha">
+          ></dxi-column
+        >
+        <!--         [format]="{ style: 'currency', currency: 'EUR', useGrouping: true, minimumSignificantDigits: 3 }">
+ -->
         <dxi-column
           dataField="caja.id"
           caption="Caja"

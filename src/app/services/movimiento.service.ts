@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { Movimiento, NuevoMovimiento } from '../models/';
+import { Movimiento, NuevoMovimiento, TipoCategoria } from '../models/';
 import { BaseService } from './base.service';
 import { LocalService } from './local.service';
 
@@ -19,18 +19,22 @@ export class MovimientoService extends BaseService {
     idCajas,
     fechaInicio,
     fechaFin,
+    tipo,
   }: Parametros): Observable<any> {
     const fechaInicioRuta = fechaInicio ? `&fechaInicio=${fechaInicio}` : '';
     const fechaFinRuta = fechaFin ? `&fechaFin=${fechaFin}` : '';
     const empresaRuta = this.empresaParametro;
     const cajasRuta = idCajas ? `&cajas=${idCajas}` : '';
+    const tipoRuta = tipo ? `&tipo=${tipo}` : '';
 
     const ruta =
       this.movimientoURL +
       empresaRuta +
       cajasRuta +
       fechaInicioRuta +
-      fechaFinRuta;
+      fechaFinRuta +
+      tipoRuta;
+
     return this.httpClient.get<Movimiento[]>(ruta);
   }
   public trasnferenciasEntreCajas(cajas): Observable<any> {
@@ -60,4 +64,5 @@ interface Parametros {
   idCajas?: number[];
   fechaInicio?: Date;
   fechaFin?: Date;
+  tipo?: TipoCategoria;
 }
