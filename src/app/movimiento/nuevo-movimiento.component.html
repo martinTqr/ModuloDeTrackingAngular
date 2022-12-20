@@ -56,6 +56,10 @@
             mask="separator"
             thousandSeparator="."
           />
+          <small class="mb-0" *ngIf="cotizacionDeLaFecha"
+            >Cotizacion: {{ cotizacionDeLaFecha.valor }}, Dolares:
+            {{ montoEnDolares() }}</small
+          >
         </div>
       </div>
       <div class="row mt-3">

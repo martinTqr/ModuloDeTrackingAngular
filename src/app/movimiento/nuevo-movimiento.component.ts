@@ -6,12 +6,14 @@ import { volverPaginaAnterior } from '../helper/genreales';
 import {
   Caja,
   Categoria,
+  Cotizacion,
   NuevoMovimiento,
   UnidadNegocio,
   Usuario,
 } from '../models';
 import { CajaService } from '../services/caja.service';
 import { CategoriaService } from '../services/categoria.service';
+import { CotizacionService } from '../services/cotizacion.service';
 import { MovimientoService } from '../services/movimiento.service';
 import { UnidadNegocioService } from '../services/unidad-negocio.service';
 import { UsuarioService } from '../services/usuario.service';
@@ -28,6 +30,21 @@ const mensajes = {
   styleUrls: ['./nuevo-movimiento.component.css'],
 })
 export class NuevoMovimientoComponent implements OnInit {
+  constructor(
+    private movimientoService: MovimientoService,
+    private categoriasService: CategoriaService,
+    private cajaService: CajaService,
+    private unidadNegocioService: UnidadNegocioService,
+    private usuarioService: UsuarioService,
+    private cotizacionService: CotizacionService,
+    private fb: FormBuilder
+  ) {}
+
+  ngOnInit() {
+    this.validacionDeEntidades();
+    this.cargarCotizaciones();
+  }
+
   movimientoFormulario = this.fb.group({
     idCaja: ['', Validators.required],
     idUnidadNegocio: [''],
@@ -40,6 +57,8 @@ export class NuevoMovimientoComponent implements OnInit {
   isGeneral: string = 'true';
 
   categoriaSeleccionadaNombre: string = '-';
+  cotizaciones: Cotizacion[] = [];
+  cotizacionDeLaFecha: Cotizacion;
   categorias: Categoria[][] = [];
   cajas: Caja[] = [];
   unidadesDeNegocio: UnidadNegocio[] = [];
@@ -51,16 +70,7 @@ export class NuevoMovimientoComponent implements OnInit {
     in_especificas: 3,
   };
 
-  constructor(
-    private movimientoService: MovimientoService,
-    private categoriasService: CategoriaService,
-    private cajaService: CajaService,
-    private unidadNegocioService: UnidadNegocioService,
-    private usuarioService: UsuarioService,
-    private fb: FormBuilder
-  ) {}
-
-  ngOnInit() {
+  validacionDeEntidades() {
     const mensajeError: string[] = [];
     let indice = 0;
 
@@ -94,6 +104,19 @@ export class NuevoMovimientoComponent implements OnInit {
             volverPaginaAnterior();
           });
       });
+  }
+
+  cargarCotizaciones() {
+    this.cotizacionService.lista().subscribe((cotizaciones) => {
+      this.cotizaciones = cotizaciones;
+      if (cotizaciones.length > 0) this.cotizacionDeLaFecha = cotizaciones[0];
+    });
+    this.movimientoFormulario.get('fecha').valueChanges.subscribe((fecha) => {
+      this.cotizacionDeLaFecha = this.cotizaciones.find(
+        (cotizacion) => cotizacion.fecha <= fecha
+      );
+      console.log(this.cotizacionDeLaFecha);
+    });
   }
 
   cargarUsuarios(usuarios) {
@@ -133,6 +156,15 @@ export class NuevoMovimientoComponent implements OnInit {
   cargarCajas(cajas) {
     this.cajas = cajas;
   }
+
+  montoEnDolares() {
+    const monto =
+      Number(this.movimientoFormulario.get('monto').value) /
+      this.cotizacionDeLaFecha.valor;
+    //truncar monto en 2 cifras
+    return monto.toFixed(2);
+  }
+
   async cambiarGeneral(isGeneral: boolean) {
     if (!isGeneral) {
       this.isGeneral = 'false';
