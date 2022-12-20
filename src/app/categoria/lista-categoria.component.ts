@@ -63,7 +63,7 @@ export class ListaCategoriaComponent implements OnInit {
   }
 
   cambiarTipo(evento) {
-    const valor = evento.value === 'in' ? 'Ingreso' : 'Egreso';
+    const valor = evento.value === 'Ingreso' ? 'Ingreso' : 'Egreso';
     return valor;
   }
   borrar(evento: any): void {

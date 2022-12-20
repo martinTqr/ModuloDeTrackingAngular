@@ -17,6 +17,7 @@
       (onSaved)="guardado($event)"
       (onRowRemoved)="borrar($event)"
     >
+      <dxo-filter-row [visible]="true" showAllText="Todos"></dxo-filter-row>
       <dxo-editing
         mode="row"
         [allowUpdating]="true"
