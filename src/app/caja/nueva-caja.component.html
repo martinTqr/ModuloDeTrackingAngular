@@ -1,67 +1,64 @@
-<div class="card">
-  <h2 class="card-header">Nueva caja</h2>
+<div class="card mx-auto" style="max-width: 600px">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h3 class="mb-0">Nueva caja</h3>
+    <boton-volver></boton-volver>
+  </div>
   <div class="card-body">
-    <div class="my-3 d-flex flex-row-reverse justify-content-between">
-      <div></div>
-      <boton-volver></boton-volver>
-
-      <form
-        class="container"
-        style="max-width: 600px"
-        (ngSubmit)="crear()"
-        [formGroup]="cajaFormulario"
-        novalidate
-        #f="ngForm"
-      >
-        <div class="row">
-          <div class="col">
-            <label for="nombre">Nombre</label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Nombre"
-              aria-label="Nombre"
-              formControlName="nombre"
-              required
-            />
-          </div>
-          <div class="col">
-            <label for="nombre">Acepta negativos?</label>
-            <select
-              name="negativa"
-              formControlName="negativa"
-              class="form-control"
-              id=""
-            >
-              <option [value]="true" [selected]="true">Si</option>
-              <option [value]="false">No</option>
-            </select>
-          </div>
-          <div class="row">
-            <div class="col">
-              <label for="nombre">Grupo de cajas</label>
-              <select
-                name="idGrupoCaja"
-                formControlName="idGrupoCaja"
-                class="form-control"
-                id=""
-              >
-                <option *ngFor="let grupo of grupoCajas" value="{{ grupo.id }}">
-                  {{ grupo.nombre }}
-                </option>
-              </select>
-            </div>
-            <div class="col">
-              <button
-                class="mt-3 ms-3 btn btn-success btn-block col mx-2 btn-small"
-                type="submit"
-              >
-                Crear
-              </button>
-            </div>
-          </div>
+    <form
+      class="container"
+      (ngSubmit)="crear()"
+      [formGroup]="cajaFormulario"
+      novalidate
+      #f="ngForm"
+    >
+      <div class="row">
+        <div class="col">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nombre"
+            aria-label="Nombre"
+            formControlName="nombre"
+            required
+          />
         </div>
-      </form>
-    </div>
+        <div class="col">
+          <label for="nombre">Acepta negativos?</label>
+          <select
+            name="negativa"
+            formControlName="negativa"
+            class="form-control"
+            id=""
+          >
+            <option [value]="true" [selected]="true">Si</option>
+            <option [value]="false">No</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col">
+          <label for="nombre">Grupo de cajas</label>
+          <select
+            name="idGrupoCaja"
+            formControlName="idGrupoCaja"
+            class="form-control"
+            id=""
+          >
+            <option *ngFor="let grupo of grupoCajas" value="{{ grupo.id }}">
+              {{ grupo.nombre }}
+            </option>
+          </select>
+        </div>
+        <div class="col">
+          <button
+            class="mt-3 btn btn-primary btn-block btn-small"
+            type="submit"
+          >
+            Crear
+          </button>
+        </div>
+      </div>
+    </form>
   </div>
 </div>
