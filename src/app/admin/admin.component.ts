@@ -17,7 +17,11 @@ export class AdminComponent implements OnInit {
   cargarUltimaCotizacion() {
     this.cotizacionService.ultimo().subscribe({
       next: (cotizacion) => {
-        cotizacion.fecha = parsearFecha(String(cotizacion.fecha));
+        const fechaArray = String(cotizacion.fecha).split('-');
+        const fechaDDMMYY = `${fechaArray[2].slice(0, 2)}/${fechaArray[1]}/${
+          fechaArray[0]
+        }`;
+        cotizacion.fecha = parsearFecha(String(fechaDDMMYY));
         this.ultimaCotizacion = cotizacion;
       },
     });
