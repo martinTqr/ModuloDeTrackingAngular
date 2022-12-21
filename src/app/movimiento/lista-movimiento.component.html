@@ -87,11 +87,34 @@
           [allowDeleting]="true"
           [useIcons]="true"
         ></dxo-editing>
-        <dxi-column dataField="fecha" [calculateDisplayValue]="parsearFecha">
-          ></dxi-column
+        <dxo-filter-row
+          [visible]="true"
+          showAllText="Todos"
+          betweenStartText="Desde"
+          betweenEndText="Hasta"
+          resetOperationText="Borrar"
         >
-        <!--         [format]="{ style: 'currency', currency: 'EUR', useGrouping: true, minimumSignificantDigits: 3 }">
- -->
+          <dxo-operation-descriptions
+            between="Entre"
+            equal="Igual"
+            notEqual="Diferente"
+            lessThan="Menor a"
+            greaterThan="Mayor a"
+            lessThanOrEqual="Menor o igual"
+            greaterThanOrEqual="Mayor o igual"
+            contains="Contiene"
+            notContains="No contiene"
+            startsWith="Empieza con"
+            endsWith="Termina con"
+          >
+          </dxo-operation-descriptions>
+        </dxo-filter-row>
+
+        <dxi-column
+          dataField="fecha"
+          dataType="date"
+          format="dd/MM/yyyy"
+        ></dxi-column>
         <dxi-column
           dataField="caja.id"
           caption="Caja"
@@ -117,6 +140,7 @@
 
         <dxi-column
           dataField="monto"
+          dataType="number"
           [customizeText]="separarMiles"
         ></dxi-column>
 
@@ -124,13 +148,15 @@
           dataField="categoria.tipo"
           [allowEditing]="false"
           [customizeText]="mostrarTipo"
-        ></dxi-column>
+        >
+          <dxo-lookup [dataSource]="tipo" displayExpr="nombre" valueExpr="id">
+          </dxo-lookup>
+        </dxi-column>
 
         <dxi-column
           dataField="fechaCreacion"
           dataType="date"
           format="dd/MM/yyyy"
-          [allowEditing]="false"
         ></dxi-column>
       </dx-data-grid>
     </div>

@@ -30,7 +30,7 @@ export class ListaMovimientoComponent implements OnInit {
   categorias: any[] = [];
   movimientos: Movimiento[] = [];
   cajas: Caja[] = [];
-  categ = [
+  tipo = [
     {
       id: 'in',
       nombre: 'Ingreso',
@@ -102,10 +102,15 @@ export class ListaMovimientoComponent implements OnInit {
     this.movimientoService
       .lista({ fechaInicio, fechaFin, idCajas: cajas, tipo: tipo })
       .subscribe({
-        next: ({ movimientos }) =>
-          (this.movimientos = movimientos.sort(
+        next: ({ movimientos }) => {
+          const movimientosOrdenados = movimientos.sort(
             (a: any, b: any) => b.id - a.id
-          )),
+          );
+          this.movimientos = movimientosOrdenados.map((movimiento) => ({
+            ...movimiento,
+            fecha: parsearFecha(movimiento.fecha),
+          }));
+        },
         error: (error) => console.error(error),
       });
   }
@@ -178,7 +183,7 @@ export class ListaMovimientoComponent implements OnInit {
     return separarMiles(Number(evento.value));
   }
   mostrarTipo(evento) {
-    return evento.value === 'in' ? 'Ingreso' : 'Egreso';
+    return evento.value === 'Ingreso' ? 'Ingreso' : 'Egreso';
   }
   filtrarTipo(tipo: string) {
     let tipoForm = this.movimientosForm.get('tipo').value;
