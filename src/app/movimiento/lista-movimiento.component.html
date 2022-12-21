@@ -1,78 +1,15 @@
 <div class="card">
-  <div class="card-header d-flex justify-content-between">
-    <h2 class="">Lista de movimientos</h2>
-    <boton-volver></boton-volver>
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h3 class="mb-0">Lista de movimientos</h3>
+    <div>
+      <a routerLink="/movimiento/nuevo" class="btn btn-outline-primary"
+        >Crear movimiento</a
+      >
+      <boton-volver></boton-volver>
+    </div>
   </div>
   <div class="card-body">
-    <div class="my-3 d-flex justify-content-between">
-      <div></div>
-      <div>
-        <a routerLink="/movimiento/nuevo" class="btn btn-outline-primary"
-          >Crear movimiento</a
-        >
-      </div>
-    </div>
     <div class="container">
-      <form
-        class="container mb-3"
-        (ngSubmit)="filtrarMovimientos()"
-        [formGroup]="movimientosForm"
-        novalidate
-        #f="ngForm"
-      >
-        <div class="row">
-          <div class="col">
-            <label for="">Caja</label>
-            <select
-              class="form-control"
-              name="idCaja"
-              formControlName="idCaja"
-              id=""
-            >
-              <option value="{{ undefined }}">Todas</option>
-              <option *ngFor="let caja of cajas" value="{{ caja.id }}">
-                {{ caja.nombre }}
-              </option>
-            </select>
-          </div>
-          <div class="col">
-            <label for="">Tipo</label>
-            <select
-              class="form-control"
-              name="tipo"
-              formControlName="tipo"
-              id=""
-            >
-              <option value="{{ undefined }}">Todos</option>
-              <option value="'in'">Ingreso</option>
-              <option value="'out'">Egreso</option>
-            </select>
-          </div>
-          <div class="col">
-            <label for="">Desde</label>
-            <input
-              type="date"
-              class="form-control"
-              name="fechaInicio"
-              formControlName="fechaInicio"
-              id=""
-            />
-          </div>
-          <div class="col">
-            <label for="">Hasta</label>
-            <input
-              type="date"
-              class="col form-control"
-              name="fechaFin"
-              formControlName="fechaFin"
-              id=""
-            />
-          </div>
-          <div class="col">
-            <button class="mt-3 btn btn-primary">Filtrar</button>
-          </div>
-        </div>
-      </form>
       <dx-data-grid
         id="dataGrid"
         [dataSource]="movimientos"
