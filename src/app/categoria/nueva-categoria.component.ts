@@ -123,7 +123,7 @@ export class NuevaCategoriaComponent implements OnInit {
     this.categoriaSeleccionadaNombre = '-';
   }
   selccionarCategoria(evento: any) {
-    if (evento.event.target.tagName.toLowerCase() !== 'span') {
+    if (evento.event.target.tagName.toLowerCase() !== 'span' && evento?.data) {
       const idCateg = evento.row.node.data.id;
       this.categoriaFormulario.patchValue({
         idCategoriaPadre: idCateg,
