@@ -20,6 +20,21 @@
       (onSaved)="guardado($event)"
       (onRowRemoving)="borrar($event)"
     >
+      <dxo-filter-row
+        [visible]="true"
+        showAllText="Todos"
+        resetOperationText="Borrar"
+      >
+        <dxo-operation-descriptions
+          equal="Igual"
+          notEqual="Diferente"
+          contains="Contiene"
+          notContains="No contiene"
+          startsWith="Empieza con"
+          endsWith="Termina con"
+        >
+        </dxo-operation-descriptions>
+      </dxo-filter-row>
       <dxo-editing
         mode="row"
         [allowUpdating]="true"
