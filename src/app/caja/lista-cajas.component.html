@@ -19,6 +19,21 @@
       (onSaved)="guardado($event)"
       (onRowRemoved)="borrar($event)"
     >
+      <dxo-filter-row
+        [visible]="true"
+        showAllText="Todos"
+        resetOperationText="Borrar"
+      >
+        <dxo-operation-descriptions
+          equal="Igual"
+          notEqual="Diferente"
+          contains="Contiene"
+          notContains="No contiene"
+          startsWith="Empieza con"
+          endsWith="Termina con"
+        >
+        </dxo-operation-descriptions>
+      </dxo-filter-row>
       <dxo-editing
         mode="row"
         [allowUpdating]="true"
@@ -38,7 +53,10 @@
         >
         </dxo-lookup>
       </dxi-column>
-      <dxi-column dataField="negativa" caption="Acepta negativos"></dxi-column>
+      <dxi-column dataField="negativa" caption="Acepta negativos">
+        <dxo-lookup [dataSource]="tipo" displayExpr="nombre" valueExpr="valor">
+        </dxo-lookup>
+      </dxi-column>
     </dx-data-grid>
   </div>
 </div>

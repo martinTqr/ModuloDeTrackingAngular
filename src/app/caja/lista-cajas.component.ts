@@ -14,6 +14,16 @@ export class ListaCajasComponent implements OnInit {
   cajas: Caja[] = [];
   cajaPorEditar: Caja;
   grupoCajas: GrupoCaja[] = [];
+  tipo = [
+    {
+      valor: true,
+      nombre: 'Si',
+    },
+    {
+      valor: false,
+      nombre: 'No',
+    },
+  ];
   constructor(
     private cajaService: CajaService,
     private grupoCajaServe: GrupoCajaService

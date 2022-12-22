@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
-import { obtenerCambios, parsearObjeto } from '../helper';
+import { obtenerCambios } from '../helper';
+import { filtrosDevExtreme } from '../helper/constantes';
 import { Categoria } from '../models';
 import { CategoriaService } from '../services/categoria.service';
 
@@ -12,26 +13,8 @@ import { CategoriaService } from '../services/categoria.service';
 export class ListaCategoriaComponent implements OnInit {
   categorias!: Categoria[];
   categoriaPorEditar: Categoria;
-  tipo = [
-    {
-      id: 'in',
-      nombre: 'Ingreso',
-    },
-    {
-      id: 'out',
-      nombre: 'Egreso',
-    },
-  ];
-  general = [
-    {
-      id: true,
-      nombre: 'General',
-    },
-    {
-      id: false,
-      nombre: 'No general',
-    },
-  ];
+  tipo = filtrosDevExtreme.tipo;
+  general = filtrosDevExtreme.general;
   constructor(private categoriaService: CategoriaService) {}
 
   ngOnInit(): void {
