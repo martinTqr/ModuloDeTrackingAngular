@@ -9,13 +9,16 @@
     </div>
   </div>
   <div class="card-body">
-    <dx-data-grid
+    <dx-tree-list
       id="dataGrid"
       [dataSource]="categorias"
       keyExpr="id"
+      parentIdExpr="idCategoriaPadre"
       (onEditingStart)="preparacionDeEdicion($event)"
       (onSaved)="guardado($event)"
       (onRowRemoved)="borrar($event)"
+      [hoverStateEnabled]="true"
+      (onEditorPreparing)="validarEdicion($event)"
     >
       <dxo-filter-row [visible]="true" showAllText="Todos"></dxo-filter-row>
       <dxo-editing
@@ -29,7 +32,7 @@
         <dxo-lookup [dataSource]="tipo" displayExpr="nombre" valueExpr="id">
         </dxo-lookup>
       </dxi-column>
-      <dxi-column dataField="isGeneral" caption="Es general"></dxi-column>
-    </dx-data-grid>
+      <dxi-column dataField="isGeneral" caption="Es general"> </dxi-column>
+    </dx-tree-list>
   </div>
 </div>

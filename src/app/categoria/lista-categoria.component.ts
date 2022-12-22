@@ -22,16 +22,55 @@ export class ListaCategoriaComponent implements OnInit {
       nombre: 'Egreso',
     },
   ];
+  general = [
+    {
+      id: true,
+      nombre: 'General',
+    },
+    {
+      id: false,
+      nombre: 'No general',
+    },
+  ];
   constructor(private categoriaService: CategoriaService) {}
 
   ngOnInit(): void {
+    this.cargarCategorias();
+  }
+  cargarCategorias() {
     this.categoriaService.lista().subscribe(
-      (categorias) => (this.categorias = categorias),
+      (categorias) => {
+        this.categorias = categorias.sort((a, b) =>
+          a.nombre.localeCompare(b.nombre)
+        );
+      },
       (err) => console.error(err)
     );
   }
+  validarEdicion(e) {
+    if (this.categoriaPorEditar) {
+      const tieneHijos = this.categorias.find(
+        (categoria) => categoria.idCategoriaPadre == this.categoriaPorEditar.id
+      );
+      const tieneCategoriaPadre = this.categoriaPorEditar.idCategoriaPadre;
+      const columnaIsGeneralOTipo =
+        e.dataField == 'isGeneral' || e.dataField == 'tipo';
+      const esFilaDeDatos = e.parentType == 'dataRow';
+
+      const noPuedeEditar =
+        esFilaDeDatos &&
+        columnaIsGeneralOTipo &&
+        (tieneCategoriaPadre || tieneHijos);
+
+      if (noPuedeEditar) e.editorOptions.disabled = true;
+    }
+  }
   preparacionDeEdicion(evento) {
-    this.categoriaPorEditar = parsearObjeto(evento.data);
+    console.log(this.categorias);
+
+    this.categoriaPorEditar = this.categorias.find(
+      (categoria) => categoria.id == evento.data.id
+    );
   }
   guardado(evento) {
     if (evento?.changes[0].type === 'update') {
@@ -67,8 +106,6 @@ export class ListaCategoriaComponent implements OnInit {
     return valor;
   }
   borrar(evento: any): void {
-    console.log(evento);
-
     const { id } = evento.data;
 
     this.categoriaService.borrar(id).subscribe(
