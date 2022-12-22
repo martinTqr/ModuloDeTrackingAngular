@@ -17,6 +17,28 @@
       (onSaved)="guardado($event)"
       (onRowRemoved)="borrar($event)"
     >
+      <dxo-filter-row
+        [visible]="true"
+        showAllText="Todos"
+        betweenStartText="Desde"
+        betweenEndText="Hasta"
+        resetOperationText="Borrar"
+      >
+        <dxo-operation-descriptions
+          between="Entre"
+          equal="Igual"
+          notEqual="Diferente"
+          lessThan="Menor a"
+          greaterThan="Mayor a"
+          lessThanOrEqual="Menor o igual"
+          greaterThanOrEqual="Mayor o igual"
+          contains="Contiene"
+          notContains="No contiene"
+          startsWith="Empieza con"
+          endsWith="Termina con"
+        >
+        </dxo-operation-descriptions>
+      </dxo-filter-row>
       <dxo-editing
         mode="row"
         [allowUpdating]="true"
