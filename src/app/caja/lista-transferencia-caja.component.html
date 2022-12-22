@@ -37,12 +37,10 @@
         <table class="table mb-0">
           <thead>
             <tr>
-              <th scope="col">Fecha de creacion</th>
+              <th scope="col">Fecha de transferencia</th>
               <th scope="col">Caja</th>
-              <th scope="col">Categoria</th>
               <th scope="col">Detalle</th>
               <th scope="col">Monto</th>
-              <th scope="col">Fecha del movimiento</th>
               <th scope="col">Tipo</th>
               <th></th>
             </tr>
@@ -56,10 +54,8 @@
                 {{ parsearFecha(transferencia.fechaCreacion, "fechaHora") }}
               </td>
               <td>{{ transferencia.caja.nombre }}</td>
-              <td>{{ transferencia.categoria.nombre }}</td>
               <td>{{ transferencia.detalle }}</td>
               <td>{{ separarMiles(transferencia.monto) }}</td>
-              <td>{{ parsearFecha(transferencia.fecha) }}</td>
               <td>
                 {{
                   transferencia.categoria.tipo == "in" ? "Ingreso" : "Egreso"

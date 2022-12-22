@@ -50,8 +50,6 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
   }
 
   crear() {
-    console.log(this.formularioTransferencia.value);
-
     if (this.formularioTransferencia.invalid) return;
 
     Swal.fire({
@@ -66,20 +64,7 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
           const idCategoriaTransferenciaCajaIng = 0;
           const idCategoriaTransferenciaCajaEgr = -1;
           const detalle = 'Transferencia de caja ';
-          //Crear movimiento de caja origen
-          const movimientoIng: NuevoMovimiento = {
-            idUsuario: this.usuario.id,
-            idCaja: Number(transferencia.idCajaDestino),
-            idCategoria: idCategoriaTransferenciaCajaIng,
-            monto: Number(transferencia.monto),
-            detalle: detalle + 'ingreso',
-            fecha: new Date(),
-            fechaCreacion: new Date(),
-          };
-          this.movimientoService.crear(movimientoIng).subscribe((data) => {
-            console.log(data);
-          });
-          //Crear movimiento de caja destino
+
           const movimientoEgr: NuevoMovimiento = {
             idUsuario: this.usuario.id,
             idCaja: Number(transferencia.idCajaOrigen),
@@ -89,18 +74,42 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
             fecha: new Date(),
             fechaCreacion: new Date(),
           };
-          this.movimientoService.crear(movimientoEgr).subscribe(({ data }) => {
-            if (data)
-              Swal.fire({
-                title: 'Transferencia realizada',
-                icon: 'success',
-                timer: 2000,
-                timerProgressBar: true,
-              }).then(() => redireccionar('/caja/transferencia/lista'));
+          this.movimientoService.crear(movimientoEgr).subscribe({
+            next: ({ data }) => {
+              if (data) {
+                const movimientoIng: NuevoMovimiento = {
+                  idUsuario: this.usuario.id,
+                  idCaja: Number(transferencia.idCajaDestino),
+                  idCategoria: idCategoriaTransferenciaCajaIng,
+                  monto: Number(transferencia.monto),
+                  detalle: detalle + 'ingreso',
+                  fecha: new Date(),
+                  fechaCreacion: new Date(),
+                };
+                this.movimientoService.crear(movimientoIng).subscribe({
+                  next: () => {
+                    Swal.fire({
+                      title: 'Transferencia realizada',
+                      icon: 'success',
+                      timer: 2000,
+                      timerProgressBar: true,
+                    }).then(() => redireccionar('/caja/transferencia/lista'));
+                  },
+                  error: ({ error }) => {
+                    Swal.fire('Error', error.message, 'error');
+                  },
+                });
+              }
+            },
+            error: ({ error }) => {
+              Swal.fire('Error', error.message, 'error');
+            },
           });
         }
       })
       .catch((err) => {
+        console.log(err);
+
         Swal.fire('Error', 'Intente nuevamente', 'error');
       });
   }
