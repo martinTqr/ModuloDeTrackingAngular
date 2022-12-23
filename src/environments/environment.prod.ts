@@ -1,11 +1,12 @@
-const base = 'https://api.books.tqr.la';
+const base = 'http://localhost:3001';
 export const environment = {
   production: false,
   movimientoURL: `${base}/movimiento/`,
   reporteEmpresaURL: `${base}/reportes/empresa/`,
+  reporteUnidadURL: `${base}/reportes/unidad-de-negocio/`,
+  reporteGrupoCajas: `${base}/reportes/grupo-cajas/`,
   cajaURL: `${base}/caja/`,
   empresaURL: `${base}/empresa/`,
-  reporteUnidadURL: `${base}/reportes/unidad-de-negocio/`,
   categoriaURL: `${base}/categoria/`,
   unidadNegocioURL: `${base}/unidad-negocio/`,
   grupoCajaURL: `${base}/grupo-caja/`,
