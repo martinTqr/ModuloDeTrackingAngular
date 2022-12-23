@@ -54,10 +54,13 @@ export class ReporteService extends BaseService {
 
     return this.httpClient.get<Reporte>(ruta);
   }
-  public buscarReporteGrupoCajas(): Observable<GrupoCaja[]> {
+  public buscarReporteGrupoCajas(id?: number): Observable<GrupoCaja[]> {
     const { reporteGrupoCajas } = environment;
     const empresaRuta = this.empresaParametro;
-    return this.httpClient.get<GrupoCaja[]>(reporteGrupoCajas + empresaRuta);
+    const idGrupoCajaRuta = id ? `&idGrupoCaja=${id}` : '';
+    return this.httpClient.get<GrupoCaja[]>(
+      reporteGrupoCajas + empresaRuta + idGrupoCajaRuta
+    );
   }
 }
 interface Parametros {

@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { separarMiles } from '../helper';
 import { GrupoCaja } from '../models';
 import { ReporteService } from '../services/reporte.service';
-
+import { ActivatedRoute } from '@angular/router';
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-reporte-cajas',
   templateUrl: './reporte-cajas.component.html',
@@ -11,7 +12,10 @@ import { ReporteService } from '../services/reporte.service';
 export class ReporteCajasComponent implements OnInit {
   reporte: GrupoCaja[];
   menu: String = '';
-  constructor(private reporteService: ReporteService) {}
+  constructor(
+    private reporteService: ReporteService,
+    private rutaActiva: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
     this.cargarReporteGrupoCajas();
@@ -39,11 +43,17 @@ export class ReporteCajasComponent implements OnInit {
   }
 
   cargarReporteGrupoCajas() {
-    this.reporteService.buscarReporteGrupoCajas().subscribe((reporte) => {
+    //get query params
+    const { id } = this.rutaActiva.snapshot.queryParams;
+
+    this.reporteService.buscarReporteGrupoCajas(id).subscribe((reporte) => {
       reporte.forEach((grupoCaja) => {
-        grupoCaja.collapsed = true;
+        grupoCaja.collapsed = id ? false : true;
       });
+
       this.reporte = reporte;
+      if (reporte.length === 0)
+        Swal.fire('No hay datos para mostrar', '', 'info');
     });
   }
 }
