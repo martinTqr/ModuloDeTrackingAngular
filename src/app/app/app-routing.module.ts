@@ -41,7 +41,7 @@ const rutas: Routes = [
 
   { path: 'reporte/empresa', component: ReporteEmpComponent },
   { path: 'reporte/unidad/:id', component: ReporteUNComponent },
-  { path: 'reporte/cajas', component: ReporteCajasComponent },
+  { path: 'reporte/grupo-cajas', component: ReporteCajasComponent },
 
   { path: 'movimiento/lista', component: ListaMovimientoComponent },
   { path: 'movimiento/nuevo', component: NuevoMovimientoComponent },
@@ -84,7 +84,7 @@ const rutas: Routes = [
 
   { path: 'usuario/lista', component: ListaUsuarioComponent },
   { path: 'usuario/detalle/:id', component: DetalleUsuarioComponent },
-  { path: 'usuario/nueoa', component: NuevoUsuarioComponent },
+  { path: 'usuario/nuevo', component: NuevoUsuarioComponent },
 
   { path: 'cotizacion/lista', component: ListaCotizacionComponent },
   { path: 'cotizacion/nueva', component: NuevaCotizacionComponent },

@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { separarMiles } from '../helper';
 import { GrupoCaja } from '../models';
-import { CajaService } from '../services/caja.service';
-import { GrupoCajaService } from '../services/grupo-caja.service';
 import { ReporteService } from '../services/reporte.service';
 
 @Component({
