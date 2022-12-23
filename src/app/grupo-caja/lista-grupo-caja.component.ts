@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 import { obtenerCambios, parsearObjeto } from '../helper';
+import { redireccionar } from '../helper/genreales';
 import { GrupoCaja } from '../models';
 import { GrupoCajaService } from '../services/grupo-caja.service';
 
@@ -25,6 +26,18 @@ export class ListaGrupoCajaComponent implements OnInit {
   preparacionDeEdicion(evento) {
     this.grupoPorEditar = parsearObjeto(evento.data);
   }
+  seleccionar(evento) {
+    const { id } = evento.data;
+    redireccionar(`reporte/grupo-cajas?id=${id}`);
+  }
+
+  onCellPrepared(e) {
+    if (e.rowType == 'data' && e.column && e.column.dataField == 'nombre') {
+      var elem = e.cellElement;
+      elem.style.setProperty('cursor', 'pointer', 'important');
+    }
+  }
+
   guardado(evento) {
     const cambios = evento.changes;
 
