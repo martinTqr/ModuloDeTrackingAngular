@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
-import { obtenerCambios } from '../helper';
+import { obtenerCambios, parsearObjeto } from '../helper';
 import { filtrosDevExtreme } from '../helper/constantes';
+import { recargarPagina } from '../helper/genreales';
 import { Categoria } from '../models';
 import { CategoriaService } from '../services/categoria.service';
 
@@ -49,10 +50,8 @@ export class ListaCategoriaComponent implements OnInit {
     }
   }
   preparacionDeEdicion(evento) {
-    console.log(this.categorias);
-
-    this.categoriaPorEditar = this.categorias.find(
-      (categoria) => categoria.id == evento.data.id
+    this.categoriaPorEditar = parsearObjeto(
+      this.categorias.find((categoria) => categoria.id == evento.data.id)
     );
   }
   guardado(evento) {
@@ -68,8 +67,8 @@ export class ListaCategoriaComponent implements OnInit {
 
         this.categoriaService
           .modificar({ id: categoria.id, categoria: diferencia })
-          .subscribe(
-            ({ data, mensaje }) => {
+          .subscribe({
+            next: ({ data, mensaje }) => {
               Swal.fire({
                 title: mensaje.toUpperCase() + '!',
                 text: `Categoria ${data.nombre} actualizada con éxito`,
@@ -78,8 +77,21 @@ export class ListaCategoriaComponent implements OnInit {
                 timerProgressBar: true,
               });
             },
-            (err) => console.error(err)
-          );
+            error: (err) =>
+              Swal.fire({
+                title: 'Error!',
+                text: err.error.mensaje,
+                icon: 'error',
+                timer: 2000,
+                timerProgressBar: true,
+              }).then(() => {
+                this.categorias = this.categorias.map((categoria) =>
+                  categoria.id == this.categoriaPorEditar.id
+                    ? this.categoriaPorEditar
+                    : categoria
+                );
+              }),
+          });
       }
     }
   }

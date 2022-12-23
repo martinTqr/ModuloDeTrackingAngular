@@ -33,7 +33,7 @@ export class ListaGrupoCajaComponent implements OnInit {
 
   onCellPrepared(e) {
     if (e.rowType == 'data' && e.column && e.column.dataField == 'nombre') {
-      var elem = e.cellElement;
+      const elem = e.cellElement;
       elem.style.setProperty('cursor', 'pointer', 'important');
     }
   }
@@ -50,8 +50,8 @@ export class ListaGrupoCajaComponent implements OnInit {
 
       this.grupoCajaService
         .modificar(this.grupoPorEditar.id, diferencia)
-        .subscribe(
-          (data) => {
+        .subscribe({
+          next: (data) => {
             console.log(data);
 
             Swal.fire({
@@ -62,8 +62,8 @@ export class ListaGrupoCajaComponent implements OnInit {
               timerProgressBar: true,
             });
           },
-          (err) => console.error(err)
-        );
+          error: (err) => Swal.fire('Error!', err.error.message, 'error'),
+        });
     }
   }
   cancelDelete(e) {
