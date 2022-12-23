@@ -3,6 +3,7 @@ import { separarMiles } from '../helper';
 import { GrupoCaja } from '../models';
 import { CajaService } from '../services/caja.service';
 import { GrupoCajaService } from '../services/grupo-caja.service';
+import { ReporteService } from '../services/reporte.service';
 
 @Component({
   selector: 'app-reporte-cajas',
@@ -10,15 +11,12 @@ import { GrupoCajaService } from '../services/grupo-caja.service';
   styleUrls: ['./reporte-cajas.component.css'],
 })
 export class ReporteCajasComponent implements OnInit {
-  grupoCajas: GrupoCaja[];
+  reporte: GrupoCaja[];
   menu: String = '';
-  constructor(
-    private cajaService: CajaService,
-    private grupoCajaService: GrupoCajaService
-  ) {}
+  constructor(private reporteService: ReporteService) {}
 
   ngOnInit(): void {
-    this.cargarCajas();
+    this.cargarReporteGrupoCajas();
   }
   separarMiles(numero: number) {
     return separarMiles(numero);
@@ -42,32 +40,12 @@ export class ReporteCajasComponent implements OnInit {
     });
   }
 
-  cargarCajas() {
-    this.grupoCajaService.lista().subscribe(
-      (grupoCajas) => {
-        this.cajaService.listaConSaldo().subscribe(
-          (cajas) => {
-            grupoCajas.forEach((grupoCaja) => {
-              grupoCaja.collapsed = true;
-              const cajasFiltradas = cajas.filter(
-                (caja) => caja.grupoCaja.id === grupoCaja.id
-              );
-              cajasFiltradas.forEach((caja) => {
-                caja.total = Math.round(caja.total);
-              });
-              grupoCaja.cajas = cajasFiltradas;
-              grupoCaja.acumulado = { total: 0 };
-              grupoCaja.acumulado.total = cajasFiltradas.reduce(
-                (acumulado, caja) => acumulado + caja.total,
-                0
-              );
-            });
-            this.grupoCajas = grupoCajas;
-          },
-          (error) => console.log(error)
-        );
-      },
-      (error) => console.log(error)
-    );
+  cargarReporteGrupoCajas() {
+    this.reporteService.buscarReporteGrupoCajas().subscribe((reporte) => {
+      reporte.forEach((grupoCaja) => {
+        grupoCaja.collapsed = true;
+      });
+      this.reporte = reporte;
+    });
   }
 }

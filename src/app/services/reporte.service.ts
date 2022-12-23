@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Reporte } from '../interfaces';
+import { GrupoCaja } from '../models';
 import { BaseService } from './base.service';
 import { LocalService } from './local.service';
 
@@ -34,7 +35,7 @@ export class ReporteService extends BaseService {
     parametros: Parametros
   ): Observable<Reporte> {
     const { id, fechaInicio, fechaFin, transferencias, dolar } = parametros;
-    const { unidadDeNegocioURL } = environment;
+    const { reporteUnidadURL } = environment;
     const unidadNegocioRuta = id ? `&idUnidadNegocio=${id}` : '';
     const empresaRuta = this.empresaParametro;
     const fechaInicioRuta = fechaInicio ? `&fechaInicio=${fechaInicio}` : '';
@@ -43,14 +44,20 @@ export class ReporteService extends BaseService {
     const dolarRuta = dolar ? `&dolar=true` : '';
 
     const ruta =
-      unidadDeNegocioURL +
+      reporteUnidadURL +
       empresaRuta +
       unidadNegocioRuta +
       fechaInicioRuta +
       fechaFinRuta +
-      transferenciasRuta;
+      transferenciasRuta +
+      dolarRuta;
 
     return this.httpClient.get<Reporte>(ruta);
+  }
+  public buscarReporteGrupoCajas(): Observable<GrupoCaja[]> {
+    const { reporteGrupoCajas } = environment;
+    const empresaRuta = this.empresaParametro;
+    return this.httpClient.get<GrupoCaja[]>(reporteGrupoCajas + empresaRuta);
   }
 }
 interface Parametros {

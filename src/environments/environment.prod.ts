@@ -5,7 +5,7 @@ export const environment = {
   reporteEmpresaURL: `${base}/reportes/empresa/`,
   cajaURL: `${base}/caja/`,
   empresaURL: `${base}/empresa/`,
-  unidadDeNegocioURL: `${base}/reportes/unidad-de-negocio/`,
+  reporteUnidadURL: `${base}/reportes/unidad-de-negocio/`,
   categoriaURL: `${base}/categoria/`,
   unidadNegocioURL: `${base}/unidad-negocio/`,
   grupoCajaURL: `${base}/grupo-caja/`,

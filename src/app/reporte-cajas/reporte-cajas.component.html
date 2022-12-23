@@ -6,11 +6,11 @@
 
   <div class="card-body pt-3">
     <div class="grid-responsive mb-3 mx-auto">
-      <div class="card" *ngFor="let grupoCaja of grupoCajas">
+      <div class="card" *ngFor="let grupoCaja of reporte">
         <div
           [ngClass]="tipoDeFondo(grupoCaja.acumulado.total)"
           class="card-header cursor-pointer"
-          (click)="cambiarColapso(grupoCajas)"
+          (click)="cambiarColapso(reporte)"
         >
           <p class="mb-0">
             {{ grupoCaja.nombre }}: $
