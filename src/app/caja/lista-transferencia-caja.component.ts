@@ -30,12 +30,6 @@ export class ListaTransferenciaCajaListaComponent implements OnInit {
     });
   }
 
-  cambiarEstiloFila(transferencia: Movimiento) {
-    return {
-      union_transferencia: transferencia.id % 2 === 1,
-    };
-  }
-
   parsearFecha(fecha: string, formato?: string): string {
     return parsearFecha(fecha, formato);
   }
