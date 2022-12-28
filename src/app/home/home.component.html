@@ -18,10 +18,11 @@
       showBorders="true"
       (onEditingStart)="preparacionDeEdicion($event)"
       (onSaved)="guardado($event)"
+      (onSaving)="cancelarEdicion()"
       (onCellClick)="seleccionar($event)"
       hoverStateEnabled="true"
       (onCellPrepared)="onCellPrepared($event)"
-      (onEditCanceled)="cancelarEdicion($event)"
+      (onEditCanceled)="cancelarEdicion()"
     >
       <dxo-filter-row
         [visible]="true"

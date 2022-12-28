@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
       this.empresas = empresas;
     });
   }
-  cancelarEdicion(evento) {
+  cancelarEdicion() {
     this.empresaPorEditar = null;
   }
   preparacionDeEdicion(evento) {
