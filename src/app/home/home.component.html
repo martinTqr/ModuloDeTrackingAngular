@@ -1,20 +1,49 @@
-<div class="card">
+<div class="card mx-auto" style="max-width: 600px">
   <div class="card-header d-flex justify-content-between align-items-center">
     <h3 class="mb-0">Empresas</h3>
-    <button class="btn btn-outline-primary" routerLink="empresa/nueva">
-      Crear empresa
-    </button>
+    <div>
+      <a routerLink="/empresa/nueva" class="btn btn-outline-primary"
+        >Nueva empresa</a
+      >
+      <boton-volver></boton-volver>
+    </div>
   </div>
   <div class="card-body">
-    <div class="grid-responsive mb-3 mx-auto">
-      <a
-        class="card p-0"
-        *ngFor="let emp of empresas"
-        (click)="seleccionarEmpresa(emp)"
-        routerLink="/admin"
+    <dx-data-grid
+      id="dataGrid"
+      [dataSource]="empresas"
+      keyExpr="id"
+      width="300"
+      class="mx-auto"
+      showBorders="true"
+      (onEditingStart)="preparacionDeEdicion($event)"
+      (onSaved)="guardado($event)"
+      (onCellClick)="seleccionar($event)"
+      hoverStateEnabled="true"
+      (onCellPrepared)="onCellPrepared($event)"
+      (onEditCanceled)="cancelarEdicion($event)"
+    >
+      <dxo-filter-row
+        [visible]="true"
+        showAllText="Todos"
+        resetOperationText="Borrar"
       >
-        <div class="card-header">{{ emp.nombre }}</div>
-      </a>
-    </div>
+        <dxo-operation-descriptions
+          equal="Igual"
+          notEqual="Diferente"
+          contains="Contiene"
+          notContains="No contiene"
+          startsWith="Empieza con"
+          endsWith="Termina con"
+        >
+        </dxo-operation-descriptions>
+      </dxo-filter-row>
+      <dxo-editing
+        mode="row"
+        [allowUpdating]="true"
+        [useIcons]="true"
+      ></dxo-editing>
+      <dxi-column dataField="nombre"></dxi-column>
+    </dx-data-grid>
   </div>
 </div>

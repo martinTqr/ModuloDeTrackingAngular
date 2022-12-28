@@ -17,6 +17,9 @@ export class EmpresaService {
   public detalle(id: number): Observable<Empresa> {
     return this.httpClient.get<Empresa>(this.empresaURL + id);
   }
+  public modificar(id: number, empresa: Empresa): Observable<any> {
+    return this.httpClient.put<any>(this.empresaURL + id, empresa);
+  }
   public crear(empresa: Empresa): Observable<any> {
     return this.httpClient.post<any>(this.empresaURL, empresa);
   }
