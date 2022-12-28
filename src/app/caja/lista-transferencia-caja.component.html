@@ -51,7 +51,7 @@
               class="union_transferencias"
             >
               <td>
-                {{ parsearFecha(transferencia.fechaCreacion, "fechaHora") }}
+                {{ parsearFecha(transferencia.fecha) }}
               </td>
               <td>{{ transferencia.caja.nombre }}</td>
               <td>{{ transferencia.detalle }}</td>
@@ -61,7 +61,7 @@
                   transferencia.categoria.tipo == "in" ? "Ingreso" : "Egreso"
                 }}
               </td>
-              <td *ngIf="transferencia.id % 2 == 0">
+              <td *ngIf="transferencia.categoria.tipo == 'out'">
                 <button
                   class="btn btn-danger btn-sm pb-0 px-1"
                   (click)="borrar(transferencia.id)"
