@@ -19,6 +19,9 @@
       (onEditingStart)="preparacionDeEdicion($event)"
       (onSaved)="guardado($event)"
       (onRowRemoving)="borrar($event)"
+      (onCellClick)="seleccionar($event)"
+      hoverStateEnabled="true"
+      (onCellPrepared)="onCellPrepared($event)"
     >
       <dxo-filter-row
         [visible]="true"

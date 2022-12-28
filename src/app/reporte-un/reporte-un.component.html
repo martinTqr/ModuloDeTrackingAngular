@@ -1,55 +1,63 @@
-<h2>Reporte Unidad De Negocio</h2>
-<div class="my-3 d-flex justify-content-between">
-  <div></div>
-  <boton-volver></boton-volver>
-</div>
-<dx-tree-list
-  id="reporte"
-  [dataSource]="reporte"
-  itemsExpr="subcategorias"
-  dataStructure="tree"
-  [showRowLines]="true"
-  [showBorders]="true"
-  [columnAutoWidth]="true"
-  [expandedRowKeys]="[1]"
-  [renderAsync]="true"
-  (onCellClick)="mostrarColumnaSemanasPorMes($event)"
-  [hoverStateEnabled]="true"
-  (onRowPrepared)="cambiarColorFila($event)"
-  (onCellPrepared)="cambiarColorCelda($event)"
->
-  <dxi-column
-    [allowSorting]="false"
-    dataField="nombre"
-    caption="Categoria"
-  ></dxi-column>
-  <dxi-column
-    [allowSorting]="false"
-    dataField="acumulado.total"
-    caption="Total categoria"
-    format="fixedPoint"
-  ></dxi-column>
-
-  <dxi-column
-    [allowSorting]="false"
-    [dataField]="nombreDeMeses[numeroMes]"
-    caption="{{ data }}"
-    *ngFor="let data of nombreDeMeses; let numeroMes = index"
-  >
-    <dxi-column
-      [allowSorting]="false"
-      dataField="meses[{{ numeroMes }}].total"
-      format="fixedPoint"
-      caption="Total"
-    ></dxi-column>
-    <dxi-column caption="Semanas de {{ nombreDeMeses[numeroMes] }}">
+<div class="card mx-auto">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h3 class="mb-0">Reprote de unidad de negocio</h3>
+    <div>
+      <div></div>
+      <boton-volver></boton-volver>
+    </div>
+  </div>
+  <div class="card-body">
+    <dx-tree-list
+      id="reporte"
+      [dataSource]="reporte"
+      itemsExpr="subcategorias"
+      dataStructure="tree"
+      [showRowLines]="true"
+      [showBorders]="true"
+      [columnAutoWidth]="true"
+      [expandedRowKeys]="[1]"
+      [renderAsync]="true"
+      (onCellClick)="mostrarColumnaSemanasPorMes($event)"
+      [hoverStateEnabled]="true"
+      (onRowPrepared)="cambiarColorFila($event)"
+      (onCellPrepared)="cambiarColorCelda($event)"
+    >
       <dxi-column
-        *ngFor="let data of semanas; let numeroSemana = index"
         [allowSorting]="false"
-        dataField="meses[{{ numeroMes }}].semanas[{{ numeroSemana }}].total"
-        format="fixedPoint"
-        [caption]="reporte[0]?.meses[numeroMes].semanas[numeroSemana]?.semana"
+        dataField="nombre"
+        caption="Categoria"
       ></dxi-column>
-    </dxi-column>
-  </dxi-column>
-</dx-tree-list>
+      <dxi-column
+        [allowSorting]="false"
+        dataField="acumulado.total"
+        caption="Total categoria"
+        format="fixedPoint"
+      ></dxi-column>
+
+      <dxi-column
+        [allowSorting]="false"
+        [dataField]="nombreDeMeses[numeroMes]"
+        caption="{{ data }}"
+        *ngFor="let data of nombreDeMeses; let numeroMes = index"
+      >
+        <dxi-column
+          [allowSorting]="false"
+          dataField="meses[{{ numeroMes }}].total"
+          format="fixedPoint"
+          caption="Total"
+        ></dxi-column>
+        <dxi-column caption="Semanas de {{ nombreDeMeses[numeroMes] }}">
+          <dxi-column
+            *ngFor="let data of semanas; let numeroSemana = index"
+            [allowSorting]="false"
+            dataField="meses[{{ numeroMes }}].semanas[{{ numeroSemana }}].total"
+            format="fixedPoint"
+            [caption]="
+              reporte[0]?.meses[numeroMes].semanas[numeroSemana]?.semana
+            "
+          ></dxi-column>
+        </dxi-column>
+      </dxi-column>
+    </dx-tree-list>
+  </div>
+</div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 import { obtenerCambios, parsearObjeto } from '../helper';
+import { redireccionar } from '../helper/genreales';
 import { UnidadNegocio } from '../models';
 import { UnidadNegocioService } from '../services/unidad-negocio.service';
 
@@ -27,6 +28,16 @@ export class ListaUnidadNegocioComponent implements OnInit {
   }
   preparacionDeEdicion(evento) {
     this.unidadPorEditar = parsearObjeto(evento.data);
+  }
+  seleccionar(evento) {
+    const { id } = evento.data;
+    redireccionar(`reporte/unidad/${id}`);
+  }
+  onCellPrepared(e) {
+    if (e.rowType == 'data' && e.column && e.column.dataField == 'nombre') {
+      const elem = e.cellElement;
+      elem.style.setProperty('cursor', 'pointer', 'important');
+    }
   }
   guardado(evento) {
     const cambios = evento.changes;
