@@ -16,6 +16,7 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
   formularioTransferencia = this.fb.group({
     idCajaOrigen: ['', Validators.required],
     idCajaDestino: ['', Validators.required],
+    fecha: [new Date().toISOString().substring(0, 10), Validators.required],
     monto: ['', Validators.required],
   });
   fechaHoy = new Date().toISOString().split('T')[0];
@@ -71,7 +72,7 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
             idCategoria: idCategoriaTransferenciaCajaEgr,
             monto: Number(transferencia.monto),
             detalle: detalle + 'egreso',
-            fecha: new Date(),
+            fecha: new Date(transferencia.fecha),
             fechaCreacion: new Date(),
           };
           this.movimientoService.crear(movimientoEgr).subscribe({
@@ -83,7 +84,7 @@ export class NuevaTransferenciaCajaComponent implements OnInit {
                   idCategoria: idCategoriaTransferenciaCajaIng,
                   monto: Number(transferencia.monto),
                   detalle: detalle + 'ingreso',
-                  fecha: new Date(),
+                  fecha: new Date(transferencia.fecha),
                   fechaCreacion: new Date(),
                 };
                 this.movimientoService.crear(movimientoIng).subscribe({

@@ -13,12 +13,16 @@
         [formGroup]="formularioTransferencia"
       >
         <div class="row mb-3">
-          <div class="d-flex justify-content-between">
-            <div></div>
-            <p class="mb-1">Fecha de transferencia: {{ fechaHoy }}</p>
-          </div>
-
-          <br />
+          <label for="Fecha">Fecha</label>
+          <input
+            type="date"
+            class="form-control"
+            name="fecha"
+            aria-label="Fecha"
+            formControlName="fecha"
+          />
+        </div>
+        <div class="row mb-3">
           <label for="nombre">Caja origen</label>
           <select
             name="idCajaOrigen"
