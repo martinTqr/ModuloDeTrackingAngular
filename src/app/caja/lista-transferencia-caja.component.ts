@@ -49,7 +49,7 @@ export class ListaTransferenciaCajaListaComponent implements OnInit {
           this.transferencias = this.transferencias.filter(
             (t) => t.id !== id && t.id !== id + 1
           );
-          Swal.fire('Borrado', mensaje, 'success');
+          Swal.fire({ title: 'Transferencia borrada', icon: 'success' });
         });
     });
   }
