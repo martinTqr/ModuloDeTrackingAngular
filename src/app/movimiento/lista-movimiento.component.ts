@@ -112,39 +112,33 @@ export class ListaMovimientoComponent implements OnInit {
 
       if (cambios.length > 0) {
         const movimiento = cambios[0].data;
-        const diferencia: any = obtenerCambios({
-          original: this.movimientoPorEditar,
-          modificado: movimiento,
-        });
+
         if (this.movimientoPorEditar.caja.id !== movimiento.caja.id) {
           const caja = this.cajas.find(
             (caja) => caja.id === movimiento.caja.id
           );
-          diferencia.caja = caja;
-        } else delete diferencia.caja;
+          movimiento.caja = caja;
+        }
 
         if (this.movimientoPorEditar.categoria.id !== movimiento.categoria.id) {
           const categoria = this.categorias.find(
             (categoria) => categoria.id === movimiento.categoria.id
           );
-          diferencia.categoria = categoria;
-        } else delete diferencia.categoria;
+          movimiento.categoria = categoria;
+        }
 
-        delete diferencia.usuario;
         this.movimientoService
-          .modificar(this.movimientoPorEditar.id, diferencia)
+          .modificar(this.movimientoPorEditar.id, movimiento)
           .subscribe({
             next: (data) => {
-              console.log(data);
-
               Swal.fire({
                 title: data.mensaje.toUpperCase() + '!',
                 text: `Movimiento actualizado con éxito`,
                 icon: 'success',
-                timer: 2000,
+                timer: 2500,
                 timerProgressBar: true,
               }).then(() => {
-                if (diferencia?.categoria) recargarPagina();
+                recargarPagina();
               });
             },
             error: ({ error }) => {
@@ -152,8 +146,6 @@ export class ListaMovimientoComponent implements OnInit {
                 title: 'Error!',
                 text: error.message,
                 icon: 'error',
-                timer: 2000,
-                timerProgressBar: true,
               });
               this.movimientos = this.movimientos.map((movimiento) => {
                 if (movimiento.id === this.movimientoPorEditar.id) {
