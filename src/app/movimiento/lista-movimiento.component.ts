@@ -54,10 +54,7 @@ export class ListaMovimientoComponent implements OnInit {
   }
   cargarCategorias() {
     this.categoriaService.lista().subscribe((categorias) => {
-      this.categorias = categorias.map((categ) => ({
-        id: categ.id,
-        nombre: categ.nombre,
-      }));
+      this.categorias = categorias;
     });
   }
   cargarCajas() {
@@ -70,11 +67,6 @@ export class ListaMovimientoComponent implements OnInit {
   }
   mostrarCaja(movimiento: any) {
     return movimiento.caja.nombre;
-  }
-  parsearFecha(movimiento: any) {
-    console.log(movimiento.fecha);
-
-    return parsearFecha(movimiento.fecha);
   }
   preparacionDeEdicion(evento) {
     this.movimientoPorEditar = parsearObjeto(evento.data);
@@ -139,11 +131,12 @@ export class ListaMovimientoComponent implements OnInit {
         } else delete diferencia.categoria;
 
         delete diferencia.usuario;
-
         this.movimientoService
           .modificar(this.movimientoPorEditar.id, diferencia)
-          .subscribe(
-            (data) => {
+          .subscribe({
+            next: (data) => {
+              console.log(data);
+
               Swal.fire({
                 title: data.mensaje.toUpperCase() + '!',
                 text: `Movimiento actualizado con éxito`,
@@ -154,8 +147,22 @@ export class ListaMovimientoComponent implements OnInit {
                 if (diferencia?.categoria) recargarPagina();
               });
             },
-            (err) => console.error(err)
-          );
+            error: ({ error }) => {
+              Swal.fire({
+                title: 'Error!',
+                text: error.message,
+                icon: 'error',
+                timer: 2000,
+                timerProgressBar: true,
+              });
+              this.movimientos = this.movimientos.map((movimiento) => {
+                if (movimiento.id === this.movimientoPorEditar.id) {
+                  return this.movimientoPorEditar;
+                }
+                return movimiento;
+              });
+            },
+          });
       }
     }
   }
