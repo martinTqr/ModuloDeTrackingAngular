@@ -36,8 +36,8 @@ export class ReporteEmpComponent implements OnInit {
     this.reporteService
       .buscarReporteEmpresa({ fechaInicio, fechaFin, dolar: this.dolar })
       .subscribe(
-        (data: ReporteEmpresaReducido[]) => {
-          const categorias = data.map((categoria) => {
+        (reporte: ReporteEmpresaReducido[]) => {
+          const categorias = reporte.map((categoria) => {
             return formatearObjeto(categoria);
           });
           this.reporte = categorias;

@@ -22,7 +22,6 @@ const mensajes = {
   0: 'usuarios',
   1: 'categorias',
   2: 'cajas',
-  3: 'unidadesDeNegocio',
 };
 @Component({
   selector: 'app-nuevo-movimiento',
@@ -43,6 +42,7 @@ export class NuevoMovimientoComponent implements OnInit {
   ngOnInit() {
     this.validacionDeEntidades();
     this.cargarCotizaciones();
+    this.cargarUnidadNegocio();
   }
 
   movimientoFormulario = this.fb.group({
@@ -77,8 +77,7 @@ export class NuevoMovimientoComponent implements OnInit {
     concat(
       this.usuarioService.lista(),
       this.categoriasService.listaArbol(),
-      this.cajaService.lista(),
-      this.unidadNegocioService.lista()
+      this.cajaService.lista()
     )
       .forEach((value) => {
         if (value.length === 0) mensajeError.push(mensajes[indice]);
@@ -87,8 +86,6 @@ export class NuevoMovimientoComponent implements OnInit {
           if (mensajes[indice] === 'categorias')
             this.cargarCategorias(value as Categoria[]);
           if (mensajes[indice] === 'cajas') this.cargarCajas(value as Caja[]);
-          if (mensajes[indice] === 'unidadesDeNegocio')
-            this.cargarUnidadNegocio(value);
         }
         indice++;
       })
@@ -108,14 +105,16 @@ export class NuevoMovimientoComponent implements OnInit {
 
   cargarCotizaciones() {
     this.cotizacionService.lista().subscribe((cotizaciones) => {
-      this.cotizaciones = cotizaciones;
-      if (cotizaciones.length > 0) this.cotizacionDeLaFecha = cotizaciones[0];
+      if (cotizaciones.length > 0) {
+        this.cotizaciones = cotizaciones;
+        const ultimaCotizacion = cotizaciones[0];
+        this.cotizacionDeLaFecha = ultimaCotizacion;
+      }
     });
     this.movimientoFormulario.get('fecha').valueChanges.subscribe((fecha) => {
       this.cotizacionDeLaFecha = this.cotizaciones.find(
         (cotizacion) => cotizacion.fecha <= fecha
       );
-      console.log(this.cotizacionDeLaFecha);
     });
   }
 
@@ -125,11 +124,26 @@ export class NuevoMovimientoComponent implements OnInit {
       idUsuario: String(usuarios[0].id),
     });
   }
-  cargarUnidadNegocio(unidadesDeNegocio) {
-    this.unidadesDeNegocio = unidadesDeNegocio;
-    if (unidadesDeNegocio.length === 1 && this.isGeneral === 'false') {
+  cargarUnidadNegocio() {
+    this.unidadNegocioService.lista().subscribe({
+      next: (unidadesDeNegocio) => {
+        this.unidadesDeNegocio = unidadesDeNegocio;
+        if (unidadesDeNegocio.length === 1 && this.isGeneral === 'false') {
+          this.movimientoFormulario.patchValue({
+            idUnidadNegocio: String(unidadesDeNegocio[0].id),
+          });
+        }
+      },
+      error: ({ error }) => {
+        Swal.fire({ text: error, icon: 'error' });
+      },
+    });
+  }
+  cambiarUnidadNegocio(unidades) {
+    this.unidadesDeNegocio = unidades;
+    if (unidades.length === 1 && this.isGeneral === 'false') {
       this.movimientoFormulario.patchValue({
-        idUnidadNegocio: String(unidadesDeNegocio[0].id),
+        idUnidadNegocio: String(unidades[0].id),
       });
     }
   }
@@ -168,7 +182,7 @@ export class NuevoMovimientoComponent implements OnInit {
   async cambiarGeneral(isGeneral: boolean) {
     if (!isGeneral) {
       this.isGeneral = 'false';
-      this.cargarUnidadNegocio(this.unidadesDeNegocio);
+      this.cambiarUnidadNegocio(this.unidadesDeNegocio);
       return;
     }
     this.movimientoFormulario.patchValue({
@@ -198,8 +212,6 @@ export class NuevoMovimientoComponent implements OnInit {
   }
 
   crear(): void {
-    console.log(this.movimientoFormulario.value);
-
     if (this.movimientoFormulario.invalid) return;
     let {
       fecha,
@@ -238,7 +250,7 @@ export class NuevoMovimientoComponent implements OnInit {
           idUnidadNegocio: '',
           idUsuario: String(this.usuarios[0].id),
         });
-        this.cargarUnidadNegocio(this.unidadesDeNegocio);
+        this.cambiarUnidadNegocio(this.unidadesDeNegocio);
         this.categoriaSeleccionadaNombre = '-';
       },
       ({ error }) => {
