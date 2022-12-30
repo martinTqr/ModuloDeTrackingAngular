@@ -57,18 +57,8 @@ export class ListaCajasComponent implements OnInit {
 
     if (cambios.length > 0 && cambios[0].type === 'update') {
       const caja = cambios[0].data;
-      const diferencia: any = obtenerCambios({
-        original: this.cajaPorEditar,
-        modificado: caja,
-      });
-      if (this.cajaPorEditar.grupoCaja.id !== caja.grupoCaja.id) {
-        const grupoCaja = this.grupoCajas.find(
-          (grupo) => grupo.id === caja.grupoCaja.id
-        );
-        diferencia.grupoCaja = grupoCaja;
-      }
 
-      this.cajaService.modificar({ id: caja.id, caja: diferencia }).subscribe(
+      this.cajaService.modificar({ id: this.cajaPorEditar.id, caja }).subscribe(
         (data) => {
           console.log(data);
 

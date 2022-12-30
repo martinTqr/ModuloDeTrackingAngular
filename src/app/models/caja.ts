@@ -6,6 +6,7 @@ export class Caja {
   idGrupoCaja: number;
   nombre: string;
   negativa: boolean;
+  prioritaria?: boolean;
   fechaBorrado?: number;
   total?: number;
   grupoCaja?: GrupoCaja;
@@ -18,6 +19,7 @@ export class Caja {
     negativa,
     fechaBorrado,
     fechaCreacion,
+    prioritaria,
   }: any) {
     this.id = id;
     this.idEmpresa = idEmpresa;
@@ -26,5 +28,6 @@ export class Caja {
     this.negativa = negativa;
     this.fechaBorrado = fechaBorrado;
     this.fechaCreacion = fechaCreacion;
+    this.prioritaria = prioritaria;
   }
 }

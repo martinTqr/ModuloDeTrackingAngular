@@ -16,7 +16,7 @@
       [dataSource]="cajas"
       keyExpr="id"
       (onEditingStart)="preparacionDeEdicion($event)"
-      (onSaved)="guardado($event)"
+      (onSaving)="guardado($event)"
       (onRowRemoved)="borrar($event)"
     >
       <dxo-filter-row
@@ -54,6 +54,10 @@
         </dxo-lookup>
       </dxi-column>
       <dxi-column dataField="negativa" caption="Acepta negativos">
+        <dxo-lookup [dataSource]="tipo" displayExpr="nombre" valueExpr="valor">
+        </dxo-lookup>
+      </dxi-column>
+      <dxi-column dataField="prioritaria" caption="Caja prioritaria">
         <dxo-lookup [dataSource]="tipo" displayExpr="nombre" valueExpr="valor">
         </dxo-lookup>
       </dxi-column>
