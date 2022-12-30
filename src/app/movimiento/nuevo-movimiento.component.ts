@@ -54,7 +54,7 @@ export class NuevoMovimientoComponent implements OnInit {
     fecha: [new Date().toISOString().substring(0, 10), Validators.required],
     detalle: [''],
     monto: ['', [Validators.required, Validators.min(0)]],
-    cajas: [[{}]],
+    /* cajas: [[{}]], */
   });
 
   isGeneral: string = 'true';
@@ -213,10 +213,11 @@ export class NuevoMovimientoComponent implements OnInit {
   }
 
   crear(): void {
+    /* 
     this.movimientoFormulario.get('cajas').value.push({ id: 1, monto: 0 });
-    console.log(this.movimientoFormulario.value);
+    console.log(this.movimientoFormulario.value); */
 
-    /* if (this.movimientoFormulario.invalid) return;
+    if (this.movimientoFormulario.invalid) return;
     let {
       fecha,
       idCaja,
@@ -264,6 +265,6 @@ export class NuevoMovimientoComponent implements OnInit {
           icon: 'error',
         });
       }
-    ); */
+    );
   }
 }
