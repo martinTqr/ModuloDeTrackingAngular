@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CotizacionService } from '../services/cotizacion.service';
-import { Cotizacion } from '../models';
+import { Cotizacion, Empresa } from '../models';
 import { parsearFecha } from '../helper';
+import { LocalService } from '../services/local.service';
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
@@ -9,11 +10,19 @@ import { parsearFecha } from '../helper';
 })
 export class AdminComponent implements OnInit {
   ultimaCotizacion: Cotizacion;
-  constructor(private cotizacionService: CotizacionService) {}
+  empresa: Empresa;
+  constructor(
+    private cotizacionService: CotizacionService,
+    private localService: LocalService
+  ) {}
   ngOnInit(): void {
     this.cargarUltimaCotizacion();
+    this.cargarEmpresa();
   }
 
+  cargarEmpresa() {
+    this.empresa = this.localService.getData('empresa');
+  }
   cargarUltimaCotizacion() {
     this.cotizacionService.ultimo().subscribe({
       next: (cotizacion) => {
