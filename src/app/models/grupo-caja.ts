@@ -4,7 +4,6 @@ export class GrupoCaja {
   id?: number;
   nombre: string;
   idEmpresa: number;
-  prioritaria?: boolean;
   subcategorias?: any[] = [];
   cajas?: any[] = [];
   acumulado?: Acumulado;
@@ -12,18 +11,10 @@ export class GrupoCaja {
   fechaBorrado?: number;
   collapsed?: boolean;
   fechaCreacion?: Date;
-  constructor({
-    id,
-    nombre,
-    idEmpresa,
-    fechaBorrado,
-    fechaCreacion,
-    prioritaria,
-  }: any) {
+  constructor({ id, nombre, idEmpresa, fechaBorrado, fechaCreacion }: any) {
     this.id = id;
     this.nombre = nombre;
     this.idEmpresa = idEmpresa;
-    this.prioritaria = prioritaria;
     this.fechaBorrado = fechaBorrado;
     this.fechaCreacion = fechaCreacion;
   }
