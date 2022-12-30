@@ -46,14 +46,10 @@ export class ListaUnidadNegocioComponent implements OnInit {
     const cambios = evento.changes;
 
     if (cambios.length > 0 && cambios[0].type === 'update') {
-      const grupo = cambios[0].data;
-      const diferencia: any = obtenerCambios({
-        original: this.unidadPorEditar,
-        modificado: grupo,
-      });
+      const unidadEditada = cambios[0].data;
 
       this.unidadNegocioService
-        .modificar(this.unidadPorEditar.id, diferencia)
+        .modificar(this.unidadPorEditar.id, unidadEditada)
         .subscribe(
           (data) => {
             console.log(data);
