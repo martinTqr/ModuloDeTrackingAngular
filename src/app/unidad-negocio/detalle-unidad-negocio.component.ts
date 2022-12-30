@@ -22,7 +22,7 @@ export class DetalleUnidadNegocioComponent implements OnInit {
   buscarUnidadNegocio() {
     const { id } = this.rutaActiva.snapshot.params;
 
-    this.unidadNegocioService.detalle(id).subscribe(
+    this.unidadNegocioService.buscarPorId(id).subscribe(
       (unidadNegocio) => (this.unidadNegocio = unidadNegocio),
       ({ error }) =>
         Swal.fire({

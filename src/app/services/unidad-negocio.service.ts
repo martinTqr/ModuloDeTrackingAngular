@@ -20,7 +20,7 @@ export class UnidadNegocioService extends BaseService {
       this.unidadNegocioURL + this.empresaParametro
     );
   }
-  public detalle(id: number): Observable<UnidadNegocio> {
+  public buscarPorId(id: number): Observable<UnidadNegocio> {
     return this.httpClient.get<UnidadNegocio>(this.unidadNegocioURL + id);
   }
   public crear(unidadNegocio: UnidadNegocio): Observable<any> {
