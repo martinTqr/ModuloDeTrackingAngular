@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { concat } from 'rxjs';
 import Swal from 'sweetalert2';
 import { volverPaginaAnterior } from '../helper/genreales';
@@ -43,6 +43,7 @@ export class NuevoMovimientoComponent implements OnInit {
     this.validacionDeEntidades();
     this.cargarCotizaciones();
     this.cargarUnidadNegocio();
+    console.log(this.movimientoFormulario.value);
   }
 
   movimientoFormulario = this.fb.group({
@@ -53,9 +54,10 @@ export class NuevoMovimientoComponent implements OnInit {
     fecha: [new Date().toISOString().substring(0, 10), Validators.required],
     detalle: [''],
     monto: ['', [Validators.required, Validators.min(0)]],
+    cajas: [[{}]],
   });
-  isGeneral: string = 'true';
 
+  isGeneral: string = 'true';
   categoriaSeleccionadaNombre: string = '-';
   cotizaciones: Cotizacion[] = [];
   cotizacionDeLaFecha: Cotizacion;
@@ -73,7 +75,6 @@ export class NuevoMovimientoComponent implements OnInit {
   validacionDeEntidades() {
     const mensajeError: string[] = [];
     let indice = 0;
-
     concat(
       this.usuarioService.lista(),
       this.categoriasService.listaArbol(),
@@ -212,7 +213,10 @@ export class NuevoMovimientoComponent implements OnInit {
   }
 
   crear(): void {
-    if (this.movimientoFormulario.invalid) return;
+    this.movimientoFormulario.get('cajas').value.push({ id: 1, monto: 0 });
+    console.log(this.movimientoFormulario.value);
+
+    /* if (this.movimientoFormulario.invalid) return;
     let {
       fecha,
       idCaja,
@@ -260,6 +264,6 @@ export class NuevoMovimientoComponent implements OnInit {
           icon: 'error',
         });
       }
-    );
+    ); */
   }
 }
