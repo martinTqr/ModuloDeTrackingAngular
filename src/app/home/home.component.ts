@@ -62,7 +62,7 @@ export class HomeComponent implements OnInit {
           next: (data) => {
             Swal.fire({
               title: data.mensaje.toUpperCase() + '!',
-              text: `Grupo de cajas ${data.data.nombre} actualizada con éxito`,
+              text: `Empresa ${data.data.nombre} actualizada con éxito`,
               icon: 'success',
               timer: 2000,
               timerProgressBar: true,
