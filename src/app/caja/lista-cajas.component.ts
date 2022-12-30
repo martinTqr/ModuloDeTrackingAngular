@@ -85,13 +85,18 @@ export class ListaCajasComponent implements OnInit {
     }
   }
 
-  borrar(id: any): void {
+  borrar(evento: any): void {
+    const { id } = evento.data;
+    console.log(id);
+
     this.cajaService.borrar(id).subscribe(
       (response) => {
         this.cajas = this.cajas.filter((caja) => caja.id !== id);
         Swal.fire('Caja borrada', `Caja ${id} eliminada con éxito`, 'success');
       },
       (error) => {
+        console.log(error);
+
         Swal.fire(
           'Error!',
           'No puede borrar una caja con movimientos!',
