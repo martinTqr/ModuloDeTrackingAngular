@@ -19,10 +19,9 @@ export class ListaGrupoCajaComponent implements OnInit {
     this.cargarGrupos();
   }
   cargarGrupos() {
-    this.grupoCajaService.lista().subscribe((grupoCajas) => {
-      this.grupoCajas = grupoCajas;
-      console.log(grupoCajas);
-    });
+    this.grupoCajaService
+      .lista()
+      .subscribe((grupoCajas) => (this.grupoCajas = grupoCajas));
   }
   preparacionDeEdicion(evento) {
     this.grupoPorEditar = parsearObjeto(evento.data);

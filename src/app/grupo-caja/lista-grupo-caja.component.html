@@ -17,12 +17,12 @@
       class="mx-auto"
       showBorders="true"
       (onEditingStart)="preparacionDeEdicion($event)"
-      (onSaved)="guardado($event)"
+      (onSaved)="cancelarEdicion()"
       (onRowRemoving)="borrar($event)"
       (onCellClick)="seleccionar($event)"
       hoverStateEnabled="true"
       (onCellPrepared)="onCellPrepared($event)"
-      (onSaving)="cancelarEdicion()"
+      (onSaving)="guardado($event)"
       (onEditCanceled)="cancelarEdicion()"
     >
       <dxo-filter-row
@@ -47,6 +47,7 @@
         [useIcons]="true"
       ></dxo-editing>
       <dxi-column dataField="nombre"></dxi-column>
+      <dxi-column dataField="prioritaria"></dxi-column>
     </dx-data-grid>
   </div>
 </div>
