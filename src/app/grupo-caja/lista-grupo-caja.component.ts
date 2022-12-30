@@ -45,27 +45,23 @@ export class ListaGrupoCajaComponent implements OnInit {
 
     if (cambios.length > 0 && cambios[0].type === 'update') {
       const grupo = cambios[0].data;
-      const diferencia: any = obtenerCambios({
-        original: this.grupoPorEditar,
-        modificado: grupo,
+
+      this.grupoCajaService.modificar(this.grupoPorEditar.id, grupo).subscribe({
+        next: (data) => {
+          console.log(data);
+
+          Swal.fire({
+            title: data.mensaje.toUpperCase() + '!',
+            text: `Grupo de cajas ${data.data.nombre} actualizada con éxito`,
+            icon: 'success',
+            timer: 2000,
+            timerProgressBar: true,
+          });
+        },
+        error: ({ error }) => {
+          Swal.fire('Error!', error.message, 'error');
+        },
       });
-
-      this.grupoCajaService
-        .modificar(this.grupoPorEditar.id, diferencia)
-        .subscribe({
-          next: (data) => {
-            console.log(data);
-
-            Swal.fire({
-              title: data.mensaje.toUpperCase() + '!',
-              text: `Grupo de cajas ${data.data.nombre} actualizada con éxito`,
-              icon: 'success',
-              timer: 2000,
-              timerProgressBar: true,
-            });
-          },
-          error: (err) => Swal.fire('Error!', err.error.message, 'error'),
-        });
       this.cancelarEdicion();
     }
   }
