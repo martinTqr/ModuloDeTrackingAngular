@@ -26,12 +26,15 @@ export class ListaUnidadNegocioComponent implements OnInit {
         (unidadesDeNegocio) => (this.unidadesNegocio = unidadesDeNegocio)
       );
   }
+  cancelarEdicion() {
+    this.unidadPorEditar = null;
+  }
   preparacionDeEdicion(evento) {
     this.unidadPorEditar = parsearObjeto(evento.data);
   }
   seleccionar(evento) {
     const { id } = evento.data;
-    redireccionar(`reporte/unidad/${id}`);
+    !this.unidadPorEditar && redireccionar(`reporte/unidad/${id}`);
   }
   onCellPrepared(e) {
     if (e.rowType == 'data' && e.column && e.column.dataField == 'nombre') {
@@ -65,6 +68,7 @@ export class ListaUnidadNegocioComponent implements OnInit {
           },
           (err) => console.error(err)
         );
+      this.cancelarEdicion();
     }
   }
   cancelDelete(e) {

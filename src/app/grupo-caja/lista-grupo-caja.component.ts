@@ -19,16 +19,17 @@ export class ListaGrupoCajaComponent implements OnInit {
     this.cargarGrupos();
   }
   cargarGrupos() {
-    this.grupoCajaService
-      .lista()
-      .subscribe((grupoCajas) => (this.grupoCajas = grupoCajas));
+    this.grupoCajaService.lista().subscribe((grupoCajas) => {
+      this.grupoCajas = grupoCajas;
+      console.log(grupoCajas);
+    });
   }
   preparacionDeEdicion(evento) {
     this.grupoPorEditar = parsearObjeto(evento.data);
   }
   seleccionar(evento) {
     const { id } = evento.data;
-    redireccionar(`reporte/grupo-cajas?id=${id}`);
+    !this.grupoPorEditar && redireccionar(`reporte/grupo-cajas?id=${id}`);
   }
 
   onCellPrepared(e) {
@@ -37,7 +38,9 @@ export class ListaGrupoCajaComponent implements OnInit {
       elem.style.setProperty('cursor', 'pointer', 'important');
     }
   }
-
+  cancelarEdicion() {
+    this.grupoPorEditar = null;
+  }
   guardado(evento) {
     const cambios = evento.changes;
 
@@ -64,6 +67,7 @@ export class ListaGrupoCajaComponent implements OnInit {
           },
           error: (err) => Swal.fire('Error!', err.error.message, 'error'),
         });
+      this.cancelarEdicion();
     }
   }
   cancelDelete(e) {

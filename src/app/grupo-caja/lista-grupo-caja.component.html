@@ -22,6 +22,8 @@
       (onCellClick)="seleccionar($event)"
       hoverStateEnabled="true"
       (onCellPrepared)="onCellPrepared($event)"
+      (onSaving)="cancelarEdicion()"
+      (onEditCanceled)="cancelarEdicion()"
     >
       <dxo-filter-row
         [visible]="true"
