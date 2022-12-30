@@ -31,7 +31,8 @@
             class="form-control"
             id=""
           >
-            <option [value]="true" [selected]="true">Si</option>
+            <option value="" [selected]="true">Seleccione una opcion</option>
+            <option [value]="true">Si</option>
             <option [value]="false">No</option>
           </select>
         </div>
@@ -45,6 +46,7 @@
             class="form-control"
             id=""
           >
+            <option value="" [selected]="true">Seleccione una opcion</option>
             <option *ngFor="let grupo of grupoCajas" value="{{ grupo.id }}">
               {{ grupo.nombre }}
             </option>
