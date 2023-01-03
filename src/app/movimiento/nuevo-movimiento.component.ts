@@ -1,6 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, Validators } from '@angular/forms';
-import { concat } from 'rxjs';
+import { AbstractControl, FormBuilder, Validators } from '@angular/forms';
+import {
+  catchError,
+  concat,
+  forkJoin,
+  map,
+  Observable,
+  of,
+  tap,
+  throwError,
+  zip,
+} from 'rxjs';
 import Swal from 'sweetalert2';
 import { volverPaginaAnterior } from '../helper/genreales';
 import {
@@ -43,20 +53,29 @@ export class NuevoMovimientoComponent implements OnInit {
     this.validacionDeEntidades();
     this.cargarCotizaciones();
     this.cargarUnidadNegocio();
-    console.log(this.movimientoFormulario.value);
+    this.movimientoFormulario
+      .get('cajaNueva')
+      .valueChanges.subscribe((idCaja) => {
+        const cajaNueva = this.cajas.find(
+          (caja) => Number(caja.id) === Number(idCaja)
+        );
+        this.agregarCajaAlFormulario(cajaNueva);
+
+        this.isAgregando = false;
+      });
   }
 
   movimientoFormulario = this.fb.group({
-    idCaja: ['', Validators.required],
+    cajaNueva: [''],
     idUnidadNegocio: [''],
     idCategoria: ['', Validators.required],
     idUsuario: ['', Validators.required],
     fecha: [new Date().toISOString().substring(0, 10), Validators.required],
     detalle: [''],
-    monto: ['', [Validators.required, Validators.min(0)]],
-    /* cajas: [[{}]], */
+    cajas: this.fb.array([], [this.validarCajas]),
   });
 
+  isAgregando = false;
   isGeneral: string = 'true';
   categoriaSeleccionadaNombre: string = '-';
   cotizaciones: Cotizacion[] = [];
@@ -67,10 +86,25 @@ export class NuevoMovimientoComponent implements OnInit {
   usuarios: Usuario[] = [];
   categoriasIndice = {
     out_general: 0,
-    in_general: 1,
-    out_especificas: 2,
-    in_especificas: 3,
+    out_no_generales: 1,
+    in_general: 2,
+    in_no_generales: 3,
   };
+  movimientosCorrectos = [];
+  movimientosIncorrectos = [];
+
+  validarCajas(control: AbstractControl) {
+    const cajas = control.value;
+    const noHayCajas = cajas.length === 0;
+    const cajasSinTotal = cajas.every((caja) => caja.total === '');
+
+    if (noHayCajas) return { error: 'Debe agregar al menos una caja' };
+
+    if (cajasSinTotal)
+      return { error: 'Debe agregar al menos una caja con total' };
+
+    return null;
+  }
 
   validacionDeEntidades() {
     const mensajeError: string[] = [];
@@ -150,34 +184,96 @@ export class NuevoMovimientoComponent implements OnInit {
   }
   cargarCategorias(cat: Categoria[]) {
     const categorias: Categoria[][] = [[], [], [], []];
-    const { in_especificas, in_general, out_especificas, out_general } =
+    const { in_no_generales, in_general, out_no_generales, out_general } =
       this.categoriasIndice;
     cat.forEach((categoria) => {
       if (categoria.tipo === 'in' && categoria.isGeneral)
         categorias[in_general].push(categoria);
 
       if (categoria.tipo === 'in' && !categoria.isGeneral)
-        categorias[in_especificas].push(categoria);
+        categorias[in_no_generales].push(categoria);
 
       if (categoria.tipo === 'out' && categoria.isGeneral)
         categorias[out_general].push(categoria);
 
       if (categoria.tipo === 'out' && !categoria.isGeneral)
-        categorias[out_especificas].push(categoria);
+        categorias[out_no_generales].push(categoria);
     });
     this.categorias = categorias;
   }
 
   cargarCajas(cajas) {
     this.cajas = cajas;
+    const cajasModificadas: any[] = cajas.map((caja) => ({
+      id: caja.id,
+      nombre: caja.nombre,
+      grupo: caja.grupoCaja.nombre,
+      total: 0,
+      prioritaria: caja.prioritaria,
+    }));
+    const cajasPrioritarias = cajasModificadas.filter(
+      (caja) => caja.prioritaria
+    );
+
+    const cajasControl = this.cajasFormulario;
+    cajasPrioritarias.forEach((caja) => {
+      cajasControl.push(this.transformarCaja(caja));
+    });
+  }
+  transformarCaja({ id, nombre, grupo }) {
+    return this.fb.group({
+      id: [id],
+      nombre: [nombre],
+      grupo: [grupo],
+      total: [''],
+    });
+  }
+  get cajasFormulario(): any {
+    return this.movimientoFormulario.get('cajas');
   }
 
-  montoEnDolares() {
-    const monto =
-      Number(this.movimientoFormulario.get('monto').value) /
+  agregarCaja() {
+    this.isAgregando = !this.isAgregando;
+  }
+
+  agregarCajaAlFormulario(caja: Caja) {
+    const {
+      id,
+      nombre,
+      grupoCaja: { nombre: grupo },
+    } = caja;
+    this.cajasFormulario.push(
+      this.fb.group({
+        id: [id],
+        nombre: [nombre],
+        grupo: [grupo],
+        total: [''],
+      })
+    );
+  }
+  borrarCaja(cajaControl) {
+    console.log(cajaControl);
+    const cajasControl = this.cajasFormulario;
+    const index = cajasControl.value.findIndex(
+      (c) => c.id === cajaControl.value.id
+    );
+
+    cajasControl.removeAt(index);
+  }
+  cajasParaAgregar() {
+    const cajasFormulario = this.cajasFormulario.value;
+    const cajasParaAgregar = this.cajas.filter(
+      (caja) => cajasFormulario.findIndex((c) => c.id === caja.id) === -1
+    );
+
+    return cajasParaAgregar;
+  }
+  totalEnDolares() {
+    const total =
+      Number(this.movimientoFormulario.get('total').value) /
       this.cotizacionDeLaFecha.valor;
-    //truncar monto en 2 cifras
-    return monto.toFixed(2);
+    //truncar total en 2 cifras
+    return total.toFixed(2);
   }
 
   async cambiarGeneral(isGeneral: boolean) {
@@ -212,59 +308,87 @@ export class NuevoMovimientoComponent implements OnInit {
     }
   }
 
-  crear(): void {
-    /* 
-    this.movimientoFormulario.get('cajas').value.push({ id: 1, monto: 0 });
-    console.log(this.movimientoFormulario.value); */
-
+  crear() {
     if (this.movimientoFormulario.invalid) return;
-    let {
-      fecha,
-      idCaja,
-      idUsuario,
-      idCategoria,
-      idUnidadNegocio,
-      detalle,
-      monto,
-    } = this.movimientoFormulario.value;
+    let { fecha, cajas, idUsuario, idCategoria, idUnidadNegocio, detalle } =
+      this.movimientoFormulario.value;
+
     if (this.isGeneral === 'false' && !idUnidadNegocio) return;
     const idCategoriaNumber = Number(idCategoria);
-    const montoNumber = Number(monto);
-    const idCajaNumber = Number(idCaja);
     const idUnidadNegocioNumber = Number(idUnidadNegocio);
     const idUsuarioNumber = Number(idUsuario);
-    const movimiento = new NuevoMovimiento({
-      idCaja: idCajaNumber,
-      idUnidadNegocio: idUnidadNegocioNumber,
-      idCategoria: idCategoriaNumber,
-      monto: montoNumber,
-      idUsuario: idUsuarioNumber,
-      fecha: new Date(fecha).toISOString(),
-      detalle,
+    const cajasConTotal: any = cajas.filter((caja: any) => caja.total !== '');
+
+    /* this.movimientoService.crear(movimiento).subscribe({
+        next: () => {
+          console.log('next');
+
+          const mensaje = `Monto: ${cajasConTotal[i].total} - Caja: ${cajasConTotal[i].nombre} - Categoria: ${this.categoriaSeleccionadaNombre}`;
+          this.movimientosCorrectos.push(mensaje);
+          i++;
+        },
+        error: ({ error }) => {
+          console.log(error);
+
+          const mensaje = [error.message]
+            .map((mensaje: string) => mensaje)
+            .join(' ');
+          this.movimientosIncorrectos.push(mensaje);
+          i++;
+        },
+      }); */
+    const suscripciones = [];
+    cajasConTotal.forEach((caja: any) => {
+      const movimiento = new NuevoMovimiento({
+        idCaja: caja.id,
+        idUnidadNegocio: idUnidadNegocioNumber,
+        idCategoria: idCategoriaNumber,
+        monto: caja.total,
+        idUsuario: idUsuarioNumber,
+        fecha: new Date(fecha).toISOString(),
+        detalle,
+      });
+      suscripciones.push(this.movimientoService.crear(movimiento));
     });
-    this.movimientoService.crear(movimiento).subscribe(
-      () => {
-        Swal.fire({
-          title: 'Movimiento creado',
-          icon: 'success',
-        });
-        this.movimientoFormulario.reset();
+    concat(...suscripciones)
+      .forEach(({ data: movimiento }) => {
+        const mensaje = `Monto: ${movimiento.monto} - Caja: ${movimiento.caja.nombre} - Categoria: ${movimiento.categoria.nombre}`;
+        this.movimientosCorrectos.push(mensaje);
+      })
+      .catch(({ error }) => {
+        console.log(error);
+        const mensaje = [error.message]
+          .map((mensaje: string) => mensaje)
+          .join(' ');
+        this.movimientosIncorrectos.push(mensaje);
+      })
+      .finally(() => {
+        if (this.movimientosCorrectos.length > 0) {
+          Swal.fire({
+            title: 'Movimientos creados',
+            html: this.movimientosCorrectos.join(' <br/> '),
+            icon: 'success',
+          }).then(() => {
+            if (this.movimientosIncorrectos.length > 0) {
+              Swal.fire({
+                title: 'Movimientos no creados',
+                html: this.movimientosIncorrectos.join(' <br/> '),
+                icon: 'error',
+              });
+            }
+          });
+        } else if (this.movimientosIncorrectos.length > 0) {
+          Swal.fire({
+            title: 'Movimientos no creados',
+            html: this.movimientosIncorrectos.join(' <br/> '),
+            icon: 'error',
+          });
+        }
         this.movimientoFormulario.patchValue({
           detalle: '',
-          fecha: new Date().toISOString().substring(0, 10),
           idUnidadNegocio: '',
-          idUsuario: String(this.usuarios[0].id),
         });
         this.cambiarUnidadNegocio(this.unidadesDeNegocio);
-        this.categoriaSeleccionadaNombre = '-';
-      },
-      ({ error }) => {
-        Swal.fire({
-          title: 'Error al crear movimiento',
-          text: [error.message].map((mensaje: string) => mensaje).join(' '),
-          icon: 'error',
-        });
-      }
-    );
+      });
   }
 }
