@@ -87,9 +87,6 @@ export class ReporteUNComponent implements OnInit {
     }
   }
 }
-/* nombre
-acumulado.total
-meses */
 const formatearObjeto = (objeto: any): any => {
   return {
     nombre: objeto.nombre,
