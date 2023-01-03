@@ -97,7 +97,12 @@ export class NuevaCategoriaComponent implements OnInit {
           text: data.nombre,
           icon: 'success',
           timer: 3000,
-        }).then(() => window.location.reload());
+        }).then(() => {
+          this.categoriaFormulario.patchValue({
+            nombre: '',
+          });
+          this.cargarCategorias();
+        });
       },
       ({ error }) =>
         Swal.fire({ title: 'Error', text: error.message, icon: 'error' })
