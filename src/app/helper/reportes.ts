@@ -59,7 +59,7 @@ export const acumularMesesTotales = (categoria) => {
     });
   });
   const total = {
-    nombre: 'Saldo',
+    nombre: 'Resultado',
     acumulado: {
       total: categoria.total,
     },

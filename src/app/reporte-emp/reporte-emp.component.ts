@@ -56,7 +56,7 @@ export class ReporteEmpComponent implements OnInit {
     this.cargarReporte();
   }
   cambiarColorFila(evento) {
-    if (evento.data?.nombre === 'Saldo') {
+    if (evento.data?.nombre === 'Resultado') {
       const colorFila = 'rgb(154,154,154,0.32)';
       evento.rowElement.style.backgroundColor = colorFila;
     }
@@ -64,7 +64,7 @@ export class ReporteEmpComponent implements OnInit {
   cambiarColorCelda(evento) {
     const { negativo, positivo } = colores;
     const { columnIndex, cellElement, data, displayValue } = evento;
-    if (displayValue && columnIndex !== 0 && data?.nombre === 'Saldo') {
+    if (displayValue && columnIndex !== 0 && data?.nombre === 'Resultado') {
       const color = displayValue >= 0 ? positivo : negativo;
       cellElement.style.backgroundColor = color;
       cellElement.style.color = 'white';
