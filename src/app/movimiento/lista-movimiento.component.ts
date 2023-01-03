@@ -173,6 +173,12 @@ export class ListaMovimientoComponent implements OnInit {
       },
 
       ({ error }) => {
+        const movimiento = evento.data;
+        //Put the movimiento in the same position
+        const movimientosOrdenados = [movimiento, ...this.movimientos].sort(
+          (a: any, b: any) => b.id - a.id
+        );
+        this.movimientos = movimientosOrdenados;
         Swal.fire('Error!', error.mensaje || error.message, 'error');
       }
     );
