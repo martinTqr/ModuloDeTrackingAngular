@@ -4,7 +4,7 @@ import { GrupoCaja } from '../models';
 import { ReporteService } from '../services/reporte.service';
 import { ActivatedRoute } from '@angular/router';
 import Swal from 'sweetalert2';
-import { colores, meses } from '../helper/constantes';
+import { colores, filaResultado, meses } from '../helper/constantes';
 @Component({
   selector: 'app-reporte-cajas',
   templateUrl: './reporte-cajas.component.html',
@@ -39,7 +39,6 @@ export class ReporteCajasComponent implements OnInit {
         grupoCaja['collapsed'] = id ? false : true;
       });
       this.reporteAnual = grupos;
-      console.log(this.reporteAnual);
 
       if (grupos.length === 0)
         Swal.fire('No hay datos para mostrar', '', 'info');
@@ -79,14 +78,14 @@ export class ReporteCajasComponent implements OnInit {
     });
   }
   cambiarColorFila(evento) {
-    if (evento.data?.nombre === 'Saldo') {
+    if (evento.data?.nombre === filaResultado) {
       evento.rowElement.style.backgroundColor = 'rgb(154,154,154,0.32)';
     }
   }
   cambiarColorCelda(evento) {
     const { negativo, positivo } = colores;
     const { columnIndex, cellElement, data, displayValue } = evento;
-    if (displayValue && columnIndex !== 0 && data?.nombre === 'Saldo') {
+    if (displayValue && columnIndex !== 0 && data?.nombre === filaResultado) {
       const color = displayValue >= 0 ? positivo : negativo;
       cellElement.style.backgroundColor = color;
       cellElement.style.color = 'white';

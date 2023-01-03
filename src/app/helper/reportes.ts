@@ -1,5 +1,6 @@
 import { mesesVacios, parsearObjeto } from '.';
 import { Caja, GrupoCaja } from '../models';
+import { filaResultado } from './constantes';
 
 export const agruparCajas = (cajas: any[], grupoCajas: GrupoCaja[]) => {
   //modificar cajas para tree list
@@ -59,7 +60,7 @@ export const acumularMesesTotales = (categoria) => {
     });
   });
   const total = {
-    nombre: 'Resultado',
+    nombre: filaResultado,
     acumulado: {
       total: categoria.total,
     },

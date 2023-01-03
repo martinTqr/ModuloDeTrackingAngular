@@ -17,6 +17,8 @@ export const colores = {
   negativo: '#EF9A9A',
 };
 
+export const filaResultado = 'Resultado';
+
 export const filtrosDevExtreme = {
   tipo: [
     {

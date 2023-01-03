@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { separarMiles } from '../helper';
-import { colores, meses } from '../helper/constantes';
+import { colores, filaResultado, meses } from '../helper/constantes';
 import { Empresa, GrupoCaja } from '../models';
 import { CajaService } from '../services/caja.service';
 import { GrupoCajaService } from '../services/grupo-caja.service';
@@ -54,14 +54,14 @@ export class ReporteTransferenciaComponent implements OnInit {
     });
   }
   cambiarColorFila(evento) {
-    if (evento.data?.nombre === 'Saldo') {
+    if (evento.data?.nombre === filaResultado) {
       evento.rowElement.style.backgroundColor = 'rgb(154,154,154,0.32)';
     }
   }
   cambiarColorCelda(evento) {
     const { columnIndex, cellElement, data, displayValue } = evento;
     const { negativo, positivo } = colores;
-    if (displayValue && columnIndex !== 0 && data?.nombre === 'Saldo') {
+    if (displayValue && columnIndex !== 0 && data?.nombre === filaResultado) {
       const color = displayValue >= 0 ? positivo : negativo;
       cellElement.style.backgroundColor = color;
       cellElement.style.color = 'white';

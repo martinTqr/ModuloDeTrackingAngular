@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import Swal from 'sweetalert2';
-import { colores, meses } from '../helper/constantes';
+import { colores, filaResultado, meses } from '../helper/constantes';
 import { ReporteService } from '../services/reporte.service';
 import { ReporteEmpresaReducido } from './reporte-emp.interface';
 
@@ -56,7 +56,7 @@ export class ReporteEmpComponent implements OnInit {
     this.cargarReporte();
   }
   cambiarColorFila(evento) {
-    if (evento.data?.nombre === 'Resultado') {
+    if (evento.data?.nombre === filaResultado) {
       const colorFila = 'rgb(154,154,154,0.32)';
       evento.rowElement.style.backgroundColor = colorFila;
     }
@@ -64,7 +64,7 @@ export class ReporteEmpComponent implements OnInit {
   cambiarColorCelda(evento) {
     const { negativo, positivo } = colores;
     const { columnIndex, cellElement, data, displayValue } = evento;
-    if (displayValue && columnIndex !== 0 && data?.nombre === 'Resultado') {
+    if (displayValue && columnIndex !== 0 && data?.nombre === filaResultado) {
       const color = displayValue >= 0 ? positivo : negativo;
       cellElement.style.backgroundColor = color;
       cellElement.style.color = 'white';
