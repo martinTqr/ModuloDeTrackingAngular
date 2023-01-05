@@ -319,24 +319,6 @@ export class NuevoMovimientoComponent implements OnInit {
     const idUsuarioNumber = Number(idUsuario);
     const cajasConTotal: any = cajas.filter((caja: any) => caja.total !== '');
 
-    /* this.movimientoService.crear(movimiento).subscribe({
-        next: () => {
-          console.log('next');
-
-          const mensaje = `Monto: ${cajasConTotal[i].total} - Caja: ${cajasConTotal[i].nombre} - Categoria: ${this.categoriaSeleccionadaNombre}`;
-          this.movimientosCorrectos.push(mensaje);
-          i++;
-        },
-        error: ({ error }) => {
-          console.log(error);
-
-          const mensaje = [error.message]
-            .map((mensaje: string) => mensaje)
-            .join(' ');
-          this.movimientosIncorrectos.push(mensaje);
-          i++;
-        },
-      }); */
     const suscripciones = [];
     cajasConTotal.forEach((caja: any) => {
       const movimiento = new NuevoMovimiento({
@@ -389,6 +371,8 @@ export class NuevoMovimientoComponent implements OnInit {
           idUnidadNegocio: '',
         });
         this.cambiarUnidadNegocio(this.unidadesDeNegocio);
+        this.movimientosCorrectos = [];
+        this.movimientosIncorrectos = [];
       });
   }
 }
