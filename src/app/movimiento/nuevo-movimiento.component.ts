@@ -317,9 +317,8 @@ export class NuevoMovimientoComponent implements OnInit {
     const idCategoriaNumber = Number(idCategoria);
     const idUnidadNegocioNumber = Number(idUnidadNegocio);
     const idUsuarioNumber = Number(idUsuario);
-    const cajasConTotal: any = cajas.filter((caja: any) => caja.total !== '');
-
-    const suscripciones = [];
+    const cajasConTotal: any = cajas.filter((caja: any) => caja.total);
+    let suscripciones = [];
     cajasConTotal.forEach((caja: any) => {
       const movimiento = new NuevoMovimiento({
         idCaja: caja.id,
@@ -330,7 +329,9 @@ export class NuevoMovimientoComponent implements OnInit {
         fecha: new Date(fecha).toISOString(),
         detalle,
       });
+
       suscripciones.push(this.movimientoService.crear(movimiento));
+      console.log(suscripciones);
     });
     concat(...suscripciones)
       .forEach(({ data: movimiento }) => {
@@ -376,6 +377,7 @@ export class NuevoMovimientoComponent implements OnInit {
         );
         this.movimientosCorrectos = [];
         this.movimientosIncorrectos = [];
+        suscripciones = [];
       });
   }
 }
