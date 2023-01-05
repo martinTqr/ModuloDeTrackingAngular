@@ -371,6 +371,9 @@ export class NuevoMovimientoComponent implements OnInit {
           idUnidadNegocio: '',
         });
         this.cambiarUnidadNegocio(this.unidadesDeNegocio);
+        this.cajasFormulario.controls.forEach((caja) =>
+          caja.get('total').reset()
+        );
         this.movimientosCorrectos = [];
         this.movimientosIncorrectos = [];
       });
