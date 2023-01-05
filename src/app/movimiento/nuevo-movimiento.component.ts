@@ -18,6 +18,7 @@ import {
   Categoria,
   Cotizacion,
   NuevoMovimiento,
+  TipoCategoria,
   UnidadNegocio,
   Usuario,
 } from '../models';
@@ -53,16 +54,7 @@ export class NuevoMovimientoComponent implements OnInit {
     this.validacionDeEntidades();
     this.cargarCotizaciones();
     this.cargarUnidadNegocio();
-    this.movimientoFormulario
-      .get('cajaNueva')
-      .valueChanges.subscribe((idCaja) => {
-        const cajaNueva = this.cajas.find(
-          (caja) => Number(caja.id) === Number(idCaja)
-        );
-        this.agregarCajaAlFormulario(cajaNueva);
-
-        this.isAgregando = false;
-      });
+    this.agregarCajaNueva();
   }
 
   movimientoFormulario = this.fb.group({
@@ -77,9 +69,9 @@ export class NuevoMovimientoComponent implements OnInit {
 
   isAgregando = false;
   isGeneral: string = 'true';
-  categoriaSeleccionadaNombre: string = '-';
   cotizaciones: Cotizacion[] = [];
   cotizacionDeLaFecha: Cotizacion;
+  categoriaSeleccionada: Categoria;
   categorias: Categoria[][] = [];
   cajas: Caja[] = [];
   unidadesDeNegocio: UnidadNegocio[] = [];
@@ -106,13 +98,25 @@ export class NuevoMovimientoComponent implements OnInit {
     return null;
   }
 
+  agregarCajaNueva() {
+    this.movimientoFormulario
+      .get('cajaNueva')
+      .valueChanges.subscribe((idCaja) => {
+        const cajaNueva = this.cajas.find(
+          (caja) => Number(caja.id) === Number(idCaja)
+        );
+        this.agregarCajaAlFormulario(cajaNueva);
+
+        this.isAgregando = false;
+      });
+  }
   validacionDeEntidades() {
     const mensajeError: string[] = [];
     let indice = 0;
     concat(
       this.usuarioService.lista(),
       this.categoriasService.listaArbol(),
-      this.cajaService.lista()
+      this.cajaService.listaConSaldo()
     )
       .forEach((value) => {
         if (value.length === 0) mensajeError.push(mensajes[indice]);
@@ -208,7 +212,7 @@ export class NuevoMovimientoComponent implements OnInit {
       id: caja.id,
       nombre: caja.nombre,
       grupo: caja.grupoCaja.nombre,
-      total: 0,
+      total: '',
       prioritaria: caja.prioritaria,
     }));
     const cajasPrioritarias = cajasModificadas.filter(
@@ -231,7 +235,9 @@ export class NuevoMovimientoComponent implements OnInit {
   get cajasFormulario(): any {
     return this.movimientoFormulario.get('cajas');
   }
-
+  get categriaFormulario(): any {
+    return this.movimientoFormulario.get('idCategoria');
+  }
   agregarCaja() {
     this.isAgregando = !this.isAgregando;
   }
@@ -252,7 +258,6 @@ export class NuevoMovimientoComponent implements OnInit {
     );
   }
   borrarCaja(cajaControl) {
-    console.log(cajaControl);
     const cajasControl = this.cajasFormulario;
     const index = cajasControl.value.findIndex(
       (c) => c.id === cajaControl.value.id
@@ -262,9 +267,23 @@ export class NuevoMovimientoComponent implements OnInit {
   }
   cajasParaAgregar() {
     const cajasFormulario = this.cajasFormulario.value;
-    const cajasParaAgregar = this.cajas.filter(
-      (caja) => cajasFormulario.findIndex((c) => c.id === caja.id) === -1
-    );
+    let cajasParaAgregar = this.cajas.filter((caja) => {
+      const cajaNoEstaEnFormulario =
+        cajasFormulario.findIndex((c) => c.id === caja.id) === -1;
+      return cajaNoEstaEnFormulario;
+    });
+
+    cajasParaAgregar = cajasParaAgregar.filter((caja) => {
+      if (this.categoriaSeleccionada) {
+        if (
+          (this.categoriaSeleccionada.tipo === TipoCategoria.out &&
+            caja.total != 0) ||
+          this.categoriaSeleccionada.tipo === TipoCategoria.in
+        )
+          return true;
+        else return false;
+      } else return true;
+    });
 
     return cajasParaAgregar;
   }
@@ -304,7 +323,7 @@ export class NuevoMovimientoComponent implements OnInit {
       this.movimientoFormulario.patchValue({
         idCategoria: idCateg,
       });
-      this.categoriaSeleccionadaNombre = evento.row.node.data.nombre;
+      this.categoriaSeleccionada = evento.row.node.data;
     }
   }
 
@@ -331,7 +350,6 @@ export class NuevoMovimientoComponent implements OnInit {
       });
 
       suscripciones.push(this.movimientoService.crear(movimiento));
-      console.log(suscripciones);
     });
     concat(...suscripciones)
       .forEach(({ data: movimiento }) => {
@@ -339,7 +357,6 @@ export class NuevoMovimientoComponent implements OnInit {
         this.movimientosCorrectos.push(mensaje);
       })
       .catch(({ error }) => {
-        console.log(error);
         const mensaje = [error.message]
           .map((mensaje: string) => mensaje)
           .join(' ');
@@ -378,6 +395,11 @@ export class NuevoMovimientoComponent implements OnInit {
         this.movimientosCorrectos = [];
         this.movimientosIncorrectos = [];
         suscripciones = [];
+        this.cajaService.listaConSaldo().subscribe({
+          next: (cajas) => {
+            this.cajas = cajas;
+          },
+        });
       });
   }
 }
