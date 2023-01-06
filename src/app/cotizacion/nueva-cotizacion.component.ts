@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
+import { parsearFecha } from '../helper';
 import { CotizacionService } from '../services/cotizacion.service';
 import { LocalService } from '../services/local.service';
 
@@ -26,12 +27,12 @@ export class NuevaCotizacionComponent implements OnInit {
     const { fecha, valor } = this.cotizacionFormulario.value;
 
     const cotizacion = {
-      fecha: new Date(fecha),
+      fecha: parsearFecha(String(fecha)),
       valor: Number(valor),
       idEmpresa: id,
     };
     this.cotizacionService.crear(cotizacion).subscribe(
-      (res) => {
+      () => {
         Swal.fire({
           title: 'Cotización creada',
           icon: 'success',
