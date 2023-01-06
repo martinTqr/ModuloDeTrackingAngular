@@ -23,4 +23,7 @@ export class EmpresaService {
   public crear(empresa: Empresa): Observable<any> {
     return this.httpClient.post<any>(this.empresaURL, empresa);
   }
+  public borrar(id: number): Observable<any> {
+    return this.httpClient.delete<any>(this.empresaURL + id);
+  }
 }

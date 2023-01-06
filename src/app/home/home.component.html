@@ -21,6 +21,7 @@
       hoverStateEnabled="true"
       (onCellPrepared)="onCellPrepared($event)"
       (onEditCanceled)="cancelarEdicion()"
+      (onRowRemoving)="borrar($event)"
     >
       <dxo-filter-row
         [visible]="true"

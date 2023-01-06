@@ -73,4 +73,14 @@ export class HomeComponent implements OnInit {
       this.empresaPorEditar = null;
     }
   }
+
+  borrar(evento) {
+    const { id } = evento.data;
+    this.empresaService.borrar(id).subscribe({
+      next: (data) => {
+        console.log(data);
+      },
+      error: (err) => console.log(err),
+    });
+  }
 }
