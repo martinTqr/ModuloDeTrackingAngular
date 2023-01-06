@@ -23,6 +23,7 @@ export class ListaCotizacionComponent implements OnInit {
         cotizacion.fecha = parsearFecha(String(cotizacion.fecha));
       });
       this.cotizaciones = cotizaciones;
+      console.log(cotizaciones);
     });
   }
   preparacionDeEdicion(evento) {
