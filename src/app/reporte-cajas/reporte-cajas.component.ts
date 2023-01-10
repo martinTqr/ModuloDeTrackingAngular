@@ -37,7 +37,6 @@ export class ReporteCajasComponent implements OnInit {
         grupoCaja['collapsed'] = id ? false : true;
       });
       this.reporteAnual = grupos;
-      console.log(grupos);
 
       if (grupos.length === 0)
         Swal.fire('No hay datos para mostrar', '', 'info');
