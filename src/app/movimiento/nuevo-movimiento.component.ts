@@ -208,27 +208,31 @@ export class NuevoMovimientoComponent implements OnInit {
 
   cargarCajas(cajas) {
     this.cajas = cajas;
-    const cajasModificadas: any[] = cajas.map((caja) => ({
+
+    const cajasModifica: any[] = cajas.map((caja) => ({
       id: caja.id,
       nombre: caja.nombre,
       grupo: caja.grupoCaja.nombre,
+      saldo: caja.total,
       total: '',
       prioritaria: caja.prioritaria,
     }));
-    const cajasPrioritarias = cajasModificadas.filter(
-      (caja) => caja.prioritaria
-    );
 
+    const cajasPrioritarias = cajasModifica.filter((caja) => caja.prioritaria);
     const cajasControl = this.cajasFormulario;
+
     cajasPrioritarias.forEach((caja) => {
+      console.log(caja);
+
       cajasControl.push(this.transformarCaja(caja));
     });
   }
-  transformarCaja({ id, nombre, grupo }) {
+  transformarCaja({ id, nombre, grupo, saldo }) {
     return this.fb.group({
       id: [id],
       nombre: [nombre],
       grupo: [grupo],
+      saldo: [saldo],
       total: [''],
     });
   }
@@ -247,6 +251,7 @@ export class NuevoMovimientoComponent implements OnInit {
       id,
       nombre,
       grupoCaja: { nombre: grupo },
+      total,
     } = caja;
     this.cajasFormulario.push(
       this.fb.group({
@@ -254,6 +259,7 @@ export class NuevoMovimientoComponent implements OnInit {
         nombre: [nombre],
         grupo: [grupo],
         total: [''],
+        saldo: [total],
       })
     );
   }
@@ -364,6 +370,18 @@ export class NuevoMovimientoComponent implements OnInit {
       })
       .finally(() => {
         if (this.movimientosCorrectos.length > 0) {
+          this.cajaService.listaConSaldo().subscribe({
+            next: (cajas) => {
+              this.cajas = cajas;
+              this.cajasFormulario.value.forEach((caja, index) => {
+                const cajaEncontrada = cajas.find((c) => c.id === caja.id);
+                if (cajaEncontrada) {
+                  this.cajasFormulario.value[index].saldo =
+                    cajaEncontrada.total;
+                }
+              });
+            },
+          });
           Swal.fire({
             title: 'Movimientos creados',
             html: this.movimientosCorrectos.join(' <br/> '),
@@ -389,6 +407,7 @@ export class NuevoMovimientoComponent implements OnInit {
           idUnidadNegocio: '',
         });
         this.cambiarUnidadNegocio(this.unidadesDeNegocio);
+
         this.cajasFormulario.controls.forEach((caja) =>
           caja.get('total').reset()
         );

@@ -102,7 +102,7 @@
                 {{ caja.value.grupo }}
               </label>
               <label class="ps-0" for="total" class="form-control">
-                {{ caja.value.nombre }}</label
+                {{ caja.value.nombre }}: {{ caja.value.saldo }}</label
               >
 
               <input
@@ -139,7 +139,7 @@
           >
           <option value="">Seleccione una caja</option>
           <option *ngFor="let caja of cajasParaAgregar()" value="{{ caja.id }}">
-            {{ caja.nombre }}
+            {{ caja.nombre }}: {{ caja.total }}
           </option>
         </select>
       </div>
