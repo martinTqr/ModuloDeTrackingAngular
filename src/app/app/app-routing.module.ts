@@ -36,7 +36,7 @@ import { NuevaCotizacionComponent } from '../cotizacion/nueva-cotizacion.compone
 const rutas: Routes = [
   { path: '', component: HomeComponent },
 
-  { path: 'dashboard', component: DashboardComponent },
+  /*   { path: 'dashboard', component: DashboardComponent }, */
   { path: 'admin', component: AdminComponent },
 
   { path: 'reporte/empresa', component: ReporteEmpComponent },
@@ -65,10 +65,10 @@ const rutas: Routes = [
     path: 'caja/transferencia/nueva',
     component: NuevaTransferenciaCajaComponent,
   },
-  {
+  /*   {
     path: 'caja/transferencia/reporte',
     component: ReporteTransferenciaComponent,
-  },
+  }, */
 
   { path: 'grupo-caja/lista', component: ListaGrupoCajaComponent },
   { path: 'grupo-caja/detalle/:id', component: DetalleGrupoCajaComponent },
