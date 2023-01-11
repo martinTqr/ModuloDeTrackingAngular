@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import Swal from 'sweetalert2';
-import { colores, filaResultado, meses } from '../helper/constantes';
+import { FilasColores, meses } from '../helper/constantes';
 import { ReporteService } from '../services/reporte.service';
 import { ReporteEmpresaReducido } from './reporte-emp.interface';
 
@@ -40,8 +40,6 @@ export class ReporteEmpComponent implements OnInit {
           const categorias = reporte.map((categoria) => {
             return formatearObjeto(categoria);
           });
-          console.log(reporte);
-
           this.reporte = categorias;
           Swal.close();
         },
@@ -57,20 +55,15 @@ export class ReporteEmpComponent implements OnInit {
     this.dolar = !this.dolar;
     this.cargarReporte();
   }
-  cambiarColorFila(evento) {
-    if (evento.data?.nombre === filaResultado) {
-      const colorFila = 'rgb(154,154,154,0.32)';
-      evento.rowElement.style.backgroundColor = colorFila;
-    }
-  }
   cambiarColorCelda(evento) {
-    const { negativo, positivo } = colores;
-    const { columnIndex, cellElement, data, displayValue } = evento;
-    if (displayValue && columnIndex !== 0 && data?.nombre === filaResultado) {
-      const color = displayValue >= 0 ? positivo : negativo;
-      cellElement.style.backgroundColor = color;
-      cellElement.style.color = 'white';
-    }
+    const { cellElement, data } = evento;
+
+    const color =
+      FilasColores[data.nombre.toLowerCase()] || FilasColores.blanco;
+    cellElement.style.backgroundColor = color;
+    cellElement.style.color = FilasColores[data.nombre.toLowerCase()]
+      ? FilasColores.blanco
+      : 'black';
   }
 }
 const formatearObjeto = (objeto: any): ReporteEmpresaReducido => {
