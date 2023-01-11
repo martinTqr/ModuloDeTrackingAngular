@@ -40,6 +40,8 @@ export class ReporteEmpComponent implements OnInit {
           const categorias = reporte.map((categoria) => {
             return formatearObjeto(categoria);
           });
+          console.log(reporte);
+
           this.reporte = categorias;
           Swal.close();
         },
